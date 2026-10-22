@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<script>let r=document.documentElement;try{r.dataset.theme=localStorage.theme==='light'?'light':'dark'}catch{}r.dataset.js='';</script>
+<meta name="color-scheme" content="dark light">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>d20 Bench · Erol Can Akbaba</title>
+<meta name="description" content="Exploratory English SRD 5.2.1 studies: quality, token use and completion time for local language models.">
+<link rel="stylesheet" href="assets/paper.css">
+<script src="assets/theme.js" defer></script>
+</head><body>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="paper-grid">
+<header class="site-header"><div class="identity"><a href="https://erolcanakbaba.com/">Erol Can Akbaba</a></div><nav aria-label="Main navigation"><a href="index.html" aria-current="page">d20 Bench</a><span class="separator" aria-hidden="true"> · </span><a href="{{study-report}}">Report</a><span class="separator" aria-hidden="true"> · </span><a href="{{study-explore}}">Explore the data</a><span class="separator" aria-hidden="true"> · </span><a href="https://erolcanakbaba.com/">erolcanakbaba.com ↗︎</a><span class="theme-control"><span class="separator" aria-hidden="true"> · </span><button id="theme-toggle" type="button" aria-label="Switch to light theme">Light</button></span></nav></header>
+<main id="main" class="home"><div class="title-block"><p class="eyebrow">Exploratory English SRD 5.2.1 studies</p><h1>d20 Bench</h1><p class="affiliation">Erol Can Akbaba · 2026</p><hr></div>
+<div class="abstract"><p>Which local model can keep a live interaction moving? These studies measure answer quality, tokens and completion time for local language models answering D&amp;D rules questions. That stands in for a broader need: interactive narrative systems have to apply precise rules knowledge live. I start with a baseline, then test whether retrieving the right context helps.</p></div>
+<h2>Studies</h2><ul><!--STUDIES--></ul>
+<p>Study 1 tested 25 configurations (a model with a thinking setting) on 120 SRD 5.2.1 rules questions, with and without oracle passages, the passages used to write each question. With those passages, only three configurations got more than half the answers fully correct at a median of 5 seconds or less, and all three were Gemma 4. The totals cover all 120 questions; the <a href="{{study-explore}}">explorer</a> shows the 18 public cases and their 900 answers. <a href="{{study-report}}">Read the report</a>.</p>
+<p>Study 2 is in progress: BM25 retrieval, a standard keyword-ranking method, with Gemma 4, on the same 120 questions. It has no published results yet.</p>
+</main>
+<footer class="site-footer">
+<p>Erol Can Akbaba<span class="separator"> · </span>Ankara, Türkiye<span class="separator"> · </span>UTC+3<span class="separator"> · </span><a href="mailto:erol@erolcanakbaba.com">erol@erolcanakbaba.com</a><span class="separator"> · </span><a href="CITATION.cff">Cite</a></p>
+<p class="colophon">Code MIT; data, cases, documentation and reports CC BY 4.0. Erol Can Akbaba, 2026. <a href="THIRD_PARTY_NOTICES.md">Third-party notices</a>.</p>
+<p class="colophon">Set in Newsreader and IBM Plex Mono. No tracking, no cookies.</p>
+</footer></div></body></html>

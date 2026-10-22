@@ -1,0 +1,8 @@
+{
+  "d20-en-pilot-t01-003": "gemma4-e2b/off",
+  "d20-en-pilot-t11-006": "qwen3.5-4b/off",
+  "d20-en-pilot-t03-009": "granite4.2-30b/on",
+  "d20-en-pilot-t10-008": "qwen3.5-4b/on",
+  "d20-en-pilot-t05-010": "lfm2.5-2.6b/native",
+  "d20-en-pilot-t09-003": "granite4.2-3b/off"
+}

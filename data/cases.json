@@ -1,0 +1,1483 @@
+{
+  "schema_version": 1,
+  "cases": [
+    {
+      "case_id": "d20-en-pilot-t01-003",
+      "topic_id": 1,
+      "topic": "Core tests and skills",
+      "question": "An effect tells a willing character to make a Wisdom saving throw. The character wants the effect to work and does not want to resist it. There is no special rule changing saving throws. How should the player resolve this saving throw?",
+      "reference_answer": "They can choose to fail without rolling.",
+      "requirements": [
+        {
+          "claim_id": "C001",
+          "original_text": "The character may choose to fail the save without rolling.",
+          "weight": 100,
+          "rationale": "The entire requested procedure is the voluntary failure option, including avoiding the roll.",
+          "credit_rule": {
+            "full_credit_condition": "Allows this willing character to choose failure without making the saving-throw roll. Permission to accept the effect directly is equivalent. No unresolved assertion may contradict this required ruling.",
+            "partial_levels": [],
+            "zero_credit_condition": "The required ruling above is absent, incorrect, or contradicted elsewhere in the answer. A correct statement later explicitly retracting an earlier mistake is not an unresolved contradiction.",
+            "selection_rule": "Award the existing full weight only when the full condition is met; otherwise zero.",
+            "no_partial_credit_reason": "Voluntary failure is the no-roll resolution itself; merely wanting failure or saying rolling is unnecessary without allowing failure does not supply a usable correct procedure."
+          }
+        }
+      ],
+      "passages": [
+        {
+          "pdf_page_numbers": [
+            7
+          ],
+          "text": "Saving Throws\nA saving throw—also called a save—represents an \nattempt to evade or resist a threat, such as a fiery \nexplosion, a blast of poisonous gas, or a spell trying \nto invade your mind. You don’t normally choose to \nmake a save; you must make one because your char-\nacter or a monster (if you’re the GM) is at risk. A \nsave’s result is detailed in the effect that caused it.\n\t If you don’t want to resist the effect, you can \nchoose to fail the save without rolling."
+        }
+      ]
+    },
+    {
+      "case_id": "d20-en-pilot-t02-003",
+      "topic_id": 2,
+      "topic": "Combat, actions, and movement",
+      "question": "An ogre with a 5-foot reach stands next to three adventurers. The ogre can see all three and has its Reaction available. On their own turns, a wizard casts Misty Step to teleport 30 feet away, and a fighter simply walks 20 feet away using her Speed without taking any special action. Before that, on the ogre's turn, a goblin shaman's Thunderwave hurled a cleric 10 feet away from the ogre without using any of the cleric's movement or actions. Which of the three movements allows the ogre to make an Opportunity Attack, and what attack may the ogre make against that creature?",
+      "reference_answer": "Only the fighter's walk provokes an Opportunity Attack. The wizard is teleporting, and the cleric was moved by an effect without using his own movement or actions, so neither provokes. The ogre can see the fighter and has a Reaction, so it can use that Reaction to make one melee attack with a weapon or an Unarmed Strike against her.",
+      "requirements": [
+        {
+          "claim_id": "C001",
+          "original_text": "The fighter's walk provokes an Opportunity Attack because she leaves the ogre's reach by ordinary movement without Disengaging",
+          "weight": 30,
+          "rationale": "This is the answer to the main question (which movement provokes). It is the only provoking movement, so it carries the most weight.",
+          "credit_rule": {
+            "full_credit_condition": "States that the fighter's walk provokes an Opportunity Attack and gives the mechanism: she leaves the ogre's reach by ordinary movement (her own Speed) and did not Disengage. Mentioning that Disengage would have avoided it is acceptable but not required.",
+            "partial_levels": [
+              {
+                "points": 20,
+                "condition": "Correctly says the fighter's walk provokes an Opportunity Attack, but gives no mechanism or only a vague or incomplete one (for example 'because she moved away'), with no statement that contradicts the provoking ruling.",
+                "rationale": "The asked ruling is correct and only the supporting explanation is thin."
+              }
+            ],
+            "zero_credit_condition": "Says the fighter does not provoke, never identifies the fighter's movement as the one that provokes, or says both that she does and that she does not provoke. An answer that says several creatures provoke still gets credit here if it clearly says the fighter provokes; the wrong statements about the others are handled in C002/C003.",
+            "selection_rule": "Award full credit, or the 20-point level, or zero. Do not sum levels.",
+            "no_partial_credit_reason": null
+          }
+        },
+        {
+          "claim_id": "C002",
+          "original_text": "The wizard's Misty Step teleport does not provoke",
+          "weight": 20,
+          "rationale": "A distinct asked branch, but it is the same Teleport exception as in the common table misconception, so it is weighted below the central provoking ruling.",
+          "credit_rule": {
+            "full_credit_condition": "States that the wizard's Misty Step teleport does not provoke an Opportunity Attack. A reason is welcome (teleporting is exempt) but not required.",
+            "partial_levels": [],
+            "zero_credit_condition": "Says the wizard provokes or the ogre may attack him, omits the wizard entirely, or contradicts itself about the wizard.",
+            "selection_rule": "Full weight or zero; no partial level applies.",
+            "no_partial_credit_reason": "The claim is a single yes/no ruling about one movement, with no separable correct component."
+          }
+        },
+        {
+          "claim_id": "C003",
+          "original_text": "The cleric's forced movement does not provoke",
+          "weight": 20,
+          "rationale": "A distinct asked branch of equal difficulty to the wizard's. Equal weight with C002 is intentional.",
+          "credit_rule": {
+            "full_credit_condition": "States that the cleric, hurled by Thunderwave without using his own movement or actions, does not provoke an Opportunity Attack. A reason is welcome but not required.",
+            "partial_levels": [],
+            "zero_credit_condition": "Says the cleric provokes or the ogre may attack him, omits the cleric entirely, or contradicts itself about the cleric.",
+            "selection_rule": "Full weight or zero; no partial level applies.",
+            "no_partial_credit_reason": "The claim is a single yes/no ruling about one movement, with no separable correct component."
+          }
+        },
+        {
+          "claim_id": "C004",
+          "original_text": "The attack the ogre may make is one melee attack (weapon or Unarmed Strike) taken with its Reaction",
+          "weight": 30,
+          "rationale": "The question explicitly asks what attack may be made. The Reaction cost and single melee attack are a separate rule element worth as much as the provoking ruling.",
+          "credit_rule": {
+            "full_credit_condition": "States that the ogre makes one melee attack, with a weapon or an Unarmed Strike, and that it takes this attack using its Reaction. Equivalent wording is accepted (for example 'a single melee weapon attack or Unarmed Strike as a Reaction').",
+            "partial_levels": [
+              {
+                "points": 20,
+                "condition": "Correctly describes the attack as one melee attack (a weapon attack or an Unarmed Strike) but never says what it costs the ogre, and states no wrong attack type and no wrong action cost.",
+                "rationale": "The asked attack type is correct and the action-economy cost is missing."
+              },
+              {
+                "points": 10,
+                "condition": "Exactly one component is correct and the other is not stated as correct, with no wrong attack type: either (a) the answer correctly says the attack uses the ogre's Reaction but describes it only as 'an attack' or 'an Opportunity Attack' without identifying one melee weapon attack or Unarmed Strike; or (b) the answer correctly describes one melee attack (weapon or Unarmed Strike) but expressly gives a wrong action cost (for example an Action or Bonus Action instead of the Reaction).",
+                "rationale": "One separable component (Reaction cost, or the single melee attack) is true, and the other is missing or wrongly costed."
+              }
+            ],
+            "zero_credit_condition": "Describes a wrong attack type (a ranged or spell attack, or more than one attack such as Multiattack or Extra Attack), even if the Reaction cost is correct; gives neither the single melee attack nor the Reaction cost correctly; says contradictory things about the attack type or the cost; or does not say what attack the ogre may make.",
+            "selection_rule": "Award the single highest eligible level; do not sum. A wrong attack type makes both partial levels unavailable and gives zero, even when the Reaction cost is correct. A wrong action cost with a correct melee attack caps the claim at the 10-point level.",
+            "no_partial_credit_reason": null
+          }
+        }
+      ],
+      "passages": [
+        {
+          "pdf_page_numbers": [
+            15
+          ],
+          "text": "Avoiding Opportunity Attacks. You can avoid \nprovoking an Opportunity Attack by taking the \nDisengage action. You also don’t provoke an Oppor-\ntunity Attack when you Teleport or when you are \nmoved without using your movement, action, Bonus \nAction, or Reaction. For example, you don’t provoke \nan Opportunity Attack if an explosion hurls you out \nof a foe’s reach or if you fall past an enemy."
+        },
+        {
+          "pdf_page_numbers": [
+            15
+          ],
+          "text": "Making an Opportunity Attack. You can make an \nOpportunity Attack when a creature that you can \nsee leaves your reach. To make the attack, take a Re-\naction to make one melee attack with a weapon or \nan Unarmed Strike against that creature."
+        }
+      ]
+    },
+    {
+      "case_id": "d20-en-pilot-t03-001",
+      "topic_id": 3,
+      "topic": "Conditions, damage, and recovery",
+      "question": "Your melee attack would reduce a conscious bandit to 0 Hit Points. You want to capture the bandit alive. What option do the general rules give you, and when does its effect end?",
+      "reference_answer": "You may instead leave the bandit at 1 HP and Unconscious. It starts a Short Rest; unconsciousness ends at its end, or earlier upon regaining any HP or successful first aid using an action and DC 10 Wisdom (Medicine).",
+      "requirements": [
+        {
+          "claim_id": "C001",
+          "original_text": "Optional melee knockout leaves 1 HP and Unconscious.",
+          "weight": 45,
+          "rationale": "The capture option depends foremost on replacing lethal zero HP with one HP and unconsciousness.",
+          "credit_rule": {
+            "full_credit_condition": "All components are satisfied, explicitly or by an unambiguous equivalent statement: A: Offers a voluntary knockout choice for this melee attack when it would reduce the bandit to zero, rather than an automatic outcome. B: Sets the knocked-out bandit to 1 HP. C: Gives the knocked-out bandit the Unconscious condition. Each component must be uncontradicted; a wrong required outcome prevents full credit.",
+            "partial_levels": [
+              {
+                "points": 12,
+                "condition": "Using the component definitions in full_credit_condition, exactly one of these sets is satisfied without contradiction: A. Other components are missing, wrong, or unresolvedly contradicted; no extra credit for them.",
+                "rationale": "Credits the identified correct component combination at its case-specific contribution: A=12 (Offers a voluntary knockout choice for this melee attack when it would reduce the bandit to zero, rather than an automatic outcome.); B=18 (Sets the knocked-out bandit to 1 HP.); C=15 (Gives the knocked-out bandit the Unconscious condition.)."
+              },
+              {
+                "points": 15,
+                "condition": "Using the component definitions in full_credit_condition, exactly one of these sets is satisfied without contradiction: C. Other components are missing, wrong, or unresolvedly contradicted; no extra credit for them.",
+                "rationale": "Credits the identified correct component combination at its case-specific contribution: A=12 (Offers a voluntary knockout choice for this melee attack when it would reduce the bandit to zero, rather than an automatic outcome.); B=18 (Sets the knocked-out bandit to 1 HP.); C=15 (Gives the knocked-out bandit the Unconscious condition.)."
+              },
+              {
+                "points": 18,
+                "condition": "Using the component definitions in full_credit_condition, exactly one of these sets is satisfied without contradiction: B. Other components are missing, wrong, or unresolvedly contradicted; no extra credit for them.",
+                "rationale": "Credits the identified correct component combination at its case-specific contribution: A=12 (Offers a voluntary knockout choice for this melee attack when it would reduce the bandit to zero, rather than an automatic outcome.); B=18 (Sets the knocked-out bandit to 1 HP.); C=15 (Gives the knocked-out bandit the Unconscious condition.)."
+              },
+              {
+                "points": 27,
+                "condition": "Using the component definitions in full_credit_condition, exactly one of these sets is satisfied without contradiction: A+C. Other components are missing, wrong, or unresolvedly contradicted; no extra credit for them.",
+                "rationale": "Credits the identified correct component combination at its case-specific contribution: A=12 (Offers a voluntary knockout choice for this melee attack when it would reduce the bandit to zero, rather than an automatic outcome.); B=18 (Sets the knocked-out bandit to 1 HP.); C=15 (Gives the knocked-out bandit the Unconscious condition.)."
+              },
+              {
+                "points": 30,
+                "condition": "Using the component definitions in full_credit_condition, exactly one of these sets is satisfied without contradiction: A+B. Other components are missing, wrong, or unresolvedly contradicted; no extra credit for them.",
+                "rationale": "Credits the identified correct component combination at its case-specific contribution: A=12 (Offers a voluntary knockout choice for this melee attack when it would reduce the bandit to zero, rather than an automatic outcome.); B=18 (Sets the knocked-out bandit to 1 HP.); C=15 (Gives the knocked-out bandit the Unconscious condition.)."
+              },
+              {
+                "points": 33,
+                "condition": "Using the component definitions in full_credit_condition, exactly one of these sets is satisfied without contradiction: B+C. Other components are missing, wrong, or unresolvedly contradicted; no extra credit for them.",
+                "rationale": "Credits the identified correct component combination at its case-specific contribution: A=12 (Offers a voluntary knockout choice for this melee attack when it would reduce the bandit to zero, rather than an automatic outcome.); B=18 (Sets the knocked-out bandit to 1 HP.); C=15 (Gives the knocked-out bandit the Unconscious condition.)."
+              }
+            ],
+            "zero_credit_condition": "None of the defined components is satisfied without an unresolved contradiction. An incorrect component earns no component credit even if also asserted correctly elsewhere; an explicitly retracted mistake is not unresolved.",
+            "selection_rule": "Identify the exact set of satisfied, uncontradicted components, then award its single listed point level; all components earn the existing full weight. Never sum partial levels. Logical equivalents count, but a bare final number does not establish an explanation component unless it actually communicates that reasoning. Contradictions invalidate only the affected component.",
+            "no_partial_credit_reason": null
+          }
+        },
+        {
+          "claim_id": "C002",
+          "original_text": "Starts Short Rest; condition ends at rest end.",
+          "weight": 25,
+          "rationale": "The automatic Short Rest endpoint answers the ordinary duration branch.",
+          "credit_rule": {
+            "full_credit_condition": "All components are satisfied, explicitly or by an unambiguous equivalent statement: A: The knocked-out bandit starts a Short Rest. B: The knockout unconsciousness ends when that Short Rest finishes. Each component must be uncontradicted; a wrong required outcome prevents full credit.",
+            "partial_levels": [
+              {
+                "points": 8,
+                "condition": "Using the component definitions in full_credit_condition, exactly one of these sets is satisfied without contradiction: A. Other components are missing, wrong, or unresolvedly contradicted; no extra credit for them.",
+                "rationale": "Credits the identified correct component combination at its case-specific contribution: A=8 (The knocked-out bandit starts a Short Rest.); B=17 (The knockout unconsciousness ends when that Short Rest finishes.)."
+              },
+              {
+                "points": 17,
+                "condition": "Using the component definitions in full_credit_condition, exactly one of these sets is satisfied without contradiction: B. Other components are missing, wrong, or unresolvedly contradicted; no extra credit for them.",
+                "rationale": "Credits the identified correct component combination at its case-specific contribution: A=8 (The knocked-out bandit starts a Short Rest.); B=17 (The knockout unconsciousness ends when that Short Rest finishes.)."
+              }
+            ],
+            "zero_credit_condition": "None of the defined components is satisfied without an unresolved contradiction. An incorrect component earns no component credit even if also asserted correctly elsewhere; an explicitly retracted mistake is not unresolved.",
+            "selection_rule": "Identify the exact set of satisfied, uncontradicted components, then award its single listed point level; all components earn the existing full weight. Never sum partial levels. Logical equivalents count, but a bare final number does not establish an explanation component unless it actually communicates that reasoning. Contradictions invalidate only the affected component.",
+            "no_partial_credit_reason": null
+          }
+        },
+        {
+          "claim_id": "C003",
+          "original_text": "Healing or action plus successful DC 10 Wisdom (Medicine) ends it early.",
+          "weight": 30,
+          "rationale": "Healing and successful first aid are the two requested early-ending routes.",
+          "credit_rule": {
+            "full_credit_condition": "All components are satisfied, explicitly or by an unambiguous equivalent statement: A: Regaining any HP ends this knockout unconsciousness early. B: An action administering successful Wisdom (Medicine) first aid ends it early. C: That Medicine check has DC10, attached to the action-based first-aid route. Each component must be uncontradicted; a wrong required outcome prevents full credit.",
+            "partial_levels": [
+              {
+                "points": 8,
+                "condition": "Using the component definitions in full_credit_condition, exactly one of these sets is satisfied without contradiction: C. Other components are missing, wrong, or unresolvedly contradicted; no extra credit for them.",
+                "rationale": "Credits the identified correct component combination at its case-specific contribution: A=12 (Regaining any HP ends this knockout unconsciousness early.); B=10 (An action administering successful Wisdom (Medicine) first aid ends it early.); C=8 (That Medicine check has DC10, attached to the action-based first-aid route.)."
+              },
+              {
+                "points": 10,
+                "condition": "Using the component definitions in full_credit_condition, exactly one of these sets is satisfied without contradiction: B. Other components are missing, wrong, or unresolvedly contradicted; no extra credit for them.",
+                "rationale": "Credits the identified correct component combination at its case-specific contribution: A=12 (Regaining any HP ends this knockout unconsciousness early.); B=10 (An action administering successful Wisdom (Medicine) first aid ends it early.); C=8 (That Medicine check has DC10, attached to the action-based first-aid route.)."
+              },
+              {
+                "points": 12,
+                "condition": "Using the component definitions in full_credit_condition, exactly one of these sets is satisfied without contradiction: A. Other components are missing, wrong, or unresolvedly contradicted; no extra credit for them.",
+                "rationale": "Credits the identified correct component combination at its case-specific contribution: A=12 (Regaining any HP ends this knockout unconsciousness early.); B=10 (An action administering successful Wisdom (Medicine) first aid ends it early.); C=8 (That Medicine check has DC10, attached to the action-based first-aid route.)."
+              },
+              {
+                "points": 18,
+                "condition": "Using the component definitions in full_credit_condition, exactly one of these sets is satisfied without contradiction: B+C. Other components are missing, wrong, or unresolvedly contradicted; no extra credit for them.",
+                "rationale": "Credits the identified correct component combination at its case-specific contribution: A=12 (Regaining any HP ends this knockout unconsciousness early.); B=10 (An action administering successful Wisdom (Medicine) first aid ends it early.); C=8 (That Medicine check has DC10, attached to the action-based first-aid route.)."
+              },
+              {
+                "points": 20,
+                "condition": "Using the component definitions in full_credit_condition, exactly one of these sets is satisfied without contradiction: A+C. Other components are missing, wrong, or unresolvedly contradicted; no extra credit for them.",
+                "rationale": "Credits the identified correct component combination at its case-specific contribution: A=12 (Regaining any HP ends this knockout unconsciousness early.); B=10 (An action administering successful Wisdom (Medicine) first aid ends it early.); C=8 (That Medicine check has DC10, attached to the action-based first-aid route.)."
+              },
+              {
+                "points": 22,
+                "condition": "Using the component definitions in full_credit_condition, exactly one of these sets is satisfied without contradiction: A+B. Other components are missing, wrong, or unresolvedly contradicted; no extra credit for them.",
+                "rationale": "Credits the identified correct component combination at its case-specific contribution: A=12 (Regaining any HP ends this knockout unconsciousness early.); B=10 (An action administering successful Wisdom (Medicine) first aid ends it early.); C=8 (That Medicine check has DC10, attached to the action-based first-aid route.)."
+              }
+            ],
+            "zero_credit_condition": "None of the defined components is satisfied without an unresolved contradiction. An incorrect component earns no component credit even if also asserted correctly elsewhere; an explicitly retracted mistake is not unresolved.",
+            "selection_rule": "Identify the exact set of satisfied, uncontradicted components, then award its single listed point level; all components earn the existing full weight. Never sum partial levels. Logical equivalents count, but a bare final number does not establish an explanation component unless it actually communicates that reasoning. Contradictions invalidate only the affected component.",
+            "no_partial_credit_reason": null
+          }
+        }
+      ],
+      "passages": [
+        {
+          "pdf_page_numbers": [
+            17
+          ],
+          "text": "Knocking Out a Creature\nWhen you would reduce a creature to 0 Hit Points \nwith a melee attack, you can instead reduce the crea-\nture to 1 Hit Point and give it the Unconscious condi-\ntion. It then starts a Short Rest, at the end of which \nthat condition ends on it. The condition ends early \nif the creature regains any Hit Points or if someone \ntakes an action to administer first aid to it, making a \nsuccessful DC 10 Wisdom (Medicine) check."
+        },
+        {
+          "pdf_page_numbers": [
+            184
+          ],
+          "text": "Knocking Out a Creature\nWhen you would reduce a creature to 0 Hit Points \nwith a melee attack, you can instead reduce the \ncreature to 1 Hit Point. The creature then has the \nUnconscious condition and starts a Short Rest.\n\t The creature remains Unconscious until it regains \nany Hit Points or until someone uses an action to \nadminister first aid to it, which requires a success-\nful DC 10 Wisdom (Medicine) check."
+        }
+      ]
+    },
+    {
+      "case_id": "d20-en-pilot-t03-009",
+      "topic_id": 3,
+      "topic": "Conditions, damage, and recovery",
+      "question": "A character with a Hit Point maximum of 24 dropped to 0 Hit Points and failed two Death Saving Throws. An ally then took the Help action and succeeded on the DC 10 Wisdom (Medicine) check, stabilizing her. Later, while she is still at 0 Hit Points and has received no healing, a trap dart hits her for 3 damage; the hit is not a Critical Hit. What is her status immediately afterward, how many Death Saving Throw successes and failures does she have, and what happens at the start of her next turn if she still has 0 Hit Points?",
+      "reference_answer": "She is no longer Stable. She remains at 0 Hit Points and Unconscious, and she suffers one Death Saving Throw failure from the damage (the hit is not a Critical Hit). Her earlier two failures were reset to zero when she became Stable, so she now has 0 successes and 1 failure. The 3 damage is far below her Hit Point maximum of 24, so she does not die instantly. At the start of her next turn, if she still has 0 Hit Points, she must make a Death Saving Throw.",
+      "requirements": [
+        {
+          "claim_id": "C001",
+          "original_text": "She stops being Stable",
+          "weight": 20,
+          "rationale": "First asked item (status), a short single-fact ruling that directly follows from the Stable rule.",
+          "credit_rule": {
+            "full_credit_condition": "States that the damage ends her Stable status, so she is no longer Stable. Resuming Death Saving Throws is graded under C004 and is not required here.",
+            "partial_levels": [],
+            "zero_credit_condition": "Says she is still Stable, does not address whether she remains Stable, or contradicts itself about whether she is still Stable.",
+            "selection_rule": "Full weight or zero; no partial level applies.",
+            "no_partial_credit_reason": "A single fact: she either stops being Stable or she does not."
+          }
+        },
+        {
+          "claim_id": "C002",
+          "original_text": "She has 0 successes and 1 failure, because the earlier tally was reset when she became Stable",
+          "weight": 35,
+          "rationale": "The most error-prone requested item: the carryover trap. It includes the explanation of why the earlier two failures are gone.",
+          "credit_rule": {
+            "full_credit_condition": "States that the current tally is 0 successes and 1 failure, and explains that the earlier two failures were cleared (reset) when she became Stable, so the damage adds a single failure. Equivalent wording is accepted.",
+            "partial_levels": [
+              {
+                "points": 25,
+                "condition": "States the final tally as exactly 0 successes and 1 failure, but gives no explanation of why the earlier failures are gone, or an incomplete one, or an expressly wrong reset explanation that does not change the stated final tally (for example crediting the wrong mechanism for the cleared failures).",
+                "rationale": "The asked numeric answer is correct and only the requested explanation is missing or flawed."
+              },
+              {
+                "points": 15,
+                "condition": "Correctly explains that the earlier tally was reset when she became Stable and that the damage adds one failure, but the final tally is not fully and correctly stated as 0 successes and 1 failure: the success count or the failure count is omitted, or only one of them is given, or the statement is ambiguous.",
+                "rationale": "The conceptual trap (reset on becoming Stable) is handled correctly, but the tally itself is incomplete."
+              }
+            ],
+            "zero_credit_condition": "The final tally the answer relies on is any other failure or success count (for example 2 failures, 3 failures, or a 0/2 tally); says the earlier failures carry over to the final tally; contradicts itself about the final tally; or states neither the tally nor the reset explanation.",
+            "selection_rule": "Award the single highest eligible level; do not sum the 25 and 15 levels. The final tally stated by the answer governs: an expressly wrong tally gives zero, while a correct 0/1 tally with a flawed reset explanation is capped at 25. An answer that gives a correct reset explanation and no tally is graded under the 15-point level.",
+            "no_partial_credit_reason": null
+          }
+        },
+        {
+          "claim_id": "C003",
+          "original_text": "She remains Unconscious at 0 Hit Points and does not die from the 3 damage",
+          "weight": 20,
+          "rationale": "Completes the status answer. Death avoidance is checkable against the 24 HP maximum and is easier than the tally.",
+          "credit_rule": {
+            "full_credit_condition": "States both that she remains at 0 Hit Points and Unconscious, and that she does not die from the 3 damage.",
+            "partial_levels": [
+              {
+                "points": 10,
+                "condition": "Correctly states exactly one of the two halves (she remains Unconscious at 0 Hit Points, or she does not die), and the other half is omitted or wrongly stated.",
+                "rationale": "The claim has two separable status facts, and one correct fact is worth half."
+              }
+            ],
+            "zero_credit_condition": "Says she regains consciousness and also dies, or addresses neither half correctly.",
+            "selection_rule": "Award full credit, or the 10-point level, or zero. A correct half earns the 10 points even when the other half is wrong. Do not give 20 unless both halves are correct.",
+            "no_partial_credit_reason": null
+          }
+        },
+        {
+          "claim_id": "C004",
+          "original_text": "She makes a Death Saving Throw at the start of her next turn if she still has 0 Hit Points",
+          "weight": 25,
+          "rationale": "The third requested part of the question and the practical consequence of ceasing to be Stable.",
+          "credit_rule": {
+            "full_credit_condition": "States that at the start of her next turn, if she still has 0 Hit Points, she must make a Death Saving Throw.",
+            "partial_levels": [
+              {
+                "points": 15,
+                "condition": "States that she resumes making Death Saving Throws (or will make one), but does not tie it to the start of her next turn or to still being at 0 Hit Points, or ties it to a wrong time, and does not say anything that replaces the Death Saving Throw with a different roll.",
+                "rationale": "The consequence is correct, but the timing the question asked about is missing or wrong."
+              }
+            ],
+            "zero_credit_condition": "Says she makes no Death Saving Throw (for example because she is still Stable), gives a different roll as the required roll at the start of her next turn (including a wrong roll stated alongside a Death Saving Throw as the required roll), contradicts itself on whether she makes a Death Saving Throw, or gives no Death Saving Throw component at all (it never says she makes or resumes Death Saving Throws and never addresses what she rolls). An answer that says she resumes or will make Death Saving Throws without next-turn timing is not an omission for this clause; it is graded at the 15-point level.",
+            "selection_rule": "Award full credit, or the 15-point level, or zero. The 15-point level takes precedence over the zero clause's omission wording whenever the answer states that she resumes or will make Death Saving Throws without correct timing. If the answer states both a Death Saving Throw and an incompatible different required roll, the wrong-roll statement governs and the result is zero.",
+            "no_partial_credit_reason": null
+          }
+        }
+      ],
+      "passages": [
+        {
+          "pdf_page_numbers": [
+            17
+          ],
+          "text": "Whenever you start your turn with 0 Hit Points, \nyou must make a Death Saving Throw to determine \nwhether you creep closer to death or hang on to life."
+        },
+        {
+          "pdf_page_numbers": [
+            17
+          ],
+          "text": "The successes and failures don’t need to be con-\nsecutive; keep track of both until you collect three \nof a kind. The number of both is reset to zero when \nyou regain any Hit Points or become Stable."
+        },
+        {
+          "pdf_page_numbers": [
+            18
+          ],
+          "text": "Damage at 0 Hit Points. If you take any damage \nwhile you have 0 Hit Points, you suffer a Death Sav-\ning Throw failure. If the damage is from a Critical \nHit, you suffer two failures instead. If the damage \nequals or exceeds your Hit Point maximum, you die.\nStabilizing a Character\nYou can take the Help action to try to stabilize a \ncreature with 0 Hit Points, which requires a suc-\ncessful DC 10 Wisdom (Medicine) check.\n\t A Stable creature doesn’t make Death Saving \nThrows even though it has 0 Hit Points, but it still \nhas the Unconscious condition. If the creature takes \ndamage, it stops being Stable and starts making \nDeath Saving Throws again. A Stable creature that \nisn’t healed regains 1 Hit Point after 1d4 hours."
+        }
+      ]
+    },
+    {
+      "case_id": "d20-en-pilot-t04-003",
+      "topic_id": 4,
+      "topic": "Exploration",
+      "question": "A secret door is concealed in the north wall of a room. A character explicitly searches only the south wall, nowhere near the door, and rolls a total of 25 on Wisdom (Perception). Does this search reveal the secret door?",
+      "reference_answer": "No. A check does not reveal a hidden object when the described search is nowhere near it, regardless of total.",
+      "requirements": [
+        {
+          "claim_id": "C001",
+          "original_text": "No discovery from this search.",
+          "weight": 55,
+          "rationale": "Whether the door is revealed is the direct asked ruling.",
+          "credit_rule": {
+            "full_credit_condition": "Rules that searching the south wall does not reveal the north-wall secret door. No unresolved assertion may contradict this required ruling.",
+            "partial_levels": [],
+            "zero_credit_condition": "The required ruling above is absent, incorrect, or contradicted elsewhere in the answer. A correct statement later explicitly retracting an earlier mistake is not an unresolved contradiction.",
+            "selection_rule": "Award the existing full weight only when the full condition is met; otherwise zero.",
+            "no_partial_credit_reason": "The asked discovery outcome is binary; an incorrect or missing discovery ruling has no independently correct portion of this criterion."
+          }
+        },
+        {
+          "claim_id": "C002",
+          "original_text": "Search location matters regardless of high total.",
+          "weight": 45,
+          "rationale": "The vicinity requirement explains why a 25 cannot override the chosen search location.",
+          "credit_rule": {
+            "full_credit_condition": "Explains that searching away from the door cannot find it regardless of the high Perception total. No unresolved assertion may contradict this required ruling.",
+            "partial_levels": [],
+            "zero_credit_condition": "The required ruling above is absent, incorrect, or contradicted elsewhere in the answer. A correct statement later explicitly retracting an earlier mistake is not an unresolved contradiction.",
+            "selection_rule": "Award the existing full weight only when the full condition is met; otherwise zero.",
+            "no_partial_credit_reason": "Vicinity overriding the roll is one causal rule; merely remarking that location matters without excluding discovery from this remote search does not establish it."
+          }
+        }
+      ],
+      "passages": [
+        {
+          "pdf_page_numbers": [
+            12
+          ],
+          "text": "Finding Hidden Objects\nWhen your character searches for hidden things, \nsuch as a secret door or a trap, the GM typically asks \nyou to make a Wisdom (Perception) check, provided \nyou describe the character searching in the hidden \nobject’s vicinity. On a success, you find the object, \nother important details, or both.\n\t If you describe your character searching nowhere \nnear a hidden object, a Wisdom (Perception) check \nwon’t reveal the object, no matter the check’s total."
+        }
+      ]
+    },
+    {
+      "case_id": "d20-en-pilot-t05-004",
+      "topic_id": 5,
+      "topic": "Social interaction",
+      "question": "A character makes separate Influence attempts with two NPCs. The GM determines each NPC is hesitant about the request; one is Friendly toward the character and the other Hostile. Neither check has any other source of Advantage or Disadvantage. How does each attitude affect the check?",
+      "reference_answer": "The check to influence the Friendly NPC has Advantage; the check to influence the Hostile NPC has Disadvantage.",
+      "requirements": [
+        {
+          "claim_id": "C001",
+          "original_text": "Friendly: Advantage.",
+          "weight": 50,
+          "rationale": "The Friendly attempt is one of two equally requested attitude applications.",
+          "credit_rule": {
+            "full_credit_condition": "Applies Advantage to the Influence check against the Friendly hesitant NPC; equivalent two-d20 selection is accepted. No unresolved assertion may contradict this required ruling.",
+            "partial_levels": [],
+            "zero_credit_condition": "The required ruling above is absent, incorrect, or contradicted elsewhere in the answer. A correct statement later explicitly retracting an earlier mistake is not an unresolved contradiction.",
+            "selection_rule": "Award the existing full weight only when the full condition is met; otherwise zero.",
+            "no_partial_credit_reason": "The Friendly attitude has a single requested roll effect; no separately correct numerical substep exists."
+          }
+        },
+        {
+          "claim_id": "C002",
+          "original_text": "Hostile: Disadvantage.",
+          "weight": 50,
+          "rationale": "The Hostile attempt is the other equally requested attitude application.",
+          "credit_rule": {
+            "full_credit_condition": "Applies Disadvantage to the Influence check against the Hostile hesitant NPC; equivalent two-d20 selection is accepted. No unresolved assertion may contradict this required ruling.",
+            "partial_levels": [],
+            "zero_credit_condition": "The required ruling above is absent, incorrect, or contradicted elsewhere in the answer. A correct statement later explicitly retracting an earlier mistake is not an unresolved contradiction.",
+            "selection_rule": "Award the existing full weight only when the full condition is met; otherwise zero.",
+            "no_partial_credit_reason": "The Hostile attitude has a single requested roll effect; no separately correct numerical substep exists."
+          }
+        }
+      ],
+      "passages": [
+        {
+          "pdf_page_numbers": [
+            184
+          ],
+          "text": "\t Hesitant. If you urge the monster to do something \nthat it is hesitant to do, you must make an ability \ncheck, which is affected by the monster’s attitude: \nIndifferent, Friendly, or Hostile, each of which is \ndefined in this glossary. The Influence Checks ta-\nble suggests which ability check to make based on \nhow you’re interacting with the monster. The GM \nchooses the check, which has a default DC equal to \n15 or the monster’s Intelligence score, whichever \nis higher. On a successful check, the monster does \nas urged. On a failed check, you must wait 24 hours \n(or a duration set by the GM) before urging it in the \nsame way again.\nInfluence Checks\nAbility Check\nInteraction\nCharisma (Deception)\nDeceiving a monster \nthat understands you\nCharisma (Intimidation)\nIntimidating a monster\nCharisma (Performance)\nAmusing a monster\nCharisma (Persuasion)\nPersuading a monster \nthat understands you\nWisdom (Animal Handling)\nGently coaxing a Beast \nor Monstrosity"
+        },
+        {
+          "pdf_page_numbers": [
+            182
+          ],
+          "text": "Friendly [Attitude]\nA Friendly creature views you favorably. You \nhave Advantage on an ability check to influence a \nFriendly creature. See also “Influence.”"
+        },
+        {
+          "pdf_page_numbers": [
+            183
+          ],
+          "text": "Hostile [Attitude]\nA Hostile creature views you unfavorably. You have \nDisadvantage on an ability check to influence a Hos-\ntile creature. See also “Influence.”"
+        }
+      ]
+    },
+    {
+      "case_id": "d20-en-pilot-t05-010",
+      "topic_id": 5,
+      "topic": "Social interaction",
+      "question": "During a negotiation, a character wants to urge a merchant to lower a price while simultaneously reading the merchant’s body language. No special feature changes the normal action rules. Can these be performed as one simultaneous action under the general rules, and what actions correspond to the two intentions?",
+      "reference_answer": "No. Urging the merchant is Influence and reading body language is Search; the character cannot do both at the same time.",
+      "requirements": [
+        {
+          "claim_id": "C001",
+          "original_text": "Influence corresponds to urging the merchant.",
+          "weight": 25,
+          "rationale": "Influence identifies the action serving the price request.",
+          "credit_rule": {
+            "full_credit_condition": "Identifies Influence as the action for urging the merchant to reduce the price. No unresolved assertion may contradict this required ruling.",
+            "partial_levels": [],
+            "zero_credit_condition": "The required ruling above is absent, incorrect, or contradicted elsewhere in the answer. A correct statement later explicitly retracting an earlier mistake is not an unresolved contradiction.",
+            "selection_rule": "Award the existing full weight only when the full condition is met; otherwise zero.",
+            "no_partial_credit_reason": "This criterion asks for one action-to-intention mapping."
+          }
+        },
+        {
+          "claim_id": "C002",
+          "original_text": "Search corresponds to reading body language.",
+          "weight": 25,
+          "rationale": "Search identifies the separate action serving body-language reading.",
+          "credit_rule": {
+            "full_credit_condition": "Identifies Search as the action for reading the merchant’s body language. No unresolved assertion may contradict this required ruling.",
+            "partial_levels": [],
+            "zero_credit_condition": "The required ruling above is absent, incorrect, or contradicted elsewhere in the answer. A correct statement later explicitly retracting an earlier mistake is not an unresolved contradiction.",
+            "selection_rule": "Award the existing full weight only when the full condition is met; otherwise zero.",
+            "no_partial_credit_reason": "This criterion asks for one action-to-intention mapping."
+          }
+        },
+        {
+          "claim_id": "C003",
+          "original_text": "They cannot be done simultaneously as one action.",
+          "weight": 50,
+          "rationale": "The central question is whether these can be merged into one simultaneous action.",
+          "credit_rule": {
+            "full_credit_condition": "Disallows combining the price request and body-language Search into one simultaneous action; sequential actions are compatible. No unresolved assertion may contradict this required ruling.",
+            "partial_levels": [],
+            "zero_credit_condition": "The required ruling above is absent, incorrect, or contradicted elsewhere in the answer. A correct statement later explicitly retracting an earlier mistake is not an unresolved contradiction.",
+            "selection_rule": "Award the existing full weight only when the full condition is met; otherwise zero.",
+            "no_partial_credit_reason": "The simultaneous-combination permission is a single binary ruling."
+          }
+        }
+      ],
+      "passages": [
+        {
+          "pdf_page_numbers": [
+            10
+          ],
+          "text": "One Thing at a Time\nThe game uses actions to govern how much you can \ndo at one time. You can take only one action at a \ntime. This principle is most important in combat, as \nexplained in “Combat” later in “Playing the Game.”\n\t Actions can come up in other situations, too: in a \nsocial interaction, you can try to Influence a crea-\nture or use the Search action to read the creature’s \nbody language, but you can’t do both at the same \ntime. And when you’re exploring a dungeon, you \ncan’t simultaneously use the Search action to look \nfor traps and use the Help action to aid another \ncharacter who’s trying to open a stuck door (with \nthe Utilize action)."
+        }
+      ]
+    },
+    {
+      "case_id": "d20-en-pilot-t06-005",
+      "topic_id": 6,
+      "topic": "Character creation and advancement",
+      "question": "A level 6 character’s Constitution increases from 15 to 16 through a feat’s ability score increase. The character is not gaining a level at the same moment, and no other effect changes maximum Hit Points. What adjustment to maximum Hit Points follows from this Constitution change?",
+      "reference_answer": "The modifier rises from +2 to +3, and maximum Hit Points increases by 6, one per attained level.",
+      "requirements": [
+        {
+          "claim_id": "C001",
+          "original_text": "Constitution modifier rises by 1.",
+          "weight": 25,
+          "rationale": "The one-step modifier rise supplies the arithmetic basis for the HP adjustment.",
+          "credit_rule": {
+            "full_credit_condition": "States that the Constitution modifier rises by one, including an equivalent +2 to +3 comparison. No unresolved assertion may contradict this required ruling.",
+            "partial_levels": [],
+            "zero_credit_condition": "The required ruling above is absent, incorrect, or contradicted elsewhere in the answer. A correct statement later explicitly retracting an earlier mistake is not an unresolved contradiction.",
+            "selection_rule": "Award the existing full weight only when the full condition is met; otherwise zero.",
+            "no_partial_credit_reason": "Only one modifier change is required; the raw ability-score increase alone is not this change."
+          }
+        },
+        {
+          "claim_id": "C002",
+          "original_text": "Maximum Hit Points increases by 6, including previous levels.",
+          "weight": 75,
+          "rationale": "The asked result is six additional maximum HP now, including earlier attained levels.",
+          "credit_rule": {
+            "full_credit_condition": "All components are satisfied, explicitly or by an unambiguous equivalent statement: A: Maximum HP increases by6 now. B: Explains that the change applies to all six attained levels, including previous levels, rather than only future levels. Each component must be uncontradicted; a wrong required outcome prevents full credit.",
+            "partial_levels": [
+              {
+                "points": 30,
+                "condition": "Using the component definitions in full_credit_condition, exactly one of these sets is satisfied without contradiction: B. Other components are missing, wrong, or unresolvedly contradicted; no extra credit for them.",
+                "rationale": "Credits the identified correct component combination at its case-specific contribution: A=45 (Maximum HP increases by6 now.); B=30 (Explains that the change applies to all six attained levels, including previous levels, rather than only future levels.)."
+              },
+              {
+                "points": 45,
+                "condition": "Using the component definitions in full_credit_condition, exactly one of these sets is satisfied without contradiction: A. Other components are missing, wrong, or unresolvedly contradicted; no extra credit for them.",
+                "rationale": "Credits the identified correct component combination at its case-specific contribution: A=45 (Maximum HP increases by6 now.); B=30 (Explains that the change applies to all six attained levels, including previous levels, rather than only future levels.)."
+              }
+            ],
+            "zero_credit_condition": "None of the defined components is satisfied without an unresolved contradiction. An incorrect component earns no component credit even if also asserted correctly elsewhere; an explicitly retracted mistake is not unresolved.",
+            "selection_rule": "Identify the exact set of satisfied, uncontradicted components, then award its single listed point level; all components earn the existing full weight. Never sum partial levels. Logical equivalents count, but a bare final number does not establish an explanation component unless it actually communicates that reasoning. Contradictions invalidate only the affected component.",
+            "no_partial_credit_reason": null
+          }
+        }
+      ],
+      "passages": [
+        {
+          "pdf_page_numbers": [
+            23
+          ],
+          "text": "5:\tAdjust Ability Modifiers. If you choose a feat \nthat increases one or more of your ability scores, \nyour ability modifier also changes if the new \nscore is an even number. When that happens, ad-\njust all the numbers on your character sheet that \nuse that ability modifier. When your Constitution \nmodifier increases by 1, your Hit Point maximum \nincreases by 1 for each level you have attained. \nFor example, if a character reaches level 8 and \nincreases their Constitution score from 17 to 18, \nthe Constitution modifier increases to +4. The \ncharacter’s Hit Point maximum then increases by \n8, in addition to the Hit Points gained for reach-\ning level 8."
+        },
+        {
+          "pdf_page_numbers": [
+            21
+          ],
+          "text": "Determine Ability Modifiers\nFinally, determine your ability modifiers using the \nAbility Scores and Modifiers table. Write the modi-\nfier next to each of your scores.\nAbility Scores and Modifiers\nScore\nModifier\n3\n−4\n4–5\n−3\n6–7\n−2\n8–9\n−1\n10–11\n+0\nScore\nModifier\n12–13\n+1\n14–15\n+2\n16–17\n+3\n18–19\n+4\n20\n+5"
+        }
+      ]
+    },
+    {
+      "case_id": "d20-en-pilot-t07-002",
+      "topic_id": 7,
+      "topic": "Feats and prerequisites",
+      "question": "Selu is a Fighter 1 / Wizard 4 with Strength 10 and Dexterity 14. Selu's Fighting Style feat is Defense. Selu has just reached Wizard level 4 and gets to choose a feat. Can Selu take Grappler, Archery, or Boon of Combat Prowess? Explain each.",
+      "reference_answer": "Grappler: yes. Selu is at least level 4 (character level 5, and Wizard level 4) and has Dexterity 14, which satisfies 'Strength or Dexterity 13+' even though Strength is 10. Archery: yes. Its prerequisite is the Fighting Style feature, and Selu has it from Fighter level 1, because a multiclass Fighter gains the Fighter's level 1 features, including Fighting Style. The Wizard level 4 feature lets Selu choose another feat 'for which you qualify' with no category specified, so any category is allowed. Boon of Combat Prowess: no. It requires level 19+, and Selu is level 5; the unrestricted category does not waive the prerequisite.",
+      "requirements": [
+        {
+          "claim_id": "C001",
+          "original_text": "Grappler is allowed: level 4+ is met and Dexterity 14 meets the 'Strength or Dexterity 13+' requirement even though Strength is only 10.",
+          "weight": 30,
+          "rationale": "One of three asked verdicts, with a clear 'or' prerequisite. It is the simplest verdict of the three.",
+          "credit_rule": {
+            "full_credit_condition": "Says Grappler is allowed, and explains both prerequisites correctly: the level 4+ requirement is met (read as either character level 5 or Wizard level 4) and Dexterity 14 satisfies 'Strength or Dexterity 13+' despite Strength 10, with no false prerequisite statement.",
+            "partial_levels": [
+              {
+                "points": 20,
+                "condition": "Says Grappler is allowed and correctly explains that Dexterity 14 satisfies the 'Strength or Dexterity 13+' prerequisite, but does not address the level 4+ requirement at all (omitted, not misstated).",
+                "rationale": "The Strength-versus-Dexterity trap is the main prerequisite and is handled correctly; the level point is only omitted."
+              },
+              {
+                "points": 15,
+                "condition": "Says Grappler is allowed and correctly explains the Dexterity prerequisite, but expressly states a false level premise (for example that Selu is below level 4, or that the level 4+ requirement is unmet or conditional).",
+                "rationale": "The main prerequisite is correct, but the answer asserts a wrong premise rather than merely omitting one."
+              },
+              {
+                "points": 12,
+                "condition": "Says Grappler is allowed but gives no correct ability-score reasoning: no reason at all, only a correct level point, or an ability-score reason that is false (for example that Strength 10 qualifies).",
+                "rationale": "The verdict is correct and the main prerequisite reasoning is missing or wrong."
+              }
+            ],
+            "zero_credit_condition": "Says Grappler is not allowed, says it is conditional on Strength, does not give a verdict on Grappler, or contradicts itself about the verdict.",
+            "selection_rule": "Award the single highest eligible level; do not sum. If the answer states the allowed verdict, the correct Dexterity reasoning outranks level reasoning, and a false level premise caps the claim at 15. A false ability-score premise makes the 20- and 15-point levels unavailable.",
+            "no_partial_credit_reason": null
+          }
+        },
+        {
+          "claim_id": "C002",
+          "original_text": "Archery is allowed because Selu has the Fighting Style feature from Fighter level 1 gained as a multiclass character.",
+          "weight": 35,
+          "rationale": "The least obvious verdict, because it depends on multiclass Fighter level 1 features granting the Fighting Style feature.",
+          "credit_rule": {
+            "full_credit_condition": "Says Archery is allowed because Selu has the Fighting Style feature, and that it comes from the Fighter level 1 features gained through multiclassing.",
+            "partial_levels": [
+              {
+                "points": 25,
+                "condition": "Says Archery is allowed and identifies that Selu has the Fighting Style feature (for example from having Defense or from being a Fighter), but does not explain that the multiclass Fighter level 1 grants it.",
+                "rationale": "The prerequisite is correctly identified and satisfied, and the multiclass source is not explained."
+              },
+              {
+                "points": 15,
+                "condition": "Says Archery is allowed with no reason, or with a reason that does not identify the Fighting Style feature prerequisite (for example only that category does not restrict the choice).",
+                "rationale": "Only the verdict is correct."
+              }
+            ],
+            "zero_credit_condition": "Says Archery is not allowed, says it is allowed only if Selu gives up Defense or meets a different prerequisite, gives no verdict on Archery, or contradicts itself about the verdict.",
+            "selection_rule": "Award the single highest eligible level; do not sum.",
+            "no_partial_credit_reason": null
+          }
+        },
+        {
+          "claim_id": "C003",
+          "original_text": "Boon of Combat Prowess is not allowed because Selu is far below level 19, and the feat choice being unrestricted by category does not waive the prerequisite.",
+          "weight": 35,
+          "rationale": "The verdict plus the requested reasoning that category freedom does not waive prerequisites. The reasoning is the tested rule.",
+          "credit_rule": {
+            "full_credit_condition": "Says Boon of Combat Prowess is not allowed, with reasoning that applies the level 19+ prerequisite to Selu's level (5 or Wizard 4) as barring this Wizard feat choice. Integrated wording that conveys this (for example 'the Wizard feature only lets Selu take a feat for which Selu qualifies, and Selu is far below level 19') earns full credit. A separate sentence about category freedom is not required.",
+            "partial_levels": [
+              {
+                "points": 25,
+                "condition": "Says it is not allowed and gives only a non-waiver statement (the unrestricted category or the Wizard feat feature does not waive prerequisites) without identifying the level 19+ prerequisite as unmet by Selu.",
+                "rationale": "The verdict and the tested non-waiver rule are correct, and the specific unmet level prerequisite is not identified."
+              },
+              {
+                "points": 12,
+                "condition": "Says it is not allowed with no reason, with a reason unrelated to the level prerequisite, or with a wrong level threshold as the reason.",
+                "rationale": "Only the verdict is correct."
+              }
+            ],
+            "zero_credit_condition": "Says Boon of Combat Prowess is allowed, says it is allowed under some condition such as the Wizard feat feature waiving the prerequisite, gives no verdict on it, or contradicts itself about the verdict.",
+            "selection_rule": "Award the single highest eligible level; do not sum.",
+            "no_partial_credit_reason": null
+          }
+        }
+      ],
+      "passages": [
+        {
+          "pdf_page_numbers": [
+            87
+          ],
+          "text": "Category. A feat is a member of a category, which \nis noted in the feat. If you’re instructed to choose \na feat from a specific category, such as the Origin \ncategory, that category must appear under the \nfeat’s name. If you’re instructed to choose a feat and \nno category is specified, you can choose from any \ncategory."
+        },
+        {
+          "pdf_page_numbers": [
+            87
+          ],
+          "text": "Prerequisite. To take a feat, you must meet any \nprerequisite in its description unless a feature al-\nlows you to take the feat without the prerequisite. \nIf a prerequisite includes a class, you must have at \nleast 1 level in that class to take the feat."
+        },
+        {
+          "pdf_page_numbers": [
+            87
+          ],
+          "text": "Grappler\nGeneral Feat (Prerequisite: Level 4+, Strength or \nDexterity 13+)"
+        },
+        {
+          "pdf_page_numbers": [
+            87
+          ],
+          "text": "Archery\nFighting Style Feat (Prerequisite: Fighting Style \nFeature)"
+        },
+        {
+          "pdf_page_numbers": [
+            88
+          ],
+          "text": "Boon of Combat Prowess\nEpic Boon Feat (Prerequisite: Level 19+)"
+        },
+        {
+          "pdf_page_numbers": [
+            47
+          ],
+          "text": "Gain the Fighter’s level 1 features, which are \nlisted in the Fighter Features table."
+        },
+        {
+          "pdf_page_numbers": [
+            47
+          ],
+          "text": "Level 1: Fighting Style\nYou have honed your martial prowess and gain a \nFighting Style feat of your choice (see “Feats”). De-\nfense is recommended."
+        },
+        {
+          "pdf_page_numbers": [
+            79
+          ],
+          "text": "Level 4: Ability Score Improvement\nYou gain the Ability Score Improvement feat (see \n“Feats”) or another feat of your choice for which you \nqualify. You gain this feature again at Wizard levels \n8, 12, and 16."
+        }
+      ]
+    },
+    {
+      "case_id": "d20-en-pilot-t07-009",
+      "topic_id": 7,
+      "topic": "Feats and prerequisites",
+      "question": "Rina is a level 5 Fighter with the Savage Attacker feat. On her turn she takes the Attack action and makes two attacks with her Longsword, and both attacks hit. (a) Can Savage Attacker apply to both hits? (b) Can she choose to use it on the first hit, and can she instead choose not to use it on the first hit and use it on the second hit? (c) On her next turn she hits with a single Longsword attack. Can she use Savage Attacker on that hit? Explain each answer.",
+      "reference_answer": "(a) No. The feat works only once per turn, so at most one of the two hits can benefit from it. (b) Yes to both. Each Longsword hit is a hit on a target with a weapon, so she can use Savage Attacker on the first hit. She can also choose not to use it on the first hit and use it on the second hit instead. Either way she gets the benefit for only one of the two hits this turn. Once she uses it on the first hit, it is spent for the turn and cannot be used on the second hit. (c) Yes. The limit is once per turn, so it is available again on her next turn. On that single hit she can roll the Longsword's damage dice twice and use either roll.",
+      "requirements": [
+        {
+          "claim_id": "C001",
+          "original_text": "(a) Savage Attacker cannot apply to both hits in the same turn, because it can be used only once per turn",
+          "weight": 30,
+          "rationale": "The core limit tested by the case, and part (a) of the question.",
+          "credit_rule": {
+            "full_credit_condition": "Answers (a) no: Savage Attacker cannot apply to both hits, and gives the reason that it can be used only once per turn.",
+            "partial_levels": [
+              {
+                "points": 20,
+                "condition": "Answers (a) no (at most one of the two hits benefits) but gives no reason, or a reason other than the once-per-turn limit.",
+                "rationale": "The asked verdict is correct and only the stated rule is missing."
+              }
+            ],
+            "zero_credit_condition": "Says it can apply to both hits in the same turn, or does not answer (a), or contradicts itself.",
+            "selection_rule": "Award full credit, or the 20-point level, or zero.",
+            "no_partial_credit_reason": null
+          }
+        },
+        {
+          "claim_id": "C002",
+          "original_text": "(b) She can use it on the first hit, which uses up the benefit for that turn",
+          "weight": 20,
+          "rationale": "The most direct branch of (b). It is easy once (a) is understood, so it weighs less.",
+          "credit_rule": {
+            "full_credit_condition": "States that she can use Savage Attacker on the first hit, and that doing so uses up the benefit for the rest of that turn (so the second hit gets none).",
+            "partial_levels": [
+              {
+                "points": 12,
+                "condition": "States that she can use it on the first hit but does not say it is spent for the turn, and does not say anything contradictory about the second hit.",
+                "rationale": "The asked permission is correct and the consequence is missing."
+              }
+            ],
+            "zero_credit_condition": "Says she cannot use it on the first hit or must use it on the second hit, says using it on the first hit leaves it available for the second, does not state whether she can use it on the first hit, or contradicts itself.",
+            "selection_rule": "Award full credit, or the 12-point level, or zero.",
+            "no_partial_credit_reason": null
+          }
+        },
+        {
+          "claim_id": "C003",
+          "original_text": "(b) She can instead choose not to use it on the first hit and use it on the second hit, but she gets it for only one of the two hits",
+          "weight": 25,
+          "rationale": "The less intuitive branch (choosing to hold it). It matters as a legal alternative the player may take.",
+          "credit_rule": {
+            "full_credit_condition": "States that she may decline to use it on the first hit and use it on the second hit instead, and that she gets the benefit on only one of the two hits.",
+            "partial_levels": [
+              {
+                "points": 15,
+                "condition": "States that she may choose to hold it and use it on the second hit, but does not say that only one of the two hits can benefit, and does not claim both can.",
+                "rationale": "The less intuitive choice is correct and the exclusivity is missing."
+              }
+            ],
+            "zero_credit_condition": "Says she must use it on the first hit, or cannot use it on the second hit, or that she can use it on both, does not state whether she may hold it for the second hit, or contradicts itself.",
+            "selection_rule": "Award full credit, or the 15-point level, or zero.",
+            "no_partial_credit_reason": null
+          }
+        },
+        {
+          "claim_id": "C004",
+          "original_text": "(c) She can use it on the hit on her next turn, because the once-per-turn limit applies to each turn separately and the hit is a weapon hit",
+          "weight": 25,
+          "rationale": "Part (c) and the per-turn reset reasoning. Wrongly denying it would make the feat a once-per-fight feature.",
+          "credit_rule": {
+            "full_credit_condition": "Answers (c) yes: she can use it on the single hit on her next turn, because the once-per-turn limit applies to each turn separately so it is available again. The weapon-hit premise is satisfied by the stipulated Longsword hit: an answer that applies the reset to 'that hit', 'the Longsword hit' or 'a weapon hit' earns full credit, and a separate restatement that it is a weapon hit is not required.",
+            "partial_levels": [
+              {
+                "points": 15,
+                "condition": "Answers (c) yes but gives no per-turn reset reasoning: no reason at all, only the weapon-hit point, or only a reason unrelated to the per-turn reset (for example a wrong reason such as needing a rest), with no statement that denies the next-turn use.",
+                "rationale": "The asked verdict is correct and the reset reasoning is missing. The weapon-hit premise alone adds little because the question stipulates the Longsword hit."
+              }
+            ],
+            "zero_credit_condition": "Says she cannot use it on the next turn's hit, says using it earlier prevents it, does not answer (c), or contradicts itself about the verdict.",
+            "selection_rule": "Award full credit, or the 15-point level, or zero. Reset reasoning without a weapon-hit restatement earns full credit. A weapon-hit point without reset reasoning earns 15. Neither earns 15 if the verdict is yes.",
+            "no_partial_credit_reason": null
+          }
+        }
+      ],
+      "passages": [
+        {
+          "pdf_page_numbers": [
+            87
+          ],
+          "text": "Savage Attacker\nOrigin Feat\nYou’ve trained to deal particularly damaging \nstrikes. Once per turn when you hit a target with \na weapon, you can roll the weapon’s damage dice \ntwice and use either roll against the target."
+        }
+      ]
+    },
+    {
+      "case_id": "d20-en-pilot-t08-006",
+      "topic_id": 8,
+      "topic": "Classes, subclasses, and class options",
+      "question": "In round 1, Dara, a level 5 Barbarian, enters Rage as a Bonus Action and then uses the Dash action. Dara makes no attack roll and forces no saving throw that round. In round 2, there are two possibilities. In Scenario A, Dara takes the Attack action and misses with both attacks against an enemy. In Scenario B, Dara only moves and takes the Dodge action, with no attack roll and no saving throw. In which scenario is the Rage still active when Dara's turn begins in round 3, and what could Dara have done differently in the other scenario to keep the Rage going without attacking?",
+      "reference_answer": "The Rage is still active at the start of round 3 in Scenario A only. Making an attack roll against an enemy extends the Rage, and a miss still counts. In Scenario B, Dara did none of the extending actions, so the Rage ended at the end of Dara's round 2 turn. Dara could have taken a Bonus Action to extend the Rage, or forced an enemy to make a saving throw.",
+      "requirements": [
+        {
+          "claim_id": "C001",
+          "original_text": "Rage entered in round 1 lasts until the end of Dara's next turn (round 2).",
+          "weight": 15,
+          "rationale": "The baseline duration premise from the p.29 Duration text. The scenario reasoning needs it, but it is not itself the asked ruling.",
+          "credit_rule": {
+            "full_credit_condition": "States, or clearly applies in the scenario analysis, that the Rage entered in round 1 lasts until the end of Dara's next turn (her round 2 turn) unless extended. Saying in Scenario B that the Rage ends at the end of round 2 counts as stating it.",
+            "partial_levels": [],
+            "zero_credit_condition": "Gives a different duration (for example a full minute regardless, or ending at the end of round 1), or never states or applies the duration.",
+            "selection_rule": "Full weight or zero; no partial level applies.",
+            "no_partial_credit_reason": "A single duration fact with no separable correct component."
+          }
+        },
+        {
+          "claim_id": "C002",
+          "original_text": "In Scenario A, making an attack roll against an enemy extends the Rage, whether or not it hits.",
+          "weight": 30,
+          "rationale": "The answer for Scenario A and the central trap. The source requires only an attack roll against an enemy, so a miss still extends the Rage.",
+          "credit_rule": {
+            "full_credit_condition": "Says the Rage is still active at the start of round 3 in Scenario A because Dara made attack rolls against an enemy, and that a miss still counts, because only an attack roll is required, not a hit. Any equivalent statement that misses are still attack rolls, or that she need not hit, satisfies the miss point; a second synonymous sentence is not required.",
+            "partial_levels": [
+              {
+                "points": 20,
+                "condition": "Says the Rage is still active in Scenario A because she made attack roll(s) against an enemy, but does not address whether the misses still count, and does not say that a hit was needed.",
+                "rationale": "The scenario outcome and mechanism are correct, and the key point about misses is not stated."
+              },
+              {
+                "points": 10,
+                "condition": "Says the Rage is still active in Scenario A but gives no reason, or gives a reason that is not an attack roll against an enemy (including a wrong reason such as Dash), without saying that a hit was needed or that misses do not count.",
+                "rationale": "Only the outcome is correct."
+              }
+            ],
+            "zero_credit_condition": "Says the Rage is not active in Scenario A; says that Dara needed to hit (the misses did not extend it); does not state the Scenario A outcome; or contradicts itself about the Scenario A outcome.",
+            "selection_rule": "Award the single highest eligible level; do not sum. The Scenario A outcome governs: an active outcome with a missing or wrong reason earns the 10-point level, and the answer earns zero only when it denies the outcome, requires a hit, omits the outcome, or contradicts itself. A correct attack-roll reason that is accompanied by an additional wrong extension method is graded on the correct reason.",
+            "no_partial_credit_reason": null
+          }
+        },
+        {
+          "claim_id": "C003",
+          "original_text": "In Scenario B, Dodging and moving don't extend it, so the Rage ends at the end of round 2.",
+          "weight": 30,
+          "rationale": "The answer for Scenario B. Together with C002 it answers 'in which scenario'.",
+          "credit_rule": {
+            "full_credit_condition": "Says the Rage is not active at the start of round 3 in Scenario B, because Dodge and moving are not among the ways to extend it, so it ends at the end of Dara's round 2 turn.",
+            "partial_levels": [
+              {
+                "points": 20,
+                "condition": "Says the Rage ends in Scenario B because Dodge and moving do not extend it, but does not say when it ends (the end of round 2).",
+                "rationale": "The outcome and mechanism are correct, and the timing detail is missing."
+              },
+              {
+                "points": 12,
+                "condition": "Says the Rage is not active in round 3 in Scenario B but gives no reason, or a reason that does not identify that none of the listed extension actions were taken.",
+                "rationale": "Only the outcome is correct."
+              }
+            ],
+            "zero_credit_condition": "Says the Rage is still active in Scenario B, says Dodge or moving extends it, does not state the Scenario B outcome, or contradicts itself about the Scenario B outcome.",
+            "selection_rule": "Award the single highest eligible level; do not sum. The Scenario B outcome governs: if the outcome is omitted, wrong or self-contradictory, the answer earns zero and no partial level applies.",
+            "no_partial_credit_reason": null
+          }
+        },
+        {
+          "claim_id": "C004",
+          "original_text": "Alternative ways to extend: use a Bonus Action to extend, or force an enemy to make a saving throw.",
+          "weight": 25,
+          "rationale": "The second requested part of the question (what Dara could have done differently without attacking). The two options are alternatives, so one correct option is enough to earn this weight. Naming both is not required.",
+          "credit_rule": {
+            "full_credit_condition": "Names at least one valid non-attack extension method for the Rage: taking a Bonus Action to extend it, or forcing an enemy to make a saving throw. Naming both is not required.",
+            "partial_levels": [],
+            "zero_credit_condition": "Names no valid non-attack method (names only Dodge, moving or another invalid action, names only making an attack roll which the question excludes, or says nothing could have been done).",
+            "selection_rule": "Full weight or zero. Naming a valid option earns full credit regardless of how many valid options are named. Any invalid methods stated alongside it are handled by the error list, not by reducing this claim.",
+            "no_partial_credit_reason": "The claim is satisfied by either listed alternative, so there is no meaningful intermediate state between naming a valid method and naming none."
+          }
+        }
+      ],
+      "passages": [
+        {
+          "pdf_page_numbers": [
+            29
+          ],
+          "text": "Duration. The Rage lasts until the end of your \nnext turn, and it ends early if you don Heavy armor \nor have the Incapacitated condition. If your Rage \nis still active on your next turn, you can extend \nthe Rage for another round by doing one of the \nfollowing:\n•\t Make an attack roll against an enemy.\n•\t Force an enemy to make a saving throw.\n•\t Take a Bonus Action to extend your Rage.\nEach time the Rage is extended, it lasts until the end \nof your next turn. You can maintain a Rage for up to \n10 minutes."
+        }
+      ]
+    },
+    {
+      "case_id": "d20-en-pilot-t09-003",
+      "topic_id": 9,
+      "topic": "Equipment, magic items, and crafting",
+      "question": "A character can normally make two attacks with one Attack action. They use a weapon with the Loading property and have no feature that overrides it. How many pieces of ammunition can they fire from that weapon with this action? Explain.",
+      "reference_answer": "One piece of ammunition. Loading limits firing from that weapon to one piece per action used to fire it, rather than one per attack. The character’s two attacks share this one Attack action, so they do not allow a second shot from that weapon.",
+      "requirements": [
+        {
+          "claim_id": "C001",
+          "original_text": "Only one piece of ammunition can be fired from that weapon with this Attack action.",
+          "weight": 55,
+          "rationale": "The permitted ammunition count is the direct numerical ruling.",
+          "credit_rule": {
+            "full_credit_condition": "Allows only one piece of ammunition from this Loading weapon in the Attack action, despite two available attacks. No unresolved assertion may contradict this required ruling.",
+            "partial_levels": [],
+            "zero_credit_condition": "The required ruling above is absent, incorrect, or contradicted elsewhere in the answer. A correct statement later explicitly retracting an earlier mistake is not an unresolved contradiction.",
+            "selection_rule": "Award the existing full weight only when the full condition is met; otherwise zero.",
+            "no_partial_credit_reason": "The per-action ammunition count is one indivisible numeric ruling."
+          }
+        },
+        {
+          "claim_id": "C002",
+          "original_text": "The one-piece limit applies to the action, not separately to each attack; having two attacks within that action does not permit a second shot from that weapon.",
+          "weight": 45,
+          "rationale": "The explicit request to explain requires distinguishing one action from its constituent attacks.",
+          "credit_rule": {
+            "full_credit_condition": "Explains that Loading limits ammunition per action, so the two attacks within that action do not each create a fresh shot allowance. No unresolved assertion may contradict this required ruling.",
+            "partial_levels": [],
+            "zero_credit_condition": "The required ruling above is absent, incorrect, or contradicted elsewhere in the answer. A correct statement later explicitly retracting an earlier mistake is not an unresolved contradiction.",
+            "selection_rule": "Award the existing full weight only when the full condition is met; otherwise zero.",
+            "no_partial_credit_reason": "Per-action rather than per-attack limitation is one explanation; its consequence is logically the same rule, not a second independent component."
+          }
+        }
+      ],
+      "passages": [
+        {
+          "pdf_page_numbers": [
+            90
+          ],
+          "text": "Loading\nYou can fire only one piece of ammunition from a \nLoading weapon when you use an action, a Bonus \nAction, or a Reaction to fire it, regardless of the \nnumber of attacks you can normally make."
+        }
+      ]
+    },
+    {
+      "case_id": "d20-en-pilot-t10-006",
+      "topic_id": 10,
+      "topic": "General spellcasting",
+      "question": "A caster uses a spell slot to cast a spell on a creature that turns out to be an invalid target. The spell normally has no effect on a target that succeeds on its saving throw. What happens to the target and the slot, and what does the caster perceive?",
+      "reference_answer": "Nothing happens to the invalid target, but the spell slot is still expended. The target appears to have succeeded on the saving throw despite not attempting one; this gives no hint that it was invalid.",
+      "requirements": [
+        {
+          "claim_id": "C001",
+          "original_text": "Nothing happens to the invalid target, but the spell slot is still expended.",
+          "weight": 50,
+          "rationale": "Actual target effect and resource expenditure together answer the mechanical-result branch.",
+          "credit_rule": {
+            "full_credit_condition": "All components are satisfied, explicitly or by an unambiguous equivalent statement: A: The spell does nothing to the invalid target. B: The slot used to cast the spell is expended. Each component must be uncontradicted; a wrong required outcome prevents full credit.",
+            "partial_levels": [
+              {
+                "points": 20,
+                "condition": "Using the component definitions in full_credit_condition, exactly one of these sets is satisfied without contradiction: A. Other components are missing, wrong, or unresolvedly contradicted; no extra credit for them.",
+                "rationale": "Credits the identified correct component combination at its case-specific contribution: A=20 (The spell does nothing to the invalid target.); B=30 (The slot used to cast the spell is expended.)."
+              },
+              {
+                "points": 30,
+                "condition": "Using the component definitions in full_credit_condition, exactly one of these sets is satisfied without contradiction: B. Other components are missing, wrong, or unresolvedly contradicted; no extra credit for them.",
+                "rationale": "Credits the identified correct component combination at its case-specific contribution: A=20 (The spell does nothing to the invalid target.); B=30 (The slot used to cast the spell is expended.)."
+              }
+            ],
+            "zero_credit_condition": "None of the defined components is satisfied without an unresolved contradiction. An incorrect component earns no component credit even if also asserted correctly elsewhere; an explicitly retracted mistake is not unresolved.",
+            "selection_rule": "Identify the exact set of satisfied, uncontradicted components, then award its single listed point level; all components earn the existing full weight. Never sum partial levels. Logical equivalents count, but a bare final number does not establish an explanation component unless it actually communicates that reasoning. Contradictions invalidate only the affected component.",
+            "no_partial_credit_reason": null
+          }
+        },
+        {
+          "claim_id": "C002",
+          "original_text": "The target appears to have succeeded on the saving throw; this gives no hint that it was invalid.",
+          "weight": 50,
+          "rationale": "Apparent successful save and absence of a validity hint answer the equally requested information branch.",
+          "credit_rule": {
+            "full_credit_condition": "All components are satisfied, explicitly or by an unambiguous equivalent statement: A: To the caster the invalid target appears to have succeeded on its save. B: That appearance gives the caster no indication that the target is invalid. Each component must be uncontradicted; a wrong required outcome prevents full credit.",
+            "partial_levels": [
+              {
+                "points": 20,
+                "condition": "Using the component definitions in full_credit_condition, exactly one of these sets is satisfied without contradiction: B. Other components are missing, wrong, or unresolvedly contradicted; no extra credit for them.",
+                "rationale": "Credits the identified correct component combination at its case-specific contribution: A=30 (To the caster the invalid target appears to have succeeded on its save.); B=20 (That appearance gives the caster no indication that the target is invalid.)."
+              },
+              {
+                "points": 30,
+                "condition": "Using the component definitions in full_credit_condition, exactly one of these sets is satisfied without contradiction: A. Other components are missing, wrong, or unresolvedly contradicted; no extra credit for them.",
+                "rationale": "Credits the identified correct component combination at its case-specific contribution: A=30 (To the caster the invalid target appears to have succeeded on its save.); B=20 (That appearance gives the caster no indication that the target is invalid.)."
+              }
+            ],
+            "zero_credit_condition": "None of the defined components is satisfied without an unresolved contradiction. An incorrect component earns no component credit even if also asserted correctly elsewhere; an explicitly retracted mistake is not unresolved.",
+            "selection_rule": "Identify the exact set of satisfied, uncontradicted components, then award its single listed point level; all components earn the existing full weight. Never sum partial levels. Logical equivalents count, but a bare final number does not establish an explanation component unless it actually communicates that reasoning. Contradictions invalidate only the affected component.",
+            "no_partial_credit_reason": null
+          }
+        }
+      ],
+      "passages": [
+        {
+          "pdf_page_numbers": [
+            106
+          ],
+          "text": "\t Invalid Targets. If you cast a spell on someone \nor something that can’t be affected by it, nothing \nhappens to that target, but if you used a spell slot to \ncast the spell, the slot is still expended.\n\t If the spell normally has no effect on a target that \nsucceeds on a saving throw, the invalid target ap-\npears to have succeeded on its saving throw, even \nthough it didn’t attempt one (giving no hint that the \ncreature is an invalid target). Otherwise, you per-\nceive that the spell did nothing to the target."
+        }
+      ]
+    },
+    {
+      "case_id": "d20-en-pilot-t10-008",
+      "topic_id": 10,
+      "topic": "General spellcasting",
+      "question": "On Ysolde's turn, she casts Misty Step (level 2, casting time Bonus Action) using a level 2 spell slot. She has unspent slots of levels 1, 2, and 3, has Fire Bolt, Scorching Ray, Shield, and Counterspell prepared or known, and has a free hand for the Somatic component. Later in that same turn, she considers three actions. (a) Cast the Fire Bolt cantrip with her Magic action. (b) Cast Scorching Ray (level 2, Magic action) with another spell slot. (c) An enemy, while she is still taking her turn, would hit her with an attack, and she wants to cast Shield (level 1, Reaction) using a level 1 slot. Separately, (d) on the enemy's next turn, an enemy she can see 40 feet away begins casting a spell with Verbal and Somatic components, Ysolde's Reaction is available, and she wants to cast Counterspell (level 3, Reaction) with a level 3 slot. Which of (a)-(d) is she allowed to do?",
+      "reference_answer": "(a) Allowed: a cantrip uses no spell slot. (b) Not allowed: it would be a second spell slot expended on the same turn. (c) Not allowed on Ysolde's own turn, because Shield would expend a second spell slot on that turn. (d) Allowed: the enemy's turn is a different turn, so the slot limit does not apply to it, and the Counterspell trigger is met because she sees a creature within 60 feet casting a spell with components and her Reaction is available.",
+      "requirements": [
+        {
+          "claim_id": "C001",
+          "original_text": "(a) is allowed because cantrips don't expend a spell slot.",
+          "weight": 20,
+          "rationale": "An asked branch with a one-step reason (cantrip exception).",
+          "credit_rule": {
+            "full_credit_condition": "Says (a), casting the Fire Bolt cantrip, is allowed, because a cantrip does not expend a spell slot.",
+            "partial_levels": [
+              {
+                "points": 12,
+                "condition": "Says (a) is allowed but gives no reason, or a reason other than the cantrip using no slot.",
+                "rationale": "The asked verdict is correct and the reason is missing."
+              }
+            ],
+            "zero_credit_condition": "Says (a) is not allowed, gives no ruling on (a), or contradicts itself about (a).",
+            "selection_rule": "Award full credit, or the 12-point level, or zero.",
+            "no_partial_credit_reason": null
+          }
+        },
+        {
+          "claim_id": "C002",
+          "original_text": "(b) is not allowed because only one spell slot can be expended per turn.",
+          "weight": 25,
+          "rationale": "The core slot-per-turn ruling, and the most common dispute.",
+          "credit_rule": {
+            "full_credit_condition": "Says (b), casting Scorching Ray with another slot, is not allowed, because only one spell slot can be expended per turn and Misty Step already used one.",
+            "partial_levels": [
+              {
+                "points": 15,
+                "condition": "Says (b) is not allowed but gives no reason, or an invalid reason.",
+                "rationale": "The asked verdict is correct and the reason is missing."
+              }
+            ],
+            "zero_credit_condition": "Says (b) is allowed, including by treating the Magic action and Bonus Action as separate allowances, gives no ruling on (b), or contradicts itself about (b).",
+            "selection_rule": "Award full credit, or the 15-point level, or zero.",
+            "no_partial_credit_reason": null
+          }
+        },
+        {
+          "claim_id": "C003",
+          "original_text": "(c) is not allowed because a reaction on her own turn that expends a slot would be a second slot that turn.",
+          "weight": 30,
+          "rationale": "The most counterintuitive branch (reactions on one's own turn). The rule is applied by inference from 'on a turn'.",
+          "credit_rule": {
+            "full_credit_condition": "Says (c), casting Shield on her own turn, is not allowed, because it would expend a second spell slot on that turn.",
+            "partial_levels": [
+              {
+                "points": 18,
+                "condition": "Says (c) is not allowed but gives no reason, or an invalid reason (for example only that the casting time is a Reaction).",
+                "rationale": "The asked verdict is correct and the reason is missing."
+              }
+            ],
+            "zero_credit_condition": "Says (c) is allowed, including by saying reactions are exempt from the slot limit, gives no ruling on (c), or contradicts itself about (c).",
+            "selection_rule": "Award full credit, or the 18-point level, or zero.",
+            "no_partial_credit_reason": null
+          }
+        },
+        {
+          "claim_id": "C004",
+          "original_text": "(d) is allowed because it occurs on a different creature's turn and the Counterspell trigger is met.",
+          "weight": 25,
+          "rationale": "The contrast case showing the limit is per turn, plus the trigger check.",
+          "credit_rule": {
+            "full_credit_condition": "Says (d) is allowed, because it happens on a different creature's turn so the one-slot-per-turn limit does not count against it, and because the Counterspell trigger is met (a visible creature within 60 feet casting a spell with components, with her Reaction available), with no false statement about either point.",
+            "partial_levels": [
+              {
+                "points": 18,
+                "condition": "Says (d) is allowed because it is a different turn from the one where she expended the slot, without addressing the Counterspell trigger at all (omitted, not misstated).",
+                "rationale": "The tested per-turn contrast is correct and the trigger check is only omitted."
+              },
+              {
+                "points": 15,
+                "condition": "Says (d) is allowed and gives the correct different-turn reason, but expressly states a wrong Counterspell trigger assertion (for example that the trigger is not met, or misstates its range, components or Reaction requirement).",
+                "rationale": "The tested per-turn contrast is correct, but the answer asserts a wrong trigger fact rather than merely omitting it."
+              },
+              {
+                "points": 12,
+                "condition": "Says (d) is allowed but gives no correct different-turn point: no reason, only a correct trigger statement, or only a wrong reason such as reactions being exempt from the slot limit.",
+                "rationale": "The asked verdict is correct and the main reason is missing or wrong."
+              }
+            ],
+            "zero_credit_condition": "Says (d) is not allowed, including by treating the limit as per round; gives no ruling on (d); or contradicts itself about whether (d) is allowed.",
+            "selection_rule": "Award the single highest eligible level; do not sum. The allowed verdict is required for every level. A correct different-turn reason outranks a correct trigger statement. A wrong trigger assertion caps the claim at 15, and a correct trigger with a wrong or missing different-turn point earns 12.",
+            "no_partial_credit_reason": null
+          }
+        }
+      ],
+      "passages": [
+        {
+          "pdf_page_numbers": [
+            104
+          ],
+          "text": "Cantrips. A cantrip is cast without a spell slot."
+        },
+        {
+          "pdf_page_numbers": [
+            105
+          ],
+          "text": "One Spell with a Spell Slot per Turn\nOn a turn, you can expend only one spell slot to cast \na spell. This rule means you can’t, for example, cast \na spell with a spell slot using the Magic action and \nanother one using a Bonus Action on the same turn."
+        },
+        {
+          "pdf_page_numbers": [
+            105
+          ],
+          "text": "A spell that has a casting time of a Reaction is cast \nin response to a trigger that is defined in the spell’s \nCasting Time entry."
+        },
+        {
+          "pdf_page_numbers": [
+            120
+          ],
+          "text": "Counterspell\nLevel 3 Abjuration (Sorcerer, Warlock, Wizard)\nCasting Time: Reaction, which you take when you see a \ncreature within 60 feet of yourself casting a spell with \nVerbal, Somatic, or Material components\nRange: 60 feet\nComponents: S"
+        }
+      ]
+    },
+    {
+      "case_id": "d20-en-pilot-t11-004",
+      "topic_id": 11,
+      "topic": "Individual spells",
+      "question": "An enemy knight has two ongoing spells on it: Haste (a level 3 spell) and Greater Invisibility (a level 4 spell). Your Sorcerer casts Dispel Magic targeting the knight, with a level 3 spell slot. Sorcerer's spellcasting ability is Charisma with a modifier of +4. Which of the two ongoing spells end, including any roll and DC needed? What changes if the Sorcerer instead casts Dispel Magic using a level 4 spell slot? (Consider only whether each spell ends, not any aftereffects of it ending.)",
+      "reference_answer": "With a level 3 slot: Haste ends automatically, because it is level 3 or lower. For Greater Invisibility (level 4) the Sorcerer makes an ability check using Charisma, rolling a d20 and adding the +4 modifier against DC 14 (10 + 4). The spell ends only if the total equals or exceeds 14. With a level 4 slot, both spells end automatically, because each is level 4 or lower and the slot's level is equal to or higher than each spell's level.",
+      "requirements": [
+        {
+          "claim_id": "C001",
+          "original_text": "Haste (level 3) ends automatically with a level 3 slot.",
+          "weight": 20,
+          "rationale": "A direct reading of the level 3 or lower clause. Less error-prone than the check.",
+          "credit_rule": {
+            "full_credit_condition": "Says Haste ends automatically, with no check, when Dispel Magic is cast with a level 3 slot. A reason (it is level 3 or lower) is welcome but not required.",
+            "partial_levels": [],
+            "zero_credit_condition": "Says Haste requires a check or survives, does not state Haste's outcome with a level 3 slot, or contradicts itself about Haste's outcome.",
+            "selection_rule": "Full weight or zero; no partial level applies.",
+            "no_partial_credit_reason": "A single automatic-end ruling; the spell either ends automatically or it does not."
+          }
+        },
+        {
+          "claim_id": "C002",
+          "original_text": "Greater Invisibility (level 4) requires an ability check using the spellcasting ability against DC 14, and ends only on a success.",
+          "weight": 30,
+          "rationale": "The central computation (DC 10 + 4) and the conditional ending.",
+          "credit_rule": {
+            "full_credit_condition": "With a level 3 slot, says Greater Invisibility is not automatically ended and requires an ability check using the spellcasting ability against DC 14 (10 + 4), and that it ends only if the check succeeds.",
+            "partial_levels": [
+              {
+                "points": 22,
+                "condition": "Says an ability check against DC 14 is needed, but does not say the spell ends only on a success (the conditional outcome is omitted), and states no wrong outcome.",
+                "rationale": "The check requirement and the computed DC are correct, and the conditional ending is only missing."
+              },
+              {
+                "points": 12,
+                "condition": "Says an ability check is needed (not an automatic ending) and exactly one of the following holds: (a) the spell ends only on a success, but the DC is given as something other than 14 (for example 15 or a spell save DC) or no DC is given; or (b) the DC is stated as 14, but the answer expressly states a wrong conditional outcome other than automatic ending (for example that it ends only on a failure).",
+                "rationale": "The check requirement is correct, and one of the two further components (the DC, or the conditional outcome) is correct while the other is wrong or missing."
+              },
+              {
+                "points": 6,
+                "condition": "Says an ability check is needed (not an automatic ending), but the DC is wrong or omitted and the answer states no correct success-conditional outcome (the outcome is omitted or wrongly stated).",
+                "rationale": "Only the existence of the ability check is correct."
+              }
+            ],
+            "zero_credit_condition": "Says Greater Invisibility ends automatically with the level 3 slot (including 'ends whatever the check result'), says it cannot be dispelled, gives no ability-check component at all (it never says a check is needed), or contradicts itself about whether a check is needed. Omitting the conditional ending is not a zero ground when the answer says an ability check is needed: that state is graded at the 22-point level (DC 14 stated) or the 6-point level (DC wrong or omitted).",
+            "selection_rule": "Award the single highest eligible level; do not sum. The 22-point and 6-point levels take precedence over the zero clause for an answer that states a check but omits the conditional outcome. A wrong conditional outcome excludes the 22-point level even when DC 14 is correct. A wrong or omitted DC with a correct conditional outcome earns 12, and a wrong or omitted DC with no correct conditional outcome earns 6.",
+            "no_partial_credit_reason": null
+          }
+        },
+        {
+          "claim_id": "C003",
+          "original_text": "The ability check is d20 plus the Charisma modifier.",
+          "weight": 20,
+          "rationale": "The question asks for any roll needed. This states the roll composition.",
+          "credit_rule": {
+            "full_credit_condition": "States that the check is a d20 roll plus the Sorcerer's Charisma modifier (+4), or plus the spellcasting ability modifier, or equivalently d20 + 4, with no additional unsupported bonus. Not adding the proficiency bonus is acceptable.",
+            "partial_levels": [
+              {
+                "points": 10,
+                "condition": "Says the check is a d20 roll plus a modifier but does not identify it as the spellcasting or Charisma modifier (or +4), or names a wrong ability modifier, or adds an additional unsupported bonus such as the proficiency bonus to the d20 plus Charisma modifier.",
+                "rationale": "The roll type is correct and the modifier composition is unspecified, wrong or inflated."
+              }
+            ],
+            "zero_credit_condition": "Gives no roll composition, describes a saving throw or a spell save DC contest instead of an ability check, or contradicts itself about the roll.",
+            "selection_rule": "Award full credit, or the 10-point level, or zero. An additional unsupported bonus excludes full credit even when d20 plus Charisma is stated correctly, and it caps the claim at 10.",
+            "no_partial_credit_reason": null
+          }
+        },
+        {
+          "claim_id": "C004",
+          "original_text": "With a level 4 slot, Greater Invisibility also ends automatically.",
+          "weight": 30,
+          "rationale": "The second requested part (what changes with a level 4 slot). It tests the higher-level slot clause.",
+          "credit_rule": {
+            "full_credit_condition": "Says that with a level 4 slot, Greater Invisibility ends automatically with no check. A stated outcome alone is sufficient. A correct application of the higher-slot rule that clearly covers Greater Invisibility (for example 'both spells end automatically', or 'every spell of level 4 or lower ends, so it does') also earns full credit, and no separate restatement is required.",
+            "partial_levels": [
+              {
+                "points": 15,
+                "condition": "Correctly states the higher-level-slot rule (spells of a level equal to or lower than the slot level end automatically) but does not explicitly apply it to Greater Invisibility, so its outcome is not conveyed.",
+                "rationale": "The tested rule is correct and its application is not stated or clearly implied."
+              }
+            ],
+            "zero_credit_condition": "Says Greater Invisibility still requires a check with the level 4 slot, says nothing changes, does not state its outcome or the rule, or contradicts itself about whether it ends automatically.",
+            "selection_rule": "Award full credit, or the 15-point level, or zero. A wrong reason alongside a correct automatic-ending outcome does not reduce the claim unless it contradicts that outcome.",
+            "no_partial_credit_reason": null
+          }
+        }
+      ],
+      "passages": [
+        {
+          "pdf_page_numbers": [
+            124
+          ],
+          "text": "Dispel Magic\nLevel 3 Abjuration (Bard, Cleric, Druid, Paladin, \nRanger, Sorcerer, Warlock, Wizard)\nCasting Time: Action\nRange: 120 feet\nComponents: V, S\nDuration: Instantaneous\nChoose one creature, object, or magical effect \nwithin range. Any ongoing spell of level 3 or lower \non the target ends. For each ongoing spell of level 4 \nor higher on the target, make an ability check using \nyour spellcasting ability (DC 10 plus that spell’s \nlevel). On a successful check, the spell ends.\n\t Using a Higher-Level Spell Slot. You automati-\ncally end a spell on the target if the spell’s level is \nequal to or less than the level of the spell slot you \nuse."
+        },
+        {
+          "pdf_page_numbers": [
+            6
+          ],
+          "text": "D20 Tests\nWhen the outcome of an action is uncertain, the \ngame uses a d20 roll to determine success or fail-\nure. These rolls are called D20 Tests, and they come \nin three kinds: ability checks, saving throws, and \nattack rolls. They follow these steps:\n4:\tRoll 1d20. You always want to roll high. If the \nroll has Advantage or Disadvantage (described \nlater in “Playing the Game”), you roll two d20s, \nbut you use the number from only one of them—\nthe higher one if you have Advantage or the lower \none if you have Disadvantage.\n5:\tAdd Modifiers. Add these modifiers to the num-\nber rolled on the d20:\n•\t The Relevant Ability Modifier. “Playing the \nGame” and “Rules Glossary” explain which ability \nmodifiers to use for various D20 Tests."
+        },
+        {
+          "pdf_page_numbers": [
+            6
+          ],
+          "text": "6:\tCompare the Total to a Target Number. If the \ntotal of the d20 and its modifiers equals or ex-\nceeds the target number, the D20 Test succeeds. \nOtherwise, it fails. The Game Master determines \ntarget numbers and tells players whether their \nrolls are successful. The target number for an \nability check or a saving throw is called a Diffi-\nculty Class (DC)."
+        }
+      ]
+    },
+    {
+      "case_id": "d20-en-pilot-t11-006",
+      "topic_id": 11,
+      "topic": "Individual spells",
+      "question": "Consider two separate uses of Knock: first, on a chest with two mundane locks; second, on a door held shut only by Arcane Lock. Both targets are visible and within range. What does one casting do in each case, and what sound does it produce?",
+      "reference_answer": "Only one mundane lock is unlocked; the other still holds the chest shut. Arcane Lock is suppressed for 10 minutes, allowing the door to open and close during that time. Each casting makes a loud knock from the target audible up to 300 feet away.",
+      "requirements": [
+        {
+          "claim_id": "C001",
+          "original_text": "Only one mundane lock is unlocked; the other still holds the chest shut.",
+          "weight": 35,
+          "rationale": "One remaining mundane lock determines whether the first chest can open.",
+          "credit_rule": {
+            "full_credit_condition": "All components are satisfied, explicitly or by an unambiguous equivalent statement: A: One casting unlocks only one of the chest’s two mundane locks. B: The remaining mundane lock still prevents opening the chest. Each component must be uncontradicted; a wrong required outcome prevents full credit.",
+            "partial_levels": [
+              {
+                "points": 12,
+                "condition": "Using the component definitions in full_credit_condition, exactly one of these sets is satisfied without contradiction: B. Other components are missing, wrong, or unresolvedly contradicted; no extra credit for them.",
+                "rationale": "Credits the identified correct component combination at its case-specific contribution: A=23 (One casting unlocks only one of the chest’s two mundane locks.); B=12 (The remaining mundane lock still prevents opening the chest.)."
+              },
+              {
+                "points": 23,
+                "condition": "Using the component definitions in full_credit_condition, exactly one of these sets is satisfied without contradiction: A. Other components are missing, wrong, or unresolvedly contradicted; no extra credit for them.",
+                "rationale": "Credits the identified correct component combination at its case-specific contribution: A=23 (One casting unlocks only one of the chest’s two mundane locks.); B=12 (The remaining mundane lock still prevents opening the chest.)."
+              }
+            ],
+            "zero_credit_condition": "None of the defined components is satisfied without an unresolved contradiction. An incorrect component earns no component credit even if also asserted correctly elsewhere; an explicitly retracted mistake is not unresolved.",
+            "selection_rule": "Identify the exact set of satisfied, uncontradicted components, then award its single listed point level; all components earn the existing full weight. Never sum partial levels. Logical equivalents count, but a bare final number does not establish an explanation component unless it actually communicates that reasoning. Contradictions invalidate only the affected component.",
+            "no_partial_credit_reason": null
+          }
+        },
+        {
+          "claim_id": "C002",
+          "original_text": "Arcane Lock is suppressed for 10 minutes, allowing the door to open and close during that time.",
+          "weight": 40,
+          "rationale": "Temporary suppression and its ten-minute window determine access to the magically locked door.",
+          "credit_rule": {
+            "full_credit_condition": "All components are satisfied, explicitly or by an unambiguous equivalent statement: A: Arcane Lock is temporarily suppressed rather than permanently dispelled. B: The suppression lasts10 minutes. C: During suppression the door can be opened and closed. Each component must be uncontradicted; a wrong required outcome prevents full credit.",
+            "partial_levels": [
+              {
+                "points": 10,
+                "condition": "Using the component definitions in full_credit_condition, exactly one of these sets is satisfied without contradiction: B. Other components are missing, wrong, or unresolvedly contradicted; no extra credit for them.",
+                "rationale": "Credits the identified correct component combination at its case-specific contribution: A=18 (Arcane Lock is temporarily suppressed rather than permanently dispelled.); B=10 (The suppression lasts10 minutes.); C=12 (During suppression the door can be opened and closed.)."
+              },
+              {
+                "points": 12,
+                "condition": "Using the component definitions in full_credit_condition, exactly one of these sets is satisfied without contradiction: C. Other components are missing, wrong, or unresolvedly contradicted; no extra credit for them.",
+                "rationale": "Credits the identified correct component combination at its case-specific contribution: A=18 (Arcane Lock is temporarily suppressed rather than permanently dispelled.); B=10 (The suppression lasts10 minutes.); C=12 (During suppression the door can be opened and closed.)."
+              },
+              {
+                "points": 18,
+                "condition": "Using the component definitions in full_credit_condition, exactly one of these sets is satisfied without contradiction: A. Other components are missing, wrong, or unresolvedly contradicted; no extra credit for them.",
+                "rationale": "Credits the identified correct component combination at its case-specific contribution: A=18 (Arcane Lock is temporarily suppressed rather than permanently dispelled.); B=10 (The suppression lasts10 minutes.); C=12 (During suppression the door can be opened and closed.)."
+              },
+              {
+                "points": 22,
+                "condition": "Using the component definitions in full_credit_condition, exactly one of these sets is satisfied without contradiction: B+C. Other components are missing, wrong, or unresolvedly contradicted; no extra credit for them.",
+                "rationale": "Credits the identified correct component combination at its case-specific contribution: A=18 (Arcane Lock is temporarily suppressed rather than permanently dispelled.); B=10 (The suppression lasts10 minutes.); C=12 (During suppression the door can be opened and closed.)."
+              },
+              {
+                "points": 28,
+                "condition": "Using the component definitions in full_credit_condition, exactly one of these sets is satisfied without contradiction: A+B. Other components are missing, wrong, or unresolvedly contradicted; no extra credit for them.",
+                "rationale": "Credits the identified correct component combination at its case-specific contribution: A=18 (Arcane Lock is temporarily suppressed rather than permanently dispelled.); B=10 (The suppression lasts10 minutes.); C=12 (During suppression the door can be opened and closed.)."
+              },
+              {
+                "points": 30,
+                "condition": "Using the component definitions in full_credit_condition, exactly one of these sets is satisfied without contradiction: A+C. Other components are missing, wrong, or unresolvedly contradicted; no extra credit for them.",
+                "rationale": "Credits the identified correct component combination at its case-specific contribution: A=18 (Arcane Lock is temporarily suppressed rather than permanently dispelled.); B=10 (The suppression lasts10 minutes.); C=12 (During suppression the door can be opened and closed.)."
+              }
+            ],
+            "zero_credit_condition": "None of the defined components is satisfied without an unresolved contradiction. An incorrect component earns no component credit even if also asserted correctly elsewhere; an explicitly retracted mistake is not unresolved.",
+            "selection_rule": "Identify the exact set of satisfied, uncontradicted components, then award its single listed point level; all components earn the existing full weight. Never sum partial levels. Logical equivalents count, but a bare final number does not establish an explanation component unless it actually communicates that reasoning. Contradictions invalidate only the affected component.",
+            "no_partial_credit_reason": null
+          }
+        },
+        {
+          "claim_id": "C003",
+          "original_text": "Each casting makes a loud knock from the target audible up to 300 feet away.",
+          "weight": 25,
+          "rationale": "The explicitly asked sound creates a practical detection consequence for each casting.",
+          "credit_rule": {
+            "full_credit_condition": "All components are satisfied, explicitly or by an unambiguous equivalent statement: A: Each separate casting produces a loud knock. B: The knock emanates from the target object. C: The sound is audible up to300 feet away. Each component must be uncontradicted; a wrong required outcome prevents full credit.",
+            "partial_levels": [
+              {
+                "points": 4,
+                "condition": "Using the component definitions in full_credit_condition, exactly one of these sets is satisfied without contradiction: B. Other components are missing, wrong, or unresolvedly contradicted; no extra credit for them.",
+                "rationale": "Credits the identified correct component combination at its case-specific contribution: A=12 (Each separate casting produces a loud knock.); B=4 (The knock emanates from the target object.); C=9 (The sound is audible up to300 feet away.)."
+              },
+              {
+                "points": 9,
+                "condition": "Using the component definitions in full_credit_condition, exactly one of these sets is satisfied without contradiction: C. Other components are missing, wrong, or unresolvedly contradicted; no extra credit for them.",
+                "rationale": "Credits the identified correct component combination at its case-specific contribution: A=12 (Each separate casting produces a loud knock.); B=4 (The knock emanates from the target object.); C=9 (The sound is audible up to300 feet away.)."
+              },
+              {
+                "points": 12,
+                "condition": "Using the component definitions in full_credit_condition, exactly one of these sets is satisfied without contradiction: A. Other components are missing, wrong, or unresolvedly contradicted; no extra credit for them.",
+                "rationale": "Credits the identified correct component combination at its case-specific contribution: A=12 (Each separate casting produces a loud knock.); B=4 (The knock emanates from the target object.); C=9 (The sound is audible up to300 feet away.)."
+              },
+              {
+                "points": 13,
+                "condition": "Using the component definitions in full_credit_condition, exactly one of these sets is satisfied without contradiction: B+C. Other components are missing, wrong, or unresolvedly contradicted; no extra credit for them.",
+                "rationale": "Credits the identified correct component combination at its case-specific contribution: A=12 (Each separate casting produces a loud knock.); B=4 (The knock emanates from the target object.); C=9 (The sound is audible up to300 feet away.)."
+              },
+              {
+                "points": 16,
+                "condition": "Using the component definitions in full_credit_condition, exactly one of these sets is satisfied without contradiction: A+B. Other components are missing, wrong, or unresolvedly contradicted; no extra credit for them.",
+                "rationale": "Credits the identified correct component combination at its case-specific contribution: A=12 (Each separate casting produces a loud knock.); B=4 (The knock emanates from the target object.); C=9 (The sound is audible up to300 feet away.)."
+              },
+              {
+                "points": 21,
+                "condition": "Using the component definitions in full_credit_condition, exactly one of these sets is satisfied without contradiction: A+C. Other components are missing, wrong, or unresolvedly contradicted; no extra credit for them.",
+                "rationale": "Credits the identified correct component combination at its case-specific contribution: A=12 (Each separate casting produces a loud knock.); B=4 (The knock emanates from the target object.); C=9 (The sound is audible up to300 feet away.)."
+              }
+            ],
+            "zero_credit_condition": "None of the defined components is satisfied without an unresolved contradiction. An incorrect component earns no component credit even if also asserted correctly elsewhere; an explicitly retracted mistake is not unresolved.",
+            "selection_rule": "Identify the exact set of satisfied, uncontradicted components, then award its single listed point level; all components earn the existing full weight. Never sum partial levels. Logical equivalents count, but a bare final number does not establish an explanation component unless it actually communicates that reasoning. Contradictions invalidate only the affected component.",
+            "no_partial_credit_reason": null
+          }
+        }
+      ],
+      "passages": [
+        {
+          "pdf_page_numbers": [
+            143
+          ],
+          "text": "Knock\nLevel 2 Transmutation (Bard, Sorcerer, Wizard)\nCasting Time: Action\nRange: 60 feet\nComponents: V\nDuration: Instantaneous"
+        },
+        {
+          "pdf_page_numbers": [
+            144
+          ],
+          "text": "Choose an object that you can see within range. The \nobject can be a door, a box, a chest, a set of mana-\ncles, a padlock, or another object that contains a \nmundane or magical means that prevents access.\n\t A target that is held shut by a mundane lock or \nthat is stuck or barred becomes unlocked, unstuck, \nor unbarred. If the object has multiple locks, only \none of them is unlocked.\n\t If the target is held shut by Arcane Lock, that spell \nis suppressed for 10 minutes, during which time the \ntarget can be opened and closed.\n\t When you cast the spell, a loud knock, audible up \nto 300 feet away, emanates from the target."
+        }
+      ]
+    },
+    {
+      "case_id": "d20-en-pilot-t11-008",
+      "topic_id": 11,
+      "topic": "Individual spells",
+      "question": "A creature protected by Sanctuary is inside the area of an enemy’s damaging area spell. The spell does not individually target that creature. Does Sanctuary require the enemy to pass a Wisdom save for this? Later, the warded creature casts a harmless spell. Does Sanctuary remain?",
+      "reference_answer": "Sanctuary does not protect from areas of effect, so no Sanctuary Wisdom save is required. Sanctuary ends when the warded creature casts the harmless spell.",
+      "requirements": [
+        {
+          "claim_id": "C001",
+          "original_text": "Sanctuary does not protect from areas of effect, so no Sanctuary Wisdom save is required.",
+          "weight": 50,
+          "rationale": "The area spell is an independent asked protection branch.",
+          "credit_rule": {
+            "full_credit_condition": "Requires no Sanctuary Wisdom save for the area spell because Sanctuary does not protect against areas of effect. Stating the area exception as the reason is sufficient. No unresolved assertion may contradict this required ruling.",
+            "partial_levels": [],
+            "zero_credit_condition": "The required ruling above is absent, incorrect, or contradicted elsewhere in the answer. A correct statement later explicitly retracting an earlier mistake is not an unresolved contradiction.",
+            "selection_rule": "Award the existing full weight only when the full condition is met; otherwise zero.",
+            "no_partial_credit_reason": "The no-save ruling and area exception express one protection boundary; a correct boundary already entails the ruling."
+          }
+        },
+        {
+          "claim_id": "C002",
+          "original_text": "Sanctuary ends when the warded creature casts the harmless spell.",
+          "weight": 50,
+          "rationale": "The harmless spell is an independent asked termination branch.",
+          "credit_rule": {
+            "full_credit_condition": "Ends Sanctuary when the warded creature casts the harmless spell, even without harm or an attack. No unresolved assertion may contradict this required ruling.",
+            "partial_levels": [],
+            "zero_credit_condition": "The required ruling above is absent, incorrect, or contradicted elsewhere in the answer. A correct statement later explicitly retracting an earlier mistake is not an unresolved contradiction.",
+            "selection_rule": "Award the existing full weight only when the full condition is met; otherwise zero.",
+            "no_partial_credit_reason": "Termination on this spellcasting is a single binary outcome; harmlessness does not create a separate graded substep."
+          }
+        }
+      ],
+      "passages": [
+        {
+          "pdf_page_numbers": [
+            159
+          ],
+          "text": "Sanctuary\nLevel 1 Abjuration (Cleric)\nCasting Time: Bonus Action\nRange: 30 feet\nComponents: V, S, M (a shard of glass from a mirror)\nDuration: 1 minute\nYou ward a creature within range. Until the spell \nends, any creature who targets the warded crea-\nture with an attack roll or a damaging spell must \nsucceed on a Wisdom saving throw or either choose \na new target or lose the attack or spell. This spell \ndoesn’t protect the warded creature from areas of \neffect. The spell ends if the warded creature makes \nan attack roll, casts a spell, or deals damage."
+        }
+      ]
+    },
+    {
+      "case_id": "d20-en-pilot-t12-007",
+      "topic_id": 12,
+      "topic": "Monsters and stat blocks",
+      "question": "A treant uses Animate Trees on two trees. One animated tree tries to use Animate Trees itself. Later that tree moves to 125 feet from the original treant while both remain alive and less than one day has passed. Can the tree animate more trees, and what happens when it reaches that distance?",
+      "reference_answer": "The animated tree cannot animate more trees because it lacks Animate Trees. At more than 120 feet from the original treant its animation ends. It then takes root if possible.",
+      "requirements": [
+        {
+          "claim_id": "C001",
+          "original_text": "The animated tree cannot animate more trees because it lacks Animate Trees.",
+          "weight": 45,
+          "rationale": "Excluding Animate Trees prevents the attempted recursive creation and explains its failure.",
+          "credit_rule": {
+            "full_credit_condition": "All components are satisfied, explicitly or by an unambiguous equivalent statement: A: The animated tree cannot use Animate Trees to animate additional trees. B: Explains that the animated tree lacks the Animate Trees action even though it uses the Treant stat block. Each component must be uncontradicted; a wrong required outcome prevents full credit.",
+            "partial_levels": [
+              {
+                "points": 18,
+                "condition": "Using the component definitions in full_credit_condition, exactly one of these sets is satisfied without contradiction: B. Other components are missing, wrong, or unresolvedly contradicted; no extra credit for them.",
+                "rationale": "Credits the identified correct component combination at its case-specific contribution: A=27 (The animated tree cannot use Animate Trees to animate additional trees.); B=18 (Explains that the animated tree lacks the Animate Trees action even though it uses the Treant stat block.)."
+              },
+              {
+                "points": 27,
+                "condition": "Using the component definitions in full_credit_condition, exactly one of these sets is satisfied without contradiction: A. Other components are missing, wrong, or unresolvedly contradicted; no extra credit for them.",
+                "rationale": "Credits the identified correct component combination at its case-specific contribution: A=27 (The animated tree cannot use Animate Trees to animate additional trees.); B=18 (Explains that the animated tree lacks the Animate Trees action even though it uses the Treant stat block.)."
+              }
+            ],
+            "zero_credit_condition": "None of the defined components is satisfied without an unresolved contradiction. An incorrect component earns no component credit even if also asserted correctly elsewhere; an explicitly retracted mistake is not unresolved.",
+            "selection_rule": "Identify the exact set of satisfied, uncontradicted components, then award its single listed point level; all components earn the existing full weight. Never sum partial levels. Logical equivalents count, but a bare final number does not establish an explanation component unless it actually communicates that reasoning. Contradictions invalidate only the affected component.",
+            "no_partial_credit_reason": null
+          }
+        },
+        {
+          "claim_id": "C002",
+          "original_text": "At more than 120 feet from the original treant its animation ends.",
+          "weight": 40,
+          "rationale": "The 120-foot termination boundary decides what occurs at the specified 125 feet.",
+          "credit_rule": {
+            "full_credit_condition": "Ends the tree’s animation at125 feet because that exceeds120 feet from its original treant. No unresolved assertion may contradict this required ruling.",
+            "partial_levels": [],
+            "zero_credit_condition": "The required ruling above is absent, incorrect, or contradicted elsewhere in the answer. A correct statement later explicitly retracting an earlier mistake is not an unresolved contradiction.",
+            "selection_rule": "Award the existing full weight only when the full condition is met; otherwise zero.",
+            "no_partial_credit_reason": "The specified distance and termination are one threshold application; stating that it ends from excessive separation is equivalent without restating numbers."
+          }
+        },
+        {
+          "claim_id": "C003",
+          "original_text": "It then takes root if possible.",
+          "weight": 15,
+          "rationale": "Taking root if possible is the subsidiary consequence after animation ends.",
+          "credit_rule": {
+            "full_credit_condition": "After animation ends the tree takes root if possible, or states it takes root here without inventing an obstacle. No unresolved assertion may contradict this required ruling.",
+            "partial_levels": [],
+            "zero_credit_condition": "The required ruling above is absent, incorrect, or contradicted elsewhere in the answer. A correct statement later explicitly retracting an earlier mistake is not an unresolved contradiction.",
+            "selection_rule": "Award the existing full weight only when the full condition is met; otherwise zero.",
+            "no_partial_credit_reason": "Conditional rooting is one consequence; a bare root-taking statement fits the stipulated unobstructed scenario and does not require an extra caveat."
+          }
+        }
+      ],
+      "passages": [
+        {
+          "pdf_page_numbers": [
+            333
+          ],
+          "text": "Animate Trees (1/Day). The treant magically animates \nup to two trees it can see within 60 feet of itself. Each \ntree uses the Treant stat block, except it has Intelligence \nand Charisma scores of 1, it can’t speak, and it lacks \nthis action. The tree takes its turn immediately after the \ntreant on the same Initiative count, and it obeys the tre-\nant. A tree remains animate for 1 day or until it dies, the \ntreant dies, or it is more than 120 feet from the treant. \nThe tree then takes root if possible."
+        }
+      ]
+    }
+  ]
+}

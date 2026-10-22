@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+*.py[cod]
+site/
+dist/
+.env
+.env.*
+*.key
+*.pem
+private/
+raw/
+artifacts/
+LOCAL_HANDOFF.md
+.DS_Store

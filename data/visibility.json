@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "case_ids": [
+    "d20-en-pilot-t01-003",
+    "d20-en-pilot-t02-003",
+    "d20-en-pilot-t03-001",
+    "d20-en-pilot-t03-009",
+    "d20-en-pilot-t04-003",
+    "d20-en-pilot-t05-004",
+    "d20-en-pilot-t05-010",
+    "d20-en-pilot-t06-005",
+    "d20-en-pilot-t07-002",
+    "d20-en-pilot-t07-009",
+    "d20-en-pilot-t08-006",
+    "d20-en-pilot-t09-003",
+    "d20-en-pilot-t10-006",
+    "d20-en-pilot-t10-008",
+    "d20-en-pilot-t11-004",
+    "d20-en-pilot-t11-006",
+    "d20-en-pilot-t11-008",
+    "d20-en-pilot-t12-007"
+  ],
+  "public_case_count": 18,
+  "private_case_count": 102,
+  "basis": "The 18 accepted human task-quality reviews; 12 random topic selections plus six targeted selections, including repaired versions. Not a random audit of model grades.",
+  "private_disclosure": "Aggregate metrics only; no private case IDs, per-case records, prompts, answers or rubric text."
+}

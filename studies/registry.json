@@ -1,0 +1,11 @@
+[
+  {
+    "slug": "01-baseline",
+    "title": "Study 1: baseline",
+    "private_import": "model-comparison",
+    "selected_records": 6000,
+    "public_answer_records": 900,
+    "configurations": 25,
+    "conditions": 50
+  }
+]
