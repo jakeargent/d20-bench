@@ -1,0 +1,2300 @@
+[
+  {
+    "record": [
+      "gemma4-e4b/on",
+      "d20-en-pilot-t04-003",
+      "no_source"
+    ],
+    "path": [
+      "historical_expert_annotations",
+      "gpt",
+      "mistakes",
+      0,
+      "reason"
+    ],
+    "before_sha256": "9685e289c7e3b8f9ce43bf156e3ed15734de2478f33566adfe742ad0f49c27b5",
+    "text": "Misstates what a check establishes: checks resolve attempted challenges, while the described search supplies its location. The later assertion that the roll only confirms skill repeats this mistaken account of checks. The answer nevertheless supplies the correct scenario outcome and vicinity explanation."
+  },
+  {
+    "record": [
+      "gemma4-e4b/on",
+      "d20-en-pilot-t04-003",
+      "no_source"
+    ],
+    "path": [
+      "historical_expert_annotations",
+      "sonnet",
+      "mistakes",
+      0,
+      "reason"
+    ],
+    "before_sha256": "c5b61e3707df8f45b00d26fb5a2118fcaabab36d385b90064cf9683eeffac3a0",
+    "text": "The SRD does not say a successful check proves awareness, focus or search location. It makes the described search in the object's vicinity a precondition for the check. An ability check is a creature using talent and training to try to overcome a challenge. This is a loose, backwards framing of the rule. It does not contradict either required ruling."
+  },
+  {
+    "record": [
+      "gemma4-e4b/on",
+      "d20-en-pilot-t09-003",
+      "no_source"
+    ],
+    "path": [
+      "historical_expert_annotations",
+      "sonnet",
+      "mistakes",
+      0,
+      "reason"
+    ],
+    "before_sha256": "f29e9ae7393fee0d543006820f7df83d022b257c149ceff197867a1251c4e69e",
+    "text": "The answer denies Loading's per-action limit and allows two shots solely because there are two attacks. The wrong count and wrong explanation come from this one mistake."
+  },
+  {
+    "record": [
+      "gemma4-e4b/on",
+      "d20-en-pilot-t08-006",
+      "no_source"
+    ],
+    "path": [
+      "historical_expert_annotations",
+      "gpt",
+      "mistakes",
+      0,
+      "reason"
+    ],
+    "before_sha256": "6ac0f47cfd47163f2eb8ced0caae2f64212dbe2d63efa27643bb9d7a5627a116",
+    "text": "The candidate's unconditional-persistence rule produces the wrong Scenario B outcome and its claim that moving, Dodging, and arbitrary utility actions maintain Rage. This false rule replaces the required duration, extension explanation, Scenario B outcome and maintenance advice."
+  },
+  {
+    "record": [
+      "gemma4-e4b/on",
+      "d20-en-pilot-t08-006",
+      "no_source"
+    ],
+    "path": [
+      "historical_expert_annotations",
+      "gpt",
+      "mistakes",
+      1,
+      "reason"
+    ],
+    "before_sha256": "f012efdb84f57cd67a45ad5ef58e33809cb26dd2efb7d7ed0b4c412bc6f8c3d2",
+    "text": "Dara's standard grapple is an Unarmed Strike, expressly defined as a melee attack. Using a saving throw instead of an attack roll does not make it a non-attack."
+  },
+  {
+    "record": [
+      "gemma4-e4b/on",
+      "d20-en-pilot-t08-006",
+      "no_source"
+    ],
+    "path": [
+      "historical_expert_annotations",
+      "sonnet",
+      "mistakes",
+      0,
+      "reason"
+    ],
+    "before_sha256": "1b49c83c44ba9cd312711795779906da0b7848715c94559e5e665fd910a013c0",
+    "text": "Treats Dodge and moving as leaving Rage active into round 3. This flips the Scenario B outcome. Only the three listed methods extend Rage."
+  },
+  {
+    "record": [
+      "gemma4-e4b/on",
+      "d20-en-pilot-t08-006",
+      "no_source"
+    ],
+    "path": [
+      "historical_expert_annotations",
+      "sonnet",
+      "mistakes",
+      1,
+      "reason"
+    ],
+    "before_sha256": "c8b6d05a633291ba3cbed405509c9ce1f6bcc7cf06cca75dac90c2b9ad1f5e15",
+    "text": "Misstates the duration as unconditional persistence and omits the attack-roll mechanism in Scenario A."
+  },
+  {
+    "record": [
+      "gemma4-e4b/on",
+      "d20-en-pilot-t08-006",
+      "no_source"
+    ],
+    "path": [
+      "historical_expert_annotations",
+      "sonnet",
+      "mistakes",
+      2,
+      "reason"
+    ],
+    "before_sha256": "6bb28de9d8bea94b9f5dd410837edcbee4263c6869a68f0868bc0128208ecd75",
+    "text": "Arbitrary actions do not extend Rage. The answer also calls a grapple 'not an attack', but an Unarmed Strike grapple is a melee attack."
+  },
+  {
+    "record": [
+      "gemma4-e4b/on",
+      "d20-en-pilot-t11-004",
+      "no_source"
+    ],
+    "path": [
+      "historical_expert_annotations",
+      "gpt",
+      "mistakes",
+      1,
+      "reason"
+    ],
+    "before_sha256": "a098a2dfbf64739e934c157283b66a9b1ef3cd1497f7ab304c1be700e956a604",
+    "text": "Dispel Magic requires no target saving throw. Higher-level ongoing spells instead require the caster's ability check against DC 10 plus the spell's level. Repeated saving-throw requirements express this same false mechanic."
+  },
+  {
+    "record": [
+      "gemma4-e4b/on",
+      "d20-en-pilot-t11-004",
+      "no_source"
+    ],
+    "path": [
+      "historical_expert_annotations",
+      "gpt",
+      "mistakes",
+      2,
+      "reason"
+    ],
+    "before_sha256": "ef1f8c5f5d575aca68bc7d8c9c83bd6436c6fddb5fbb9536323e59f3778ffbf8",
+    "text": "This incorrectly excludes successful dispelling of Greater Invisibility with a level 3 slot. That spell ends on a successful DC 14 spellcasting-ability check."
+  },
+  {
+    "record": [
+      "gemma4-e4b/on",
+      "d20-en-pilot-t11-004",
+      "no_source"
+    ],
+    "path": [
+      "historical_expert_annotations",
+      "gpt",
+      "mistakes",
+      3,
+      "reason"
+    ],
+    "before_sha256": "fb6ad803699294cfe7ba77c9d1a0aa495ba0de5333aef62d2d1a1d8a17cbb292",
+    "text": "Requiring a roll to end Greater Invisibility with a level 4 slot contradicts the higher-slot automatic-ending rule."
+  },
+  {
+    "record": [
+      "gemma4-e4b/on",
+      "d20-en-pilot-t11-004",
+      "no_source"
+    ],
+    "path": [
+      "historical_expert_annotations",
+      "sonnet",
+      "mistakes",
+      0,
+      "reason"
+    ],
+    "before_sha256": "f460f15d85ee1712eb3d59a3905a5224c0e7eab4e256bbf6365ee237cc12739f",
+    "text": "Haste (level 3) ends automatically with a level 3 slot. The answer requires a check, plus a knight saving throw that Dispel Magic does not use."
+  },
+  {
+    "record": [
+      "gemma4-e4b/on",
+      "d20-en-pilot-t11-004",
+      "no_source"
+    ],
+    "path": [
+      "historical_expert_annotations",
+      "sonnet",
+      "mistakes",
+      1,
+      "reason"
+    ],
+    "before_sha256": "0a084af331307f1a341ef8c6b235d5018f28bd8c06f61dcd7ab5350df52d65ce",
+    "text": "Dispel Magic has no target saving throw. Higher-level spells need the caster's ability check against DC 10 plus the spell's level."
+  },
+  {
+    "record": [
+      "gemma4-e4b/on",
+      "d20-en-pilot-t11-004",
+      "no_source"
+    ],
+    "path": [
+      "historical_expert_annotations",
+      "sonnet",
+      "mistakes",
+      2,
+      "reason"
+    ],
+    "before_sha256": "02ec1d3d89917387cbf4cbfcd124075217bc93bb9db069c2795c6e4b0d2428e8",
+    "text": "With a level 3 slot, Greater Invisibility can end on a successful DC 14 spellcasting-ability check. The answer says it cannot effectively be targeted."
+  },
+  {
+    "record": [
+      "gemma4-e4b/on",
+      "d20-en-pilot-t11-004",
+      "no_source"
+    ],
+    "path": [
+      "historical_expert_annotations",
+      "sonnet",
+      "mistakes",
+      3,
+      "reason"
+    ],
+    "before_sha256": "c33bd450f674b7beec01675de097df72c5a8953c36bed0ded8fd6cf4e7583564",
+    "text": "The caster chooses one creature, and each ongoing spell on it is resolved by level. The caster does not pick a single spell."
+  },
+  {
+    "record": [
+      "gemma4-e4b/on",
+      "d20-en-pilot-t03-001",
+      "supplied_passage"
+    ],
+    "path": [
+      "historical_expert_annotations",
+      "gpt",
+      "mistakes",
+      0,
+      "reason"
+    ],
+    "before_sha256": "3b697a5a1c751f73722bdade7b8d97b02000cf79410ecdde7009442ad0280e6d",
+    "text": "False source attribution: page 184 specifies healing and first aid but omits the explicit Short Rest endpoint found on page 17. The required outcomes are correctly stated."
+  },
+  {
+    "record": [
+      "gemma4-e4b/on",
+      "d20-en-pilot-t03-001",
+      "supplied_passage"
+    ],
+    "path": [
+      "historical_expert_annotations",
+      "sonnet",
+      "mistakes",
+      0,
+      "reason"
+    ],
+    "before_sha256": "46c6724ccd6aab43ff2d28dfbc25ef89f5d8be85c3ba72aff4cc8c1228a1336c",
+    "text": "Minor source-attribution inaccuracy. Page 184 gives only healing and first aid as ways the condition ends, and it does not say the condition ends when the Short Rest ends. Page 17 gives all three. The rules the answer states are correct."
+  },
+  {
+    "record": [
+      "gemma4-e4b/on",
+      "d20-en-pilot-t11-008",
+      "no_source"
+    ],
+    "path": [
+      "historical_expert_annotations",
+      "gpt",
+      "mistakes",
+      1,
+      "reason"
+    ],
+    "before_sha256": "e8900bab6ddc6cd6fdcb38f6e898b3f9e03dd00c34c60d2635a3c7dd188f6b08",
+    "text": "Sanctuary checks specified targeting, not intent or hostility, and permits the targeting creature to proceed after a successful Wisdom save. The accompanying description of targeted immunity misstates the same mechanism."
+  },
+  {
+    "record": [
+      "gemma4-e4b/on",
+      "d20-en-pilot-t11-008",
+      "no_source"
+    ],
+    "path": [
+      "historical_expert_annotations",
+      "gpt",
+      "mistakes",
+      3,
+      "reason"
+    ],
+    "before_sha256": "129ed6602fdf79264465526371219b3dd19dbf405e0963820c486cce5c244a3b",
+    "text": "Web does not inherently damage creatures in its area. It creates difficult terrain, light obscuration, and possible restraint; its damage requires the webs to be exposed to fire. Fireball is a valid damaging-area example."
+  },
+  {
+    "record": [
+      "gemma4-e4b/on",
+      "d20-en-pilot-t11-008",
+      "no_source"
+    ],
+    "path": [
+      "historical_expert_annotations",
+      "sonnet",
+      "mistakes",
+      0,
+      "reason"
+    ],
+    "before_sha256": "43d972c3a53db81d5f09dd366c12df8a2493939f47d27d61e36fdd96ef8136fe",
+    "text": "The warded creature casting a spell ends Sanctuary, whether or not the spell is harmful."
+  },
+  {
+    "record": [
+      "gemma4-e4b/on",
+      "d20-en-pilot-t11-008",
+      "no_source"
+    ],
+    "path": [
+      "historical_expert_annotations",
+      "sonnet",
+      "mistakes",
+      1,
+      "reason"
+    ],
+    "before_sha256": "f257741e32ce2ea781258d9cd053c343d639e745cb2c0079c65308aa46554df3",
+    "text": "Sanctuary has no intent test and grants no immunity. It imposes a Wisdom save on creatures who target the warded creature with an attack roll or damaging spell."
+  },
+  {
+    "record": [
+      "gemma4-e4b/on",
+      "d20-en-pilot-t11-008",
+      "no_source"
+    ],
+    "path": [
+      "historical_expert_annotations",
+      "sonnet",
+      "mistakes",
+      2,
+      "reason"
+    ],
+    "before_sha256": "10b50a23f18e4ce8a850fd6f00157dc82218f124aff66086595e1522893ed394",
+    "text": "Web does not inherently deal damage on casting. Its webs burn for damage only when exposed to fire. Fireball is a valid example."
+  },
+  {
+    "record": [
+      "gemma4-e4b/on",
+      "d20-en-pilot-t10-008",
+      "no_source"
+    ],
+    "path": [
+      "historical_expert_annotations",
+      "gpt",
+      "mistakes",
+      0,
+      "reason"
+    ],
+    "before_sha256": "bf1398e796a68e8b424259fecc5506d378eebad2fe75310da150aea54265ca04",
+    "text": "Wrongly permits a second spell-slot expenditure on the same turn. The candidate cites an available action and slot without explicitly comparing Bonus Action and action allowances."
+  },
+  {
+    "record": [
+      "gemma4-e4b/on",
+      "d20-en-pilot-t10-008",
+      "no_source"
+    ],
+    "path": [
+      "historical_expert_annotations",
+      "gpt",
+      "mistakes",
+      1,
+      "reason"
+    ],
+    "before_sha256": "6885c847aeb5e48efd3de31b8df099214d0e920dc2d8711aaad87249c3b4c79d",
+    "text": "Wrongly permits a second spell-slot expenditure on Ysolde's turn. Its separate statement that Reactions do not consume an action is correct and does not establish an exemption from the slot limit."
+  },
+  {
+    "record": [
+      "gemma4-e4b/on",
+      "d20-en-pilot-t10-008",
+      "no_source"
+    ],
+    "path": [
+      "historical_expert_annotations",
+      "sonnet",
+      "mistakes",
+      0,
+      "reason"
+    ],
+    "before_sha256": "95a148b0c14530d6d417f125d4d826b3f9a85da2f140abd27f7c26628a8d5595",
+    "text": "Allows a second slot-expending spell on the same turn, treating the Magic action and the earlier Bonus Action spell as independent allowances. The rule text excludes this, though the candidate does not explicitly state the bonus-action/action explanation."
+  },
+  {
+    "record": [
+      "gemma4-e4b/on",
+      "d20-en-pilot-t10-008",
+      "no_source"
+    ],
+    "path": [
+      "historical_expert_annotations",
+      "sonnet",
+      "mistakes",
+      1,
+      "reason"
+    ],
+    "before_sha256": "edf227e9e28d0dc7b8f726a970bba379d7fd1be19bf01686fd8d8e58debf63dd",
+    "text": "Allows Shield on her own turn after a slot was already expended, so the limit is effectively not applied to Reactions. The candidate never says reactions are exempt."
+  },
+  {
+    "record": [
+      "gemma4-e4b/on",
+      "d20-en-pilot-t12-007",
+      "no_source"
+    ],
+    "path": [
+      "historical_expert_annotations",
+      "gpt",
+      "mistakes",
+      0,
+      "reason"
+    ],
+    "before_sha256": "094f1a899d99d380e2451318c549676a71499d119def1ca5d81d870bbc7c469e",
+    "text": "Animate Trees is a magical treant action, not a spell requiring a spell slot. The animated tree cannot use it because its inherited stat block expressly excludes that action."
+  },
+  {
+    "record": [
+      "gemma4-e4b/on",
+      "d20-en-pilot-t12-007",
+      "no_source"
+    ],
+    "path": [
+      "historical_expert_annotations",
+      "gpt",
+      "mistakes",
+      1,
+      "reason"
+    ],
+    "before_sha256": "b70c747bfea4868d3f995d265ccf18b6642ce7e50d9e7d7e57f0900571ed4a4c",
+    "text": "The animated trees retain the Treant stat block's Plant creature type; the listed exceptions do not change their type to Construct or make them objects. The SRD describes Plants as sentient vegetation."
+  },
+  {
+    "record": [
+      "gemma4-e4b/on",
+      "d20-en-pilot-t12-007",
+      "no_source"
+    ],
+    "path": [
+      "historical_expert_annotations",
+      "gpt",
+      "mistakes",
+      2,
+      "reason"
+    ],
+    "before_sha256": "2894b2e9ec740504706178ca2d6fad9920ec9e78e9a1e48b33b510a9bf24a22b",
+    "text": "Wrongly keeps the tree animated after it exceeds the separation limit. The answer does not explicitly promise a full day of animation."
+  },
+  {
+    "record": [
+      "gemma4-e4b/on",
+      "d20-en-pilot-t12-007",
+      "no_source"
+    ],
+    "path": [
+      "historical_expert_annotations",
+      "sonnet",
+      "mistakes",
+      0,
+      "reason"
+    ],
+    "before_sha256": "c853c213734567d139a8063e0a87bc01f3d309a1b609277ae761a6dff21b72b2",
+    "text": "The answer keeps the tree animate at 125 feet, past the 120-foot limit. It does not mention a full day, but it wrongly treats separation as leaving the tree animated."
+  },
+  {
+    "record": [
+      "gemma4-e4b/on",
+      "d20-en-pilot-t12-007",
+      "no_source"
+    ],
+    "path": [
+      "historical_expert_annotations",
+      "sonnet",
+      "mistakes",
+      1,
+      "reason"
+    ],
+    "before_sha256": "8ce7677e9266f80b8ba3d1fa4cde6837b554b2f230aa9ceea150a1c379a4c8ab",
+    "text": "The animated trees use the Treant stat block, so they stay Plants, not Constructs. Animate Trees is a 1/Day treant action, not a spell that needs a spell slot. The tree cannot use it because the animated tree 'lacks this action'."
+  },
+  {
+    "record": [
+      "gemma4-e4b/on",
+      "d20-en-pilot-t02-003",
+      "no_source"
+    ],
+    "path": [
+      "historical_expert_annotations",
+      "gpt",
+      "mistakes",
+      2,
+      "reason"
+    ],
+    "before_sha256": "052e814db993eb8385be202d6bcd480a4d6bb3551d649f2557c17a7e1497bb20",
+    "text": "The published ogre has Greatclub and Javelin attacks, with no claw or bite weapon attack. It may also use the general Unarmed Strike rule."
+  },
+  {
+    "record": [
+      "gemma4-e4b/on",
+      "d20-en-pilot-t02-003",
+      "no_source"
+    ],
+    "path": [
+      "historical_expert_annotations",
+      "sonnet",
+      "mistakes",
+      2,
+      "reason"
+    ],
+    "before_sha256": "13d49d88b55492aa00dc00aff24019cc84638ba171a29b2ac689850bab98a213",
+    "text": "The published ogre's listed attacks are Greatclub and Javelin, not claw or bite. A legal Opportunity Attack is one melee attack with a weapon or an Unarmed Strike, taken with a Reaction."
+  },
+  {
+    "record": [
+      "gemma4-e4b/on",
+      "d20-en-pilot-t07-002",
+      "no_source"
+    ],
+    "path": [
+      "historical_expert_annotations",
+      "gpt",
+      "mistakes",
+      1,
+      "reason"
+    ],
+    "before_sha256": "b34797dc6c8a17a02a1e839d695e60de97474227ad86bd66561ad847fddebe2e",
+    "text": "Presented as a source of feat selection, Extra Attack is a false example. It grants two attacks when taking the Attack action, not a feat."
+  },
+  {
+    "record": [
+      "gemma4-e4b/on",
+      "d20-en-pilot-t07-002",
+      "no_source"
+    ],
+    "path": [
+      "historical_expert_annotations",
+      "gpt",
+      "mistakes",
+      2,
+      "reason"
+    ],
+    "before_sha256": "3f2ef79ff8c3bdf770c05c2d8f3b96491a5424db0a16335805a95e29f61187fe",
+    "text": "Variant Human is not an option in the complete published SRD 5.2.1. Its Human instead has Versatile, granting an Origin feat. Species traits can grant feats, but the named example is not a rule option in the requested source."
+  },
+  {
+    "record": [
+      "gemma4-e4b/on",
+      "d20-en-pilot-t07-002",
+      "no_source"
+    ],
+    "path": [
+      "historical_expert_annotations",
+      "sonnet",
+      "mistakes",
+      0,
+      "reason"
+    ],
+    "before_sha256": "f701e6e33d49440d2476f80027a930171af4d21b08635f955d88b401653f6c7e",
+    "text": "False. Wizard level 4 Ability Score Improvement grants the Ability Score Improvement feat or another feat for which Selu qualifies, with no category specified. This one misconception drives the wrong Grappler and Archery verdicts and the wrong reason for the Boon verdict."
+  },
+  {
+    "record": [
+      "gemma4-e4b/on",
+      "d20-en-pilot-t07-002",
+      "no_source"
+    ],
+    "path": [
+      "historical_expert_annotations",
+      "sonnet",
+      "mistakes",
+      1,
+      "reason"
+    ],
+    "before_sha256": "12a4a8b6e0abe2d8f02f601e63659ebe9f4a5d3e8cbb1adcaf925a34052e8e12",
+    "text": "Extra Attack only lets the character attack twice with the Attack action. It grants no feat. Fighter's Ability Score Improvement is the feature that grants a feat."
+  },
+  {
+    "record": [
+      "gemma4-e4b/on",
+      "d20-en-pilot-t07-002",
+      "no_source"
+    ],
+    "path": [
+      "historical_expert_annotations",
+      "sonnet",
+      "mistakes",
+      2,
+      "reason"
+    ],
+    "before_sha256": "2386ccc839ca126c7a262109dd9facc5a3b1c74614a2eee3c7929248724c9c37",
+    "text": "Variant Human is not in SRD 5.2.1. The SRD Human has Versatile, which grants an Origin feat. The 'Race Features' label also does not match the SRD's species terminology."
+  },
+  {
+    "record": [
+      "gemma4-e4b/on",
+      "d20-en-pilot-t05-004",
+      "no_source"
+    ],
+    "path": [
+      "historical_expert_annotations",
+      "gpt",
+      "mistakes",
+      0,
+      "reason"
+    ],
+    "before_sha256": "97c2e1ee4b1f0220f5df90c6d5d21eb41c1772c3e22ca7101bd276d5bfd2c335",
+    "text": "These definitions incorrectly specify two ability checks. Advantage and Disadvantage require two d20 rolls within one check, using the higher or lower die. The selection directions are correct, but the distinction between checks and dice is a mechanical error."
+  },
+  {
+    "record": [
+      "gemma4-e4b/on",
+      "d20-en-pilot-t12-007",
+      "supplied_passage"
+    ],
+    "path": [
+      "historical_expert_annotations",
+      "gpt",
+      "mistakes",
+      0,
+      "reason"
+    ],
+    "before_sha256": "627a07c037bde75ab3348ccce3aff53a4543614ebc90b58301540b9d330d0cc9",
+    "text": "Animate Trees is a magical monster action, not a spell. The complete Treant stat block provides this action without spellcasting or spell characteristics. Repeated references to casting express the same classification mistake."
+  },
+  {
+    "record": [
+      "gemma4-e4b/on",
+      "d20-en-pilot-t12-007",
+      "supplied_passage"
+    ],
+    "path": [
+      "historical_expert_annotations",
+      "sonnet",
+      "mistakes",
+      0,
+      "reason"
+    ],
+    "before_sha256": "b4e35f90d2f8335bde5625fa440cf4441b2372cc9d4f3bb9fe5d8f0fcff1653b",
+    "text": "Animate Trees is a Treant action (a magical ability), not a spell. The Treant entry lists it under Actions and gives it no spell level. Monster spellcasting is a separate feature. The answer's repeated 'spell' and 'cast' wording is one classification error."
+  },
+  {
+    "record": [
+      "gemma4-e4b/on",
+      "d20-en-pilot-t03-009",
+      "no_source"
+    ],
+    "path": [
+      "historical_expert_annotations",
+      "sonnet",
+      "claims",
+      2,
+      "reason"
+    ],
+    "before_sha256": "374c5f46b9198c43b61a5ccc7ea8efb04635a91d208c43203fed9c02cd446e82",
+    "text": "The answer keeps her at 0 HP and alive after the 3 damage, which satisfies the no-death half. It never says she remains Unconscious. Its remark that damage doesn't cause loss of consciousness is confused. It does not say she regains consciousness. The Unconscious half is not established."
+  },
+  {
+    "record": [
+      "gemma4-e4b/on",
+      "d20-en-pilot-t10-008",
+      "supplied_passage"
+    ],
+    "path": [
+      "historical_expert_annotations",
+      "sonnet",
+      "claims",
+      3,
+      "reason"
+    ],
+    "before_sha256": "e1f87ce768b9115244c279edcc34284d3806a8498c857807c043d27a2d254468",
+    "text": "Correct verdict, and it gives the different-turn point (the Reaction occurs on the enemy's turn). It refers to the trigger only loosely, as seeing the enemy cast a spell. It does not address range or components, but it misstates nothing about the trigger, so this is an omission. It also adds the false Reaction-exemption rationale, which prevents full credit. The 12-point level does not apply because a correct different-turn point is present."
+  },
+  {
+    "record": [
+      "gemma4-e4b/on",
+      "d20-en-pilot-t11-006",
+      "no_source"
+    ],
+    "path": [
+      "historical_expert_annotations",
+      "gpt",
+      "mistakes",
+      0,
+      "reason"
+    ],
+    "before_sha256": "f99fe5fcb08ce87370b55c1288208f6b8701b1bc33c1371d0f2c51f17d47e251",
+    "text": "The answer invents prescribed physical impact and displacement effects in place of unlocking one lock. Additional outcomes require GM adjudication. Possible distraction from the actual loud knock is not itself erroneous. It does not assert that both locks unlock."
+  },
+  {
+    "record": [
+      "gemma4-e4b/on",
+      "d20-en-pilot-t11-006",
+      "no_source"
+    ],
+    "path": [
+      "historical_expert_annotations",
+      "gpt",
+      "mistakes",
+      1,
+      "reason"
+    ],
+    "before_sha256": "1ef4716b1bcb55411b9da7105409dd6690d68fb150c7dfc0dfe0da345ed949b0",
+    "text": "Arcane Lock provides no detection, countering, or rebound effect. Knock specifically suppresses it and allows opening and closing. The related general claim that wards deflect incoming magic is the same mistaken explanation. The duration is omitted."
+  },
+  {
+    "record": [
+      "gemma4-e4b/on",
+      "d20-en-pilot-t11-006",
+      "no_source"
+    ],
+    "path": [
+      "historical_expert_annotations",
+      "gpt",
+      "mistakes",
+      2,
+      "reason"
+    ],
+    "before_sha256": "9eccefee2c707b902e132f017f91b7b303467c067180903d14123609d053bf82",
+    "text": "The Arcane Lock casting produces the prescribed loud knock, not a replacement deflection sound. The audibility distance is omitted, and the answer does not call Knock silent."
+  },
+  {
+    "record": [
+      "gemma4-e4b/on",
+      "d20-en-pilot-t11-006",
+      "no_source"
+    ],
+    "path": [
+      "historical_expert_annotations",
+      "sonnet",
+      "mistakes",
+      0,
+      "reason"
+    ],
+    "before_sha256": "5b6e3d9cfa659fd78578bead39644979e027f72891b885a8bbdcbf621dfff3bf",
+    "text": "Knock unlocks, unsticks or unbars the target, and only one lock is unlocked if there are several. It is not a force or impact spell. The dust-dislodging and rattling effects are invented. Outcomes beyond the stated effects are for the GM to adjudicate. The answer does not say both locks are unlocked."
+  },
+  {
+    "record": [
+      "gemma4-e4b/on",
+      "d20-en-pilot-t11-006",
+      "no_source"
+    ],
+    "path": [
+      "historical_expert_annotations",
+      "sonnet",
+      "mistakes",
+      1,
+      "reason"
+    ],
+    "before_sha256": "27ff0af1d3113aca231496158c51304cdec502214ff359d36b34dd7806610e6c",
+    "text": "Arcane Lock has no detect, counter or rebound behavior. Knock suppresses it for 10 minutes, and the door can then be opened and closed. The answer does not say Arcane Lock is permanently dispelled."
+  },
+  {
+    "record": [
+      "gemma4-e4b/on",
+      "d20-en-pilot-t11-006",
+      "no_source"
+    ],
+    "path": [
+      "historical_expert_annotations",
+      "sonnet",
+      "mistakes",
+      2,
+      "reason"
+    ],
+    "before_sha256": "a46ab0a6616b9ffe23e62adc915a7c2def06ea3a3e8ed6e55fc49bab406cff4e",
+    "text": "The door casting still makes the loud knock, audible up to 300 feet. Arcane Lock does not replace it with a deflection sound. The answer does not call Knock silent."
+  },
+  {
+    "record": [
+      "gemma4-e4b/on",
+      "d20-en-pilot-t05-010",
+      "no_source"
+    ],
+    "path": [
+      "historical_expert_annotations",
+      "gpt",
+      "mistakes",
+      0,
+      "reason"
+    ],
+    "before_sha256": "322b96e373ad26e44f5f92528f770bef468b98b283e231da859e1c9bb8188902",
+    "text": "Treating body-language reading as a free observational check permits the prohibited simultaneous combination. The answer omits the required Influence and Search action names. It assigns an action to persuasion and does not generally exempt social scenes from action rules."
+  },
+  {
+    "record": [
+      "gemma4-e4b/on",
+      "d20-en-pilot-t05-010",
+      "no_source"
+    ],
+    "path": [
+      "historical_expert_annotations",
+      "sonnet",
+      "mistakes",
+      0,
+      "reason"
+    ],
+    "before_sha256": "464467c8fd1f5332d676c05b668d9103457ba97d9e9b918d9e7d07aa8c2ea94d",
+    "text": "This merges the price request and the body-language reading into one simultaneous action, which the SRD forbids. Treating Insight as a free ambient check is part of the same mistake. The answer still assigns an action to persuasion and does not say social scenes ignore action rules. Influence and Search are never named."
+  },
+  {
+    "record": [
+      "gemma4-e4b/on",
+      "d20-en-pilot-t06-005",
+      "no_source"
+    ],
+    "path": [
+      "historical_expert_annotations",
+      "sonnet",
+      "mistakes",
+      0,
+      "reason"
+    ],
+    "before_sha256": "2c59695190fe8e35559348f9c21110c796e9a0999c4040ce494d54e6678fa917",
+    "text": "The answer confines the Constitution benefit to future level calculations and denies the retroactive per-attained-level increase. The SRD gives the increase as a general rule that needs no special feature. The \"no change\" conclusion repeats the same mistake."
+  },
+  {
+    "record": [
+      "gemma4-e4b/on",
+      "d20-en-pilot-t03-009",
+      "supplied_passage"
+    ],
+    "path": [
+      "historical_expert_annotations",
+      "gpt",
+      "mistakes",
+      0,
+      "reason"
+    ],
+    "before_sha256": "7bb37c86849a087b96bf033670d4102362ce5bbfa548b36b0f084781e42edb46",
+    "text": "Incorrectly carries forward the two failures already cleared when she became Stable. Losing Stable status does not undo that reset. The candidate does not declare death."
+  },
+  {
+    "record": [
+      "gemma4-e4b/on",
+      "d20-en-pilot-t03-009",
+      "supplied_passage"
+    ],
+    "path": [
+      "historical_expert_annotations",
+      "sonnet",
+      "mistakes",
+      0,
+      "reason"
+    ],
+    "before_sha256": "5f9acc058da5fc7ae987a9c1fe2e531ff177d7299edd57dec660c491818cde69",
+    "text": "This misapplies the reset rule. Becoming Stable already cleared the tally, and losing Stable status does not restore it, so the answer reports 3 failures instead of 1. The answer never says she is dead and has her keep rolling."
+  },
+  {
+    "record": [
+      "gemma4-e4b/on",
+      "d20-en-pilot-t03-009",
+      "supplied_passage"
+    ],
+    "path": [
+      "historical_expert_annotations",
+      "sonnet",
+      "mistakes",
+      1,
+      "reason"
+    ],
+    "before_sha256": "06d55a423e27183752ba9c79dd55fcacb4993836e16e4a2de31066a4a317eed2",
+    "text": "The scenario gives no successes. The answer invents 2 initial successes and keeps them after Stabilization, which reset successes too."
+  },
+  {
+    "record": [
+      "gemma4-e4b/on",
+      "d20-en-pilot-t03-001",
+      "no_source"
+    ],
+    "path": [
+      "historical_expert_annotations",
+      "gpt",
+      "mistakes",
+      1,
+      "reason"
+    ],
+    "before_sha256": "12d82ba18fc2febb52bda372b28c676129dbd8699a0902b31f278644c95084f1",
+    "text": "General grappling gives Grappled, not Restrained. The later Grappled-to-Restrained equivalences repeat this same error."
+  },
+  {
+    "record": [
+      "gemma4-e4b/on",
+      "d20-en-pilot-t03-001",
+      "no_source"
+    ],
+    "path": [
+      "historical_expert_annotations",
+      "gpt",
+      "mistakes",
+      3,
+      "reason"
+    ],
+    "before_sha256": "36f92eeda05908a0bf17d7a1e79d304803ac88289e258556f1a856065a7041f8",
+    "text": "Unconscious does imply Incapacitated, but the asserted scenario outcome is wrong. A knockout leaves 1 HP; an ordinary monster dies at 0 HP unless the GM makes an exception. Death saves are never asserted."
+  },
+  {
+    "record": [
+      "gemma4-e4b/on",
+      "d20-en-pilot-t03-001",
+      "no_source"
+    ],
+    "path": [
+      "historical_expert_annotations",
+      "sonnet",
+      "mistakes",
+      1,
+      "reason"
+    ],
+    "before_sha256": "a5af9965f288f997e13bdae6ea2e98d6102a302d48fa3c498f9f964ddb74908a",
+    "text": "A successful grapple gives the Grappled condition, not Restrained."
+  },
+  {
+    "record": [
+      "gemma4-e4b/on",
+      "d20-en-pilot-t03-001",
+      "no_source"
+    ],
+    "path": [
+      "historical_expert_annotations",
+      "sonnet",
+      "mistakes",
+      2,
+      "reason"
+    ],
+    "before_sha256": "cc606b7750c3e635ded7301aa75fdfc805e5553b785800542e2d4cf82f7df27b",
+    "text": "Restrained gives Speed 0, Advantage on attacks against the creature, Disadvantage on its own attack rolls, and Disadvantage on Dexterity saves. It does not impose Incapacitated or bar spellcasting or ranged attacks."
+  },
+  {
+    "record": [
+      "gemma4-e4b/on",
+      "d20-en-pilot-t03-001",
+      "no_source"
+    ],
+    "path": [
+      "historical_expert_annotations",
+      "sonnet",
+      "mistakes",
+      3,
+      "reason"
+    ],
+    "before_sha256": "87fdca2557c4cd887dc49b87d575e43276339529b3fe774774ee67607edfb750",
+    "text": "The capture option leaves the bandit at 1 HP and Unconscious. The answer leaves it at 0 HP, where an ordinary monster dies unless the GM rules otherwise. The answer never asserts death saves."
+  },
+  {
+    "record": [
+      "gemma4-e4b/on",
+      "d20-en-pilot-t01-003",
+      "no_source"
+    ],
+    "path": [
+      "historical_expert_annotations",
+      "gpt",
+      "mistakes",
+      0,
+      "reason"
+    ],
+    "before_sha256": "8d66b8219eb86525e97a275399b4b4e62cddc3217098e6d422314cf3d15f69eb",
+    "text": "Willingness permits choosing to fail the required save without rolling; it does not negate the save through an inference about resistance. The no-roll procedure is correct, but the explanation is false."
+  },
+  {
+    "record": [
+      "gemma4-e4b/on",
+      "d20-en-pilot-t01-003",
+      "no_source"
+    ],
+    "path": [
+      "historical_expert_annotations",
+      "sonnet",
+      "mistakes",
+      0,
+      "reason"
+    ],
+    "before_sha256": "3156231fedf6339514a1cbea1a405c57138026fac87fde80bb11e59638f2d6d3",
+    "text": "The SRD does not say willingness cancels the saving throw as a matter of its purpose. It says a creature that doesn't want to resist can choose to fail the save without rolling. The answer misdescribes the mechanism, but gives the correct no-roll outcome."
+  },
+  {
+    "record": [
+      "gemma4-e4b/on",
+      "d20-en-pilot-t02-003",
+      "supplied_passage"
+    ],
+    "path": [
+      "historical_expert_annotations",
+      "gpt",
+      "mistakes",
+      0,
+      "reason"
+    ],
+    "before_sha256": "91b6459b8442147bcb57c22ee2fba8ccd418d5be8b5f85cbf67b81eecd4368a9",
+    "text": "The false wizard ruling and denial of the teleportation exception are one underlying mistake. Repeated permission to attack the wizard does not create additional mistakes. The answer expressly excludes the cleric."
+  },
+  {
+    "record": [
+      "gemma4-e4b/on",
+      "d20-en-pilot-t02-003",
+      "supplied_passage"
+    ],
+    "path": [
+      "historical_expert_annotations",
+      "sonnet",
+      "mistakes",
+      0,
+      "reason"
+    ],
+    "before_sha256": "c4ac89b54893e1ea6bc121b63076a54d102e2b65536894a372f48bb03d3aa71c",
+    "text": "The answer wrongly says the wizard provokes. Teleportation never provokes. The answer excludes the cleric. Repeated permission to attack the wizard is the same mistake."
+  },
+  {
+    "record": [
+      "qwen3.5-4b/off",
+      "d20-en-pilot-t07-002",
+      "supplied_passage"
+    ],
+    "path": [
+      "expert_annotation",
+      "evidence_findings",
+      4,
+      "reason"
+    ],
+    "before_sha256": "8d0f826bf81799c43cf6f121dc1ebce0d10eae54f9ab80fadef3308d5e2ddeb9",
+    "text": "War Caster does not appear in the complete SRD or supplied passages."
+  },
+  {
+    "record": [
+      "qwen3.5-4b/off",
+      "d20-en-pilot-t05-010",
+      "supplied_passage"
+    ],
+    "path": [
+      "expert_annotation",
+      "evidence_findings",
+      4,
+      "reason"
+    ],
+    "before_sha256": "3fa7991a3390a64a70ae82cf1319e711e62c1662bb2892a47bb9d8728109a15e",
+    "text": "The provided page reference identifies the SRD. The rule itself is verified."
+  },
+  {
+    "record": [
+      "qwen3.5-4b/off",
+      "d20-en-pilot-t05-010",
+      "no_source"
+    ],
+    "path": [
+      "expert_annotation",
+      "evidence_findings",
+      3,
+      "reason"
+    ],
+    "before_sha256": "8a2243fcc697d8eff84ced309e3987c172fd7191f862d11126ed7f31927851b5",
+    "text": "Action Surge grants an additional action. No Rapid Reposition feat appears in the complete SRD."
+  },
+  {
+    "record": [
+      "qwen3.5-4b/off",
+      "d20-en-pilot-t05-010",
+      "no_source"
+    ],
+    "path": [
+      "expert_annotation",
+      "evidence_findings",
+      5,
+      "reason"
+    ],
+    "before_sha256": "7dcfa27d2822e35df5574777e7abea15521ee8aad565faf8fb19f9b1f0bbf108",
+    "text": "The SRD specifies one action on a turn and distinguishes turns from rounds."
+  },
+  {
+    "record": [
+      "qwen3.5-4b/off",
+      "d20-en-pilot-t01-003",
+      "no_source"
+    ],
+    "path": [
+      "expert_annotation",
+      "evidence_findings",
+      3,
+      "reason"
+    ],
+    "before_sha256": "8aa12d008f797a0eb2be1ae52d70dcae5dd804e4c9dcb46d3f8a0d7726252221",
+    "text": "The SRD places these mechanics in Playing the Game."
+  },
+  {
+    "record": [
+      "qwen3.5-4b/on",
+      "d20-en-pilot-t04-003",
+      "no_source"
+    ],
+    "path": [
+      "expert_annotation",
+      "evidence_findings",
+      2,
+      "reason"
+    ],
+    "before_sha256": "d9f2258ae337abce53d8083fea1e2af8d87a1d85a797f9c2e1071557ed02eb5d",
+    "text": "The SRD supports the substantive rule but does not contain this purported quotation or heading."
+  },
+  {
+    "record": [
+      "qwen3.5-4b/on",
+      "d20-en-pilot-t04-003",
+      "no_source"
+    ],
+    "path": [
+      "expert_annotation",
+      "evidence_findings",
+      3,
+      "reason"
+    ],
+    "before_sha256": "621422cfbb353a2f15b78738c1a7baf8f2a94604dc476db22a10bb8ec7afa9a0",
+    "text": "The substantive vicinity requirement is explicit in the SRD."
+  },
+  {
+    "record": [
+      "qwen3.5-4b/on",
+      "d20-en-pilot-t08-006",
+      "no_source"
+    ],
+    "path": [
+      "expert_annotation",
+      "evidence_findings",
+      2,
+      "reason"
+    ],
+    "before_sha256": "d913e7d873d57aa29b0c9f09bae13a1c5942a93d16620833e869d353c3b7483b",
+    "text": "The weapon-based maintenance explanation contradicts the SRD. Attacking is optional because other listed extension methods exist."
+  },
+  {
+    "record": [
+      "qwen3.5-4b/on",
+      "d20-en-pilot-t01-003",
+      "no_source"
+    ],
+    "path": [
+      "expert_annotation",
+      "evidence_findings",
+      2,
+      "reason"
+    ],
+    "before_sha256": "0a49207d174ddac31d4a8b5fc17ebad82ebff5752b4cddeb534ecfafe4f0b041",
+    "text": "SRD pages 173–174 contain spells; the relevant rule is on page 7."
+  },
+  {
+    "record": [
+      "granite4.2-8b/on",
+      "d20-en-pilot-t06-005",
+      "no_source"
+    ],
+    "path": [
+      "expert_annotation",
+      "mistakes",
+      0,
+      "reason"
+    ],
+    "before_sha256": "ca56600f2c6d4ef06d1232ccc68cd5aae92d08e82ecb58f620111197c5b38fca",
+    "text": "The Constitution adjustment rule applies to each attained level. The repeated claims denying this adjustment give the opposite ruling."
+  },
+  {
+    "record": [
+      "granite4.2-8b/on",
+      "d20-en-pilot-t06-005",
+      "no_source"
+    ],
+    "path": [
+      "expert_annotation",
+      "evidence_findings",
+      3,
+      "reason"
+    ],
+    "before_sha256": "c6a356851ab364c3125716fe10f4fce4b4aeeeda1bf91d7a22176fb6ae7ff2be",
+    "text": "This quotation asserts the opposite of the SRD Constitution adjustment rule."
+  },
+  {
+    "record": [
+      "lfm2.5-8b-a1b/native",
+      "d20-en-pilot-t04-003",
+      "no_source"
+    ],
+    "path": [
+      "expert_annotation",
+      "evidence_findings",
+      4,
+      "reason"
+    ],
+    "before_sha256": "1a04baa4950ad01a9a074626029a57ea840e993e35534bbd50e485272b82906a",
+    "text": "The cited section and quoted sentence are not the SRD's relevant passage. The authoritative SRD rule is Finding Hidden Objects on physical page 12; physical page 27 contains trinkets."
+  },
+  {
+    "record": [
+      "qwen3.5-9b/off",
+      "d20-en-pilot-t05-004",
+      "no_source"
+    ],
+    "path": [
+      "expert_annotation",
+      "evidence_findings",
+      7,
+      "reason"
+    ],
+    "before_sha256": "2407062cd5d8c8afc257b820e961feba67b839dbf785fdf2fe317e9b4510765b",
+    "text": null
+  },
+  {
+    "record": [
+      "qwen3.5-9b/on",
+      "d20-en-pilot-t04-003",
+      "no_source"
+    ],
+    "path": [
+      "expert_annotation",
+      "evidence_findings",
+      0,
+      "reason"
+    ],
+    "before_sha256": "a1e92e402edac9791de064a72802ecd610a35f7938740b189c39f146e8a63b8d",
+    "text": "This is not the SRD 5.2.1 definition or an exact quotation from it. Searching for concealed objects is nevertheless a valid Search use, so the inaccurate quotation does not introduce a material false rule for this scenario."
+  },
+  {
+    "record": [
+      "qwen3.5-9b/on",
+      "d20-en-pilot-t09-003",
+      "no_source"
+    ],
+    "path": [
+      "expert_annotation",
+      "evidence_findings",
+      2,
+      "reason"
+    ],
+    "before_sha256": "b88c8b6a587a09b1c68e675520e217d31f4098f7854ae1261a07ebd78c556a43",
+    "text": "The Rogue attribution is incorrect. Crossbow Expert does not appear in the complete SRD."
+  },
+  {
+    "record": [
+      "granite4.2-30b/on",
+      "d20-en-pilot-t07-009",
+      "supplied_passage"
+    ],
+    "path": [
+      "expert_annotation",
+      "evidence_findings",
+      2,
+      "reason"
+    ],
+    "before_sha256": "acd13f36d9006b6e23907602b12c65f9caa3e8e93fed044b6b96ea281c87d1dc",
+    "text": "The SRD independently establishes successive rounds and turns."
+  },
+  {
+    "record": [
+      "granite4.2-30b/on",
+      "d20-en-pilot-t03-009",
+      "no_source"
+    ],
+    "path": [
+      "expert_annotation",
+      "evidence_findings",
+      4,
+      "reason"
+    ],
+    "before_sha256": "d3003a0a77fb94fcc6a93b20e86e5a4e8cf68d7438283c62fa6faeaacbeaa023",
+    "text": "As a statement of the rule, this overlooks becoming Stable as another way to stop saves."
+  },
+  {
+    "record": [
+      "qwen3.8-27b/off",
+      "d20-en-pilot-t07-002",
+      "no_source"
+    ],
+    "path": [
+      "expert_annotation",
+      "evidence_findings",
+      4,
+      "reason"
+    ],
+    "before_sha256": "43e4a2f98a914f9b2ba1f077dceb6a4dbf4e138c58860038ffad4dc97d582a01",
+    "text": "Martial Adept does not appear in the complete SRD."
+  },
+  {
+    "record": [
+      "qwen3.8-27b/off",
+      "d20-en-pilot-t06-005",
+      "no_source"
+    ],
+    "path": [
+      "expert_annotation",
+      "evidence_findings",
+      2,
+      "reason"
+    ],
+    "before_sha256": "51175a37af39e842c704ed31a76e0d16099731ab9302ea18d81c01942b7aa194",
+    "text": "Tough is absent from the complete SRD feat descriptions. Its absence does not establish that the assertion is false."
+  },
+  {
+    "record": [
+      "qwen3.8-27b/off",
+      "d20-en-pilot-t01-003",
+      "no_source"
+    ],
+    "path": [
+      "expert_annotation",
+      "evidence_findings",
+      4,
+      "reason"
+    ],
+    "before_sha256": "03ca9bbfe769a8aa9973089ad5d0205d3ee4d4ba8a2e2c412e068d7298a33d34",
+    "text": "The Resilient feat is not included in the complete SRD."
+  },
+  {
+    "record": [
+      "qwen3.8-27b/on",
+      "d20-en-pilot-t05-004",
+      "no_source"
+    ],
+    "path": [
+      "expert_annotation",
+      "evidence_findings",
+      3,
+      "reason"
+    ],
+    "before_sha256": "3aba53a221964738035005009f1fed64494fabb1d213b1023ad63462001e4e67",
+    "text": "The claim that the attitude effects are absent from the SRD is contradicted by its rules."
+  },
+  {
+    "record": [
+      "gemma4-26b-a4b/on",
+      "d20-en-pilot-t06-005",
+      "no_source"
+    ],
+    "path": [
+      "expert_annotation",
+      "evidence_findings",
+      4,
+      "reason"
+    ],
+    "before_sha256": "8aadd28c7fdb63b32f0579cb5516ee8abf7d8f149f85d1f16a1f971f7f61e7ea",
+    "text": "The claimed absence from the SRD is false."
+  },
+  {
+    "record": [
+      "glm4.7-flash/off",
+      "d20-en-pilot-t08-006",
+      "supplied_passage"
+    ],
+    "path": [
+      "expert_annotation",
+      "mistakes",
+      6,
+      "reason"
+    ],
+    "before_sha256": "2c5a0a24fc6e294bd84273b64682fe746f05d853d3e790a9a395c60ba4ab70e0",
+    "text": "Rage's Duration feature governs its duration. The SRD's Surprise rule concerns Initiative and supplies no Rage termination rule."
+  },
+  {
+    "record": [
+      "k2-horizon-3.7b/low",
+      "d20-en-pilot-t07-009",
+      "supplied_passage"
+    ],
+    "path": [
+      "expert_annotation",
+      "uncertainty_flags",
+      0
+    ],
+    "before_sha256": "0d240e21de7453113fb15fcbc5dd35f8af065aeb63c284cb89a1e9c0d79ebb6c",
+    "text": null
+  },
+  {
+    "record": [
+      "qwen3.5-4b/off",
+      "d20-en-pilot-t07-002",
+      "supplied_passage"
+    ],
+    "path": [
+      "expert_annotation",
+      "uncertainty_flags",
+      0
+    ],
+    "before_sha256": "d9e59ce61dcdffc040a2e2c83b1602eefef1f3e725f3888696043520ae4f8fb4",
+    "text": null
+  },
+  {
+    "record": [
+      "qwen3.5-4b/off",
+      "d20-en-pilot-t05-010",
+      "no_source"
+    ],
+    "path": [
+      "expert_annotation",
+      "uncertainty_flags",
+      0
+    ],
+    "before_sha256": "52e079ef492f268906d4a80124895654f69a788d3ee3ea5cf295d9152f45fb20",
+    "text": null
+  },
+  {
+    "record": [
+      "qwen3.5-4b/on",
+      "d20-en-pilot-t04-003",
+      "no_source"
+    ],
+    "path": [
+      "expert_annotation",
+      "uncertainty_flags",
+      0
+    ],
+    "before_sha256": "0813ddee9ab3ee4cbbe12d89a7e8e612788ad35db3957c70a71e079d69c4ba84",
+    "text": null
+  },
+  {
+    "record": [
+      "qwen3.5-4b/on",
+      "d20-en-pilot-t11-008",
+      "no_source"
+    ],
+    "path": [
+      "expert_annotation",
+      "uncertainty_flags",
+      0
+    ],
+    "before_sha256": "852ccf899a1faaea88194e6e6c290498d48d55cae837f3fc6e77cd9dd503231b",
+    "text": null
+  },
+  {
+    "record": [
+      "qwen3.5-4b/on",
+      "d20-en-pilot-t12-007",
+      "no_source"
+    ],
+    "path": [
+      "expert_annotation",
+      "uncertainty_flags",
+      0
+    ],
+    "before_sha256": "91fa028764c424b0bb3441dbf252b61c0e09513c7134ffc13a833f87078ab2f0",
+    "text": null
+  },
+  {
+    "record": [
+      "qwen3.5-4b/on",
+      "d20-en-pilot-t07-002",
+      "no_source"
+    ],
+    "path": [
+      "expert_annotation",
+      "uncertainty_flags",
+      0
+    ],
+    "before_sha256": "dc210917381cfae9dee97997925d9432c28f2cef8ab894530babd39a2f47592c",
+    "text": null
+  },
+  {
+    "record": [
+      "qwen3.5-4b/on",
+      "d20-en-pilot-t11-006",
+      "no_source"
+    ],
+    "path": [
+      "expert_annotation",
+      "uncertainty_flags",
+      0
+    ],
+    "before_sha256": "d4c632873caeec123c98728796c459a617f3be2ab591846e7149a5b6333be034",
+    "text": null
+  },
+  {
+    "record": [
+      "granite4.2-8b/on",
+      "d20-en-pilot-t10-008",
+      "supplied_passage"
+    ],
+    "path": [
+      "expert_annotation",
+      "uncertainty_flags",
+      0
+    ],
+    "before_sha256": "af66cec91ddb895233156ac17de86f082155e10a87a0fd2edd49c7f236d0c765",
+    "text": null
+  },
+  {
+    "record": [
+      "granite4.2-8b/off",
+      "d20-en-pilot-t10-008",
+      "supplied_passage"
+    ],
+    "path": [
+      "expert_annotation",
+      "uncertainty_flags",
+      0
+    ],
+    "before_sha256": "ec30247fa3b86a64e529c9410824409ed12490a247e1e929a269cec08376326f",
+    "text": null
+  },
+  {
+    "record": [
+      "qwen3.5-9b/off",
+      "d20-en-pilot-t09-003",
+      "supplied_passage"
+    ],
+    "path": [
+      "expert_annotation",
+      "uncertainty_flags",
+      0
+    ],
+    "before_sha256": "f82d43bed8a38e43e620464e80718c753c0a2f418f2a2be44396fcfe6e0cab89",
+    "text": null
+  },
+  {
+    "record": [
+      "qwen3.5-9b/off",
+      "d20-en-pilot-t05-004",
+      "no_source"
+    ],
+    "path": [
+      "expert_annotation",
+      "uncertainty_flags",
+      0
+    ],
+    "before_sha256": "5255ba64dddb5af87a7771de6e2905dcaa38bc022edc7beb8baf519304fe4388",
+    "text": null
+  },
+  {
+    "record": [
+      "qwen3.5-9b/off",
+      "d20-en-pilot-t06-005",
+      "no_source"
+    ],
+    "path": [
+      "expert_annotation",
+      "uncertainty_flags",
+      0
+    ],
+    "before_sha256": "696852e5de3f37627489e83894d6a25e40f2096a145e82529d594e35aa3f9c88",
+    "text": null
+  },
+  {
+    "record": [
+      "qwen3.5-9b/on",
+      "d20-en-pilot-t09-003",
+      "no_source"
+    ],
+    "path": [
+      "expert_annotation",
+      "uncertainty_flags",
+      0
+    ],
+    "before_sha256": "40944ec7e2fa5b9d6fb3b896f65694adf5517cd3f604092f5b61f49e5942467e",
+    "text": null
+  },
+  {
+    "record": [
+      "qwen3.5-9b/on",
+      "d20-en-pilot-t06-005",
+      "no_source"
+    ],
+    "path": [
+      "expert_annotation",
+      "uncertainty_flags",
+      0
+    ],
+    "before_sha256": "ff924ff86d071e7aedb83cb93e181fe14c3dc1ee19441d54a4b64589a553bc8c",
+    "text": null
+  },
+  {
+    "record": [
+      "qwen3.5-9b/on",
+      "d20-en-pilot-t07-009",
+      "no_source"
+    ],
+    "path": [
+      "expert_annotation",
+      "uncertainty_flags",
+      0
+    ],
+    "before_sha256": "421b5f14d8b1d217f75a921f3c2ce26676bf28d798812a5f5fd48bb662661885",
+    "text": null
+  },
+  {
+    "record": [
+      "granite4.2-30b/on",
+      "d20-en-pilot-t03-009",
+      "no_source"
+    ],
+    "path": [
+      "expert_annotation",
+      "uncertainty_flags",
+      0
+    ],
+    "before_sha256": "092c236c57b34187f4f82641c61cac8895a0ffb37148e2dc344eadc64a5d081c",
+    "text": null
+  },
+  {
+    "record": [
+      "granite4.2-30b/off",
+      "d20-en-pilot-t03-009",
+      "no_source"
+    ],
+    "path": [
+      "expert_annotation",
+      "uncertainty_flags",
+      0
+    ],
+    "before_sha256": "82842e21648235415bb7388f06ca9b98421a0aa9912eaba9364815509a1f584e",
+    "text": null
+  },
+  {
+    "record": [
+      "qwen3.8-27b/off",
+      "d20-en-pilot-t11-008",
+      "no_source"
+    ],
+    "path": [
+      "expert_annotation",
+      "uncertainty_flags",
+      0
+    ],
+    "before_sha256": "c3516826e43d9b87e26a68c7a5f3c505aa0a4c0ed4027253dfe8cc88576ffcc3",
+    "text": null
+  },
+  {
+    "record": [
+      "qwen3.8-27b/off",
+      "d20-en-pilot-t11-008",
+      "no_source"
+    ],
+    "path": [
+      "expert_annotation",
+      "uncertainty_flags",
+      1
+    ],
+    "before_sha256": "10d599d9004382ac3ed0069fea6ea9a376147ba01848872f2f1c6901a8cfd85e",
+    "text": null
+  },
+  {
+    "record": [
+      "qwen3.8-27b/off",
+      "d20-en-pilot-t07-002",
+      "no_source"
+    ],
+    "path": [
+      "expert_annotation",
+      "uncertainty_flags",
+      0
+    ],
+    "before_sha256": "d3490dd011ee33700088a54c7a196c50dccc39782f2417794c105542925892a3",
+    "text": null
+  },
+  {
+    "record": [
+      "qwen3.8-27b/off",
+      "d20-en-pilot-t01-003",
+      "no_source"
+    ],
+    "path": [
+      "expert_annotation",
+      "uncertainty_flags",
+      0
+    ],
+    "before_sha256": "ad40fd6523ac38e5eb528e4cdd4c33ce56d8690fd2832ccdaee28303da965301",
+    "text": null
+  },
+  {
+    "record": [
+      "qwen3.8-27b/on",
+      "d20-en-pilot-t05-004",
+      "no_source"
+    ],
+    "path": [
+      "expert_annotation",
+      "uncertainty_flags",
+      0
+    ],
+    "before_sha256": "3985ed1dcfc4a02f5456820c5c46981c1499ec0fdf5de18828ba91c23d9aa20a",
+    "text": null
+  },
+  {
+    "record": [
+      "qwen3.8-27b/on",
+      "d20-en-pilot-t03-009",
+      "no_source"
+    ],
+    "path": [
+      "expert_annotation",
+      "uncertainty_flags",
+      0
+    ],
+    "before_sha256": "6ada2b54d60cabfaaa0591fa3e2747f8dc5f7f56767b64a05715b1307319afd8",
+    "text": null
+  },
+  {
+    "record": [
+      "qwen3.8-27b/on",
+      "d20-en-pilot-t01-003",
+      "no_source"
+    ],
+    "path": [
+      "expert_annotation",
+      "uncertainty_flags",
+      0
+    ],
+    "before_sha256": "055741014fb6b1d4630e5ade8443030552abcad462148c4360bb099cc59d8c42",
+    "text": null
+  },
+  {
+    "record": [
+      "gemma4-26b-a4b/off",
+      "d20-en-pilot-t07-002",
+      "no_source"
+    ],
+    "path": [
+      "expert_annotation",
+      "uncertainty_flags",
+      0
+    ],
+    "before_sha256": "1889ac7de8a9063512652170b61d04602674892cabaad69299bdb00910deef91",
+    "text": null
+  },
+  {
+    "record": [
+      "gemma4-26b-a4b/on",
+      "d20-en-pilot-t06-005",
+      "no_source"
+    ],
+    "path": [
+      "expert_annotation",
+      "uncertainty_flags",
+      0
+    ],
+    "before_sha256": "91c6a3c5fd2601f1ec866fccfb37fdc6815cd6f6afbebb38cd87cab85409ed06",
+    "text": null
+  },
+  {
+    "record": [
+      "glm4.7-flash/off",
+      "d20-en-pilot-t12-007",
+      "no_source"
+    ],
+    "path": [
+      "expert_annotation",
+      "uncertainty_flags",
+      0
+    ],
+    "before_sha256": "9b1702a25c6790255524d2ca16f15fa3d94d3b7ca9ab7cf05888f1414d9c6154",
+    "text": null
+  },
+  {
+    "record": [
+      "muse-glimmer/low",
+      "d20-en-pilot-t03-001",
+      "no_source"
+    ],
+    "path": [
+      "expert_annotation",
+      "uncertainty_flags",
+      0
+    ],
+    "before_sha256": "ca954ea8390a5f0fe567885fb590af6c23afcf21ec1386bb275768ed125f017f",
+    "text": null
+  },
+  {
+    "record": [
+      "lfm2.5-2.6b/native",
+      "d20-en-pilot-t07-002",
+      "no_source"
+    ],
+    "path": [
+      "expert_annotation",
+      "uncertainty_flags",
+      0
+    ],
+    "before_sha256": "2f2b36b42544e5acb93f39c101e3c1e3ad4daf4ff5607b08ae7008e7cb9a29b7",
+    "text": "“Fighting Style feat again” could mean choosing a different Fighting Style feat or repeating Defense. The Archery denial is explicit."
+  },
+  {
+    "record": [
+      "gemma4-e2b/off",
+      "d20-en-pilot-t03-001",
+      "no_source"
+    ],
+    "path": [
+      "expert_annotation",
+      "uncertainty_flags",
+      0
+    ],
+    "before_sha256": "6949b6e3388f57cbc1ac90b563618b2bb41613da6fbc93b15340133b0866946a",
+    "text": "The glossary entry on page 184 omits the explicit Short Rest endpoint stated on page 17. Page 17 directly establishes that endpoint."
+  },
+  {
+    "record": [
+      "k2-horizon-3.7b/low",
+      "d20-en-pilot-t03-001",
+      "no_source"
+    ],
+    "path": [
+      "expert_annotation",
+      "uncertainty_flags",
+      0
+    ],
+    "before_sha256": "37e3d87cc6bca855a1cd1ee3461c87d58a33cb616c05df67149e3809ce10b331",
+    "text": "Page 184 omits the explicit Short Rest endpoint given on page 17. The candidate omits the endpoint under either account."
+  },
+  {
+    "record": [
+      "granite4.2-3b/off",
+      "d20-en-pilot-t03-001",
+      "no_source"
+    ],
+    "path": [
+      "expert_annotation",
+      "uncertainty_flags",
+      0
+    ],
+    "before_sha256": "7a01f91b70d0f5f26b33d8180b72838835150713fd3d552670103744b39159a8",
+    "text": "The published knockout entries differ: page 17 explicitly ends unconsciousness at Short Rest completion, while page 184 omits that endpoint. The candidate omits the recovery rules."
+  },
+  {
+    "record": [
+      "granite4.2-3b/on",
+      "d20-en-pilot-t03-001",
+      "no_source"
+    ],
+    "path": [
+      "expert_annotation",
+      "uncertainty_flags",
+      0
+    ],
+    "before_sha256": "747b7f9439e734dfcf922221784a40fb6e485bd63da7d3e4a375347e8d4395ce",
+    "text": "Page 184's knockout entry omits the Short Rest endpoint explicitly stated on page 17. The candidate supplies neither knockout nor Short Rest recovery."
+  },
+  {
+    "record": [
+      "granite4.2-8b/on",
+      "d20-en-pilot-t07-002",
+      "no_source"
+    ],
+    "path": [
+      "expert_annotation",
+      "uncertainty_flags",
+      0
+    ],
+    "before_sha256": "362bac17d1cd3ce3e8faf451429df09766ea974164bc9944429ea479a538c95e",
+    "text": "The grapple parenthetical does not identify whether it describes the grappler or the target."
+  },
+  {
+    "record": [
+      "granite4.2-8b/on",
+      "d20-en-pilot-t03-001",
+      "no_source"
+    ],
+    "path": [
+      "expert_annotation",
+      "uncertainty_flags",
+      0
+    ],
+    "before_sha256": "bcc55fb3b8c15d8bcd4e4a4748a98517ec68d6e0474190d32746d0ccc201a13b",
+    "text": "The glossary knockout entry on page 184 omits the explicit end-of-Short-Rest endpoint stated on page 17. Page 17 establishes that endpoint."
+  },
+  {
+    "record": [
+      "granite4.2-8b/off",
+      "d20-en-pilot-t11-008",
+      "no_source"
+    ],
+    "path": [
+      "expert_annotation",
+      "uncertainty_flags",
+      0
+    ],
+    "before_sha256": "d7957e8489964b52cccca1158573f001488ad5cd9e25e755806ada15d561f4e0",
+    "text": "Voluntary dismissal is available if the warded creature is also Sanctuary's eligible caster; the scenario does not identify the caster."
+  },
+  {
+    "record": [
+      "lfm2.5-8b-a1b/native",
+      "d20-en-pilot-t03-001",
+      "no_source"
+    ],
+    "path": [
+      "expert_annotation",
+      "uncertainty_flags",
+      0
+    ],
+    "before_sha256": "a0b3df6fc9bc7588ed3e306f67f659bc70b591e55cebf156bebb39b4ef70bdd4",
+    "text": "Page 184 omits the Short Rest completion endpoint expressly stated on page 17. The candidate supplies neither version's recovery rules."
+  },
+  {
+    "record": [
+      "lfm2.5-8b-a1b/native",
+      "d20-en-pilot-t01-003",
+      "supplied_passage"
+    ],
+    "path": [
+      "expert_annotation",
+      "uncertainty_flags",
+      0
+    ],
+    "before_sha256": "efbd3e34c276829f93a081c383f15f9b67826387733117272578fc2e85b397aa",
+    "text": "The unspecified effect prevents verifying whether its subsequent resolution requires other rolls or adjustments."
+  },
+  {
+    "record": [
+      "granite4.2-30b/on",
+      "d20-en-pilot-t03-001",
+      "supplied_passage"
+    ],
+    "path": [
+      "expert_annotation",
+      "uncertainty_flags",
+      0
+    ],
+    "before_sha256": "34eb4d5e4591cc6e829e73e13250caa30ea8f70a83e7868c6414a224dd1db6c0",
+    "text": "The published entries differ: page 17 expressly ends unconsciousness at Short Rest completion, while page 184 lists only HP regain and first aid. No verified rule establishes the candidate's claimed glossary precedence."
+  },
+  {
+    "record": [
+      "qwen3.8-27b/off",
+      "d20-en-pilot-t07-002",
+      "no_source"
+    ],
+    "path": [
+      "expert_annotation",
+      "uncertainty_flags",
+      1
+    ],
+    "before_sha256": "b1315af7931ba5494d4baed602867402e0db904c79becb17cf64a147abc23e24",
+    "text": "The candidate's general statements about current-class prerequisites and exclusive feat acquisition are ambiguous."
+  },
+  {
+    "record": [
+      "qwen3.8-27b/on",
+      "d20-en-pilot-t03-001",
+      "no_source"
+    ],
+    "path": [
+      "expert_annotation",
+      "uncertainty_flags",
+      0
+    ],
+    "before_sha256": "a3a73185676c4f77beb70df8bcf1217af06603cf73a86200d0b32cc021dc9c49",
+    "text": "The published knockout entries differ: page 184 omits the explicit Short Rest completion endpoint stated on page 17. Page 17 directly establishes the required endpoint."
+  },
+  {
+    "record": [
+      "gemma4-26b-a4b/off",
+      "d20-en-pilot-t03-001",
+      "no_source"
+    ],
+    "path": [
+      "expert_annotation",
+      "uncertainty_flags",
+      0
+    ],
+    "before_sha256": "cc390241e906bf9451acad0070ff485e531948ab9362ae54c5ef2d43a676abfb",
+    "text": "Page 184 omits the explicit Short Rest endpoint given on page 17. Page 17 establishes that endpoint."
+  },
+  {
+    "record": [
+      "gemma4-26b-a4b/on",
+      "d20-en-pilot-t03-001",
+      "no_source"
+    ],
+    "path": [
+      "expert_annotation",
+      "uncertainty_flags",
+      0
+    ],
+    "before_sha256": "1e20a91e4527bb0de581c823ec65aa20de817eb8041ec748e58ed2c2fb81e7d1",
+    "text": "The glossary knockout entry on page 184 omits the Short Rest endpoint explicitly established on page 17."
+  },
+  {
+    "record": [
+      "muse-glimmer/low",
+      "d20-en-pilot-t03-001",
+      "supplied_passage"
+    ],
+    "path": [
+      "expert_annotation",
+      "uncertainty_flags",
+      0
+    ],
+    "before_sha256": "5fa929fd9334a3e3f547bb597bf6e9964e4ff6b236598ba1e595fe569524e09b",
+    "text": "The published entries differ: page 17 explicitly includes the Short Rest endpoint, while page 184 omits it. Neither establishes the candidate's asserted precedence."
+  },
+  {
+    "record": [
+      "muse-glimmer/low",
+      "d20-en-pilot-t03-001",
+      "no_source"
+    ],
+    "path": [
+      "expert_annotation",
+      "uncertainty_flags",
+      1
+    ],
+    "before_sha256": "9925968c15507580e57741d8d8972d9ce5361298119266d6aca5adbc30e152fe",
+    "text": "Page 184 omits the explicit Short Rest endpoint stated on page 17. Page 17 establishes that endpoint."
+  },
+  {
+    "record": [
+      "lfm2.5-2.6b/native",
+      "d20-en-pilot-t07-009",
+      "supplied_passage"
+    ],
+    "path": [
+      "expert_annotation",
+      "claims",
+      1,
+      "reason"
+    ],
+    "before_sha256": "785f2b7807fdeb3cf36009fb7f71139306828ce8cb13917824f808108b199121",
+    "text": "Permits using it on the first hit and explicitly limits the benefit to one hit that turn. The damage calculation is incorrect."
+  },
+  {
+    "record": [
+      "lfm2.5-2.6b/native",
+      "d20-en-pilot-t03-001",
+      "supplied_passage"
+    ],
+    "path": [
+      "expert_annotation",
+      "claims",
+      1,
+      "reason"
+    ],
+    "before_sha256": "6eb2a1fadd73b82b2ee6023a87b942ab50244531cc4130eb370fd41d31f3844c",
+    "text": "B is satisfied by the explicit rest-end endpoint. A is contradicted by delaying the start until the end of the bandit's turn. The numerical duration is also incorrect."
+  },
+  {
+    "record": [
+      "gemma4-e2b/on",
+      "d20-en-pilot-t03-001",
+      "supplied_passage"
+    ],
+    "path": [
+      "expert_annotation",
+      "evidence_findings",
+      0,
+      "reason"
+    ],
+    "before_sha256": "993eed4dea2e8f4bd3e7ea4d93dabb24c1c3276649c6352c64f8938d5955790f",
+    "text": "Accurately reproduces page 184's rule. That entry omits the automatic rest endpoint explicitly stated on page 17. The omission affects C002."
+  },
+  {
+    "record": [
+      "qwen3.5-4b/off",
+      "d20-en-pilot-t10-008",
+      "supplied_passage"
+    ],
+    "path": [
+      "expert_annotation",
+      "claims",
+      2,
+      "reason"
+    ],
+    "before_sha256": "71316ebffce5669b3f603ce1fda0de8edd80ea1e56c034816cfb5fb3d4cbfb28",
+    "text": "Consistently disallows Shield and explicitly supplies the required second-slot explanation. The additional Bonus Action restriction is false."
+  },
+  {
+    "record": [
+      "lfm2.5-24b-a2b/native",
+      "d20-en-pilot-t02-003",
+      "supplied_passage"
+    ],
+    "path": [
+      "expert_annotation",
+      "claims",
+      3,
+      "reason"
+    ],
+    "before_sha256": "254c33bfee5c1e63958cefe270d1ff4de6472e147ca21bb4ff1d75c6b59c273a",
+    "text": "Explicitly states the single melee weapon attack or Unarmed Strike and Reaction cost. The selected Unarmed Strike is legal; the restriction to that choice is unsupported."
+  },
+  {
+    "record": [
+      "k2-horizon-3.7b/low",
+      "d20-en-pilot-t07-009",
+      "supplied_passage"
+    ],
+    "path": [
+      "expert_annotation",
+      "evidence_findings",
+      7,
+      "reason"
+    ],
+    "before_sha256": "0df4c1a66a1c2b4687b52309dcaa19edd65801c19a0749c66b5cb47f256e0f87",
+    "text": "The SRD identifies an Origin Feat and establishes its current rule."
+  },
+  {
+    "record": [
+      "qwen3.5-4b/on",
+      "d20-en-pilot-t07-002",
+      "no_source"
+    ],
+    "path": [
+      "expert_annotation",
+      "evidence_findings",
+      2,
+      "reason"
+    ],
+    "before_sha256": "1ad8980d99eab081debf22a6ffb24d52370881e8730d5a97536f62ee588e53e6",
+    "text": "The asserted absence is directly contradicted by Grappler's entry."
+  },
+  {
+    "record": [
+      "qwen3.5-4b/on",
+      "d20-en-pilot-t07-002",
+      "no_source"
+    ],
+    "path": [
+      "expert_annotation",
+      "evidence_findings",
+      3,
+      "reason"
+    ],
+    "before_sha256": "1eec2d2297b864ffc9927625afae5a6e0f3197f12c476e7d408c2e6a4fc44a67",
+    "text": null
+  },
+  {
+    "record": [
+      "qwen3.5-4b/on",
+      "d20-en-pilot-t07-002",
+      "no_source"
+    ],
+    "path": [
+      "expert_annotation",
+      "evidence_findings",
+      4,
+      "reason"
+    ],
+    "before_sha256": "51e9ade0b9c2eea66fa9d6406e9cc8b8d0cea0e6d23212ededd5723173060bd5",
+    "text": null
+  },
+  {
+    "record": [
+      "qwen3.5-9b/off",
+      "d20-en-pilot-t09-003",
+      "supplied_passage"
+    ],
+    "path": [
+      "expert_annotation",
+      "evidence_findings",
+      3,
+      "reason"
+    ],
+    "before_sha256": "33aa9ec0dfcc863823a302594c0f2b95b56aa048cf915e22c3b9c64eee93fe33",
+    "text": "The complete SRD 5.2.1 contains no Rapid Reload entry."
+  },
+  {
+    "record": [
+      "qwen3.5-9b/off",
+      "d20-en-pilot-t05-004",
+      "no_source"
+    ],
+    "path": [
+      "expert_annotation",
+      "evidence_findings",
+      6,
+      "reason"
+    ],
+    "before_sha256": "183c0a3e0cdcaa04de937efe9ed9606e26f7f49ea09281d8dc5957b349f4cd9a",
+    "text": null
+  },
+  {
+    "record": [
+      "qwen3.5-9b/on",
+      "d20-en-pilot-t06-005",
+      "no_source"
+    ],
+    "path": [
+      "expert_annotation",
+      "evidence_findings",
+      3,
+      "reason"
+    ],
+    "before_sha256": "60158ccb4eb49abb2c0271dcc57c9e18437ec72fa9ddac4dce6c82c4de329cd1",
+    "text": "The attributed rule contradicts the SRD."
+  },
+  {
+    "record": [
+      "granite4.2-30b/on",
+      "d20-en-pilot-t07-009",
+      "no_source"
+    ],
+    "path": [
+      "expert_annotation",
+      "evidence_findings",
+      3,
+      "reason"
+    ],
+    "before_sha256": "9e6bf4827de76372cfd243dab4ebfa806f9d4758be9c52c1c9158512e0af33db",
+    "text": "The SRD feat wording directly contradicts the asserted mandatory application."
+  },
+  {
+    "record": [
+      "granite4.2-30b/off",
+      "d20-en-pilot-t03-009",
+      "no_source"
+    ],
+    "path": [
+      "expert_annotation",
+      "evidence_findings",
+      3,
+      "reason"
+    ],
+    "before_sha256": "c75521100f344cfd1a96d61d47ec403dc5a30636817dcf3316d6b96cbef4f7e5",
+    "text": "The explicit damage and stability rules contradict this interpretation."
+  },
+  {
+    "record": [
+      "qwen3.8-27b/off",
+      "d20-en-pilot-t08-006",
+      "no_source"
+    ],
+    "path": [
+      "expert_annotation",
+      "evidence_findings",
+      3,
+      "reason"
+    ],
+    "before_sha256": "9f0200661735558566cd6226b8f7f8a5fbceabd87f638ef5168fc06c5dfb71fa",
+    "text": "The SRD establishes that an attack roll can extend Rage without hitting."
+  },
+  {
+    "record": [
+      "qwen3.8-27b/on",
+      "d20-en-pilot-t03-009",
+      "no_source"
+    ],
+    "path": [
+      "expert_annotation",
+      "evidence_findings",
+      4,
+      "reason"
+    ],
+    "before_sha256": "78ad567b061a4a0605b2eb6c76d3f78ea6a7829f023cb0c5b0b4d0d1f726ff1b",
+    "text": "The SRD's start-of-turn rule defeats the claimed distinction."
+  },
+  {
+    "record": [
+      "qwen3.8-27b/on",
+      "d20-en-pilot-t01-003",
+      "no_source"
+    ],
+    "path": [
+      "expert_annotation",
+      "evidence_findings",
+      3,
+      "reason"
+    ],
+    "before_sha256": "e57c4656ba40551841b9dc13a0c3b74302c35d15e6fa287f37fa2eea101f2382",
+    "text": null
+  },
+  {
+    "record": [
+      "glm4.7-flash/off",
+      "d20-en-pilot-t12-007",
+      "no_source"
+    ],
+    "path": [
+      "expert_annotation",
+      "evidence_findings",
+      5,
+      "reason"
+    ],
+    "before_sha256": "af1e51c7da27a4d4d130639ae5bcd206832f783969a11bfbd9dbfa5b71027130",
+    "text": "The SRD establishes the applicable treant action on page 333."
+  },
+  {
+    "record": [
+      "muse-glimmer/low",
+      "d20-en-pilot-t03-001",
+      "no_source"
+    ],
+    "path": [
+      "expert_annotation",
+      "evidence_findings",
+      4,
+      "reason"
+    ],
+    "before_sha256": "64fb6193de53a7fb223e2342db21f1b0670ab2f2b44b83a8ddb4d26249a2eb03",
+    "text": "The denial of a general knockout rule contradicts the SRD."
+  }
+]

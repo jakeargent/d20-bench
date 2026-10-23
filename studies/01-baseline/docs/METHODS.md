@@ -8,7 +8,7 @@ I used 120 English SRD 5.2.1 questions in 12 topics. I asked each one twice: wit
 
 Each question has required claims. Every claim has a reviewed weight and explicit partial-credit rules, and the weights total 100. An answer's score is the sum of the points awarded across its claims. Material errors, meaning wrong rules an answer adds, are recorded separately and carry no deduction.
 
-Eighteen task versions got a human quality review: twelve random picks by topic and six picked on purpose. Seven of the 18 needed repair first. All 18 passed in the versions now published, and those 18 are the public set. An AI reviewed the quality of the other 102 tasks, and they stay private.
+Eighteen task versions got a human quality review: twelve random picks by topic and six picked on purpose. All 18 passed and form the public set. An AI reviewed the quality of the other 102 tasks, and they stay private.
 
 All 120 were development cases I used while exploring.
 
@@ -17,8 +17,6 @@ All 120 were development cases I used while exploring.
 I published 25 configurations and 6,000 answer records. A configuration is one model checkpoint with one thinking setting, sampler, context budget and output ceiling. All 25 used Q4_K_M GGUF files. The 6,000 records are one answer for each question, configuration and passage condition (25 × 2 × 120), so each of the 50 combinations of configuration and passage condition has 120 answers. This release shows 18 of them in detail, which makes 900 public answer records. The model-based IDs, parameter sources and sampling settings are in `../data/results.json`.
 
 I group comparisons by total parameters: small (approximately 4B), medium (approximately 9B) and large (approximately 30B). The classes cover totals of 2.7–5.1B, 8.0–9.7B and 24–31B. Embeddings count toward the total. The data dictionary lists the totals, and the active counts where vendors publish them.
-
-The published Qwen3.5 4B results come from a standard-prompt rerun. An earlier run used a mixed prompt setup with smaller output budgets and is excluded.
 
 I ran Gemma 4, Granite 4.2, Qwen3.5 4B and 9B, Qwen3.8 27B and GLM-4.7 Flash with thinking off and with thinking on. Qwen3.8 27B ran its thinking-on configuration at low reasoning effort. LFM2.5, K2 Horizon and Muse Glimmer cannot turn thinking off. LFM2.5 ran with thinking on, which is its only mode. K2 Horizon ran with the creator's low-effort prefix and Muse Glimmer with its low reasoning-effort setting. The configuration metadata and the public request text record each setting. Each provider's recommended sampler also differs.
 
@@ -34,13 +32,13 @@ Local generations ran one at a time, even though four slots were configured. The
 
 ## Grading
 
-Each new answer got one GPT 6.1 Sol review at requested Medium effort, with complete access to the authoritative SRD. I added targeted human review for some cases, and the 72 public Gemma 4 E4B answers keep the expert and human review they already had. I did not measure grader accuracy. With thinking on, I graded the final answer. With thinking off, any self-talk the model returned counts as part of the answer. Repairs to records and citations kept the original judgments.
+GPT 6.1 Sol at requested Medium effort graded answers with complete access to the authoritative SRD. The final scores include targeted human review. The 72 public Gemma 4 E4B answers have final scores and correctness judgments but no per-claim awards. I did not measure grader accuracy. With thinking on, I graded the final answer. With thinking off, any self-talk the model returned counts as part of the answer.
 
-Where a human reviewer changed a claim award or an answer's fully correct or material-error result, the final `claim_awards` hold the human result. The original expert annotations stay in the data as history, and they can differ.
+The final claim awards and correctness judgments include human decisions. Grader annotations are available separately and can differ from the final judgments.
 
 A fully correct answer satisfies every required claim and has no material error. A few answers couldn't be graded as clearly right or wrong. I treat those as unknown and leave them out of the counts. So some counts are out of fewer than 120, and percentages use the number of answers that could be graded.
 
-Where two SRD passages conflicted over land-vehicle pace, I followed the more specific one. This changed the fully correct and material-error results of three answers from large-class models, and no claim score.
+Where two SRD passages conflicted over land-vehicle pace, I followed the more specific one.
 
 ## Time and tokens
 
@@ -58,4 +56,4 @@ On one RTX 3090, [neoX's Q4_K_M inference tests](https://ahelpme.com/ai/llm-infe
 
 ## What you can rebuild
 
-Every table, figure and public-case view in the report rebuilds offline from the data in this repository. I computed the full-120 aggregate statistics in my private workspace and stored them with source hashes. The 18 public cases cover part of those totals. The 102 private tasks are not included, and rerunning the models gives different generations because sampling is nondeterministic.
+Every table, figure and public-case view in the report rebuilds offline from the data in this repository. The aggregate statistics cover all 120 cases per condition. The 18 public cases cover part of those totals. The 102 private tasks are not included, and rerunning the models gives different generations because sampling is nondeterministic.

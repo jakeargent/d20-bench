@@ -7,14 +7,15 @@ from decimal import Decimal,ROUND_HALF_UP
 sys.path.insert(0,str(Path(__file__).resolve().parent))
 from markdown_subset import render as render_markdown
 from paper_pages import (document_sources, source_routes, link_mapper, load_figures,
-                         paper_page, report_content, numeric_audit, rewrite_html_links, back_to_report)
+                         paper_page, report_content, rewrite_html_links, back_to_report)
+
+from transforms import public_metadata_v1 as metadata
 
 ROOT=Path(__file__).resolve().parents[1]
-BATCHES=[('tiny','six-model-suite-2026-10-13','model-review-metrics-v12.json'),('medium','eight-billion-suite-2026-10-14','model-review-metrics-v1.json'),('large','thirty-billion-suite-2026-10-15','model-review-metrics-v1.json')]
 CONDITIONS={'no_source':'Without oracle passages','supplied_passage':'With oracle passages'}
 GENERATION=('context_length','max_output_tokens','temperature','top_p','top_k','min_p','repeat_penalty','presence_penalty','frequency_penalty')
 SCORE=('earned_points','met_claims','required_claims','uncertain_claims','requirement_coverage','complete_task_success','has_material_error')
-QUALITY=('planned','answers_returned','operational_failures','graded','exact_claim_scores','mean_claim_score','fully_correct','profile_assessed','mean_fully_met_claim_coverage','answers_with_material_errors','material_error_assessed','pending_reviews','operationally_flagged_answers','output_ceiling_hits','thinking_marker_breaches','direct_failures','regenerated_answers','mean_output_tokens','mean_client_seconds')
+QUALITY=('planned','answers_returned','operational_failures','graded','exact_claim_scores','mean_claim_score','fully_correct','profile_assessed','mean_fully_met_claim_coverage','answers_with_material_errors','material_error_assessed','unknown_judgments','operationally_flagged_answers','output_ceiling_hits','thinking_marker_breaches','direct_failures','regenerated_answers','mean_output_tokens','mean_client_seconds')
 OPERATIONS=('input_tokens','total_output_tokens','reasoning_output_tokens','tokens_per_second','time_to_first_token_seconds','client_elapsed_seconds')
 TEXT_KEYS={'question','reference_answer','requirements','passages','claim_id','original_text','weight','rationale','credit_rule','full_credit_condition','partial_levels','points','condition','zero_credit_condition','selection_rule','no_partial_credit_reason','pdf_page_numbers','text','claims','status','earned_points','reason','answer_quote','pdf_pages','mistakes','mistake_id','evidence_findings','supplied_support','srd_support','accepted_alternatives','uncertainty_flags','extra_assertions_audited','source_evidence','pdf_page','source_quote'}
 FLAGS={'output_ceiling_hit','reasoning_content_despite_off','thinking_not_closed','empty_answer','request_failure','missing_final_answer'}
@@ -60,9 +61,9 @@ def clean_text(s):
   try:return '[private address removed]' if ipaddress.ip_address(m[0]).is_private and m[0]!='127.0.0.1' else m[0]
   except ValueError:return m[0]
  return IP.sub(mask,s)
-def text_projection(x):
- if isinstance(x,dict):return {k:text_projection(v) for k,v in x.items() if k in TEXT_KEYS}
- if isinstance(x,list):return [text_projection(v) for v in x]
+def public_text(x):
+ if isinstance(x,dict):return {k:public_text(v) for k,v in x.items() if k in TEXT_KEYS}
+ if isinstance(x,list):return [public_text(v) for v in x]
  return clean_text(x) if isinstance(x,str) else x
 
 AGGREGATE_KEYS={'180', 'request_failures', 'max_seconds', 'retried_cases', 'final_returned_p95_seconds', 'first_token_timing_cases', 'first_token_p95_seconds', 'nonempty_finals', 'p99_seconds', 'attempt_count', 'p25', 'count', 'no_final_cases', '300', 'request_failure_attempts', '120', 'final_returned_median_seconds', 'output_ceiling_hit', 'p75_seconds', 'p95_seconds', 'missing_or_partial_timing_cases', 'median', '1800', 'output_ceiling_hits', 'denominator', 'final_answer_completion', 'median_seconds', 'retried', 'selected_request_seconds', 'recorded_cases', 'first_token_seconds', 'has_final', 'above_30_seconds', 'p75', 'p90_seconds', 'ordinal', 'total_attempt_seconds', 'observed_above_seconds', 'maximum', 'p95', 'bins', 'complete_timing_cases', 'mean', 'mean_seconds', '900', 'p25_seconds'}
@@ -82,37 +83,50 @@ def final_awards(row):
  if j.get('scope')=='claim_C004':
   claim=next(c for c in awards if c['claim_id']==j['claim_id']);claim.update(status=j['status'],earned_points=j['points'])
  if awards and all(finite(c.get('earned_points')) for c in awards):
-  if sum(c['earned_points'] for c in awards)!=row['score']['earned_points']:raise ValueError('Final claim awards do not match accepted score')
+  if sum(c['earned_points'] for c in awards)!=row['score']['earned_points']:raise ValueError('Final claim awards do not match final score')
  return awards
 
 def project_answer(row,suite):
  if set(row.get('operational_flags',[]))-FLAGS:raise ValueError('Unknown operational flag')
- out={'suite_id':suite,'configuration':suite+'/'+row['configuration'],'case_id':row['case_id'],'condition':row['condition'],'candidate_answer':clean_text(row.get('candidate_answer') or ''),'score':fields(row['score'],SCORE),'claim_awards':final_awards(row),'expert_annotation':text_projection(row.get('annotation',{})),'operations':fields(row.get('operations',{}),OPERATIONS),'operational_flags':row.get('operational_flags',[]),'answer_sha256':row.get('answer_sha256'),'candidate_input_sha256':row['candidate_input_sha256']}
+ out={'suite_id':suite,'configuration':suite+'/'+row['configuration'],'case_id':row['case_id'],'condition':row['condition'],'candidate_answer':clean_text(row.get('candidate_answer') or ''),'score':fields(row['score'],SCORE),'claim_awards':final_awards(row),'expert_annotation':public_text(row.get('annotation',{})),'operations':fields(row.get('operations',{}),OPERATIONS),'operational_flags':row.get('operational_flags',[]),'answer_sha256':row.get('answer_sha256'),'candidate_input_sha256':row['candidate_input_sha256']}
  if row.get('expert_score'):out['original_expert_score']=fields(row['expert_score'],SCORE)
  if row.get('human_adjudication'):
-  j=row['human_adjudication'];out['final_review']={'kind':'targeted_human_adjudication','scope':j.get('scope','profile'),'verdict':j.get('verdict') or ('claim_award_accepted' if j.get('scope')=='claim_C004' else 'no_material_error' if row['score']['has_material_error'] is False else 'material_error' if row['score']['has_material_error'] is True else 'unresolved'),'claim_id':j.get('claim_id'),'points':j.get('points')}
- if row.get('operator_policy_applied'):out['accepted_assumption']='SRD-validated rule attribution to PHB accepted by operator; PHB not independently verified.'
+  j=row['human_adjudication'];out['final_review']={'kind':'human','scope':j.get('scope','profile'),'verdict':j.get('verdict') or ('points_awarded' if j.get('scope')=='claim_C004' else 'no_material_error' if row['score']['has_material_error'] is False else 'material_error' if row['score']['has_material_error'] is True else 'unresolved'),'claim_id':j.get('claim_id'),'points':j.get('points')}
+ metadata.normalize_answer_metadata(out)
  return out
 
 def project_config(cfg,name,title,mode,suite):
- return {'id':suite+'/'+name,'suite_id':suite,'model':clean_text(title),'mode':mode,'model_key':clean_text(cfg['model_key']),'selected_variant':clean_text(cfg.get('selected_variant') or 'not verified'),'quantization':cfg.get('quantization'),'adapter':cfg.get('adapter'),'generation':fields(cfg['generation'],GENERATION),'thinking':cfg['generation'].get('reasoning','native'),'reasoning_effort':cfg.get('reasoning_effort','not separately specified'),'generation_seed':cfg.get('generation_seed'),'generation_seed_status':clean_text(cfg.get('generation_seed_status','not verified')),'runtime_version':'not verified','exact_gpu_placement':'not verified'}
+ return {'id':suite+'/'+name,'suite_id':suite,'model':clean_text(title),'mode':mode,'model_key':clean_text(cfg['model_key']),'selected_variant':clean_text(cfg['selected_variant']) if cfg.get('selected_variant') else None,'quantization':cfg.get('quantization'),'adapter':cfg.get('adapter'),'generation':fields(cfg['generation'],GENERATION),'thinking':cfg['generation'].get('reasoning','native'),'reasoning_effort':cfg.get('reasoning_effort'),'generation_seed':cfg.get('generation_seed'),'generation_seed_status':'not set' if cfg.get('generation_seed') is None else 'set','runtime_version':None,'exact_gpu_placement':None}
 
-def import_private(source_root,root=ROOT,study_slug=None):
- """The only command allowed to read the private repository. Never copies it."""
+def import_private(source_root,root=ROOT,study_slug=None,source_manifest=None,case_reviews=None):
+ """Import selected records from explicitly supplied source files.
+
+ The JSON source manifest is a list of objects with suite_id, observations,
+ metrics and runtime_profiles paths relative to source_root. case_reviews
+ identifies the case-review JSON relative to the same root.
+ """
  root=Path(root);study=next((s for s in studies(root) if study_slug in (None,s['slug'])),None)
  if study is None:raise ValueError('Unknown study')
- # This migration utility only understands the original three-batch projection.
- if study.get('private_import')!='model-comparison':raise ValueError('No private importer for this study')
  dest=study_path(root,study);policy=study_config(root,study)
- source_root=Path(source_root).resolve();base=source_root/'artifacts/d20-bench'
- pilot_path=base/'claim-credit-only-2026-10-11/observations-v2.json';pilot=read(pilot_path);pilot_rows={(a['mode'],a['case_id'],a['condition']):a for a in pilot['answers']}
- accepted=pilot['cases'];public_ids=sorted(c['case_id'] for c in accepted)
- if len(public_ids)!=18 or len(set(public_ids))!=18:raise ValueError('Expected the 18 accepted public cases')
+ source_root=Path(source_root).resolve()
+ if source_manifest is None or case_reviews is None:raise ValueError('Supply source_manifest and case_reviews paths')
+ def source_path(name):
+  path=(source_root/name).resolve()
+  if not path.is_relative_to(source_root):raise ValueError('Source file outside source root')
+  return path
+ inputs=read(source_manifest)
+ expected_suites={key.split('/')[0] for key in policy['configuration_ids']}
+ if not isinstance(inputs,list) or {entry['suite_id'] for entry in inputs}!=expected_suites or len(inputs)!=len(expected_suites):raise ValueError('Source manifest membership mismatch')
+ review_path=source_path(case_reviews);reviews=read(review_path);review_rows={(a['mode'],a['case_id'],a['condition']):a for a in reviews['answers']}
+ public_ids=sorted(c['case_id'] for c in reviews['cases'])
+ if len(public_ids)!=18 or len(set(public_ids))!=18:raise ValueError('Expected 18 public cases')
  cases=None;answers=[];configs=[];cells=[];sources=[]
- for suite,folder,mname in BATCHES:
-  p=base/folder;obs=read(p/'observations.json');metrics=read(p/mname);runtime=read(p/'runtime-profiles-v1.json');by_case={c['case_id']:c for c in obs['cases']}
+ for entry in inputs:
+  suite=entry['suite_id'];observation_path=source_path(entry['observations']);metrics_path=source_path(entry['metrics']);runtime_path=source_path(entry['runtime_profiles'])
+  p=observation_path.parent;obs=read(observation_path);metrics=read(metrics_path);runtime=read(runtime_path);by_case={c['case_id']:c for c in obs['cases']}
   if not set(public_ids)<=by_case.keys():raise ValueError('Public selection not in source')
-  selected=[{'case_id':cid,'topic_id':by_case[cid]['topic_id'],'topic':by_case[cid]['topic'],**text_projection(by_case[cid])} for cid in public_ids]
+  selected=[{'case_id':cid,'topic_id':by_case[cid]['topic_id'],'topic':by_case[cid]['topic'],**public_text(by_case[cid])} for cid in public_ids]
+  metadata.normalize_cases({'cases':selected})
   if cases is None:cases=selected
   elif cases!=selected:raise ValueError('Case versions differ between selected reports')
   for model in metrics['models']:
@@ -123,8 +137,8 @@ def import_private(source_root,root=ROOT,study_slug=None):
     for c in mode['conditions']:
      if c['records']!=120:raise ValueError('Incomplete aggregate condition')
      cell={'configuration':identifier,'condition':c['condition'],'records':c['records'],'quality':fields(c['quality'],QUALITY)}
-     # Compare authoritative accepted summaries; earlier metric snapshots may differ.
-     cell['quality']=fields(obs['summary'][name][c['condition']],QUALITY)
+     # Observation summaries supply the final quality measurements.
+     cell['quality']=fields(metadata.normalize_quality(copy.deepcopy(obs['summary'][name][c['condition']])),QUALITY)
      for k in ['timing','output_tokens','input_tokens','thinking_tokens','server_tokens_per_second','first_token_seconds']:cell[k]=safe_tree(c[k])
      cell['no_final']=c['no_final'];cells.append(cell)
   runtime_lookup={(n,c['ordinal']):c for n,v in runtime['profiles'].items() for c in v['cases']}
@@ -134,10 +148,10 @@ def import_private(source_root,root=ROOT,study_slug=None):
    if row['case_id'] not in public_ids:continue
    result=project_answer(row,suite);result['configuration']=identifier
    if row.get('historical_record'):
-    hist=pilot_rows[row['configuration'].split('-')[1],row['case_id'],row['condition']]
+    hist=review_rows[row['configuration'].split('-')[1],row['case_id'],row['condition']]
     assert hist['answer_sha256']==row['answer_sha256'] and hist['earned_points']==row['score']['earned_points']
-    result['historical_review']={'origin':hist['origin'],'source':'accepted claim-only pilot projection','claim_detail':'Accepted total/profile retained; per-claim awards are not flattened in the selected suite snapshot.','targeted_human_review':bool(hist.get('human_review'))}
-    result['historical_expert_annotations']={k:text_projection(v) for k,v in hist.get('expert_annotations',{}).items() if k in {'gpt','sonnet'}}
+    result['historical_review']={'claim_detail':metadata.CLAIM_DETAIL,'targeted_human_review':bool(hist.get('human_review'))}
+    result['historical_expert_annotations']={k:public_text(v) for k,v in hist.get('expert_annotations',{}).items() if k in {'gpt','sonnet'}}
    result['request_timing']=safe_tree({k:v for k,v in runtime_lookup[row['configuration'],row['ordinal']].items() if k not in {'case_id','condition'}})
    clock=runtime_lookup[row['configuration'],row['ordinal']];assert clock['case_id']==row['case_id'] and clock['condition']==row['condition']
    result['request_timing'].pop('ordinal',None)
@@ -147,12 +161,17 @@ def import_private(source_root,root=ROOT,study_slug=None):
    result['candidate_request']={k:clean_text(v) for k,v in record['request'].items() if k in {'prompt','system_prompt','input'} and isinstance(v,str)}
    if result.get('candidate_request',{}).get('input') is not None and row['case_id'] not in public_ids:raise ValueError('Private prompt')
    answers.append(result)
-  sources.append({'historical_pilot_sha256':sha(pilot_path) if suite=='tiny' else None,'suite_id':suite,'source_selected_records':len(obs['answers']),'selected_records':sum(c['records'] for c in cells if c['configuration'] in {g['id'] for g in configs if g['batch']==suite}),'observations_sha256':sha(p/'observations.json'),'metrics_sha256':sha(p/mname),'runtime_profiles_sha256':sha(p/'runtime-profiles-v1.json')})
- visibility={'schema_version':1,'case_ids':public_ids,'public_case_count':18,'private_case_count':102,'basis':'The 18 accepted human task-quality reviews; 12 random topic selections plus six targeted selections, including repaired versions. Not a random audit of model grades.','private_disclosure':'Aggregate metrics only; no private case IDs, per-case records, prompts, answers or rubric text.'}
+  sources.append({'historical_pilot_sha256':sha(review_path) if any(g['batch']==suite and g['id'].startswith('gemma4-e4b/') for g in configs) else None,'suite_id':suite,'source_selected_records':len(obs['answers']),'selected_records':sum(c['records'] for c in cells if c['configuration'] in {g['id'] for g in configs if g['batch']==suite}),'observations_sha256':sha(observation_path),'metrics_sha256':sha(metrics_path),'runtime_profiles_sha256':sha(runtime_path)})
+ visibility={'schema_version':1,'case_ids':public_ids,'public_case_count':18,'private_case_count':102,'basis':metadata.VISIBILITY_BASIS,'private_disclosure':metadata.PRIVATE_DISCLOSURE}
  shared={'visibility.json':visibility,'cases.json':{'schema_version':1,'cases':cases}}
  for name,value in shared.items():
-  if read(root/'data'/name)!=value:raise ValueError('Shared cases or visibility differ; explicit operator approval required')
- write(dest/'data/answers.json',{'schema_version':1,'answers':answers});write(dest/'data/results.json',{'schema_version':1,'suite_questions':120,'selected_records':sum(c['records'] for c in cells),'public_answer_records':len(answers),'configurations':configs,'cells':cells,'sources':sources,'random_human_audit':'not performed; declined by operator','grader_accuracy':'unmeasured'})
+  if read(root/'data'/name)!=value:raise ValueError('Shared cases or visibility differ from the public selection')
+ for row in answers:metadata.normalize_answer_metadata(row)
+ metadata.apply_annotation_edits(answers)
+ results={'schema_version':1,'suite_questions':120,'selected_records':sum(c['records'] for c in cells),'public_answer_records':len(answers),'configurations':configs,'cells':cells,'sources':sources,'random_human_audit':'not performed','grader_accuracy':'unmeasured'}
+ metadata.normalize_results(results)
+ metadata.verify(policy,results,answers,shared['cases.json'],visibility)
+ write(dest/'data/answers.json',{'schema_version':1,'answers':answers});write(dest/'data/results.json',results)
  validate(root);print(json.dumps({'public_cases':len(cases),'public_answers':len(answers),'configurations':len(configs),'aggregate_conditions':len(cells),'private_case_records_copied':0}))
 
 def release_paths(root):
@@ -211,17 +230,12 @@ def validate_study(root,study):
  if set(policy['excluded_source_ids'])&set(policy['configuration_ids']):raise ValueError('Excluded source configuration is mapped')
  for cfg in configs.values():
   if public_configuration(policy,cfg['source_id'])!=cfg['id'] or cfg['batch']!=cfg['suite_id'] or cfg['source_id'].split('/')[0]!=cfg['batch']:raise ValueError('Configuration provenance mismatch')
-  metadata=policy['models'][cfg['id'].split('/')[0]]
-  if any(cfg.get(k)!=value for k,value in metadata.items()):raise ValueError('Configuration parameter metadata mismatch')
+  model_metadata=policy['models'][cfg['id'].split('/')[0]]
+  if any(cfg.get(k)!=value for k,value in model_metadata.items()):raise ValueError('Configuration parameter metadata mismatch')
   total,active=cfg['total_parameters'],cfg['active_parameters']
   if type(total) is not int or total<=0 or (active is not None and (type(active) is not int or not 0<active<=total)):raise ValueError('Invalid parameter count')
   if cfg['size_class'] not in {'small','medium','large'} or not cfg['parameter_source_url'].startswith('https://huggingface.co/'):raise ValueError('Invalid parameter provenance')
- for name,payload in [('cells',results['cells']),('answers',rows)]:
-  original=copy.deepcopy(payload)
-  for item in original:
-   if item['configuration'] not in configs:raise ValueError('Unknown configuration in retained payload')
-   item['configuration']=configs[item['configuration']]['source_id']
-  if payload_sha(original)!=policy['retained_payload_sha256'][name]:raise ValueError('Retained '+name+' changed beyond configuration IDs')
+ metadata.verify(policy,results,rows,{'schema_version':1,'cases':cases},v)
  if sum(c['records'] for c in results['cells'])!=results['selected_records'] or sum(s['selected_records'] for s in results['sources'])!=results['selected_records']:raise ValueError('Aggregate record total mismatch')
  for source in results['sources']:
   selected=sum(c['records'] for c in results['cells'] if configs[c['configuration']]['batch']==source['suite_id'])
@@ -234,7 +248,7 @@ def validate_study(root,study):
   key=(row['configuration'],row['case_id'],row['condition'])
   if key in keys or row['case_id'] not in ids or row['configuration'] not in configs or row['condition'] not in CONDITIONS:raise ValueError('Unexpected public answer membership')
   keys.add(key)
-  if set(row)-{'suite_id','configuration','case_id','condition','candidate_answer','score','claim_awards','expert_annotation','operations','operational_flags','answer_sha256','candidate_input_sha256','original_expert_score','final_review','accepted_assumption','request_timing','candidate_request','historical_review','historical_expert_annotations'}:raise ValueError('Unknown public answer field')
+  if set(row)-{'suite_id','configuration','case_id','condition','candidate_answer','score','claim_awards','expert_annotation','operations','operational_flags','answer_sha256','candidate_input_sha256','original_expert_score','final_review','request_timing','candidate_request','historical_review','historical_expert_annotations'}:raise ValueError('Unknown public answer field')
   awards=row['claim_awards']
   if not finite(row['score']['earned_points']) or not 0<=row['score']['earned_points']<=100:raise ValueError('Invalid final score')
   if awards and ({x['claim_id'] for x in awards}!=set(rubrics[row['case_id']]) or len(awards)!=len(rubrics[row['case_id']])):raise ValueError('Claim membership mismatch')
@@ -261,7 +275,7 @@ def table_rows(root,study):
  r=read(study_path(root,study)/'data/results.json');cfg={x['id']:x for x in r['configurations']};rows=[]
  for c in sorted(r['cells'],key=lambda c:(configuration_order(cfg[c['configuration']]),c['condition'])):
   q,t=c['quality'],c['timing'];g=cfg[c['configuration']]
-  rows.append({'size_class':g['size_class'],'configuration':g['id'],'source_id':g['source_id'],'batch':g['batch'],'total_parameters':g['total_parameters'],'active_parameters':g['active_parameters'],'parameter_source_url':g['parameter_source_url'],'model':g['model'],'mode':display_mode(g['id']),'passages':CONDITIONS[c['condition']],'records':120,'public_records':18,'mean_claim_score':q['mean_claim_score'],'fully_correct':q['fully_correct'],'profile_assessed':q['profile_assessed'],'material_errors':q['answers_with_material_errors'],'material_error_assessed':q['material_error_assessed'],'mean_seconds':t['mean_seconds'],'median_seconds':t['median_seconds'],'p25_seconds':t['p25_seconds'],'p75_seconds':t['p75_seconds'],'p95_seconds':t['p95_seconds'],'max_seconds':t['max_seconds'],'above_30_seconds':t['above_30_seconds'],'timed_records':t['complete_timing_cases'],'mean_output_tokens':c['output_tokens']['mean'],'output_limit_hits':q['output_ceiling_hits'],'thinking_marker_breaches':q['thinking_marker_breaches'],'context_tokens':g['generation']['context_length'],'output_ceiling_tokens':g['generation']['max_output_tokens']})
+  rows.append({'size_class':g['size_class'],'configuration':g['id'],'total_parameters':g['total_parameters'],'active_parameters':g['active_parameters'],'parameter_source_url':g['parameter_source_url'],'model':g['model'],'mode':display_mode(g['id']),'passages':CONDITIONS[c['condition']],'records':120,'public_records':18,'mean_claim_score':q['mean_claim_score'],'fully_correct':q['fully_correct'],'profile_assessed':q['profile_assessed'],'material_errors':q['answers_with_material_errors'],'material_error_assessed':q['material_error_assessed'],'mean_seconds':t['mean_seconds'],'median_seconds':t['median_seconds'],'p25_seconds':t['p25_seconds'],'p75_seconds':t['p75_seconds'],'p95_seconds':t['p95_seconds'],'max_seconds':t['max_seconds'],'above_30_seconds':t['above_30_seconds'],'timed_records':t['complete_timing_cases'],'mean_output_tokens':c['output_tokens']['mean'],'output_limit_hits':q['output_ceiling_hits'],'thinking_marker_breaches':q['thinking_marker_breaches'],'context_tokens':g['generation']['context_length'],'output_ceiling_tokens':g['generation']['max_output_tokens']})
  return rows
 
 def generation_speed_rows(answers,configurations,public_case_count):
@@ -321,7 +335,7 @@ def build(root=ROOT,output=None):
  first=studies(root)[0]['slug']
  page=(root/'web/index.html').read_text().replace('<!--STUDIES-->','\n'.join(links)).replace('{{study-report}}',f'studies/{first}/index.html').replace('{{study-explore}}',f'studies/{first}/explore.html')
  (out/'index.html').write_text(rewrite_html_links(page,'index.html',allowed))
- inputs=[*[root/name for name in document_sources(root,studies(root))],root/'scripts/publication.py',root/'scripts/markdown_subset.py',root/'scripts/paper_pages.py',root/'studies/registry.json',root/'web/index.html',*[root/'data'/name for name in sorted(SHARED_DATA)],*[root/'web'/name for name in sorted(WEB_ASSETS)],*[root/name for name in sorted(SITE_NOTICES)]]
+ inputs=[*[root/name for name in document_sources(root,studies(root))],root/'scripts/publication.py',root/'scripts/markdown_subset.py',root/'scripts/paper_pages.py',*[root/'scripts/transforms'/n for n in ('public_metadata_v1.py','annotation_text_v1.json')],root/'studies/registry.json',root/'web/index.html',*[root/'data'/name for name in sorted(SHARED_DATA)],*[root/'web'/name for name in sorted(WEB_ASSETS)],*[root/name for name in sorted(SITE_NOTICES)]]
  write(out/'manifest.json',{'schema_version':1,'validation':audit,'source_files':{str(f.relative_to(root)):sha(f) for f in inputs},'files':{name:sha(out/name) for name in sorted(allowed-{'manifest.json'})}})
  print(json.dumps({'build':'passed','studies':len(studies(root))}));return out
 
@@ -348,10 +362,9 @@ def build_study(root,study,out):
  svg.append('</svg>');(out/'latency.svg').write_text(''.join(svg))
  prefix='studies/'+study['slug']+'/'
  routes=source_routes(root,studies(root));template=(dest/'web/index.html').read_text()
- # The six author-selected examples retain their original explorer configuration.
+ # The five report examples link to their selected configurations.
  case_links=read(dest/'web/report-links.json')
  content=report_content((dest/'report/REPORT.md').read_text(),load_figures(dest/'web/figures.html'),link_mapper(prefix+'report/REPORT.md',prefix+'index.html',routes,case_links))
- content+='\n'+numeric_audit(read(dest/'data/results.json'),read(dest/'data/answers.json')['answers'],speeds)
  (out/'index.html').write_text(paper_page(template,content,prefix+'index.html',study['slug'],'<script src="../../assets/report-figures.js" defer></script>'))
  (out/'explore.html').write_text(rewrite_html_links((dest/'web/explore.html').read_text(),prefix+'explore.html',generated_paths(root)))
  (out/'comparison.html').write_text(paper_page(template,back_to_report(prefix+'comparison.html',study['slug'])+render_markdown('\n'.join(md)),prefix+'comparison.html',study['slug']))
@@ -365,27 +378,27 @@ def build_study(root,study,out):
  for name in STUDY_DATA:(out/name).write_bytes((dest/'data'/name).read_bytes())
  for name in STUDY_DOCS:(out/name).write_bytes((dest/'docs'/name).read_bytes())
  (out/'THIRD_PARTY_NOTICES.md').write_text((root/'THIRD_PARTY_NOTICES.md').read_text().replace('(assets/fonts/','(../../assets/fonts/').replace('(README.md#license)','(../../README.md#license)'))
- inputs=[root/'studies/registry.json',dest/'config.json',root/'scripts/publication.py',root/'scripts/markdown_subset.py',root/'scripts/paper_pages.py',dest/'report/REPORT.md',dest/'README.md',dest/'web/figures.html',dest/'web/report-links.json',*[root/'data'/name for name in sorted(SHARED_DATA)],*[dest/'data'/name for name in sorted(STUDY_DATA)],*[dest/'docs'/name for name in sorted(STUDY_DOCS)],dest/'web/index.html',dest/'web/explore.html',root/'THIRD_PARTY_NOTICES.md',*[root/'web'/name for name in sorted(WEB_ASSETS)]]
+ inputs=[root/'studies/registry.json',dest/'config.json',root/'scripts/publication.py',root/'scripts/markdown_subset.py',root/'scripts/paper_pages.py',*[root/'scripts/transforms'/n for n in ('public_metadata_v1.py','annotation_text_v1.json')],dest/'report/REPORT.md',dest/'README.md',dest/'web/figures.html',dest/'web/report-links.json',*[root/'data'/name for name in sorted(SHARED_DATA)],*[dest/'data'/name for name in sorted(STUDY_DATA)],*[dest/'docs'/name for name in sorted(STUDY_DOCS)],dest/'web/index.html',dest/'web/explore.html',root/'THIRD_PARTY_NOTICES.md',*[root/'web'/name for name in sorted(WEB_ASSETS)]]
  manifest={'schema_version':1,'validation':audit,'source_files':{str(f.relative_to(root)):sha(f) for f in inputs},'files':{str(f.relative_to(out)):sha(f) for f in sorted(out.rglob('*')) if f.is_file() and f.name!='manifest.json'}};write(out/'manifest.json',manifest)
  print(json.dumps({'study':study['slug'],'build':'passed','public_answers':study['public_answer_records'],'aggregate_cells':study['conditions']}))
 
 def package(root=ROOT,output=None):
  root=Path(root);out=Path(output) if output else root/'dist';out.mkdir(parents=True,exist_ok=True);site=build(root)
- files=release_paths(root)+[site/name for name in sorted(generated_paths(root))];target=out/'d20-bench-publication-draft.zip'
+ files=release_paths(root)+[site/name for name in sorted(generated_paths(root))];target=out/'d20-bench-study1.zip'
  with zipfile.ZipFile(target,'w',compression=zipfile.ZIP_DEFLATED) as z:
   for f in files:
    entry=zipfile.ZipInfo('d20-bench/'+str(f.relative_to(root)),date_time=(1980,1,1,0,0,0));entry.external_attr=0o100644<<16;entry.compress_type=zipfile.ZIP_DEFLATED;z.writestr(entry,f.read_bytes())
- write(out/'release-manifest.json',{'status':'local draft; no remote or public publication authorized','archive_sha256':sha(target),'archive':target.name,'files':len(files)})
+ write(out/'release-manifest.json',{'archive_sha256':sha(target),'archive':target.name,'files':len(files)})
  print(json.dumps({'package':target.name,'files':len(files)}))
 
 def main():
  p=argparse.ArgumentParser(description=__doc__);sub=p.add_subparsers(dest='command',required=True)
- imp=sub.add_parser('import-private');imp.add_argument('--source-root',required=True,type=Path);imp.add_argument('--study',choices=[s['slug'] for s in studies()])
+ imp=sub.add_parser('import-private');imp.add_argument('--source-root',required=True,type=Path);imp.add_argument('--source-manifest',required=True,type=Path);imp.add_argument('--case-reviews',required=True,type=Path);imp.add_argument('--study',choices=[s['slug'] for s in studies()])
  sub.add_parser('validate');b=sub.add_parser('build');b.add_argument('--output-dir',type=Path)
  z=sub.add_parser('package');z.add_argument('--output-dir',type=Path)
  s=sub.add_parser('serve');s.add_argument('--port',type=int,default=8000)
  args=p.parse_args()
- if args.command=='import-private':import_private(args.source_root,study_slug=args.study)
+ if args.command=='import-private':import_private(args.source_root,study_slug=args.study,source_manifest=args.source_manifest,case_reviews=args.case_reviews)
  elif args.command=='validate':print(json.dumps(validate()))
  elif args.command=='build':build(output=args.output_dir)
  elif args.command=='package':package(output=args.output_dir)

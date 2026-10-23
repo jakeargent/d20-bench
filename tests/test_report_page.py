@@ -128,7 +128,8 @@ class ReportPageTests(unittest.TestCase):
   text=self.built_report()
   self.assertNotIn('<!-- figure:',text)
   self.assertIn('href="index.html" aria-current="page"',text)
-  self.assertIn('NUMERIC AUDIT',text)
+  self.assertNotIn('NUMERIC AUDIT',text)
+  self.assertNotIn('full_suite_cells',text)
   self.assertNotIn('<mark class="check"',text)
   self.assertIn('about 24–33 tokens per second for the dense roughly 30B models without speculative decoding',text)
   for name in ('oracle-effect','live-use-tradeoffs','thinking-returns','scores-and-errors'):

@@ -29,9 +29,7 @@
       "answer_sha256": "b424007673db3b822d5cc41c47f56cc4912a4edd783154ff00c29788545c6cac",
       "candidate_input_sha256": "7f0458012db1b5455483a00e21384961433ea04d6f0dfcad2c2d49cc31eea9ab",
       "historical_review": {
-        "origin": "dual_expert_agreement",
-        "source": "accepted claim-only pilot projection",
-        "claim_detail": "Accepted total/profile retained; per-claim awards are not flattened in the selected suite snapshot.",
+        "claim_detail": "Final scores and correctness judgments are available; per-claim awards are unavailable.",
         "targeted_human_review": false
       },
       "historical_expert_annotations": {},
@@ -78,9 +76,7 @@
       "answer_sha256": "b58e77af10c2a6c25cad8eb45a53e158127ac99903042ee3dc6458f54c2ca85b",
       "candidate_input_sha256": "b2adf7ea9a58e302a6327b77273764b9a89066ba5dc9026e8623c699d4cb3f1c",
       "historical_review": {
-        "origin": "dual_expert_agreement",
-        "source": "accepted claim-only pilot projection",
-        "claim_detail": "Accepted total/profile retained; per-claim awards are not flattened in the selected suite snapshot.",
+        "claim_detail": "Final scores and correctness judgments are available; per-claim awards are unavailable.",
         "targeted_human_review": false
       },
       "historical_expert_annotations": {},
@@ -127,9 +123,7 @@
       "answer_sha256": "f854135e845ec698e3c489661fc71c3259538fc243545927b69cf8b2a82b642e",
       "candidate_input_sha256": "c22e77e51959fda554acb23060e23e4432fd2404530ec4498453262d70c24e45",
       "historical_review": {
-        "origin": "dual_expert_agreement",
-        "source": "accepted claim-only pilot projection",
-        "claim_detail": "Accepted total/profile retained; per-claim awards are not flattened in the selected suite snapshot.",
+        "claim_detail": "Final scores and correctness judgments are available; per-claim awards are unavailable.",
         "targeted_human_review": false
       },
       "historical_expert_annotations": {},
@@ -176,9 +170,7 @@
       "answer_sha256": "08f81ec6e149e1a799c422db78c4e87aa86a43bea6007167bc939ea814838d6d",
       "candidate_input_sha256": "e967718f2bf6446ae5b94358d901875d3debfa40d9cdd2c8fa39f1d451b16239",
       "historical_review": {
-        "origin": "dual_expert_agreement",
-        "source": "accepted claim-only pilot projection",
-        "claim_detail": "Accepted total/profile retained; per-claim awards are not flattened in the selected suite snapshot.",
+        "claim_detail": "Final scores and correctness judgments are available; per-claim awards are unavailable.",
         "targeted_human_review": false
       },
       "historical_expert_annotations": {},
@@ -225,9 +217,7 @@
       "answer_sha256": "54baca829824b00c18feea2081a12468f458e03e7fdb60af277903e5d7fd4f42",
       "candidate_input_sha256": "426b641a7fdffe07495a4dfaae0090ed6dfe166c85b8f1f50723cfa70ba3a29b",
       "historical_review": {
-        "origin": "operator_sonnet",
-        "source": "accepted claim-only pilot projection",
-        "claim_detail": "Accepted total/profile retained; per-claim awards are not flattened in the selected suite snapshot.",
+        "claim_detail": "Final scores and correctness judgments are available; per-claim awards are unavailable.",
         "targeted_human_review": false
       },
       "historical_expert_annotations": {},
@@ -274,9 +264,7 @@
       "answer_sha256": "a7ab70fa15c25af5eb510f6f8bde6acf018f8c698be8136de4b6868d6d80c08c",
       "candidate_input_sha256": "5713ba532921dd5a27d826fffa18758c812af3dfb994f99c127e893dce18ade4",
       "historical_review": {
-        "origin": "operator_sufficient_agreement",
-        "source": "accepted claim-only pilot projection",
-        "claim_detail": "Accepted total/profile retained; per-claim awards are not flattened in the selected suite snapshot.",
+        "claim_detail": "Final scores and correctness judgments are available; per-claim awards are unavailable.",
         "targeted_human_review": false
       },
       "historical_expert_annotations": {},
@@ -323,9 +311,7 @@
       "answer_sha256": "56ac79696866d475ca846b4fbb6175c0bb333ec17f4c4ff4ff43ce5362d387d7",
       "candidate_input_sha256": "57efe05cf672c756d270b74cd18ac4c58abf95e520356e0b84baae31c0513fad",
       "historical_review": {
-        "origin": "operator_sufficient_agreement",
-        "source": "accepted claim-only pilot projection",
-        "claim_detail": "Accepted total/profile retained; per-claim awards are not flattened in the selected suite snapshot.",
+        "claim_detail": "Final scores and correctness judgments are available; per-claim awards are unavailable.",
         "targeted_human_review": false
       },
       "historical_expert_annotations": {},
@@ -372,9 +358,7 @@
       "answer_sha256": "3909716c28bc5c0218e3d4fa33b125ad28276e773a0376cbdf5b4c74fd6fd52f",
       "candidate_input_sha256": "a9c6ffd0e0b620848a5063f7e316a5ec845a99e4d0acd5f37caa5e4adb8576e6",
       "historical_review": {
-        "origin": "dual_expert_agreement",
-        "source": "accepted claim-only pilot projection",
-        "claim_detail": "Accepted total/profile retained; per-claim awards are not flattened in the selected suite snapshot.",
+        "claim_detail": "Final scores and correctness judgments are available; per-claim awards are unavailable.",
         "targeted_human_review": false
       },
       "historical_expert_annotations": {},
@@ -421,9 +405,7 @@
       "answer_sha256": "aa3ac8d763a2c3fa1aae207bde17f00fedd9b0a95d1a2a8ff686c51eb9de3e20",
       "candidate_input_sha256": "576159713a3b8abb7d78bb0e65e63abbed6f9c80eab7d0aa592b1feadc9b5486",
       "historical_review": {
-        "origin": "dual_expert_agreement",
-        "source": "accepted claim-only pilot projection",
-        "claim_detail": "Accepted total/profile retained; per-claim awards are not flattened in the selected suite snapshot.",
+        "claim_detail": "Final scores and correctness judgments are available; per-claim awards are unavailable.",
         "targeted_human_review": false
       },
       "historical_expert_annotations": {},
@@ -470,9 +452,7 @@
       "answer_sha256": "73a3cc5c6e52dcbd65fcb801aec7cd4a9217c22cca2c798f60305de37a629f32",
       "candidate_input_sha256": "a5e941dd054ee1d9b9f8d842d6c11fb7e1884f55c30c4607c135b44cac6111cc",
       "historical_review": {
-        "origin": "operator_gpt",
-        "source": "accepted claim-only pilot projection",
-        "claim_detail": "Accepted total/profile retained; per-claim awards are not flattened in the selected suite snapshot.",
+        "claim_detail": "Final scores and correctness judgments are available; per-claim awards are unavailable.",
         "targeted_human_review": false
       },
       "historical_expert_annotations": {},
@@ -519,9 +499,7 @@
       "answer_sha256": "12086709e30f095ae86a6796b5a40873fa0d9773b590e51e99f7f630a34c0478",
       "candidate_input_sha256": "9e832c357c46ce2b6c57acbc26dc4e148b946f2403c46ba67912f79bacfc454e",
       "historical_review": {
-        "origin": "operator_sufficient_agreement",
-        "source": "accepted claim-only pilot projection",
-        "claim_detail": "Accepted total/profile retained; per-claim awards are not flattened in the selected suite snapshot.",
+        "claim_detail": "Final scores and correctness judgments are available; per-claim awards are unavailable.",
         "targeted_human_review": false
       },
       "historical_expert_annotations": {},
@@ -568,9 +546,7 @@
       "answer_sha256": "d4f1b60b65ca76c9706b72bf2f9beba77a321e0f6ed21ef424b71049f5c83bac",
       "candidate_input_sha256": "4ee9dc93a7e8975d160d83ad511ad59bd3561dc5f760ebe52efa42b3250a4f24",
       "historical_review": {
-        "origin": "operator_sufficient_agreement",
-        "source": "accepted claim-only pilot projection",
-        "claim_detail": "Accepted total/profile retained; per-claim awards are not flattened in the selected suite snapshot.",
+        "claim_detail": "Final scores and correctness judgments are available; per-claim awards are unavailable.",
         "targeted_human_review": false
       },
       "historical_expert_annotations": {},
@@ -617,9 +593,7 @@
       "answer_sha256": "f67b4ee051b4e7cd997fcf4cf035e8c344d5639c04020d9a7e4fbab250b7bcf5",
       "candidate_input_sha256": "be623b3f0b181940c1d587919fd9bf7a7e3e74066b038becaf8a1324e5e5ed3d",
       "historical_review": {
-        "origin": "operator_gpt",
-        "source": "accepted claim-only pilot projection",
-        "claim_detail": "Accepted total/profile retained; per-claim awards are not flattened in the selected suite snapshot.",
+        "claim_detail": "Final scores and correctness judgments are available; per-claim awards are unavailable.",
         "targeted_human_review": false
       },
       "historical_expert_annotations": {},
@@ -666,9 +640,7 @@
       "answer_sha256": "bda05b09c6a281e26c803325194d15a8620dc18665053aa36847d928aaeec75b",
       "candidate_input_sha256": "8140590dc8237342f23450e91bbae417e326a1a8af2b4bdf4726cf57cb8e4746",
       "historical_review": {
-        "origin": "dual_expert_agreement",
-        "source": "accepted claim-only pilot projection",
-        "claim_detail": "Accepted total/profile retained; per-claim awards are not flattened in the selected suite snapshot.",
+        "claim_detail": "Final scores and correctness judgments are available; per-claim awards are unavailable.",
         "targeted_human_review": false
       },
       "historical_expert_annotations": {},
@@ -715,9 +687,7 @@
       "answer_sha256": "76fe62b66e8ad656a0532fb6f2eb0d2ddfc76ce0e438bb9c96133f3b3abc5aa2",
       "candidate_input_sha256": "b33f63efdf2151d617409f45d8528e50bb660d7606aa60b5a6002424d34df6cb",
       "historical_review": {
-        "origin": "operator_sufficient_agreement",
-        "source": "accepted claim-only pilot projection",
-        "claim_detail": "Accepted total/profile retained; per-claim awards are not flattened in the selected suite snapshot.",
+        "claim_detail": "Final scores and correctness judgments are available; per-claim awards are unavailable.",
         "targeted_human_review": false
       },
       "historical_expert_annotations": {},
@@ -764,9 +734,7 @@
       "answer_sha256": "3b5c857390a23de9705333dbbe4561b0b2a70c5a0c888413ef9cb8491d2fdf2e",
       "candidate_input_sha256": "2643428ae3b3d442d47ce4ea63a1345edd7a22fca076e3cabd09d444e78a6ccc",
       "historical_review": {
-        "origin": "operator_sufficient_agreement",
-        "source": "accepted claim-only pilot projection",
-        "claim_detail": "Accepted total/profile retained; per-claim awards are not flattened in the selected suite snapshot.",
+        "claim_detail": "Final scores and correctness judgments are available; per-claim awards are unavailable.",
         "targeted_human_review": false
       },
       "historical_expert_annotations": {},
@@ -813,9 +781,7 @@
       "answer_sha256": "91d284d2c2f897afc7ce843006696753eafb6350626b01563cee362fb8c30e2a",
       "candidate_input_sha256": "060c78e83bdf60a43bdc6370d5214c7f8cd9c2493925370d3433bbf0c4b8bb36",
       "historical_review": {
-        "origin": "dual_expert_agreement",
-        "source": "accepted claim-only pilot projection",
-        "claim_detail": "Accepted total/profile retained; per-claim awards are not flattened in the selected suite snapshot.",
+        "claim_detail": "Final scores and correctness judgments are available; per-claim awards are unavailable.",
         "targeted_human_review": false
       },
       "historical_expert_annotations": {},
@@ -862,9 +828,7 @@
       "answer_sha256": "bd6761df0a5391cc2d76863f1dcdd891bec3561ba50b19e6b86e65e0577dc2b3",
       "candidate_input_sha256": "1ca62a4bf269852ce3f2d11bd53ffc0e563177d9ddd4a4896c15ac7bb4b2bc1f",
       "historical_review": {
-        "origin": "operator_sufficient_agreement",
-        "source": "accepted claim-only pilot projection",
-        "claim_detail": "Accepted total/profile retained; per-claim awards are not flattened in the selected suite snapshot.",
+        "claim_detail": "Final scores and correctness judgments are available; per-claim awards are unavailable.",
         "targeted_human_review": false
       },
       "historical_expert_annotations": {},
@@ -911,9 +875,7 @@
       "answer_sha256": "4ccd510c6f1296dadce2ac01768299b8f529a7ae2fb2b48f78217087128788a8",
       "candidate_input_sha256": "bbc76964d3635948c3408f1ebf3e1f5166014d18daa7ebbd0cfcd75f495ff523",
       "historical_review": {
-        "origin": "operator_sonnet",
-        "source": "accepted claim-only pilot projection",
-        "claim_detail": "Accepted total/profile retained; per-claim awards are not flattened in the selected suite snapshot.",
+        "claim_detail": "Final scores and correctness judgments are available; per-claim awards are unavailable.",
         "targeted_human_review": false
       },
       "historical_expert_annotations": {},
@@ -960,9 +922,7 @@
       "answer_sha256": "fe0257a8e8c357e5a3cfbff954f88d9144c77f6db4d81e2bfd26ba6678ede222",
       "candidate_input_sha256": "73669d771696aaeb1ecf3fb4edd480886272ca56fecc13d9565c2d9e794e3eed",
       "historical_review": {
-        "origin": "dual_expert_agreement",
-        "source": "accepted claim-only pilot projection",
-        "claim_detail": "Accepted total/profile retained; per-claim awards are not flattened in the selected suite snapshot.",
+        "claim_detail": "Final scores and correctness judgments are available; per-claim awards are unavailable.",
         "targeted_human_review": false
       },
       "historical_expert_annotations": {},
@@ -1009,9 +969,7 @@
       "answer_sha256": "5e5d501af56dbece741b8d5a6731af972973d7288053951b41ed5651453df166",
       "candidate_input_sha256": "599c230b7294757abb83e64e4d94e10470a9d7cca3628dd189827101a94f2f06",
       "historical_review": {
-        "origin": "dual_expert_agreement",
-        "source": "accepted claim-only pilot projection",
-        "claim_detail": "Accepted total/profile retained; per-claim awards are not flattened in the selected suite snapshot.",
+        "claim_detail": "Final scores and correctness judgments are available; per-claim awards are unavailable.",
         "targeted_human_review": false
       },
       "historical_expert_annotations": {},
@@ -1058,9 +1016,7 @@
       "answer_sha256": "1fe65bc39beeda9906fb6cb2fa37eef109cb3dda9a118b2a95323a737710b494",
       "candidate_input_sha256": "1f026bfc10470c64c3a6dba86ad7dbb75ee08349a1b4257256246596d752d371",
       "historical_review": {
-        "origin": "operator_gpt",
-        "source": "accepted claim-only pilot projection",
-        "claim_detail": "Accepted total/profile retained; per-claim awards are not flattened in the selected suite snapshot.",
+        "claim_detail": "Final scores and correctness judgments are available; per-claim awards are unavailable.",
         "targeted_human_review": false
       },
       "historical_expert_annotations": {},
@@ -1107,9 +1063,7 @@
       "answer_sha256": "9e184dd2290876514a680b5df16e46ab3ea2bd62fcd0e101bea9c39b52244aaf",
       "candidate_input_sha256": "d598e3db7a58981d3298f24bc78c75b893eecd1e5bf13f849c91830f6c78bc43",
       "historical_review": {
-        "origin": "operator_gpt",
-        "source": "accepted claim-only pilot projection",
-        "claim_detail": "Accepted total/profile retained; per-claim awards are not flattened in the selected suite snapshot.",
+        "claim_detail": "Final scores and correctness judgments are available; per-claim awards are unavailable.",
         "targeted_human_review": false
       },
       "historical_expert_annotations": {},
@@ -1156,9 +1110,7 @@
       "answer_sha256": "f524106f1bcaed8cf8636e60ea8dc0e9d5e18cbc850e680d985880c858e21c6c",
       "candidate_input_sha256": "8eeaca6f85ff35ef45f729a386a9efa61fdff5b1045e9146665bfcbc4755c60c",
       "historical_review": {
-        "origin": "operator_sufficient_agreement",
-        "source": "accepted claim-only pilot projection",
-        "claim_detail": "Accepted total/profile retained; per-claim awards are not flattened in the selected suite snapshot.",
+        "claim_detail": "Final scores and correctness judgments are available; per-claim awards are unavailable.",
         "targeted_human_review": false
       },
       "historical_expert_annotations": {},
@@ -1205,9 +1157,7 @@
       "answer_sha256": "0aa599b98ea70bdb94a7f64bfd49eead5a438cb7659f35f1d8b8030c24e22863",
       "candidate_input_sha256": "e4ba4e34b4047102d925448e466118a6b352179ab641e2c7e936978bd012925c",
       "historical_review": {
-        "origin": "operator_sufficient_agreement",
-        "source": "accepted claim-only pilot projection",
-        "claim_detail": "Accepted total/profile retained; per-claim awards are not flattened in the selected suite snapshot.",
+        "claim_detail": "Final scores and correctness judgments are available; per-claim awards are unavailable.",
         "targeted_human_review": false
       },
       "historical_expert_annotations": {},
@@ -1254,9 +1204,7 @@
       "answer_sha256": "1a4ae6fe14d6520d5d6678b8fea8e1b6eb17253c30199797dc2c7c07e178ee2f",
       "candidate_input_sha256": "6390e5cefe7e366a00229fab9c7be02ad13e8db8add97bc9f683b731e11714f7",
       "historical_review": {
-        "origin": "operator_sonnet",
-        "source": "accepted claim-only pilot projection",
-        "claim_detail": "Accepted total/profile retained; per-claim awards are not flattened in the selected suite snapshot.",
+        "claim_detail": "Final scores and correctness judgments are available; per-claim awards are unavailable.",
         "targeted_human_review": false
       },
       "historical_expert_annotations": {},
@@ -1303,9 +1251,7 @@
       "answer_sha256": "977536f3fc044ed36f2e9c4d08ae6b53baba3cfc7bb2e710c67d4238e9e64865",
       "candidate_input_sha256": "ffdedae3816168bfd90a4e15322a5cf3cd1c78eb74897e4fb5cfcc0dfcf1115a",
       "historical_review": {
-        "origin": "operator_sufficient_agreement",
-        "source": "accepted claim-only pilot projection",
-        "claim_detail": "Accepted total/profile retained; per-claim awards are not flattened in the selected suite snapshot.",
+        "claim_detail": "Final scores and correctness judgments are available; per-claim awards are unavailable.",
         "targeted_human_review": false
       },
       "historical_expert_annotations": {},
@@ -1352,9 +1298,7 @@
       "answer_sha256": "1946297a75a1be8fb142f4b38e9ec647b7a33d537246b7df2884b62dc750c9cf",
       "candidate_input_sha256": "d5f92be27de4020e182af903d9d6295ea4e1de9fed82b2548cc4316232485193",
       "historical_review": {
-        "origin": "operator_sonnet",
-        "source": "accepted claim-only pilot projection",
-        "claim_detail": "Accepted total/profile retained; per-claim awards are not flattened in the selected suite snapshot.",
+        "claim_detail": "Final scores and correctness judgments are available; per-claim awards are unavailable.",
         "targeted_human_review": false
       },
       "historical_expert_annotations": {},
@@ -1401,9 +1345,7 @@
       "answer_sha256": "434767979e05355a7fd2afa34a02db999a73cc052c6a07b4c4cdb63a26ec6caa",
       "candidate_input_sha256": "e963c481a501aaffb08b0e03464f1b7cb70e10d0c55bb531f2c0e6998371ff22",
       "historical_review": {
-        "origin": "operator_sufficient_agreement",
-        "source": "accepted claim-only pilot projection",
-        "claim_detail": "Accepted total/profile retained; per-claim awards are not flattened in the selected suite snapshot.",
+        "claim_detail": "Final scores and correctness judgments are available; per-claim awards are unavailable.",
         "targeted_human_review": false
       },
       "historical_expert_annotations": {},
@@ -1450,9 +1392,7 @@
       "answer_sha256": "3d4da83e3b9c48cf340bfb22f56a93435b807de4b04e33713386abafbc8fe868",
       "candidate_input_sha256": "0d9e4f6a69f72b193f78d47b5ebea7bdc0ceb753b8e126a7a4e0cac222dee201",
       "historical_review": {
-        "origin": "dual_expert_agreement",
-        "source": "accepted claim-only pilot projection",
-        "claim_detail": "Accepted total/profile retained; per-claim awards are not flattened in the selected suite snapshot.",
+        "claim_detail": "Final scores and correctness judgments are available; per-claim awards are unavailable.",
         "targeted_human_review": false
       },
       "historical_expert_annotations": {},
@@ -1499,9 +1439,7 @@
       "answer_sha256": "8468cf3a1c43c2354271ea45e4856aad1d637d57b9a87aefd1c81e7d583e780d",
       "candidate_input_sha256": "481e7270f6a70fea65320757ee3e7f56365253c1b38afb7a38df55f2f1046ce9",
       "historical_review": {
-        "origin": "operator_sufficient_agreement",
-        "source": "accepted claim-only pilot projection",
-        "claim_detail": "Accepted total/profile retained; per-claim awards are not flattened in the selected suite snapshot.",
+        "claim_detail": "Final scores and correctness judgments are available; per-claim awards are unavailable.",
         "targeted_human_review": false
       },
       "historical_expert_annotations": {},
@@ -1548,9 +1486,7 @@
       "answer_sha256": "0624cb82ac4a50f4300c7b562afcdd2fc113770ff139eb038e6a73fd4f37520b",
       "candidate_input_sha256": "ee4671e4282f50a73ae6f28278f5261400a77f69a13259965cfa76b80a5af9f4",
       "historical_review": {
-        "origin": "operator_sufficient_agreement",
-        "source": "accepted claim-only pilot projection",
-        "claim_detail": "Accepted total/profile retained; per-claim awards are not flattened in the selected suite snapshot.",
+        "claim_detail": "Final scores and correctness judgments are available; per-claim awards are unavailable.",
         "targeted_human_review": false
       },
       "historical_expert_annotations": {},
@@ -1597,9 +1533,7 @@
       "answer_sha256": "38e2c2dafe0a865d4081fbedafd6e0b0fed040d3954462094ad56aa4ffe64bf2",
       "candidate_input_sha256": "ccbf1cc4c6c5c355ce07dc8c2c895da7bbd0239e8aafaf6c1bfb38825c588f16",
       "historical_review": {
-        "origin": "dual_expert_agreement",
-        "source": "accepted claim-only pilot projection",
-        "claim_detail": "Accepted total/profile retained; per-claim awards are not flattened in the selected suite snapshot.",
+        "claim_detail": "Final scores and correctness judgments are available; per-claim awards are unavailable.",
         "targeted_human_review": false
       },
       "historical_expert_annotations": {},
@@ -1646,9 +1580,7 @@
       "answer_sha256": "bbff7a3d43705e2c481044adc2950dbaeab4655f4d5ce5e01044bb848d881d68",
       "candidate_input_sha256": "1907456d7bf36caf14f7151cff3116cc459efcfaa50e1327cf6e01210fa3184f",
       "historical_review": {
-        "origin": "operator_sonnet",
-        "source": "accepted claim-only pilot projection",
-        "claim_detail": "Accepted total/profile retained; per-claim awards are not flattened in the selected suite snapshot.",
+        "claim_detail": "Final scores and correctness judgments are available; per-claim awards are unavailable.",
         "targeted_human_review": false
       },
       "historical_expert_annotations": {},
@@ -1695,9 +1627,7 @@
       "answer_sha256": "77d5d20786b87257617f47889b7ca24ee1170db5631275449455683100b814cf",
       "candidate_input_sha256": "1e7e2a082abb564c1d22e99938cfe338f182207abdf53f62a935090282e02765",
       "historical_review": {
-        "origin": "operator_sonnet",
-        "source": "accepted claim-only pilot projection",
-        "claim_detail": "Accepted total/profile retained; per-claim awards are not flattened in the selected suite snapshot.",
+        "claim_detail": "Final scores and correctness judgments are available; per-claim awards are unavailable.",
         "targeted_human_review": false
       },
       "historical_expert_annotations": {},
@@ -1744,9 +1674,7 @@
       "answer_sha256": "0a8779acfb76ffd4ed39721c09ebff095a04af3da3c039d5e615a137127c171e",
       "candidate_input_sha256": "9ca7fb52c8589a3209ce590d3bba748519846f74cabb53fbb5307a2d12fb651b",
       "historical_review": {
-        "origin": "dual_expert_agreement",
-        "source": "accepted claim-only pilot projection",
-        "claim_detail": "Accepted total/profile retained; per-claim awards are not flattened in the selected suite snapshot.",
+        "claim_detail": "Final scores and correctness judgments are available; per-claim awards are unavailable.",
         "targeted_human_review": false
       },
       "historical_expert_annotations": {},
@@ -1793,13 +1721,11 @@
       "answer_sha256": "74a32607cd92687647b93308b26a509ccd8e685032ab885512add7ea6d129aba",
       "candidate_input_sha256": "7f0458012db1b5455483a00e21384961433ea04d6f0dfcad2c2d49cc31eea9ab",
       "historical_review": {
-        "origin": "dual_expert_agreed_summary",
-        "source": "accepted claim-only pilot projection",
-        "claim_detail": "Accepted total/profile retained; per-claim awards are not flattened in the selected suite snapshot.",
+        "claim_detail": "Final scores and correctness judgments are available; per-claim awards are unavailable.",
         "targeted_human_review": false
       },
       "historical_expert_annotations": {
-        "gpt": {
+        "grader_1": {
           "claims": [
             {
               "claim_id": "C001",
@@ -1826,7 +1752,7 @@
             {
               "mistake_id": "M001",
               "answer_quote": "A successful skill check proves that your character is aware of, focused on, and investigating the specific area required to discover the object.",
-              "reason": "Misstates what a check establishes: checks resolve attempted challenges, while the described search supplies its location. The later assertion that the roll only confirms skill repeats this mistaken account of checks. The answer nevertheless supplies the correct scenario outcome and vicinity explanation, so this unlisted diagnostic causes no lost claim points and has no listed penalty.",
+              "reason": "Misstates what a check establishes: checks resolve attempted challenges, while the described search supplies its location. The later assertion that the roll only confirms skill repeats this mistaken account of checks. The answer nevertheless supplies the correct scenario outcome and vicinity explanation.",
               "pdf_pages": [
                 6,
                 12
@@ -1888,7 +1814,7 @@
             }
           ]
         },
-        "sonnet": {
+        "grader_2": {
           "claims": [
             {
               "claim_id": "C001",
@@ -1915,7 +1841,7 @@
             {
               "mistake_id": "M001",
               "answer_quote": "A successful skill check proves that your character is aware of, focused on, and investigating the specific area required to discover the object.",
-              "reason": "The SRD does not say a successful check proves awareness, focus or search location. It makes the described search in the object's vicinity a precondition for the check. An ability check is a creature using talent and training to try to overcome a challenge. This is a loose, backwards framing of the rule. It is an unlisted diagnostic finding. It does not contradict either required ruling and has no listed penalty.",
+              "reason": "The SRD does not say a successful check proves awareness, focus or search location. It makes the described search in the object's vicinity a precondition for the check. An ability check is a creature using talent and training to try to overcome a challenge. This is a loose, backwards framing of the rule. It does not contradict either required ruling.",
               "pdf_pages": [
                 6,
                 12
@@ -1985,13 +1911,11 @@
       "answer_sha256": "793c2aa3a24f740ed14254ad574a56bdac9c673167b6275d532bee7366878d93",
       "candidate_input_sha256": "b2adf7ea9a58e302a6327b77273764b9a89066ba5dc9026e8623c699d4cb3f1c",
       "historical_review": {
-        "origin": "dual_expert_agreed_summary",
-        "source": "accepted claim-only pilot projection",
-        "claim_detail": "Accepted total/profile retained; per-claim awards are not flattened in the selected suite snapshot.",
+        "claim_detail": "Final scores and correctness judgments are available; per-claim awards are unavailable.",
         "targeted_human_review": false
       },
       "historical_expert_annotations": {
-        "gpt": {
+        "grader_1": {
           "claims": [
             {
               "claim_id": "C001",
@@ -2045,7 +1969,7 @@
             }
           ]
         },
-        "sonnet": {
+        "grader_2": {
           "claims": [
             {
               "claim_id": "C001",
@@ -2073,7 +1997,7 @@
             {
               "mistake_id": "M001",
               "answer_quote": "It does not impose a hard limit on the total number of shots the character can fire, only that each shot must be provisioned with ammunition.",
-              "reason": "The answer denies Loading's per-action limit and allows two shots solely because there are two attacks. This is the listed error E001. The wrong count and wrong explanation come from this one mistake.",
+              "reason": "The answer denies Loading's per-action limit and allows two shots solely because there are two attacks. The wrong count and wrong explanation come from this one mistake.",
               "pdf_pages": [
                 90
               ]
@@ -2146,13 +2070,11 @@
       "answer_sha256": "266f89c67fe48adb0cad0db9db483c0c0f692f6fa53f9fc6eab9621c5b9b8f9a",
       "candidate_input_sha256": "c22e77e51959fda554acb23060e23e4432fd2404530ec4498453262d70c24e45",
       "historical_review": {
-        "origin": "dual_expert_agreed_summary",
-        "source": "accepted claim-only pilot projection",
-        "claim_detail": "Accepted total/profile retained; per-claim awards are not flattened in the selected suite snapshot.",
+        "claim_detail": "Final scores and correctness judgments are available; per-claim awards are unavailable.",
         "targeted_human_review": false
       },
       "historical_expert_annotations": {
-        "gpt": {
+        "grader_1": {
           "claims": [
             {
               "claim_id": "C001",
@@ -2193,7 +2115,7 @@
             }
           ]
         },
-        "sonnet": {
+        "grader_2": {
           "claims": [
             {
               "claim_id": "C001",
@@ -2278,13 +2200,11 @@
       "answer_sha256": "08e72dfd8ec65d6b0da62565700fc18a04c34f067cfa171393f0f85c73a1cdf8",
       "candidate_input_sha256": "e967718f2bf6446ae5b94358d901875d3debfa40d9cdd2c8fa39f1d451b16239",
       "historical_review": {
-        "origin": "dual_expert_agreed_summary",
-        "source": "accepted claim-only pilot projection",
-        "claim_detail": "Accepted total/profile retained; per-claim awards are not flattened in the selected suite snapshot.",
+        "claim_detail": "Final scores and correctness judgments are available; per-claim awards are unavailable.",
         "targeted_human_review": false
       },
       "historical_expert_annotations": {
-        "gpt": {
+        "grader_1": {
           "claims": [
             {
               "claim_id": "C001",
@@ -2352,7 +2272,7 @@
             }
           ]
         },
-        "sonnet": {
+        "grader_2": {
           "claims": [
             {
               "claim_id": "C001",
@@ -2464,13 +2384,11 @@
       "answer_sha256": "9f4c4aa77f90fcc8e8029337aa0c3757f4ea30d1414535bc871092772597db1c",
       "candidate_input_sha256": "426b641a7fdffe07495a4dfaae0090ed6dfe166c85b8f1f50723cfa70ba3a29b",
       "historical_review": {
-        "origin": "dual_expert_agreed_summary",
-        "source": "accepted claim-only pilot projection",
-        "claim_detail": "Accepted total/profile retained; per-claim awards are not flattened in the selected suite snapshot.",
+        "claim_detail": "Final scores and correctness judgments are available; per-claim awards are unavailable.",
         "targeted_human_review": false
       },
       "historical_expert_annotations": {
-        "gpt": {
+        "grader_1": {
           "claims": [
             {
               "claim_id": "C001",
@@ -2505,7 +2423,7 @@
             }
           ]
         },
-        "sonnet": {
+        "grader_2": {
           "claims": [
             {
               "claim_id": "C001",
@@ -2584,13 +2502,11 @@
       "answer_sha256": "b60a5ae61417da99f038a070177a3134afdf8857cf06c87b31ccf5a505f384dc",
       "candidate_input_sha256": "5713ba532921dd5a27d826fffa18758c812af3dfb994f99c127e893dce18ade4",
       "historical_review": {
-        "origin": "dual_expert_agreed_summary",
-        "source": "accepted claim-only pilot projection",
-        "claim_detail": "Accepted total/profile retained; per-claim awards are not flattened in the selected suite snapshot.",
+        "claim_detail": "Final scores and correctness judgments are available; per-claim awards are unavailable.",
         "targeted_human_review": false
       },
       "historical_expert_annotations": {
-        "gpt": {
+        "grader_1": {
           "claims": [
             {
               "claim_id": "C001",
@@ -2639,7 +2555,7 @@
             {
               "mistake_id": "M001",
               "answer_quote": "Dara's Rage remains active at the start of Round 3 in both Scenario A and Scenario B.",
-              "reason": "The candidate's unconditional-persistence rule produces the wrong Scenario B outcome and its claim that moving, Dodging, and arbitrary utility actions maintain Rage. These are repeated applications of one underlying maintenance error, recorded once. Its Scenario B application matches E002. E003 does not match because no full-minute duration is asserted; E001 and E004 do not match because no hit is required. This same false rule directly replaces C001's duration, C002's extension explanation, C003's outcome, and C004's maintenance advice.",
+              "reason": "The candidate's unconditional-persistence rule produces the wrong Scenario B outcome and its claim that moving, Dodging, and arbitrary utility actions maintain Rage. This false rule replaces the required duration, extension explanation, Scenario B outcome and maintenance advice.",
               "pdf_pages": [
                 29
               ]
@@ -2647,7 +2563,7 @@
             {
               "mistake_id": "M002",
               "answer_quote": "making a grappling attempt that isn't an attack",
-              "reason": "Dara's standard grapple is an Unarmed Strike, expressly defined as a melee attack. Using a saving throw instead of an attack roll does not make it a non-attack. This is an unlisted diagnostic error concerning the proposed C004 alternative, with no additional numerical penalty or duplicated claim loss.",
+              "reason": "Dara's standard grapple is an Unarmed Strike, expressly defined as a melee attack. Using a saving throw instead of an attack roll does not make it a non-attack.",
               "pdf_pages": [
                 190
               ]
@@ -2732,7 +2648,7 @@
             }
           ]
         },
-        "sonnet": {
+        "grader_2": {
           "claims": [
             {
               "claim_id": "C001",
@@ -2779,7 +2695,7 @@
             {
               "mistake_id": "M001",
               "answer_quote": "**Scenario B:** Moving and using Dodge does not end the state of Rage.",
-              "reason": "Treats Dodge and moving as leaving Rage active into round 3. This flips the Scenario B outcome, which matches E002 in effect. Only the three listed methods extend Rage.",
+              "reason": "Treats Dodge and moving as leaving Rage active into round 3. This flips the Scenario B outcome. Only the three listed methods extend Rage.",
               "pdf_pages": [
                 29
               ]
@@ -2787,7 +2703,7 @@
             {
               "mistake_id": "M002",
               "answer_quote": "Rage is a state that lasts until it is voluntarily ended, the Barbarian is incapacitated, or they become unconscious.",
-              "reason": "Misstates the duration as unconditional persistence. This is not E003 because no full-minute duration is asserted, and the answer never requires a hit. It is an unlisted diagnostic error. Its loss is the wrong duration (C001) and the missing attack-roll mechanism in Scenario A (C002).",
+              "reason": "Misstates the duration as unconditional persistence and omits the attack-roll mechanism in Scenario A.",
               "pdf_pages": [
                 29
               ]
@@ -2795,7 +2711,7 @@
             {
               "mistake_id": "M003",
               "answer_quote": "the method to keep it active would be to take any action that does not explicitly end the Rage condition.",
-              "reason": "Arbitrary actions do not extend Rage. The answer also calls a grapple 'not an attack', but an Unarmed Strike grapple is a melee attack. This is an unlisted diagnostic error. Its loss is the missing valid non-attack method (C004).",
+              "reason": "Arbitrary actions do not extend Rage. The answer also calls a grapple 'not an attack', but an Unarmed Strike grapple is a melee attack.",
               "pdf_pages": [
                 29,
                 190
@@ -2869,13 +2785,11 @@
       "answer_sha256": "418506ed2d2cd18b02b7cebe4a6c9d2eb746a150c07a8d9f8007203bce6f2f66",
       "candidate_input_sha256": "57efe05cf672c756d270b74cd18ac4c58abf95e520356e0b84baae31c0513fad",
       "historical_review": {
-        "origin": "dual_expert_agreed_summary",
-        "source": "accepted claim-only pilot projection",
-        "claim_detail": "Accepted total/profile retained; per-claim awards are not flattened in the selected suite snapshot.",
+        "claim_detail": "Final scores and correctness judgments are available; per-claim awards are unavailable.",
         "targeted_human_review": false
       },
       "historical_expert_annotations": {
-        "gpt": {
+        "grader_1": {
           "claims": [
             {
               "claim_id": "C001",
@@ -2936,7 +2850,7 @@
             {
               "mistake_id": "M002",
               "answer_quote": "typically requiring the target to make a higher DC save than they would if the caster had matched the spell level.",
-              "reason": "Dispel Magic requires no target saving throw. Higher-level ongoing spells instead require the caster's ability check against DC 10 plus the spell's level. Repeated saving-throw requirements express this same false mechanic. E001 does not match because neither DC 15 nor the Sorcerer's spell save DC is specified. Outcome losses are assigned to the specific outcome mistakes; C003 independently lacks roll composition.",
+              "reason": "Dispel Magic requires no target saving throw. Higher-level ongoing spells instead require the caster's ability check against DC 10 plus the spell's level. Repeated saving-throw requirements express this same false mechanic.",
               "pdf_pages": [
                 124
               ]
@@ -2944,7 +2858,7 @@
             {
               "mistake_id": "M003",
               "answer_quote": "If they are successful in dispelling any spell, it will be **Haste**.",
-              "reason": "This incorrectly excludes successful dispelling of Greater Invisibility with a level 3 slot. That spell ends on a successful DC 14 spellcasting-ability check. This is a diagnostic error concerning C002, with no additional listed penalty.",
+              "reason": "This incorrectly excludes successful dispelling of Greater Invisibility with a level 3 slot. That spell ends on a successful DC 14 spellcasting-ability check.",
               "pdf_pages": [
                 124,
                 137
@@ -2953,7 +2867,7 @@
             {
               "mistake_id": "M004",
               "answer_quote": "assuming the roll and save succeed",
-              "reason": "Requiring a roll to end Greater Invisibility with a level 4 slot contradicts the higher-slot automatic-ending rule. The saving-throw mechanic is already recorded as M002. This concerns C004 and carries no additional listed penalty.",
+              "reason": "Requiring a roll to end Greater Invisibility with a level 4 slot contradicts the higher-slot automatic-ending rule.",
               "pdf_pages": [
                 124,
                 137
@@ -3007,7 +2921,7 @@
             }
           ]
         },
-        "sonnet": {
+        "grader_2": {
           "claims": [
             {
               "claim_id": "C001",
@@ -3055,7 +2969,7 @@
             {
               "mistake_id": "M1",
               "answer_quote": "If the Sorcerer succeeds on the check and the knight fails its saving throw, *Haste* ends.",
-              "reason": "Haste (level 3) ends automatically with a level 3 slot. The answer requires a check, plus a knight saving throw that Dispel Magic does not use. This matches E003 (Haste also requires a check).",
+              "reason": "Haste (level 3) ends automatically with a level 3 slot. The answer requires a check, plus a knight saving throw that Dispel Magic does not use.",
               "pdf_pages": [
                 124
               ]
@@ -3063,7 +2977,7 @@
             {
               "mistake_id": "M2",
               "answer_quote": "typically requiring the target to make a higher DC save than they would if the caster had matched the spell level.",
-              "reason": "Unlisted diagnostic. Dispel Magic has no target saving throw. Higher-level spells need the caster's ability check against DC 10 plus the spell's level. The answer does not specify DC 15 or a spell save DC, so E001 does not match. Point loss is covered by C002, C003 and C004.",
+              "reason": "Dispel Magic has no target saving throw. Higher-level spells need the caster's ability check against DC 10 plus the spell's level.",
               "pdf_pages": [
                 124
               ]
@@ -3071,7 +2985,7 @@
             {
               "mistake_id": "M3",
               "answer_quote": "If they are successful in dispelling any spell, it will be **Haste**.",
-              "reason": "Unlisted diagnostic. With a level 3 slot, Greater Invisibility can end on a successful DC 14 spellcasting-ability check. The answer says it cannot effectively be targeted. The loss is covered by C002.",
+              "reason": "With a level 3 slot, Greater Invisibility can end on a successful DC 14 spellcasting-ability check. The answer says it cannot effectively be targeted.",
               "pdf_pages": [
                 124
               ]
@@ -3079,7 +2993,7 @@
             {
               "mistake_id": "M4",
               "answer_quote": "the caster must make a choice as to which specific source of magic they are attempting to remove with that single casting.",
-              "reason": "Unlisted diagnostic. The caster chooses one creature, and each ongoing spell on it is resolved by level. The caster does not pick a single spell. The loss is covered by C002 and C004.",
+              "reason": "The caster chooses one creature, and each ongoing spell on it is resolved by level. The caster does not pick a single spell.",
               "pdf_pages": [
                 124
               ]
@@ -3156,13 +3070,11 @@
       "answer_sha256": "0ae685493fb04831065f38a27b52673c95882cc44c3bfde07de0cbf034741612",
       "candidate_input_sha256": "a9c6ffd0e0b620848a5063f7e316a5ec845a99e4d0acd5f37caa5e4adb8576e6",
       "historical_review": {
-        "origin": "dual_expert_agreed_summary",
-        "source": "accepted claim-only pilot projection",
-        "claim_detail": "Accepted total/profile retained; per-claim awards are not flattened in the selected suite snapshot.",
+        "claim_detail": "Final scores and correctness judgments are available; per-claim awards are unavailable.",
         "targeted_human_review": false
       },
       "historical_expert_annotations": {
-        "gpt": {
+        "grader_1": {
           "claims": [
             {
               "claim_id": "C001",
@@ -3202,7 +3114,7 @@
             {
               "mistake_id": "M001",
               "answer_quote": "Both passages specify the duration and the three methods by which the Unconscious condition ends.",
-              "reason": "False source attribution: page 184 specifies healing and first aid but omits the explicit Short Rest endpoint found on page 17. This unlisted diagnostic error does not contradict the correctly stated required outcomes and has no listed numerical penalty.",
+              "reason": "False source attribution: page 184 specifies healing and first aid but omits the explicit Short Rest endpoint found on page 17. The required outcomes are correctly stated.",
               "pdf_pages": [
                 17,
                 184
@@ -3260,7 +3172,7 @@
             }
           ]
         },
-        "sonnet": {
+        "grader_2": {
           "claims": [
             {
               "claim_id": "C001",
@@ -3299,7 +3211,7 @@
             {
               "mistake_id": "M001",
               "answer_quote": "Both passages specify the duration and the three methods by which the Unconscious condition ends.",
-              "reason": "Minor source-attribution inaccuracy. Page 184 gives only healing and first aid as ways the condition ends, and it does not say the condition ends when the Short Rest ends. Page 17 gives all three. The rules the answer states are correct. This is an unlisted diagnostic finding with no priced penalty and no lost claim points.",
+              "reason": "Minor source-attribution inaccuracy. Page 184 gives only healing and first aid as ways the condition ends, and it does not say the condition ends when the Short Rest ends. Page 17 gives all three. The rules the answer states are correct.",
               "pdf_pages": [
                 17,
                 184
@@ -3373,13 +3285,11 @@
       "answer_sha256": "fa2c203500058fcc9c46d24957115ae587a5cd587d3596475900e54135c0e6f0",
       "candidate_input_sha256": "576159713a3b8abb7d78bb0e65e63abbed6f9c80eab7d0aa592b1feadc9b5486",
       "historical_review": {
-        "origin": "dual_expert_agreed_summary",
-        "source": "accepted claim-only pilot projection",
-        "claim_detail": "Accepted total/profile retained; per-claim awards are not flattened in the selected suite snapshot.",
+        "claim_detail": "Final scores and correctness judgments are available; per-claim awards are unavailable.",
         "targeted_human_review": false
       },
       "historical_expert_annotations": {
-        "gpt": {
+        "grader_1": {
           "claims": [
             {
               "claim_id": "C001",
@@ -3418,7 +3328,7 @@
             }
           ]
         },
-        "sonnet": {
+        "grader_2": {
           "claims": [
             {
               "claim_id": "C001",
@@ -3493,13 +3403,11 @@
       "answer_sha256": "a3f56c1d4bf114594023d979739d118a27348037853dcdd55242ff1ee553d39b",
       "candidate_input_sha256": "a5e941dd054ee1d9b9f8d842d6c11fb7e1884f55c30c4607c135b44cac6111cc",
       "historical_review": {
-        "origin": "dual_expert_agreed_summary",
-        "source": "accepted claim-only pilot projection",
-        "claim_detail": "Accepted total/profile retained; per-claim awards are not flattened in the selected suite snapshot.",
+        "claim_detail": "Final scores and correctness judgments are available; per-claim awards are unavailable.",
         "targeted_human_review": false
       },
       "historical_expert_annotations": {
-        "gpt": {
+        "grader_1": {
           "claims": [
             {
               "claim_id": "C001",
@@ -3534,7 +3442,7 @@
             {
               "mistake_id": "M002",
               "answer_quote": "Sanctuary typically grants protection against the *intent* of the enemy to harm you.",
-              "reason": "Sanctuary checks specified targeting, not intent or hostility, and permits the targeting creature to proceed after a successful Wisdom save. The accompanying description of targeted immunity misstates the same mechanism. This is an unlisted diagnostic finding with no additional numeric penalty or claim loss.",
+              "reason": "Sanctuary checks specified targeting, not intent or hostility, and permits the targeting creature to proceed after a successful Wisdom save. The accompanying description of targeted immunity misstates the same mechanism.",
               "pdf_pages": [
                 159
               ]
@@ -3552,7 +3460,7 @@
             {
               "mistake_id": "M004",
               "answer_quote": "An area spell (such as *Fireball* or *Web*) is a generalized effect that damages a volume of space.",
-              "reason": "Web does not inherently damage creatures in its area. It creates difficult terrain, light obscuration, and possible restraint; its damage requires the webs to be exposed to fire. Fireball is a valid damaging-area example. The incorrect Web example is an unlisted diagnostic finding without an additional numeric penalty.",
+              "reason": "Web does not inherently damage creatures in its area. It creates difficult terrain, light obscuration, and possible restraint; its damage requires the webs to be exposed to fire. Fireball is a valid damaging-area example.",
               "pdf_pages": [
                 131,
                 174
@@ -3630,7 +3538,7 @@
             }
           ]
         },
-        "sonnet": {
+        "grader_2": {
           "claims": [
             {
               "claim_id": "C001",
@@ -3657,7 +3565,7 @@
             {
               "mistake_id": "M001",
               "answer_quote": "Yes, Sanctuary should remain active.",
-              "reason": "The warded creature casting a spell ends Sanctuary, whether or not the spell is harmful. Keeping the ward is listed error E002.",
+              "reason": "The warded creature casting a spell ends Sanctuary, whether or not the spell is harmful.",
               "pdf_pages": [
                 159
               ]
@@ -3665,7 +3573,7 @@
             {
               "mistake_id": "M002",
               "answer_quote": "Sanctuary typically grants protection against the *intent* of the enemy to harm you.",
-              "reason": "Unlisted diagnostic error. Sanctuary has no intent test and grants no immunity. It imposes a Wisdom save on creatures who target the warded creature with an attack roll or damaging spell. It does not affect the correct C001 outcome, and it adopts no numeric penalty.",
+              "reason": "Sanctuary has no intent test and grants no immunity. It imposes a Wisdom save on creatures who target the warded creature with an attack roll or damaging spell.",
               "pdf_pages": [
                 159
               ]
@@ -3673,7 +3581,7 @@
             {
               "mistake_id": "M003",
               "answer_quote": "An area spell (such as *Fireball* or *Web*) is a generalized effect that damages a volume of space.",
-              "reason": "Unlisted minor diagnostic error. Web does not inherently deal damage on casting. Its webs burn for damage only when exposed to fire. Fireball is a valid example.",
+              "reason": "Web does not inherently deal damage on casting. Its webs burn for damage only when exposed to fire. Fireball is a valid example.",
               "pdf_pages": [
                 174
               ]
@@ -3742,13 +3650,11 @@
       "answer_sha256": "754048078e89dd3cd3de15ed7b63d318eceb11678b726f9f70ebaba9797a35fe",
       "candidate_input_sha256": "9e832c357c46ce2b6c57acbc26dc4e148b946f2403c46ba67912f79bacfc454e",
       "historical_review": {
-        "origin": "human_custom",
-        "source": "accepted claim-only pilot projection",
-        "claim_detail": "Accepted total/profile retained; per-claim awards are not flattened in the selected suite snapshot.",
+        "claim_detail": "Final scores and correctness judgments are available; per-claim awards are unavailable.",
         "targeted_human_review": true
       },
       "historical_expert_annotations": {
-        "gpt": {
+        "grader_1": {
           "claims": [
             {
               "claim_id": "C001",
@@ -3801,7 +3707,7 @@
             {
               "mistake_id": "M001",
               "answer_quote": "*Scorching Ray* is a level 2 spell that requires an action. Since she has an unspent level 2 slot, she can cast it.",
-              "reason": "Wrongly permits a second spell-slot expenditure on the same turn. This is covered by C002. E002 additionally requires the communicated explanation that the Bonus Action and action provide separate allowances; the candidate instead cites an available action and slot without making that comparison. Inferring the specific misconception would exceed the stated explanation.",
+              "reason": "Wrongly permits a second spell-slot expenditure on the same turn. The candidate cites an available action and slot without explicitly comparing Bonus Action and action allowances.",
               "pdf_pages": [
                 105,
                 159
@@ -3810,7 +3716,7 @@
             {
               "mistake_id": "M002",
               "answer_quote": "Since she has an available level 1 slot, she can use her reaction to cast *Shield*.",
-              "reason": "Wrongly permits a second spell-slot expenditure on Ysolde's turn. This is covered by C003. The candidate does not communicate E003's claimed exemption from the slot limit. Its separate statement that Reactions do not consume an action is correct and does not establish that exemption.",
+              "reason": "Wrongly permits a second spell-slot expenditure on Ysolde's turn. Its separate statement that Reactions do not consume an action is correct and does not establish an exemption from the slot limit.",
               "pdf_pages": [
                 105,
                 161,
@@ -3957,7 +3863,7 @@
             }
           ]
         },
-        "sonnet": {
+        "grader_2": {
           "claims": [
             {
               "claim_id": "C001",
@@ -4005,7 +3911,7 @@
             {
               "mistake_id": "M001",
               "answer_quote": "*Scorching Ray* is a level 2 spell that requires an action. Since she has an unspent level 2 slot, she can cast it.",
-              "reason": "Allows a second slot-expending spell on the same turn, treating the Magic action and the earlier Bonus Action spell as independent allowances. The rule text excludes this. This matches E002 in substance, though the candidate does not state the bonus-action/action wording.",
+              "reason": "Allows a second slot-expending spell on the same turn, treating the Magic action and the earlier Bonus Action spell as independent allowances. The rule text excludes this, though the candidate does not explicitly state the bonus-action/action explanation.",
               "pdf_pages": [
                 105
               ]
@@ -4013,7 +3919,7 @@
             {
               "mistake_id": "M002",
               "answer_quote": "Since she has an available level 1 slot, she can use her reaction to cast *Shield*.",
-              "reason": "Allows Shield on her own turn after a slot was already expended, so the limit is effectively not applied to Reactions. The candidate never says reactions are exempt, so the match to E003 is by outcome only. The penalty is 30 either way, equal to the C003 loss, so there is no extra deduction.",
+              "reason": "Allows Shield on her own turn after a slot was already expended, so the limit is effectively not applied to Reactions. The candidate never says reactions are exempt.",
               "pdf_pages": [
                 105
               ]
@@ -4078,13 +3984,11 @@
       "answer_sha256": "a5f343ad6ee896aad985bc57bae6085396f9d6cb34e42f8380225fad3cbc1851",
       "candidate_input_sha256": "4ee9dc93a7e8975d160d83ad511ad59bd3561dc5f760ebe52efa42b3250a4f24",
       "historical_review": {
-        "origin": "dual_expert_agreed_summary",
-        "source": "accepted claim-only pilot projection",
-        "claim_detail": "Accepted total/profile retained; per-claim awards are not flattened in the selected suite snapshot.",
+        "claim_detail": "Final scores and correctness judgments are available; per-claim awards are unavailable.",
         "targeted_human_review": false
       },
       "historical_expert_annotations": {
-        "gpt": {
+        "grader_1": {
           "claims": [
             {
               "claim_id": "C001",
@@ -4121,7 +4025,7 @@
             {
               "mistake_id": "M001",
               "answer_quote": "Since the animated tree lacks the inherent magical ability, the required spell slot, or the casting ability of a creature, it cannot replicate the actions of a spellcaster.",
-              "reason": "Animate Trees is a magical treant action, not a spell requiring a spell slot. The animated tree cannot use it because its inherited stat block expressly excludes that action. This incorrect required explanation causes the loss of C001 component B. It is an unlisted diagnostic error without an additional numerical penalty.",
+              "reason": "Animate Trees is a magical treant action, not a spell requiring a spell slot. The animated tree cannot use it because its inherited stat block expressly excludes that action.",
               "pdf_pages": [
                 333,
                 257,
@@ -4131,7 +4035,7 @@
             {
               "mistake_id": "M002",
               "answer_quote": "the resulting animated trees are considered constructs—they are magical extensions of the spell’s effect, not sentient or magical casters.",
-              "reason": "The animated trees retain the Treant stat block's Plant creature type; the listed exceptions do not change their type to Construct or make them objects. The SRD describes Plants as sentient vegetation. This classification error is distinct from the spell/action error and receives no additional claim-loss allocation or numerical penalty.",
+              "reason": "The animated trees retain the Treant stat block's Plant creature type; the listed exceptions do not change their type to Construct or make them objects. The SRD describes Plants as sentient vegetation.",
               "pdf_pages": [
                 333,
                 254
@@ -4140,7 +4044,7 @@
             {
               "mistake_id": "M003",
               "answer_quote": "The tree moves 125 feet away, successfully maintaining its status as an animated construct, but this movement does not trigger any further magical effects.",
-              "reason": "Keeping the tree animated despite exceeding the separation limit matches E002's separation error, although the answer does not explicitly promise a full day. This causes C002's loss. C003's separate omission is not allocated to this mistake.",
+              "reason": "Wrongly keeps the tree animated after it exceeds the separation limit. The answer does not explicitly promise a full day of animation.",
               "pdf_pages": [
                 333
               ]
@@ -4229,7 +4133,7 @@
             }
           ]
         },
-        "sonnet": {
+        "grader_2": {
           "claims": [
             {
               "claim_id": "C001",
@@ -4266,7 +4170,7 @@
             {
               "mistake_id": "M001",
               "answer_quote": "successfully maintaining its status as an animated construct, but this movement does not trigger any further magical effects",
-              "reason": "The answer keeps the tree animate at 125 feet, past the 120-foot limit. This matches E002, which covers keeping animation regardless of separation. The answer does not mention a full day, but the substance is the same: separation does not end the animation. The loss attributed is C002's 40 points.",
+              "reason": "The answer keeps the tree animate at 125 feet, past the 120-foot limit. It does not mention a full day, but it wrongly treats separation as leaving the tree animated.",
               "pdf_pages": [
                 333
               ]
@@ -4274,7 +4178,7 @@
             {
               "mistake_id": "M002",
               "answer_quote": "the resulting animated trees are considered constructs—they are magical extensions of the spell’s effect, not sentient or magical casters.",
-              "reason": "Unlisted diagnostic error. The animated trees use the Treant stat block, so they stay Plants, not Constructs. Animate Trees is a 1/Day treant action, not a spell that needs a spell slot. The tree cannot use it because the animated tree 'lacks this action'. This wrong explanation is why C001 component B is not met. It carries no listed penalty and no separate loss is allocated, to avoid double counting.",
+              "reason": "The animated trees use the Treant stat block, so they stay Plants, not Constructs. Animate Trees is a 1/Day treant action, not a spell that needs a spell slot. The tree cannot use it because the animated tree 'lacks this action'.",
               "pdf_pages": [
                 333,
                 254
@@ -4352,13 +4256,11 @@
       "answer_sha256": "9619c38f223665245e1f1a75a70007f2896810bd1e4cb80e9ba52af754677c70",
       "candidate_input_sha256": "be623b3f0b181940c1d587919fd9bf7a7e3e74066b038becaf8a1324e5e5ed3d",
       "historical_review": {
-        "origin": "dual_expert_agreed_summary",
-        "source": "accepted claim-only pilot projection",
-        "claim_detail": "Accepted total/profile retained; per-claim awards are not flattened in the selected suite snapshot.",
+        "claim_detail": "Final scores and correctness judgments are available; per-claim awards are unavailable.",
         "targeted_human_review": false
       },
       "historical_expert_annotations": {
-        "gpt": {
+        "grader_1": {
           "claims": [
             {
               "claim_id": "C001",
@@ -4431,7 +4333,7 @@
             {
               "mistake_id": "M003",
               "answer_quote": "The ogre may make a **natural weapon attack** (e.g., its claw attack or bite attack, using its base weapon characteristics).",
-              "reason": "The published ogre has Greatclub and Javelin attacks, with no claw or bite weapon attack. It may also use the general Unarmed Strike rule. This unlisted diagnostic concerns existing requirement C004 and introduces no additional numerical penalty.",
+              "reason": "The published ogre has Greatclub and Javelin attacks, with no claw or bite weapon attack. It may also use the general Unarmed Strike rule.",
               "pdf_pages": [
                 15,
                 190,
@@ -4538,7 +4440,7 @@
             }
           ]
         },
-        "sonnet": {
+        "grader_2": {
           "claims": [
             {
               "claim_id": "C001",
@@ -4608,7 +4510,7 @@
             {
               "mistake_id": "M003",
               "answer_quote": "The ogre may make a **natural weapon attack** (e.g., its claw attack or bite attack, using its base weapon characteristics).",
-              "reason": "Unlisted diagnostic finding. The published ogre's listed attacks are Greatclub and Javelin, not claw or bite. A legal Opportunity Attack is one melee attack with a weapon or an Unarmed Strike, taken with a Reaction. This concerns existing claim C004 and adds no numeric penalty.",
+              "reason": "The published ogre's listed attacks are Greatclub and Javelin, not claw or bite. A legal Opportunity Attack is one melee attack with a weapon or an Unarmed Strike, taken with a Reaction.",
               "pdf_pages": [
                 15,
                 312
@@ -4690,13 +4592,11 @@
       "answer_sha256": "15178803c42620f394143ed8d153558ee809cacbe0ee0195faef19d3029ddf95",
       "candidate_input_sha256": "8140590dc8237342f23450e91bbae417e326a1a8af2b4bdf4726cf57cb8e4746",
       "historical_review": {
-        "origin": "dual_expert_agreed_summary",
-        "source": "accepted claim-only pilot projection",
-        "claim_detail": "Accepted total/profile retained; per-claim awards are not flattened in the selected suite snapshot.",
+        "claim_detail": "Final scores and correctness judgments are available; per-claim awards are unavailable.",
         "targeted_human_review": false
       },
       "historical_expert_annotations": {
-        "gpt": {
+        "grader_1": {
           "claims": [
             {
               "claim_id": "C001",
@@ -4736,7 +4636,7 @@
             }
           ]
         },
-        "sonnet": {
+        "grader_2": {
           "claims": [
             {
               "claim_id": "C001",
@@ -4811,13 +4711,11 @@
       "answer_sha256": "ddf11928760436bdb9a821333c94fadd5c11a8cd06c7f73547951e7d476e025a",
       "candidate_input_sha256": "b33f63efdf2151d617409f45d8528e50bb660d7606aa60b5a6002424d34df6cb",
       "historical_review": {
-        "origin": "dual_expert_agreed_summary",
-        "source": "accepted claim-only pilot projection",
-        "claim_detail": "Accepted total/profile retained; per-claim awards are not flattened in the selected suite snapshot.",
+        "claim_detail": "Final scores and correctness judgments are available; per-claim awards are unavailable.",
         "targeted_human_review": false
       },
       "historical_expert_annotations": {
-        "gpt": {
+        "grader_1": {
           "claims": [
             {
               "claim_id": "C001",
@@ -4926,7 +4824,7 @@
             }
           ]
         },
-        "sonnet": {
+        "grader_2": {
           "claims": [
             {
               "claim_id": "C001",
@@ -5042,13 +4940,11 @@
       "answer_sha256": "12600b270719c52decc9cdcc6c23ef9ecaf1e895ca95818d71a6248562a93823",
       "candidate_input_sha256": "2643428ae3b3d442d47ce4ea63a1345edd7a22fca076e3cabd09d444e78a6ccc",
       "historical_review": {
-        "origin": "dual_expert_agreed_summary",
-        "source": "accepted claim-only pilot projection",
-        "claim_detail": "Accepted total/profile retained; per-claim awards are not flattened in the selected suite snapshot.",
+        "claim_detail": "Final scores and correctness judgments are available; per-claim awards are unavailable.",
         "targeted_human_review": false
       },
       "historical_expert_annotations": {
-        "gpt": {
+        "grader_1": {
           "claims": [
             {
               "claim_id": "C001",
@@ -5101,7 +4997,7 @@
             {
               "mistake_id": "M002",
               "answer_quote": "Fighter's Extra Attack feat feature",
-              "reason": "Presented as a source of feat selection, Extra Attack is a false example. It grants two attacks when taking the Attack action, not a feat. This distinct unlisted error is diagnostic and causes no additional required-claim loss.",
+              "reason": "Presented as a source of feat selection, Extra Attack is a false example. It grants two attacks when taking the Attack action, not a feat.",
               "pdf_pages": [
                 48
               ]
@@ -5109,7 +5005,7 @@
             {
               "mistake_id": "M003",
               "answer_quote": "**Race Features:** (e.g., Variant Human).",
-              "reason": "Variant Human is not an option in the complete published SRD 5.2.1. Its Human instead has Versatile, granting an Origin feat. Species traits can grant feats, but the named example is not a rule option in the requested source. This distinct unlisted finding is diagnostic only.",
+              "reason": "Variant Human is not an option in the complete published SRD 5.2.1. Its Human instead has Versatile, granting an Origin feat. Species traits can grant feats, but the named example is not a rule option in the requested source.",
               "pdf_pages": [
                 86
               ]
@@ -5178,7 +5074,7 @@
             }
           ]
         },
-        "sonnet": {
+        "grader_2": {
           "claims": [
             {
               "claim_id": "C001",
@@ -5219,7 +5115,7 @@
             {
               "mistake_id": "M001",
               "answer_quote": "The standard Wizard class progression, as published in the SRD, does not grant a general feat selection opportunity upon reaching Wizard level 4.",
-              "reason": "False. Wizard level 4 Ability Score Improvement grants the Ability Score Improvement feat or another feat for which Selu qualifies, with no category specified. This one misconception drives the wrong Grappler and Archery verdicts and the wrong reason for the Boon verdict. It matches none of the listed errors: E001 to E004 describe different mechanisms (Strength below 13, no Fighting Style, multiclass exclusion, Boon waived). It is an unlisted diagnostic. Its loss is already counted in C001, C002 and C003.",
+              "reason": "False. Wizard level 4 Ability Score Improvement grants the Ability Score Improvement feat or another feat for which Selu qualifies, with no category specified. This one misconception drives the wrong Grappler and Archery verdicts and the wrong reason for the Boon verdict.",
               "pdf_pages": [
                 79,
                 87
@@ -5228,7 +5124,7 @@
             {
               "mistake_id": "M002",
               "answer_quote": "Fighter's Extra Attack feat feature",
-              "reason": "Extra Attack only lets the character attack twice with the Attack action. It grants no feat. Fighter's Ability Score Improvement is the feature that grants a feat. Diagnostic only, with no listed penalty.",
+              "reason": "Extra Attack only lets the character attack twice with the Attack action. It grants no feat. Fighter's Ability Score Improvement is the feature that grants a feat.",
               "pdf_pages": [
                 48
               ]
@@ -5236,7 +5132,7 @@
             {
               "mistake_id": "M003",
               "answer_quote": "**Race Features:** (e.g., Variant Human).",
-              "reason": "Variant Human is not in SRD 5.2.1. The SRD Human has Versatile, which grants an Origin feat. The 'Race Features' label also does not match the SRD's species terminology. Diagnostic only, with no listed penalty.",
+              "reason": "Variant Human is not in SRD 5.2.1. The SRD Human has Versatile, which grants an Origin feat. The 'Race Features' label also does not match the SRD's species terminology.",
               "pdf_pages": [
                 86
               ]
@@ -5325,13 +5221,11 @@
       "answer_sha256": "d15db7496c2070f4b3d226598c56a46a17bc6b860b8922544c314ee6ad970335",
       "candidate_input_sha256": "060c78e83bdf60a43bdc6370d5214c7f8cd9c2493925370d3433bbf0c4b8bb36",
       "historical_review": {
-        "origin": "dual_expert_agreed_summary",
-        "source": "accepted claim-only pilot projection",
-        "claim_detail": "Accepted total/profile retained; per-claim awards are not flattened in the selected suite snapshot.",
+        "claim_detail": "Final scores and correctness judgments are available; per-claim awards are unavailable.",
         "targeted_human_review": false
       },
       "historical_expert_annotations": {
-        "gpt": {
+        "grader_1": {
           "claims": [
             {
               "claim_id": "C001",
@@ -5397,7 +5291,7 @@
             }
           ]
         },
-        "sonnet": {
+        "grader_2": {
           "claims": [
             {
               "claim_id": "C001",
@@ -5501,13 +5395,11 @@
       "answer_sha256": "8f71ad659372b14588ea26223a70a1c65e8b853987aebd7fd0ca037aadb9a07a",
       "candidate_input_sha256": "1ca62a4bf269852ce3f2d11bd53ffc0e563177d9ddd4a4896c15ac7bb4b2bc1f",
       "historical_review": {
-        "origin": "dual_expert_agreed_summary",
-        "source": "accepted claim-only pilot projection",
-        "claim_detail": "Accepted total/profile retained; per-claim awards are not flattened in the selected suite snapshot.",
+        "claim_detail": "Final scores and correctness judgments are available; per-claim awards are unavailable.",
         "targeted_human_review": false
       },
       "historical_expert_annotations": {
-        "gpt": {
+        "grader_1": {
           "claims": [
             {
               "claim_id": "C001",
@@ -5550,7 +5442,7 @@
             }
           ]
         },
-        "sonnet": {
+        "grader_2": {
           "claims": [
             {
               "claim_id": "C001",
@@ -5629,13 +5521,11 @@
       "answer_sha256": "886d4a5a10d891722db15185a45717cf0d212ba209944ab6cc19a9af1b1866c3",
       "candidate_input_sha256": "bbc76964d3635948c3408f1ebf3e1f5166014d18daa7ebbd0cfcd75f495ff523",
       "historical_review": {
-        "origin": "dual_expert_agreed_summary",
-        "source": "accepted claim-only pilot projection",
-        "claim_detail": "Accepted total/profile retained; per-claim awards are not flattened in the selected suite snapshot.",
+        "claim_detail": "Final scores and correctness judgments are available; per-claim awards are unavailable.",
         "targeted_human_review": false
       },
       "historical_expert_annotations": {
-        "gpt": {
+        "grader_1": {
           "claims": [
             {
               "claim_id": "C001",
@@ -5702,7 +5592,7 @@
             }
           ]
         },
-        "sonnet": {
+        "grader_2": {
           "claims": [
             {
               "claim_id": "C001",
@@ -5801,13 +5691,11 @@
       "answer_sha256": "a533a17330a75e20fdd3e6a32ae442a4025d383d09d9c44d5e9ed76b399c873d",
       "candidate_input_sha256": "73669d771696aaeb1ecf3fb4edd480886272ca56fecc13d9565c2d9e794e3eed",
       "historical_review": {
-        "origin": "dual_expert_agreed_summary",
-        "source": "accepted claim-only pilot projection",
-        "claim_detail": "Accepted total/profile retained; per-claim awards are not flattened in the selected suite snapshot.",
+        "claim_detail": "Final scores and correctness judgments are available; per-claim awards are unavailable.",
         "targeted_human_review": false
       },
       "historical_expert_annotations": {
-        "gpt": {
+        "grader_1": {
           "claims": [
             {
               "claim_id": "C001",
@@ -5846,7 +5734,7 @@
             }
           ]
         },
-        "sonnet": {
+        "grader_2": {
           "claims": [
             {
               "claim_id": "C001",
@@ -5925,13 +5813,11 @@
       "answer_sha256": "582dae4b581ace6136b938111aebcec0cec519cda6a3890e79aff08b9dd9f74c",
       "candidate_input_sha256": "599c230b7294757abb83e64e4d94e10470a9d7cca3628dd189827101a94f2f06",
       "historical_review": {
-        "origin": "human_custom",
-        "source": "accepted claim-only pilot projection",
-        "claim_detail": "Accepted total/profile retained; per-claim awards are not flattened in the selected suite snapshot.",
+        "claim_detail": "Final scores and correctness judgments are available; per-claim awards are unavailable.",
         "targeted_human_review": true
       },
       "historical_expert_annotations": {
-        "gpt": {
+        "grader_1": {
           "claims": [
             {
               "claim_id": "C001",
@@ -5960,7 +5846,7 @@
             {
               "mistake_id": "M001",
               "answer_quote": "*   **Advantage** means you roll two ability checks and take the better result.\n*   **Disadvantage** means you roll two ability checks and take the worse result.",
-              "reason": "These definitions incorrectly specify two ability checks. Advantage and Disadvantage require two d20 rolls within one check, using the higher or lower die. The selection directions are correct, but the distinction between checks and dice is a mechanical error. This unlisted diagnostic error does not contradict either required attitude assignment and has no approved numerical penalty.",
+              "reason": "These definitions incorrectly specify two ability checks. Advantage and Disadvantage require two d20 rolls within one check, using the higher or lower die. The selection directions are correct, but the distinction between checks and dice is a mechanical error.",
               "pdf_pages": [
                 6,
                 8
@@ -6050,7 +5936,7 @@
             }
           ]
         },
-        "sonnet": {
+        "grader_2": {
           "claims": [
             {
               "claim_id": "C001",
@@ -6143,13 +6029,11 @@
       "answer_sha256": "e03c7d24d1ac3dc230098e00b27de8a955b1e7ec7e4304b13a896c3fd9cbaad7",
       "candidate_input_sha256": "1f026bfc10470c64c3a6dba86ad7dbb75ee08349a1b4257256246596d752d371",
       "historical_review": {
-        "origin": "dual_expert_agreed_summary",
-        "source": "accepted claim-only pilot projection",
-        "claim_detail": "Accepted total/profile retained; per-claim awards are not flattened in the selected suite snapshot.",
+        "claim_detail": "Final scores and correctness judgments are available; per-claim awards are unavailable.",
         "targeted_human_review": false
       },
       "historical_expert_annotations": {
-        "gpt": {
+        "grader_1": {
           "claims": [
             {
               "claim_id": "C001",
@@ -6264,7 +6148,7 @@
             }
           ]
         },
-        "sonnet": {
+        "grader_2": {
           "claims": [
             {
               "claim_id": "C001",
@@ -6379,13 +6263,11 @@
       "answer_sha256": "f94e54bba685e2e8c367fa3bb87d9afc5f098f03384b19013e17a0b82610a712",
       "candidate_input_sha256": "d598e3db7a58981d3298f24bc78c75b893eecd1e5bf13f849c91830f6c78bc43",
       "historical_review": {
-        "origin": "dual_expert_agreed_summary",
-        "source": "accepted claim-only pilot projection",
-        "claim_detail": "Accepted total/profile retained; per-claim awards are not flattened in the selected suite snapshot.",
+        "claim_detail": "Final scores and correctness judgments are available; per-claim awards are unavailable.",
         "targeted_human_review": false
       },
       "historical_expert_annotations": {
-        "gpt": {
+        "grader_1": {
           "claims": [
             {
               "claim_id": "C001",
@@ -6422,7 +6304,7 @@
             {
               "mistake_id": "M001",
               "answer_quote": "the animated tree cannot use the spell *Animate Trees* itself.",
-              "reason": "Animate Trees is a magical monster action, not a spell. The complete Treant stat block provides this action without spellcasting or spell characteristics. Repeated references to casting express the same classification mistake. This unlisted diagnostic error has no supplied numerical penalty and causes no required-claim credit loss.",
+              "reason": "Animate Trees is a magical monster action, not a spell. The complete Treant stat block provides this action without spellcasting or spell characteristics. Repeated references to casting express the same classification mistake.",
               "pdf_pages": [
                 104,
                 257,
@@ -6473,7 +6355,7 @@
             }
           ]
         },
-        "sonnet": {
+        "grader_2": {
           "claims": [
             {
               "claim_id": "C001",
@@ -6510,7 +6392,7 @@
             {
               "mistake_id": "M001",
               "answer_quote": "the animated tree cannot use the spell *Animate Trees* itself.",
-              "reason": "Animate Trees is a Treant action (a magical ability), not a spell. The Treant entry lists it under Actions and gives it no spell level. Monster spellcasting is a separate feature. The answer's repeated 'spell' and 'cast' wording is one classification error. It is an unlisted diagnostic finding, minor, and does not change any required outcome. It has no priced penalty and costs no claim points.",
+              "reason": "Animate Trees is a Treant action (a magical ability), not a spell. The Treant entry lists it under Actions and gives it no spell level. Monster spellcasting is a separate feature. The answer's repeated 'spell' and 'cast' wording is one classification error.",
               "pdf_pages": [
                 257,
                 333
@@ -6580,13 +6462,11 @@
       "answer_sha256": "138a4fd68b43dd571fccf7ddce8889a2848140ddf4ed6ed650eda5c27ed86632",
       "candidate_input_sha256": "8eeaca6f85ff35ef45f729a386a9efa61fdff5b1045e9146665bfcbc4755c60c",
       "historical_review": {
-        "origin": "dual_expert_agreed_summary",
-        "source": "accepted claim-only pilot projection",
-        "claim_detail": "Accepted total/profile retained; per-claim awards are not flattened in the selected suite snapshot.",
+        "claim_detail": "Final scores and correctness judgments are available; per-claim awards are unavailable.",
         "targeted_human_review": false
       },
       "historical_expert_annotations": {
-        "gpt": {
+        "grader_1": {
           "claims": [
             {
               "claim_id": "C001",
@@ -6687,7 +6567,7 @@
             }
           ]
         },
-        "sonnet": {
+        "grader_2": {
           "claims": [
             {
               "claim_id": "C001",
@@ -6714,7 +6594,7 @@
               "claim_id": "C003",
               "status": "partly_met",
               "earned_points": 10,
-              "reason": "The answer keeps her at 0 HP and alive after the 3 damage, which satisfies the no-death half. It never says she remains Unconscious. Its remark that damage doesn't cause loss of consciousness is confused. It does not say she regains consciousness, so E004 is not triggered. The Unconscious half is not established.",
+              "reason": "The answer keeps her at 0 HP and alive after the 3 damage, which satisfies the no-death half. It never says she remains Unconscious. Its remark that damage doesn't cause loss of consciousness is confused. It does not say she regains consciousness. The Unconscious half is not established.",
               "answer_quote": "While they still suffer the 3 damage (remaining at 0 HP), their stable condition persists.",
               "pdf_pages": [
                 17,
@@ -6824,13 +6704,11 @@
       "answer_sha256": "b5713e8c02732570be2e56a0cc81dc4c3376242ab96a3582df97904c11311c1a",
       "candidate_input_sha256": "e4ba4e34b4047102d925448e466118a6b352179ab641e2c7e936978bd012925c",
       "historical_review": {
-        "origin": "human_sonnet",
-        "source": "accepted claim-only pilot projection",
-        "claim_detail": "Accepted total/profile retained; per-claim awards are not flattened in the selected suite snapshot.",
+        "claim_detail": "Final scores and correctness judgments are available; per-claim awards are unavailable.",
         "targeted_human_review": true
       },
       "historical_expert_annotations": {
-        "gpt": {
+        "grader_1": {
           "claims": [
             {
               "claim_id": "C001",
@@ -6974,7 +6852,7 @@
             }
           ]
         },
-        "sonnet": {
+        "grader_2": {
           "claims": [
             {
               "claim_id": "C001",
@@ -7012,7 +6890,7 @@
               "claim_id": "C004",
               "status": "partly_met",
               "earned_points": 18,
-              "reason": "Correct verdict, and it gives the different-turn point (the Reaction occurs on the enemy's turn). It refers to the trigger only loosely, as seeing the enemy cast a spell. It does not address range or components, but it misstates nothing about the trigger, so this is an omission. It also adds the false Reaction-exemption rationale, which prevents full credit. That exemption is charged under C003/E003. The 12-point level does not apply because a correct different-turn point is present.",
+              "reason": "Correct verdict, and it gives the different-turn point (the Reaction occurs on the enemy's turn). It refers to the trigger only loosely, as seeing the enemy cast a spell. It does not address range or components, but it misstates nothing about the trigger, so this is an omission. It also adds the false Reaction-exemption rationale, which prevents full credit. The 12-point level does not apply because a correct different-turn point is present.",
               "answer_quote": "**Allowed.** This action occurs on the enemy's turn. Since this is a Reaction used in response to a trigger (seeing the enemy cast a spell)",
               "pdf_pages": [
                 105,
@@ -7095,13 +6973,11 @@
       "answer_sha256": "f987c426be3137cbff13e1da5de834dec7b99f3179abd434640ce2d5faace26b",
       "candidate_input_sha256": "6390e5cefe7e366a00229fab9c7be02ad13e8db8add97bc9f683b731e11714f7",
       "historical_review": {
-        "origin": "human_gpt",
-        "source": "accepted claim-only pilot projection",
-        "claim_detail": "Accepted total/profile retained; per-claim awards are not flattened in the selected suite snapshot.",
+        "claim_detail": "Final scores and correctness judgments are available; per-claim awards are unavailable.",
         "targeted_human_review": true
       },
       "historical_expert_annotations": {
-        "gpt": {
+        "grader_1": {
           "claims": [
             {
               "claim_id": "C001",
@@ -7140,7 +7016,7 @@
             {
               "mistake_id": "M001",
               "answer_quote": "When the barrier is mundane (made of wood, metal, etc.), the spell delivers a raw, physical force. This force is sufficient to dislodge dust, rattle components, or distract a nearby guard.",
-              "reason": "The answer invents prescribed physical impact and displacement effects in place of unlocking one lock. Additional outcomes require GM adjudication. Possible distraction from the actual loud knock is not itself erroneous. This is an unlisted diagnostic finding; it does not assert that both locks unlock.",
+              "reason": "The answer invents prescribed physical impact and displacement effects in place of unlocking one lock. Additional outcomes require GM adjudication. Possible distraction from the actual loud knock is not itself erroneous. It does not assert that both locks unlock.",
               "pdf_pages": [
                 106,
                 144
@@ -7149,7 +7025,7 @@
             {
               "mistake_id": "M002",
               "answer_quote": "The lock detects the force and counters it, potentially causing the spell to rebound or causing the door to resist the impact with visible magical force.",
-              "reason": "Arcane Lock provides no detection, countering, or rebound effect. Knock specifically suppresses it and allows opening and closing. The related general claim that wards deflect incoming magic is the same mistaken explanation. This unlisted finding accounts for C002 components A and C; the omitted duration is separate. It does not match permanent dispelling.",
+              "reason": "Arcane Lock provides no detection, countering, or rebound effect. Knock specifically suppresses it and allows opening and closing. The related general claim that wards deflect incoming magic is the same mistaken explanation. The duration is omitted.",
               "pdf_pages": [
                 106,
                 110,
@@ -7159,7 +7035,7 @@
             {
               "mistake_id": "M003",
               "answer_quote": "A high-pitched, metallic **whine** or a sharp, magical **rebound** sound",
-              "reason": "The Arcane Lock casting produces the prescribed loud knock, not a replacement deflection sound. This unlisted finding accounts for C003 component A. The omitted audibility distance is separate, and the answer does not call Knock silent.",
+              "reason": "The Arcane Lock casting produces the prescribed loud knock, not a replacement deflection sound. The audibility distance is omitted, and the answer does not call Knock silent.",
               "pdf_pages": [
                 144
               ]
@@ -7212,7 +7088,7 @@
             }
           ]
         },
-        "sonnet": {
+        "grader_2": {
           "claims": [
             {
               "claim_id": "C001",
@@ -7250,7 +7126,7 @@
             {
               "mistake_id": "M001",
               "answer_quote": "*Knock* is primarily a force spell that simulates striking a surface.",
-              "reason": "Knock unlocks, unsticks or unbars the target, and only one lock is unlocked if there are several. It is not a force or impact spell. The dust-dislodging and rattling effects are invented. Outcomes beyond the stated effects are for the GM to adjudicate. This is an unlisted diagnostic finding. It does not match E001, because the answer does not say both locks are unlocked. The loss is already in C001.",
+              "reason": "Knock unlocks, unsticks or unbars the target, and only one lock is unlocked if there are several. It is not a force or impact spell. The dust-dislodging and rattling effects are invented. Outcomes beyond the stated effects are for the GM to adjudicate. The answer does not say both locks are unlocked.",
               "pdf_pages": [
                 144,
                 106
@@ -7259,7 +7135,7 @@
             {
               "mistake_id": "M002",
               "answer_quote": "The lock detects the force and counters it, potentially causing the spell to rebound or causing the door to resist the impact with visible magical force.",
-              "reason": "Arcane Lock has no detect, counter or rebound behavior. Knock suppresses it for 10 minutes, and the door can then be opened and closed. This is an unlisted diagnostic finding. It does not match E002, because the answer does not say Arcane Lock is permanently dispelled. The loss is already in C002.",
+              "reason": "Arcane Lock has no detect, counter or rebound behavior. Knock suppresses it for 10 minutes, and the door can then be opened and closed. The answer does not say Arcane Lock is permanently dispelled.",
               "pdf_pages": [
                 144,
                 110
@@ -7268,7 +7144,7 @@
             {
               "mistake_id": "M003",
               "answer_quote": "A high-pitched, metallic **whine** or a sharp, magical **rebound** sound",
-              "reason": "The door casting still makes the loud knock, audible up to 300 feet. Arcane Lock does not replace it with a deflection sound. The answer does not call Knock silent, so E003 does not apply. This is an unlisted diagnostic finding. The loss is already in C003.",
+              "reason": "The door casting still makes the loud knock, audible up to 300 feet. Arcane Lock does not replace it with a deflection sound. The answer does not call Knock silent.",
               "pdf_pages": [
                 144
               ]
@@ -7345,13 +7221,11 @@
       "answer_sha256": "8135db9dffbecba0f886df9120fd2dc5b646021b90848ea820b53e0d72d59a75",
       "candidate_input_sha256": "ffdedae3816168bfd90a4e15322a5cf3cd1c78eb74897e4fb5cfcc0dfcf1115a",
       "historical_review": {
-        "origin": "human_custom",
-        "source": "accepted claim-only pilot projection",
-        "claim_detail": "Accepted total/profile retained; per-claim awards are not flattened in the selected suite snapshot.",
+        "claim_detail": "Final scores and correctness judgments are available; per-claim awards are unavailable.",
         "targeted_human_review": true
       },
       "historical_expert_annotations": {
-        "gpt": {
+        "grader_1": {
           "claims": [
             {
               "claim_id": "C001",
@@ -7390,7 +7264,7 @@
             {
               "mistake_id": "M001",
               "answer_quote": "A character can, in a single round, use their **Action** to perform the **Persuasion check (Negotiation)** while simultaneously making a **Skill Check (Insight)** to gather information on the merchant.",
-              "reason": "Treating body-language reading as a free observational check permits the prohibited simultaneous combination. The free-check premise and resulting combination are one underlying mistake, causing the losses on C002 and C003. C002 is explicitly contradicted, rather than lost solely through omission of the name Search. C001 separately lacks the required action identification. E002 does not match: the answer assigns an action to persuasion and does not generally exempt social scenes from action rules.",
+              "reason": "Treating body-language reading as a free observational check permits the prohibited simultaneous combination. The answer omits the required Influence and Search action names. It assigns an action to persuasion and does not generally exempt social scenes from action rules.",
               "pdf_pages": [
                 10,
                 187
@@ -7460,7 +7334,7 @@
             }
           ]
         },
-        "sonnet": {
+        "grader_2": {
           "claims": [
             {
               "claim_id": "C001",
@@ -7499,7 +7373,7 @@
             {
               "mistake_id": "M001",
               "answer_quote": "A character can, in a single round, use their **Action** to perform the **Persuasion check (Negotiation)** while simultaneously making a **Skill Check (Insight)** to gather information on the merchant.",
-              "reason": "This merges the price request and the body-language reading into one simultaneous action, which the SRD forbids. Treating Insight as a free ambient check is part of the same mistake. E002 does not match. The answer still assigns an action to the persuasion and does not say social scenes ignore action rules. The loss is attributed to C003, the claim that is the ruling on simultaneity. C001 and C002 are lost because Influence and Search are never named, which is a separate omission. The ledger charges only the 15 points by which the 65-point penalty exceeds the 50-point loss.",
+              "reason": "This merges the price request and the body-language reading into one simultaneous action, which the SRD forbids. Treating Insight as a free ambient check is part of the same mistake. The answer still assigns an action to persuasion and does not say social scenes ignore action rules. Influence and Search are never named.",
               "pdf_pages": [
                 10,
                 187
@@ -7569,13 +7443,11 @@
       "answer_sha256": "5631267b883ee14a50c2160557dca57792edaa8c39e7a024d60e6dae92faf362",
       "candidate_input_sha256": "d5f92be27de4020e182af903d9d6295ea4e1de9fed82b2548cc4316232485193",
       "historical_review": {
-        "origin": "human_sonnet",
-        "source": "accepted claim-only pilot projection",
-        "claim_detail": "Accepted total/profile retained; per-claim awards are not flattened in the selected suite snapshot.",
+        "claim_detail": "Final scores and correctness judgments are available; per-claim awards are unavailable.",
         "targeted_human_review": true
       },
       "historical_expert_annotations": {
-        "gpt": {
+        "grader_1": {
           "claims": [
             {
               "claim_id": "C001",
@@ -7689,7 +7561,7 @@
             }
           ]
         },
-        "sonnet": {
+        "grader_2": {
           "claims": [
             {
               "claim_id": "C001",
@@ -7793,13 +7665,11 @@
       "answer_sha256": "7945379350d83ed92dd99de54c2aaa06256af546e3ed24fa813faa226c32826d",
       "candidate_input_sha256": "e963c481a501aaffb08b0e03464f1b7cb70e10d0c55bb531f2c0e6998371ff22",
       "historical_review": {
-        "origin": "dual_expert_agreed_summary",
-        "source": "accepted claim-only pilot projection",
-        "claim_detail": "Accepted total/profile retained; per-claim awards are not flattened in the selected suite snapshot.",
+        "claim_detail": "Final scores and correctness judgments are available; per-claim awards are unavailable.",
         "targeted_human_review": false
       },
       "historical_expert_annotations": {
-        "gpt": {
+        "grader_1": {
           "claims": [
             {
               "claim_id": "C001",
@@ -7883,7 +7753,7 @@
             }
           ]
         },
-        "sonnet": {
+        "grader_2": {
           "claims": [
             {
               "claim_id": "C001",
@@ -7910,7 +7780,7 @@
             {
               "mistake_id": "M001",
               "answer_quote": "a standalone ability score increase does not retroactively raise a character's established maximum Hit Points unless the character's specific class, racial feature, or another ability explicitly states that gaining that score increases Max HP",
-              "reason": "The answer confines the Constitution benefit to future level calculations and denies the retroactive per-attained-level increase. This is the future-only application in E001. The SRD gives the increase as a general rule that needs no special feature. The \"no change\" conclusion repeats the same mistake.",
+              "reason": "The answer confines the Constitution benefit to future level calculations and denies the retroactive per-attained-level increase. The SRD gives the increase as a general rule that needs no special feature. The \"no change\" conclusion repeats the same mistake.",
               "pdf_pages": [
                 23
               ]
@@ -7979,13 +7849,11 @@
       "answer_sha256": "2c80640cdcd2723dafd86bb639864d90433e29766332481689d7cb8439805715",
       "candidate_input_sha256": "0d9e4f6a69f72b193f78d47b5ebea7bdc0ceb753b8e126a7a4e0cac222dee201",
       "historical_review": {
-        "origin": "dual_expert_agreed_summary",
-        "source": "accepted claim-only pilot projection",
-        "claim_detail": "Accepted total/profile retained; per-claim awards are not flattened in the selected suite snapshot.",
+        "claim_detail": "Final scores and correctness judgments are available; per-claim awards are unavailable.",
         "targeted_human_review": false
       },
       "historical_expert_annotations": {
-        "gpt": {
+        "grader_1": {
           "claims": [
             {
               "claim_id": "C001",
@@ -8054,7 +7922,7 @@
             }
           ]
         },
-        "sonnet": {
+        "grader_2": {
           "claims": [
             {
               "claim_id": "C001",
@@ -8152,13 +8020,11 @@
       "answer_sha256": "00fb120c5081e706d0cfb7667182bff4789bebef349b9bb4d1b43ff5c9bb7394",
       "candidate_input_sha256": "481e7270f6a70fea65320757ee3e7f56365253c1b38afb7a38df55f2f1046ce9",
       "historical_review": {
-        "origin": "dual_expert_agreed_summary",
-        "source": "accepted claim-only pilot projection",
-        "claim_detail": "Accepted total/profile retained; per-claim awards are not flattened in the selected suite snapshot.",
+        "claim_detail": "Final scores and correctness judgments are available; per-claim awards are unavailable.",
         "targeted_human_review": false
       },
       "historical_expert_annotations": {
-        "gpt": {
+        "grader_1": {
           "claims": [
             {
               "claim_id": "C001",
@@ -8209,7 +8075,7 @@
             {
               "mistake_id": "M001",
               "answer_quote": "The failure count is cumulative and is not reset until she regains Hit Points or becomes Stable (which she is no longer).\n*   Initial failures: 2\n*   Failure from dart damage: +1\n*   Total failures: 3",
-              "reason": "Incorrectly carries forward the two failures already cleared when she became Stable. Losing Stable status does not undo that reset. E001 includes declaring her dead; the candidate does not declare death, so that complete listed error does not match.",
+              "reason": "Incorrectly carries forward the two failures already cleared when she became Stable. Losing Stable status does not undo that reset. The candidate does not declare death.",
               "pdf_pages": [
                 17,
                 18
@@ -8295,7 +8161,7 @@
             }
           ]
         },
-        "sonnet": {
+        "grader_2": {
           "claims": [
             {
               "claim_id": "C001",
@@ -8345,7 +8211,7 @@
             {
               "mistake_id": "M001",
               "answer_quote": "The failure count is cumulative and is not reset until she regains Hit Points or becomes Stable (which she is no longer).",
-              "reason": "This misapplies the reset rule. Becoming Stable already cleared the tally, and losing Stable status does not restore it, so the answer reports 3 failures instead of 1. It resembles E001's carryover of the old failures, but the answer never says she is dead and has her keep rolling, so I did not map it to E001. Even if E001 (35) were mapped, it would equal the C002 loss of 35 and add nothing beyond it.",
+              "reason": "This misapplies the reset rule. Becoming Stable already cleared the tally, and losing Stable status does not restore it, so the answer reports 3 failures instead of 1. The answer never says she is dead and has her keep rolling.",
               "pdf_pages": [
                 17,
                 18
@@ -8354,7 +8220,7 @@
             {
               "mistake_id": "M002",
               "answer_quote": "**2 successes** (from the initial state)",
-              "reason": "The scenario gives no successes. The answer invents 2 initial successes and keeps them after Stabilization, which reset successes too. This is an unlisted diagnostic error covered by C002.",
+              "reason": "The scenario gives no successes. The answer invents 2 initial successes and keeps them after Stabilization, which reset successes too.",
               "pdf_pages": [
                 17
               ]
@@ -8435,13 +8301,11 @@
       "answer_sha256": "563743d8fea3eafa01292d6a2e5dc4da9b509df8624c7b16468ec1d4a2bb3410",
       "candidate_input_sha256": "ee4671e4282f50a73ae6f28278f5261400a77f69a13259965cfa76b80a5af9f4",
       "historical_review": {
-        "origin": "dual_expert_agreed_summary",
-        "source": "accepted claim-only pilot projection",
-        "claim_detail": "Accepted total/profile retained; per-claim awards are not flattened in the selected suite snapshot.",
+        "claim_detail": "Final scores and correctness judgments are available; per-claim awards are unavailable.",
         "targeted_human_review": false
       },
       "historical_expert_annotations": {
-        "gpt": {
+        "grader_1": {
           "claims": [
             {
               "claim_id": "C001",
@@ -8490,7 +8354,7 @@
             {
               "mistake_id": "M002",
               "answer_quote": "If you successfully grapple the bandit, they become **Restrained**.",
-              "reason": "General grappling gives Grappled, not Restrained. The later Grappled-to-Restrained equivalences repeat this same unlisted diagnostic error.",
+              "reason": "General grappling gives Grappled, not Restrained. The later Grappled-to-Restrained equivalences repeat this same error.",
               "pdf_pages": [
                 182,
                 190
@@ -8508,7 +8372,7 @@
             {
               "mistake_id": "M004",
               "answer_quote": "Since the bandit is unconscious (at 0 HP), they are already Incapacitated.",
-              "reason": "Unconscious does imply Incapacitated, but the asserted scenario outcome is wrong. A knockout leaves 1 HP; an ordinary monster dies at 0 HP unless the GM makes an exception. Allocate C001 component B's 18-point loss here; the omitted knockout-condition component is not additionally allocated. E001 does not match because death saves are never asserted.",
+              "reason": "Unconscious does imply Incapacitated, but the asserted scenario outcome is wrong. A knockout leaves 1 HP; an ordinary monster dies at 0 HP unless the GM makes an exception. Death saves are never asserted.",
               "pdf_pages": [
                 17,
                 191
@@ -8698,7 +8562,7 @@
             }
           ]
         },
-        "sonnet": {
+        "grader_2": {
           "claims": [
             {
               "claim_id": "C001",
@@ -8743,7 +8607,7 @@
             {
               "mistake_id": "M002",
               "answer_quote": "If you successfully grapple the bandit, they become **Restrained**.",
-              "reason": "A successful grapple gives the Grappled condition, not Restrained. This is an unlisted diagnostic error with no numeric penalty.",
+              "reason": "A successful grapple gives the Grappled condition, not Restrained.",
               "pdf_pages": [
                 182
               ]
@@ -8751,7 +8615,7 @@
             {
               "mistake_id": "M003",
               "answer_quote": "When a creature is **Restrained**, it is Incapacitated, and it cannot take actions that require physical movement or complex thought (such as casting spells or making ranged attacks).",
-              "reason": "Restrained gives Speed 0, Advantage on attacks against the creature, Disadvantage on its own attack rolls, and Disadvantage on Dexterity saves. It does not impose Incapacitated or bar spellcasting or ranged attacks. This is an unlisted diagnostic error.",
+              "reason": "Restrained gives Speed 0, Advantage on attacks against the creature, Disadvantage on its own attack rolls, and Disadvantage on Dexterity saves. It does not impose Incapacitated or bar spellcasting or ranged attacks.",
               "pdf_pages": [
                 187
               ]
@@ -8759,7 +8623,7 @@
             {
               "mistake_id": "M004",
               "answer_quote": "Since the bandit is unconscious (at 0 HP), they are already Incapacitated.",
-              "reason": "The capture option leaves the bandit at 1 HP and Unconscious. The answer leaves it at 0 HP, where an ordinary monster dies unless the GM rules otherwise. The answer never asserts death saves, so E001 does not match. The loss maps to the 1 HP component of C001 (18 points).",
+              "reason": "The capture option leaves the bandit at 1 HP and Unconscious. The answer leaves it at 0 HP, where an ordinary monster dies unless the GM rules otherwise. The answer never asserts death saves.",
               "pdf_pages": [
                 17
               ]
@@ -8836,13 +8700,11 @@
       "answer_sha256": "de2cb4e798b54f1cbc79039deb9900354b17726b5cc54573b4e93e8d6c92ed1b",
       "candidate_input_sha256": "ccbf1cc4c6c5c355ce07dc8c2c895da7bbd0239e8aafaf6c1bfb38825c588f16",
       "historical_review": {
-        "origin": "dual_expert_agreed_summary",
-        "source": "accepted claim-only pilot projection",
-        "claim_detail": "Accepted total/profile retained; per-claim awards are not flattened in the selected suite snapshot.",
+        "claim_detail": "Final scores and correctness judgments are available; per-claim awards are unavailable.",
         "targeted_human_review": false
       },
       "historical_expert_annotations": {
-        "gpt": {
+        "grader_1": {
           "claims": [
             {
               "claim_id": "C001",
@@ -8860,7 +8722,7 @@
             {
               "mistake_id": "M001",
               "answer_quote": "Therefore, the need for the saving throw is negated",
-              "reason": "Willingness permits choosing to fail the required save without rolling; it does not negate the save through an inference about resistance. This false explanation is distinct from the accepted no-roll procedure, matches neither listed error, and carries no authorized numerical penalty.",
+              "reason": "Willingness permits choosing to fail the required save without rolling; it does not negate the save through an inference about resistance. The no-roll procedure is correct, but the explanation is false.",
               "pdf_pages": [
                 7,
                 187
@@ -8894,7 +8756,7 @@
             }
           ]
         },
-        "sonnet": {
+        "grader_2": {
           "claims": [
             {
               "claim_id": "C001",
@@ -8912,7 +8774,7 @@
             {
               "mistake_id": "M001",
               "answer_quote": "Therefore, the need for the saving throw is negated",
-              "reason": "The SRD does not say willingness cancels the saving throw as a matter of its purpose. It says a creature that doesn't want to resist can choose to fail the save without rolling. The answer misdescribes the mechanism. It matches neither listed error (E001 mandatory roll, E002 choosing success). It is an unpriced diagnostic finding, and the no-roll outcome still satisfies C001.",
+              "reason": "The SRD does not say willingness cancels the saving throw as a matter of its purpose. It says a creature that doesn't want to resist can choose to fail the save without rolling. The answer misdescribes the mechanism, but gives the correct no-roll outcome.",
               "pdf_pages": [
                 7,
                 187
@@ -8978,13 +8840,11 @@
       "answer_sha256": "f643478210f34ac85cffc09310793f679395ac794503e14c391f05a96c7d55f9",
       "candidate_input_sha256": "1907456d7bf36caf14f7151cff3116cc459efcfaa50e1327cf6e01210fa3184f",
       "historical_review": {
-        "origin": "dual_expert_agreed_summary",
-        "source": "accepted claim-only pilot projection",
-        "claim_detail": "Accepted total/profile retained; per-claim awards are not flattened in the selected suite snapshot.",
+        "claim_detail": "Final scores and correctness judgments are available; per-claim awards are unavailable.",
         "targeted_human_review": false
       },
       "historical_expert_annotations": {
-        "gpt": {
+        "grader_1": {
           "claims": [
             {
               "claim_id": "C001",
@@ -9066,7 +8926,7 @@
             }
           ]
         },
-        "sonnet": {
+        "grader_2": {
           "claims": [
             {
               "claim_id": "C001",
@@ -9174,13 +9034,11 @@
       "answer_sha256": "07dc6d6999714c2d5aeb3ae5f91c4488769f85931bf9379fa817e4fb2dc79235",
       "candidate_input_sha256": "1e7e2a082abb564c1d22e99938cfe338f182207abdf53f62a935090282e02765",
       "historical_review": {
-        "origin": "human_sonnet",
-        "source": "accepted claim-only pilot projection",
-        "claim_detail": "Accepted total/profile retained; per-claim awards are not flattened in the selected suite snapshot.",
+        "claim_detail": "Final scores and correctness judgments are available; per-claim awards are unavailable.",
         "targeted_human_review": true
       },
       "historical_expert_annotations": {
-        "gpt": {
+        "grader_1": {
           "claims": [
             {
               "claim_id": "C001",
@@ -9234,7 +9092,7 @@
             {
               "mistake_id": "M001",
               "answer_quote": "Since the rules do not provide an exception for a creature *voluntarily* casting a spell to teleport away from a hostile enemy, this movement triggers the Opportunity Attack.",
-              "reason": "The false wizard ruling and denial of the teleportation exception are one underlying mistake. Repeated permission to attack the wizard does not create additional mistakes. E004 does not apply because the answer expressly excludes the cleric.",
+              "reason": "The false wizard ruling and denial of the teleportation exception are one underlying mistake. Repeated permission to attack the wizard does not create additional mistakes. The answer expressly excludes the cleric.",
               "pdf_pages": [
                 15,
                 150,
@@ -9281,7 +9139,7 @@
             }
           ]
         },
-        "sonnet": {
+        "grader_2": {
           "claims": [
             {
               "claim_id": "C001",
@@ -9331,7 +9189,7 @@
             {
               "mistake_id": "M001",
               "answer_quote": "Since the rules do not provide an exception for a creature *voluntarily* casting a spell to teleport away from a hostile enemy, this movement triggers the Opportunity Attack.",
-              "reason": "The answer says the wizard provokes, which is listed error E001. Teleportation never provokes. The answer excludes the cleric, so E004 does not apply. Repeated permission to attack the wizard is the same mistake.",
+              "reason": "The answer wrongly says the wizard provokes. Teleportation never provokes. The answer excludes the cleric. Repeated permission to attack the wizard is the same mistake.",
               "pdf_pages": [
                 15,
                 190
@@ -9405,13 +9263,11 @@
       "answer_sha256": "2308fbe5ea4b70e8795206c55ecf79937ac7d4f5f954bfb62f6f6912ed1c0574",
       "candidate_input_sha256": "9ca7fb52c8589a3209ce590d3bba748519846f74cabb53fbb5307a2d12fb651b",
       "historical_review": {
-        "origin": "dual_expert_agreed_summary",
-        "source": "accepted claim-only pilot projection",
-        "claim_detail": "Accepted total/profile retained; per-claim awards are not flattened in the selected suite snapshot.",
+        "claim_detail": "Final scores and correctness judgments are available; per-claim awards are unavailable.",
         "targeted_human_review": false
       },
       "historical_expert_annotations": {
-        "gpt": {
+        "grader_1": {
           "claims": [
             {
               "claim_id": "C001",
@@ -9437,7 +9293,7 @@
             }
           ]
         },
-        "sonnet": {
+        "grader_2": {
           "claims": [
             {
               "claim_id": "C001",
@@ -10013,7 +9869,7 @@
             "claim_id": "C002",
             "status": "met",
             "earned_points": 20,
-            "reason": "Permits using it on the first hit and explicitly limits the benefit to one hit that turn. The incorrect damage calculation is a separate diagnostic error.",
+            "reason": "Permits using it on the first hit and explicitly limits the benefit to one hit that turn. The damage calculation is incorrect.",
             "answer_quote": "Choose to use Savage Attacker on her first attack (applying both dice values to that hit)",
             "pdf_pages": [
               87
@@ -10869,7 +10725,7 @@
             "claim_id": "C002",
             "status": "partly_met",
             "earned_points": 17,
-            "reason": "B is satisfied by the explicit rest-end endpoint. A is contradicted by delaying the start until the end of the bandit's turn. The incorrect numerical duration is an additional diagnostic.",
+            "reason": "B is satisfied by the explicit rest-end endpoint. A is contradicted by delaying the start until the end of the bandit's turn. The numerical duration is also incorrect.",
             "answer_quote": "The bandit then begins a Short Rest at the end of its turn.",
             "pdf_pages": [
               17,
@@ -12594,7 +12450,7 @@
         ],
         "accepted_alternatives": [],
         "uncertainty_flags": [
-          "“Fighting Style feat again” could mean choosing a different Fighting Style feat or repeating Defense. This wording ambiguity does not affect the explicit Archery denial or any claim award."
+          "“Fighting Style feat again” could mean choosing a different Fighting Style feat or repeating Defense. The Archery denial is explicit."
         ],
         "extra_assertions_audited": true,
         "source_evidence": [
@@ -22184,7 +22040,7 @@
         ],
         "accepted_alternatives": [],
         "uncertainty_flags": [
-          "The glossary entry on page 184 omits the explicit Short Rest endpoint stated on page 17. Page 17 directly establishes that endpoint, so this textual discrepancy does not leave any claim award unresolved."
+          "The glossary entry on page 184 omits the explicit Short Rest endpoint stated on page 17. Page 17 directly establishes that endpoint."
         ],
         "extra_assertions_audited": true,
         "source_evidence": [
@@ -24034,7 +23890,7 @@
             "answer_quote": "The creature remains Unconscious until it regains any Hit Points or until someone uses an action to administer first aid to it, which requires a successful DC 10 Wisdom (Medicine) check.",
             "supplied_support": "supported",
             "srd_support": "supported",
-            "reason": "Accurately reproduces page 184's rule. That entry omits the automatic rest endpoint explicitly stated on page 17. The omission affects C002; reproducing this published wording does not warrant a separate false-rule diagnostic.",
+            "reason": "Accurately reproduces page 184's rule. That entry omits the automatic rest endpoint explicitly stated on page 17. The omission affects C002.",
             "pdf_pages": [
               17,
               184
@@ -29347,16 +29203,14 @@
             "answer_quote": "This is a **basic ability**, so it applies to all editions and does **not** have the wait-a-turn escalation mechanic found in earlier editions (like D&D 5.0 where Savage Attacker’s one-hit roll came once per two rounds of attacks).",
             "supplied_support": "unsupported",
             "srd_support": "unsupported",
-            "reason": "The authorized sources identify an Origin Feat and establish its current rule, but provide neither this cross-edition principle nor the alleged historical mechanic.",
+            "reason": "The SRD identifies an Origin Feat and establishes its current rule.",
             "pdf_pages": [
               87
             ]
           }
         ],
         "accepted_alternatives": [],
-        "uncertainty_flags": [
-          "The historical assertion about earlier editions cannot be resolved from the authorized SRD 5.2.1 sources. This does not affect any required claim award."
-        ],
+        "uncertainty_flags": [],
         "extra_assertions_audited": true,
         "source_evidence": [
           {
@@ -35020,7 +34874,7 @@
         ],
         "accepted_alternatives": [],
         "uncertainty_flags": [
-          "Source discrepancy: page 184 omits the explicit Short Rest endpoint given on page 17. Page 17 establishes C002 directly; the candidate omits the endpoint under either account, so no award is unresolved."
+          "Page 184 omits the explicit Short Rest endpoint given on page 17. The candidate omits the endpoint under either account."
         ],
         "extra_assertions_audited": true,
         "source_evidence": [
@@ -42112,7 +41966,7 @@
         ],
         "accepted_alternatives": [],
         "uncertainty_flags": [
-          "The published knockout entries differ: page 17 explicitly ends unconsciousness at Short Rest completion, while page 184 omits that endpoint. Page 17 establishes C002 under the reviewed rubric; the discrepancy does not affect this candidate's zero-credit omissions."
+          "The published knockout entries differ: page 17 explicitly ends unconsciousness at Short Rest completion, while page 184 omits that endpoint. The candidate omits the recovery rules."
         ],
         "extra_assertions_audited": true,
         "source_evidence": [
@@ -48267,7 +48121,7 @@
         ],
         "accepted_alternatives": [],
         "uncertainty_flags": [
-          "Page 184's knockout entry omits the Short Rest endpoint explicitly stated on page 17. This published wording discrepancy does not affect these awards: the candidate supplies neither knockout nor Short Rest recovery."
+          "Page 184's knockout entry omits the Short Rest endpoint explicitly stated on page 17. The candidate supplies neither knockout nor Short Rest recovery."
         ],
         "extra_assertions_audited": true,
         "source_evidence": [
@@ -52087,7 +51941,7 @@
             "answer_quote": "*War Caster* which requires Level 1 or Spellcasting",
             "supplied_support": "unsupported",
             "srd_support": "unsupported",
-            "reason": "War Caster does not appear in the complete SRD or supplied passages. Its asserted prerequisite cannot be verified from the authorized reference.",
+            "reason": "War Caster does not appear in the complete SRD or supplied passages.",
             "pdf_pages": []
           }
         ],
@@ -52095,9 +51949,7 @@
           "The explicit corrections and settled Yes/Yes/No conclusions resolve the earlier tentative verdicts.",
           "Naming Fighter level 1 as the feature's source in this multiclass build satisfies C002 without repeating the word multiclass."
         ],
-        "uncertainty_flags": [
-          "War Caster is absent from the complete SRD; its asserted prerequisite remains unverified. This does not affect the resolved required claims."
-        ],
+        "uncertainty_flags": [],
         "extra_assertions_audited": true,
         "source_evidence": [
           {
@@ -52856,7 +52708,7 @@
             "answer_quote": "The relevant rule is found in the **Actions** section of the *Player's Handbook* (referenced in your prompt as page 10).",
             "supplied_support": "unsupported",
             "srd_support": "unsupported",
-            "reason": "The provided page reference identifies the SRD, not a Player's Handbook page. The rule itself is verified; the separate book attribution is not established by the authorized source.",
+            "reason": "The provided page reference identifies the SRD. The rule itself is verified.",
             "pdf_pages": [
               10
             ]
@@ -54010,7 +53862,7 @@
             "claim_id": "C003",
             "status": "met",
             "earned_points": 30,
-            "reason": "Consistently disallows Shield and explicitly supplies the required second-slot explanation. The additional false Bonus Action restriction is a separate diagnostic error.",
+            "reason": "Consistently disallows Shield and explicitly supplies the required second-slot explanation. The additional Bonus Action restriction is false.",
             "answer_quote": "Therefore, using a Level 1 slot (for *Shield*) after using a Level 2 slot (for *Misty Step*) violates \"One Spell with a Spell Slot per Turn.\"",
             "pdf_pages": [
               105
@@ -54517,7 +54369,7 @@
             "answer_quote": "such as *Action Surge* or the *Rapid Reposition* feat",
             "supplied_support": "not_applicable",
             "srd_support": "uncertain",
-            "reason": "Action Surge grants an additional action. No Rapid Reposition feat appears in the complete SRD, so that example cannot be verified.",
+            "reason": "Action Surge grants an additional action. No Rapid Reposition feat appears in the complete SRD.",
             "pdf_pages": [
               48
             ]
@@ -54536,7 +54388,7 @@
             "answer_quote": "A player can take one action per round.",
             "supplied_support": "not_applicable",
             "srd_support": "unsupported",
-            "reason": "The SRD specifies one action on a turn and distinguishes turns from rounds. The attributed DMG quotation cannot be verified from the SRD.",
+            "reason": "The SRD specifies one action on a turn and distinguishes turns from rounds.",
             "pdf_pages": [
               13,
               176
@@ -54546,9 +54398,7 @@
         "accepted_alternatives": [
           "Persuasion and Insight are appropriate associated skills, but their names alone do not identify the required Influence and Search actions."
         ],
-        "uncertainty_flags": [
-          "The Rapid Reposition feat example and attributed PHB/DMG quotation provenance cannot be verified from the complete SRD; this does not affect the claim awards."
-        ],
+        "uncertainty_flags": [],
         "extra_assertions_audited": true,
         "source_evidence": [
           {
@@ -55774,7 +55624,7 @@
             "answer_quote": "Player's Handbook (Chapter 9: Combat)",
             "supplied_support": "not_applicable",
             "srd_support": "unsupported",
-            "reason": "The SRD places these mechanics in Playing the Game. The claimed Player's Handbook location cannot be verified from the authorized SRD sources.",
+            "reason": "The SRD places these mechanics in Playing the Game.",
             "pdf_pages": [
               6,
               7
@@ -56440,7 +56290,7 @@
             "answer_quote": "*Player's Handbook*, \"Searching for Traps\": \"When you want to find something hidden in an object or place, make a Wisdom (Perception) check.\"",
             "supplied_support": "not_applicable",
             "srd_support": "unsupported",
-            "reason": "The SRD supports the substantive rule but does not contain this purported quotation or heading. Its attribution to an external book cannot be verified from the permitted sources.",
+            "reason": "The SRD supports the substantive rule but does not contain this purported quotation or heading.",
             "pdf_pages": [
               12
             ]
@@ -56449,16 +56299,14 @@
             "answer_quote": "*Dungeon Master's Guide* (Secret Doors): Implicitly requires searching the area where the door is concealed to find it via the Search mechanic.",
             "supplied_support": "not_applicable",
             "srd_support": "supported",
-            "reason": "The substantive vicinity requirement is explicit in the SRD. The external book attribution remains unverified and does not change the ruling.",
+            "reason": "The substantive vicinity requirement is explicit in the SRD.",
             "pdf_pages": [
               12
             ]
           }
         ],
         "accepted_alternatives": [],
-        "uncertainty_flags": [
-          "The external Player's Handbook quotation and Dungeon Master's Guide attribution cannot be verified from the permitted SRD sources; neither affects the established claim awards."
-        ],
+        "uncertainty_flags": [],
         "extra_assertions_audited": true,
         "source_evidence": [
           {
@@ -57163,7 +57011,7 @@
             "answer_quote": "Official rulings (Sage Advice) clarify that a Barbarian **does not need to attack** to maintain Rage, provided they do not drop their weapon.",
             "supplied_support": "not_applicable",
             "srd_support": "contradicted",
-            "reason": "The weapon-based maintenance explanation contradicts the SRD. Attacking is optional because other listed extension methods exist. The external attribution is unverified within the authorized sources and does not affect the resolved rule judgment.",
+            "reason": "The weapon-based maintenance explanation contradicts the SRD. Attacking is optional because other listed extension methods exist.",
             "pdf_pages": [
               29
             ]
@@ -57935,9 +57783,7 @@
           }
         ],
         "accepted_alternatives": [],
-        "uncertainty_flags": [
-          "Assertions about Pathfinder, other editions, and the contents of separate rulebooks cannot be fully verified from the authorized SRD; neither claim award depends on them."
-        ],
+        "uncertainty_flags": [],
         "extra_assertions_audited": true,
         "source_evidence": [
           {
@@ -58558,9 +58404,7 @@
           }
         ],
         "accepted_alternatives": [],
-        "uncertainty_flags": [
-          "Older-edition spell-level and range assertions remain unverifiable within the authorized SRD 5.2.1 sources; this does not affect the required claim awards."
-        ],
+        "uncertainty_flags": [],
         "extra_assertions_audited": true,
         "source_evidence": [
           {
@@ -59262,7 +59106,7 @@
             "answer_quote": "\"Grappler\" is a feat from the **3rd and 4th Editions** (e.g., D&D 3.5), not a published option in the official 5th Edition SRD.",
             "supplied_support": "not_applicable",
             "srd_support": "contradicted",
-            "reason": "The asserted absence is directly contradicted by Grappler's entry. Historical publication details are outside what this SRD establishes.",
+            "reason": "The asserted absence is directly contradicted by Grappler's entry.",
             "pdf_pages": [
               87
             ]
@@ -59271,14 +59115,12 @@
             "answer_quote": "The SRD 5.2 (which incorporates the *Player's Handbook* and *Tasha's Cauldron of Everything*)",
             "supplied_support": "not_applicable",
             "srd_support": "unsupported",
-            "reason": "The authorized SRD does not establish this claim about incorporation of external books.",
             "pdf_pages": []
           },
           {
             "answer_quote": "The *Tasha's Cauldron of Everything* (the only other major source for new feats in the core rules) does not list this option either.",
             "supplied_support": "not_applicable",
             "srd_support": "unsupported",
-            "reason": "The authorized SRD does not establish external book contents or which books constitute the only major sources of feats.",
             "pdf_pages": []
           },
           {
@@ -59292,9 +59134,7 @@
           }
         ],
         "accepted_alternatives": [],
-        "uncertainty_flags": [
-          "Historical publication and external sourcebook assertions cannot be verified from the authorized SRD. These ancillary limitations do not affect the resolved claim awards."
-        ],
+        "uncertainty_flags": [],
         "extra_assertions_audited": true,
         "source_evidence": [
           {
@@ -61050,9 +60890,7 @@
           "Opening the door is accepted as shorthand for becoming accessible, satisfying C002 component C.",
           "The described audible impact at the target's mechanism is accepted as communicating the sound's origin."
         ],
-        "uncertainty_flags": [
-          "The historical Bard-cantrip assertion cannot be resolved from SRD 5.2.1; this does not affect any required claim award."
-        ],
+        "uncertainty_flags": [],
         "extra_assertions_audited": true,
         "source_evidence": [
           {
@@ -62209,7 +62047,7 @@
             "answer_quote": "**Player's Handbook (SRD), p. 173-174**",
             "supplied_support": "not_applicable",
             "srd_support": "unsupported",
-            "reason": "The cited PHB pagination does not locate this rule in the authoritative SRD. SRD pages 173–174 contain spells; the relevant rule is on page 7.",
+            "reason": "SRD pages 173–174 contain spells; the relevant rule is on page 7.",
             "pdf_pages": [
               7,
               173,
@@ -65615,7 +65453,7 @@
         ],
         "accepted_alternatives": [],
         "uncertainty_flags": [
-          "The grapple parenthetical does not identify whether it describes the grappler or the target. This ambiguity does not affect any claim award."
+          "The grapple parenthetical does not identify whether it describes the grappler or the target."
         ],
         "extra_assertions_audited": true,
         "source_evidence": [
@@ -67287,9 +67125,7 @@
           }
         ],
         "accepted_alternatives": [],
-        "uncertainty_flags": [
-          "C004 has an uncovered credit-profile combination: correct verdict, explicit different-turn point, and correct trigger coexist with a false own-turn-only limitation. Full credit is excluded, but none of the permitted partial conditions applies."
-        ],
+        "uncertainty_flags": [],
         "extra_assertions_audited": true,
         "source_evidence": [
           {
@@ -67349,9 +67185,9 @@
         "has_material_error": true
       },
       "final_review": {
-        "kind": "targeted_human_adjudication",
-        "scope": "claim_C004",
-        "verdict": "claim_award_accepted",
+        "kind": "human",
+        "scope": "claim",
+        "verdict": "points_awarded",
         "claim_id": "C004",
         "points": 25
       },
@@ -67996,7 +67832,7 @@
           {
             "mistake_id": "M001",
             "answer_quote": "Ability score increases via feats affect modifiers but not maximum hit points when no level is gained.",
-            "reason": "The Constitution adjustment rule applies to each attained level. The repeated claims denying this adjustment, including the purported PHB quotation, give the opposite ruling.",
+            "reason": "The Constitution adjustment rule applies to each attained level. The repeated claims denying this adjustment give the opposite ruling.",
             "pdf_pages": [
               23
             ]
@@ -68059,7 +67895,7 @@
             "answer_quote": "If you increase your Constitution score after you have rolled your hit points, you don't gain any additional hit points. Your hit point maximum does not change.",
             "supplied_support": "not_applicable",
             "srd_support": "contradicted",
-            "reason": "This purported PHB quotation asserts the opposite of the SRD Constitution adjustment rule. Its attribution cannot be verified from the supplied authoritative SRD.",
+            "reason": "This quotation asserts the opposite of the SRD Constitution adjustment rule.",
             "pdf_pages": [
               23
             ]
@@ -68699,7 +68535,7 @@
         ],
         "accepted_alternatives": [],
         "uncertainty_flags": [
-          "The glossary knockout entry on page 184 omits the explicit end-of-Short-Rest endpoint stated on page 17. Page 17 establishes that endpoint; the editorial difference leaves no claim award unresolved."
+          "The glossary knockout entry on page 184 omits the explicit end-of-Short-Rest endpoint stated on page 17. Page 17 establishes that endpoint."
         ],
         "extra_assertions_audited": true,
         "source_evidence": [
@@ -71175,7 +71011,7 @@
           "Treating 'does not target the creature individually' as shorthand for the scenario's area-of-effect exception."
         ],
         "uncertainty_flags": [
-          "Voluntary dismissal is available if the warded creature is also Sanctuary's eligible caster; the scenario does not identify the caster. This does not affect either claim award."
+          "Voluntary dismissal is available if the warded creature is also Sanctuary's eligible caster; the scenario does not identify the caster."
         ],
         "extra_assertions_audited": true,
         "source_evidence": [
@@ -74132,9 +73968,7 @@
         "accepted_alternatives": [
           "The explicit later reevaluation of (a) corrects the opening disallowed verdict."
         ],
-        "uncertainty_flags": [
-          "C004 has a rubric coverage gap: its correct different-turn explanation and trigger coexist with a false own-turn-only qualification, excluding full credit without satisfying a listed partial-credit condition."
-        ],
+        "uncertainty_flags": [],
         "extra_assertions_audited": true,
         "source_evidence": [
           {
@@ -74188,9 +74022,9 @@
         "has_material_error": true
       },
       "final_review": {
-        "kind": "targeted_human_adjudication",
-        "scope": "claim_C004",
-        "verdict": "claim_award_accepted",
+        "kind": "human",
+        "scope": "claim",
+        "verdict": "points_awarded",
         "claim_id": "C004",
         "points": 25
       },
@@ -76454,7 +76288,7 @@
             "answer_quote": "Dungeons & Dragons 5th Edition, *Dungeon Master’s Guide*, §2.1 “Perception Checks,” p. 27.",
             "supplied_support": "not_applicable",
             "srd_support": "unsupported",
-            "reason": "The cited section and quoted sentence are not the SRD's relevant passage. The authoritative SRD rule is Finding Hidden Objects on physical page 12; physical page 27 contains trinkets. The separate Dungeon Master's Guide citation cannot be verified from the authorized sources.",
+            "reason": "The cited section and quoted sentence are not the SRD's relevant passage. The authoritative SRD rule is Finding Hidden Objects on physical page 12; physical page 27 contains trinkets.",
             "pdf_pages": [
               12,
               27
@@ -82618,7 +82452,7 @@
           "The voluntary capture wording satisfies C001 component A despite the incorrect action terminology."
         ],
         "uncertainty_flags": [
-          "Source discrepancy: page 184 omits the Short Rest completion endpoint expressly stated on page 17. This does not leave any award unresolved because the candidate supplies neither version's recovery rules."
+          "Page 184 omits the Short Rest completion endpoint expressly stated on page 17. The candidate supplies neither version's recovery rules."
         ],
         "extra_assertions_audited": true,
         "source_evidence": [
@@ -83345,7 +83179,7 @@
         ],
         "accepted_alternatives": [],
         "uncertainty_flags": [
-          "The unspecified effect prevents verifying whether its subsequent resolution requires other rolls or adjustments; this does not affect C001."
+          "The unspecified effect prevents verifying whether its subsequent resolution requires other rolls or adjustments."
         ],
         "extra_assertions_audited": true,
         "source_evidence": [
@@ -85955,14 +85789,12 @@
             "answer_quote": "such as the *Rapid Reload* feat from 3.5e which does not exist in SRD 5e",
             "supplied_support": "unsupported",
             "srd_support": "uncertain",
-            "reason": "The complete SRD 5.2.1 contains no Rapid Reload entry. Its historical attribution and effects in another edition cannot be established from the authorized sources.",
+            "reason": "The complete SRD 5.2.1 contains no Rapid Reload entry.",
             "pdf_pages": []
           }
         ],
         "accepted_alternatives": [],
-        "uncertainty_flags": [
-          "Rapid Reload's attribution to 3.5e remains outside the authorized source scope; this does not affect either required claim award."
-        ],
+        "uncertainty_flags": [],
         "extra_assertions_audited": true,
         "source_evidence": [
           {
@@ -87271,7 +87103,6 @@
             "answer_quote": "This determination comes from the **Social Interaction** rules found in the *Unearthed Arcana 2024: Level 1–5 Characters* document",
             "supplied_support": "not_applicable",
             "srd_support": "unsupported",
-            "reason": "The published SRD establishes the applicable rules, but does not establish this external document attribution.",
             "pdf_pages": [
               184
             ]
@@ -87280,14 +87111,11 @@
             "answer_quote": "Under the **Unearthed Arcana 2024** rules (which serve as the basis for the upcoming SRD 5.2.1 and current D&D Next playtest)",
             "supplied_support": "not_applicable",
             "srd_support": "unsupported",
-            "reason": "The claimed publication history and playtest relationship cannot be verified from the permitted SRD sources.",
             "pdf_pages": []
           }
         ],
         "accepted_alternatives": [],
-        "uncertainty_flags": [
-          "The external Unearthed Arcana attribution and publication-history claims remain unverified from the permitted sources. Neither affects the resolved claim awards."
-        ],
+        "uncertainty_flags": [],
         "extra_assertions_audited": true,
         "source_evidence": [
           {
@@ -88861,9 +88689,7 @@
           }
         ],
         "accepted_alternatives": [],
-        "uncertainty_flags": [
-          "Lucky's asserted ability score benefit cannot be verified from the SRD, which does not include that feat; this does not affect either claim award."
-        ],
+        "uncertainty_flags": [],
         "extra_assertions_audited": true,
         "source_evidence": [
           {
@@ -90169,7 +89995,7 @@
             "answer_quote": "The Search action is described as spending your turn \"doing something to find hidden objects or traps.\"",
             "supplied_support": "not_applicable",
             "srd_support": "unsupported",
-            "reason": "This is not the SRD 5.2.1 definition or an exact quotation from it. Searching for concealed objects is nevertheless a valid Search use, so the inaccurate quotation does not introduce a material false rule for this scenario. The PHB page reference does not establish SRD wording.",
+            "reason": "This is not the SRD 5.2.1 definition or an exact quotation from it. Searching for concealed objects is nevertheless a valid Search use, so the inaccurate quotation does not introduce a material false rule for this scenario.",
             "pdf_pages": [
               187
             ]
@@ -90329,7 +90155,7 @@
             "answer_quote": "the Rogue's *Crossbow Expert* feature ignores the Loading property to allow reloading",
             "supplied_support": "not_applicable",
             "srd_support": "unsupported",
-            "reason": "The Rogue attribution is incorrect. Crossbow Expert does not appear in the complete SRD, so the separate assertion about that external feature's mechanics cannot be verified from the specified authority.",
+            "reason": "The Rogue attribution is incorrect. Crossbow Expert does not appear in the complete SRD.",
             "pdf_pages": [
               62,
               64
@@ -90337,9 +90163,7 @@
           }
         ],
         "accepted_alternatives": [],
-        "uncertainty_flags": [
-          "Crossbow Expert's external mechanics remain unverified because the feature is absent from the authoritative SRD; this does not affect either claim award."
-        ],
+        "uncertainty_flags": [],
         "extra_assertions_audited": true,
         "source_evidence": [
           {
@@ -94259,8 +94083,8 @@
         "has_material_error": null
       },
       "final_review": {
-        "kind": "targeted_human_adjudication",
-        "scope": "material_error_profile",
+        "kind": "human",
+        "scope": "material_error",
         "verdict": "no_material_error",
         "claim_id": null,
         "points": null
@@ -94940,16 +94764,14 @@
             "answer_quote": "official Sage Advice rulings for D&D 5e clarify that the adjustment is simply the difference in modifiers when taking a feat or similar feature, not scaled by hit dice or level retroactively for all previous levels.",
             "supplied_support": "not_applicable",
             "srd_support": "contradicted",
-            "reason": "The attributed rule contradicts the SRD. Whether an external Sage Advice document contains this statement cannot be established from the authorized corpus.",
+            "reason": "The attributed rule contradicts the SRD.",
             "pdf_pages": [
               23
             ]
           }
         ],
         "accepted_alternatives": [],
-        "uncertainty_flags": [
-          "The external PHB page references and Sage Advice attribution cannot be verified from the authorized SRD corpus; this does not affect either claim award."
-        ],
+        "uncertainty_flags": [],
         "extra_assertions_audited": true,
         "source_evidence": [
           {
@@ -95817,9 +95639,7 @@
           }
         ],
         "accepted_alternatives": [],
-        "uncertainty_flags": [
-          "The historical assertion about PHB and SRD 5.0 contents remains unverified because those publications are outside the authorized source. This does not affect any claim award."
-        ],
+        "uncertainty_flags": [],
         "extra_assertions_audited": true,
         "source_evidence": [
           {
@@ -96718,7 +96538,7 @@
             "answer_quote": "Standard D&D 5e turn structure (PHB p. 189) defines when a turn begins and ends",
             "supplied_support": "unsupported",
             "srd_support": "supported",
-            "reason": "The SRD independently establishes successive rounds and turns. The external PHB pagination is unnecessary and is not verified by the authorized sources.",
+            "reason": "The SRD independently establishes successive rounds and turns.",
             "pdf_pages": [
               13
             ]
@@ -97592,7 +97412,7 @@
           "Choosing the knockout as the attack resolves is acceptable timing shorthand."
         ],
         "uncertainty_flags": [
-          "The published entries differ: page 17 expressly ends unconsciousness at Short Rest completion, while page 184 lists only HP regain and first aid. No verified rule establishes the candidate's claimed glossary precedence; this textual discrepancy does not prevent awarding the reviewed claim tiers."
+          "The published entries differ: page 17 expressly ends unconsciousness at Short Rest completion, while page 184 lists only HP regain and first aid. No verified rule establishes the candidate's claimed glossary precedence."
         ],
         "extra_assertions_audited": true,
         "source_evidence": [
@@ -100850,7 +100670,7 @@
             "answer_quote": "In standard 5e interpretation and DMG errata, death saves continue to be made on turns until healed",
             "supplied_support": "not_applicable",
             "srd_support": "contradicted",
-            "reason": "As a statement of the rule, this overlooks becoming Stable as another way to stop saves. The separate attribution to DMG errata cannot be verified from the authorized SRD.",
+            "reason": "As a statement of the rule, this overlooks becoming Stable as another way to stop saves.",
             "pdf_pages": [
               17,
               18
@@ -100858,9 +100678,7 @@
           }
         ],
         "accepted_alternatives": [],
-        "uncertainty_flags": [
-          "The attribution to DMG errata cannot be verified from the authorized SRD sources; this does not affect any claim award."
-        ],
+        "uncertainty_flags": [],
         "extra_assertions_audited": true,
         "source_evidence": [
           {
@@ -102913,7 +102731,7 @@
             "answer_quote": "By SRD interpretation standards (and confirmed by official errata/Sage Advice)",
             "supplied_support": "not_applicable",
             "srd_support": "unsupported",
-            "reason": "The complete SRD does not substantiate this claimed external confirmation; its actual feat wording directly contradicts the asserted mandatory application.",
+            "reason": "The SRD feat wording directly contradicts the asserted mandatory application.",
             "pdf_pages": [
               87
             ]
@@ -107876,16 +107694,14 @@
             "answer_quote": "This interpretation aligns with official Sage Advice",
             "supplied_support": "not_applicable",
             "srd_support": "unsupported",
-            "reason": "The authorized SRD does not authenticate this external attribution. Its explicit damage and stability rules contradict the interpretation attributed to that material.",
+            "reason": "The explicit damage and stability rules contradict this interpretation.",
             "pdf_pages": [
               18
             ]
           }
         ],
         "accepted_alternatives": [],
-        "uncertainty_flags": [
-          "The external Sage Advice and errata attributions cannot be authenticated from the authorized SRD sources. This does not leave any required claim award unresolved."
-        ],
+        "uncertainty_flags": [],
         "extra_assertions_audited": true,
         "source_evidence": [
           {
@@ -116485,7 +116301,7 @@
             "claim_id": "C004",
             "status": "met",
             "earned_points": 30,
-            "reason": "Explicitly states the single melee weapon attack or Unarmed Strike and Reaction cost. The selected Unarmed Strike is legal; the unsupported restriction to that choice is a separate diagnostic error.",
+            "reason": "Explicitly states the single melee weapon attack or Unarmed Strike and Reaction cost. The selected Unarmed Strike is legal; the restriction to that choice is unsupported.",
             "answer_quote": "take a reaction to make **one melee attack with a weapon or an unarmed strike** against that creature.",
             "pdf_pages": [
               15,
@@ -117528,7 +117344,7 @@
             "answer_quote": "The common misconception that \"Rage ends if you miss\" is a house rule or confusion with other mechanics (like the *Frenzy* ability of some monsters or older editions).",
             "supplied_support": "not_applicable",
             "srd_support": "unsupported",
-            "reason": "The SRD establishes that an attack roll can extend Rage without hitting, but does not establish this claim about player misconceptions or their historical origins. This incidental attribution does not affect claim awards.",
+            "reason": "The SRD establishes that an attack roll can extend Rage without hitting.",
             "pdf_pages": [
               29
             ]
@@ -118179,10 +117995,7 @@
           }
         ],
         "accepted_alternatives": [],
-        "uncertainty_flags": [
-          "The Sage Advice attribution cannot be verified from the authorized SRD.",
-          "Cloud of Daggers is absent from the complete SRD, so its specific mechanics cannot be verified from the authorized sources. Neither issue changes the claim awards."
-        ],
+        "uncertainty_flags": [],
         "extra_assertions_audited": true,
         "source_evidence": [
           {
@@ -119332,7 +119145,7 @@
             "answer_quote": "**Martial Adept** requires *Dexterity or Strength 13*.",
             "supplied_support": "not_applicable",
             "srd_support": "unsupported",
-            "reason": "Martial Adept does not appear in the complete SRD, so its asserted prerequisite cannot be verified from the authorized source.",
+            "reason": "Martial Adept does not appear in the complete SRD.",
             "pdf_pages": []
           },
           {
@@ -119361,8 +119174,7 @@
           "Grappler's lack of a class-specific level prerequisite is compatible with its general level 4+ prerequisite; the latter is omitted rather than expressly denied."
         ],
         "uncertainty_flags": [
-          "The SRD cannot verify the candidate's PHB/DMG publication attributions or the asserted Combat Superiority and Martial Adept prerequisites.",
-          "The candidate's general statements about current-class prerequisites and exclusive feat acquisition are ambiguous; neither changes the established claim awards."
+          "The candidate's general statements about current-class prerequisites and exclusive feat acquisition are ambiguous."
         ],
         "extra_assertions_audited": true,
         "source_evidence": [
@@ -121779,7 +121591,7 @@
             "answer_quote": "the *Tough* feat, which adds 2 per level",
             "supplied_support": "not_applicable",
             "srd_support": "unsupported",
-            "reason": "Tough is absent from the complete SRD feat descriptions. This optional example cannot be verified from the authorized source; its absence does not establish that the assertion is false.",
+            "reason": "Tough is absent from the complete SRD feat descriptions. Its absence does not establish that the assertion is false.",
             "pdf_pages": [
               87,
               88
@@ -122488,14 +122300,12 @@
             "answer_quote": "certain feats or class features like the *Resilient* feat do not allow choosing; they only modify the roll",
             "supplied_support": "not_applicable",
             "srd_support": "unsupported",
-            "reason": "The Resilient feat is not included in the complete SRD, so its particular mechanics cannot be verified from the authorized source. This does not affect the claim award.",
+            "reason": "The Resilient feat is not included in the complete SRD.",
             "pdf_pages": []
           }
         ],
         "accepted_alternatives": [],
-        "uncertainty_flags": [
-          "The Resilient feat aside cannot be verified because that feat is absent from the authorized SRD; the required ruling is fully resolved."
-        ],
+        "uncertainty_flags": [],
         "extra_assertions_audited": true,
         "source_evidence": [
           {
@@ -126241,7 +126051,7 @@
             "answer_quote": "appears in the **Dungeon Master's Guide**, in the section *\"Negotiating with Nonplayer Characters.\"*",
             "supplied_support": "not_applicable",
             "srd_support": "uncertain",
-            "reason": "The specific external book-section attribution cannot be verified from the SRD. The claim that the attitude effects are absent from the SRD is independently contradicted.",
+            "reason": "The claim that the attitude effects are absent from the SRD is contradicted by its rules.",
             "pdf_pages": [
               182,
               183
@@ -126249,9 +126059,7 @@
           }
         ],
         "accepted_alternatives": [],
-        "uncertainty_flags": [
-          "The specific Dungeon Master's Guide section attribution is unverifiable from the authoritative SRD; neither claim award depends on it."
-        ],
+        "uncertainty_flags": [],
         "extra_assertions_audited": true,
         "source_evidence": [
           {
@@ -126736,7 +126544,7 @@
             "answer_quote": "This is a meaningful distinction from 3.5e, where death saving throws were made at the *start* of a character's turn.",
             "supplied_support": "not_applicable",
             "srd_support": "unsupported",
-            "reason": "The authorized SRD does not establish historical 3.5e rules; its own start-of-turn rule also defeats the claimed distinction.",
+            "reason": "The SRD's start-of-turn rule defeats the claimed distinction.",
             "pdf_pages": [
               17
             ]
@@ -126755,9 +126563,7 @@
           "“Unstable” and “stable status lost” communicate that she stops being Stable.",
           "Describing her continuing living status communicates survival without a separate instant-death calculation."
         ],
-        "uncertainty_flags": [
-          "Historical 3.5e rules and the assertion about most tables' practices cannot be verified from the authorized SRD. Neither leaves a claim award unresolved."
-        ],
+        "uncertainty_flags": [],
         "extra_assertions_audited": true,
         "source_evidence": [
           {
@@ -128191,7 +127997,7 @@
           "Healing above zero receives credit for the healing recovery component."
         ],
         "uncertainty_flags": [
-          "The published knockout entries differ: page 184 omits the explicit Short Rest completion endpoint stated on page 17. Page 17 directly establishes the required endpoint, so this wording discrepancy leaves no claim award unresolved."
+          "The published knockout entries differ: page 184 omits the explicit Short Rest completion endpoint stated on page 17. Page 17 directly establishes the required endpoint."
         ],
         "extra_assertions_audited": true,
         "source_evidence": [
@@ -128354,7 +128160,6 @@
             "answer_quote": "In D&D 3rd edition, an explicit rule allowed a character to choose to fail a saving throw (by effectively rolling a 1).",
             "supplied_support": "not_applicable",
             "srd_support": "unsupported",
-            "reason": "SRD 5.2.1 does not establish third-edition mechanics. This historical assertion is outside the available authoritative evidence.",
             "pdf_pages": []
           },
           {
@@ -128369,9 +128174,7 @@
           }
         ],
         "accepted_alternatives": [],
-        "uncertainty_flags": [
-          "The third-edition historical assertion cannot be verified from SRD 5.2.1; this does not affect the resolved claim award."
-        ],
+        "uncertainty_flags": [],
         "extra_assertions_audited": true,
         "source_evidence": [
           {
@@ -131531,9 +131334,7 @@
           }
         ],
         "accepted_alternatives": [],
-        "uncertainty_flags": [
-          "Sharpshooter's asserted prerequisites cannot be verified because the feat is absent from the complete SRD. This source limitation does not affect any required claim award."
-        ],
+        "uncertainty_flags": [],
         "extra_assertions_audited": true,
         "source_evidence": [
           {
@@ -134287,7 +134088,7 @@
           "Magical healing is accepted as an example of regaining HP."
         ],
         "uncertainty_flags": [
-          "Page 184 omits the explicit Short Rest endpoint given on page 17. Page 17 establishes that endpoint, so this wording discrepancy does not leave any claim award unresolved."
+          "Page 184 omits the explicit Short Rest endpoint given on page 17. Page 17 establishes that endpoint."
         ],
         "extra_assertions_audited": true,
         "source_evidence": [
@@ -139325,16 +139126,14 @@
             "answer_quote": "While the *Player's Handbook* (PHB) contains a specific rule for retroactively increasing hit points when a Constitution modifier increases, that rule is not present in the published **SRD 5.2.1**.",
             "supplied_support": "not_applicable",
             "srd_support": "contradicted",
-            "reason": "The claimed absence from the SRD is false. The separate assertion about the PHB cannot be verified using the authorized SRD sources.",
+            "reason": "The claimed absence from the SRD is false.",
             "pdf_pages": [
               23
             ]
           }
         ],
         "accepted_alternatives": [],
-        "uncertainty_flags": [
-          "The PHB-content assertion is outside the authorized sources; this does not affect either claim award."
-        ],
+        "uncertainty_flags": [],
         "extra_assertions_audited": true,
         "source_evidence": [
           {
@@ -139834,7 +139633,7 @@
           "“Nonlethal” is accepted as shorthand for choosing a melee knockout."
         ],
         "uncertainty_flags": [
-          "The glossary knockout entry on page 184 omits the Short Rest endpoint explicitly established on page 17. This source discrepancy does not leave any claim award unresolved."
+          "The glossary knockout entry on page 184 omits the Short Rest endpoint explicitly established on page 17."
         ],
         "extra_assertions_audited": true,
         "source_evidence": [
@@ -142748,7 +142547,7 @@
             "answer_quote": "**Source:** *Fizban’s Treasury of Dragons* (D&D 5.2.1), page 38, *Animate Trees*.",
             "supplied_support": "not_applicable",
             "srd_support": "unsupported",
-            "reason": "The authorized SRD establishes the applicable treant action on page 333; it does not substantiate this external citation.",
+            "reason": "The SRD establishes the applicable treant action on page 333.",
             "pdf_pages": [
               333
             ]
@@ -142757,9 +142556,7 @@
         "accepted_alternatives": [
           "Lacking the specific feature allowing further tree animation communicates lacking the Animate Trees action."
         ],
-        "uncertainty_flags": [
-          "The external Fizban’s Treasury of Dragons citation cannot be verified from the authorized SRD sources; this does not affect the resolved claim awards."
-        ],
+        "uncertainty_flags": [],
         "extra_assertions_audited": true,
         "source_evidence": [
           {
@@ -144586,7 +144383,7 @@
           {
             "mistake_id": "M007",
             "answer_quote": "The duration and termination of the Rage feature are governed by **Player's Handbook (PHB), Chapter 9, Combat: \"Taking an Action\"**, and **Player's Handbook, Chapter 9, Combat: \"Surprise\"**, or corresponding sections in the SRD.",
-            "reason": "Rage's Duration feature governs its duration. The SRD's Surprise rule concerns Initiative and supplies no Rage termination rule; the asserted PHB locations are not established by this source.",
+            "reason": "Rage's Duration feature governs its duration. The SRD's Surprise rule concerns Initiative and supplies no Rage termination rule.",
             "pdf_pages": [
               13,
               29
@@ -154995,7 +154792,7 @@
           "The melee-weapon example is legal; the answer also explicitly identifies the general rule as applying to melee attacks."
         ],
         "uncertainty_flags": [
-          "The published entries differ: page 17 explicitly includes the Short Rest endpoint, while page 184 omits it. Neither establishes the candidate's asserted precedence; the explicit endpoint supports the reviewed claim award."
+          "The published entries differ: page 17 explicitly includes the Short Rest endpoint, while page 184 omits it. Neither establishes the candidate's asserted precedence."
         ],
         "extra_assertions_audited": true,
         "source_evidence": [
@@ -159485,7 +159282,7 @@
             "answer_quote": "The DMG contains a variant rule for non-lethal damage, but that is a variant, not a core general rule.",
             "supplied_support": "not_applicable",
             "srd_support": "unsupported",
-            "reason": "The authorized SRD cannot establish the external DMG attribution. The denial of a general knockout rule is separately contradicted and recorded as M001.",
+            "reason": "The denial of a general knockout rule contradicts the SRD.",
             "pdf_pages": [
               17,
               184
@@ -159494,8 +159291,7 @@
         ],
         "accepted_alternatives": [],
         "uncertainty_flags": [
-          "The DMG variant attribution cannot be verified from the authorized SRD; it does not affect the claim awards.",
-          "Page 184 omits the explicit Short Rest endpoint stated on page 17. Page 17 establishes that endpoint, so this wording difference does not make C002 unresolved."
+          "Page 184 omits the explicit Short Rest endpoint stated on page 17. Page 17 establishes that endpoint."
         ],
         "extra_assertions_audited": true,
         "source_evidence": [

@@ -141,9 +141,9 @@ class GeneratedPagesTests(unittest.TestCase):
                 target.parent.mkdir(parents=True, exist_ok=True); shutil.copyfile(source, target)
             study = p.studies(root)[0]; dest = p.study_path(root, study)
             source = dest / 'report/REPORT.md'
-            source.write_text(source.read_text().replace('## References', 'Operator edit survives <angle> & ampersand.\n\n## References'))
+            source.write_text(source.read_text().replace('## References', 'Author edit survives <angle> & ampersand.\n\n## References'))
             out = p.build(root, root / 'site'); page = out / 'studies' / study['slug'] / 'index.html'
-            self.assertIn('Operator edit survives &lt;angle&gt; &amp; ampersand.', page.read_text())
+            self.assertIn('Author edit survives &lt;angle&gt; &amp; ampersand.', page.read_text())
             manifest = p.read(page.parent / 'manifest.json')['source_files']
             for suffix in ['report/REPORT.md', 'web/index.html', 'web/figures.html', 'web/report-links.json']:
                 path = 'studies/' + study['slug'] + '/' + suffix

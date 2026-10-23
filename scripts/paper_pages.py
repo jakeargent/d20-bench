@@ -1,7 +1,6 @@
 """Markdown-to-paper mapping, shared by study reports and supporting documents."""
 from html import escape, unescape
 from pathlib import Path
-import json
 import posixpath
 import re
 from urllib.parse import urlsplit, urlunsplit, urlencode
@@ -83,7 +82,7 @@ def paper_page(template, content, output, study_slug, scripts=''):
         page = page.replace('href="' + study + 'index.html"',
                             'href="' + study + 'index.html" aria-current="page"', 1)
     page = page.replace('<!--PAGE-SCRIPTS-->', scripts)
-    # Substitute content last: operator text must never be interpreted as a template.
+    # Substitute content last: document text must never be interpreted as a template.
     return page.replace('<!--CONTENT-->', content)
 
 
@@ -102,25 +101,6 @@ def report_content(source, figures, link):
     return ('<div class="title-block"><p class="eyebrow">d20 Bench · Study 1</p>' + title +
             affiliation + '<hr></div>\n<div class="abstract">' + abstract + '</div>\n' +
             '\n'.join(body for _, body in rendered[3:]))
-
-
-def numeric_audit(results, answers, speeds):
-    """Generate exact evidence; the authored explanatory audit remains in REPORT.md."""
-    evidence = {'scope': {'selected_records': results['selected_records'],
-                         'aggregate_population_per_condition': results['suite_questions'],
-                         'public_answer_records': len(answers),
-                         'public_cases': len({a['case_id'] for a in answers})},
-                'parameters': [{k: c.get(k) for k in ('id', 'size_class', 'total_parameters', 'active_parameters')}
-                               for c in results['configurations']],
-                'full_suite_cells': [{
-                    'configuration': c['configuration'], 'condition': c['condition'], 'records': c['records'],
-                    'quality': {k: c['quality'][k] for k in ('mean_claim_score', 'fully_correct', 'profile_assessed', 'answers_with_material_errors', 'material_error_assessed', 'exact_claim_scores')},
-                    'timing': {k: c['timing'][k] for k in ('median_seconds', 'p95_seconds', 'recorded_cases', 'above_30_seconds')},
-                    'output_tokens': {k: c['output_tokens'][k] for k in ('mean', 'median', 'count')}} for c in results['cells']],
-                'public_subset_speed': speeds}
-    # A JSON string can contain '--'; avoid ending the HTML comment via input data.
-    payload = json.dumps(evidence, ensure_ascii=False, separators=(',', ':'), allow_nan=False).replace('--', r'\u002d\u002d')
-    return '<!--\nGENERATED NUMERIC AUDIT: full-suite aggregates and public-subset speed; no private per-case records.\n' + payload + '\n-->'
 
 
 def rewrite_html_links(page, output, generated):

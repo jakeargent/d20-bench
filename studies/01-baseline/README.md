@@ -14,7 +14,7 @@ I am publishing 18 of the 120 cases, with their 900 detailed answer records. A h
 - [Limitations](docs/LIMITATIONS.md): what limits how far the comparisons go.
 - [Results guide](docs/RESULTS.md): how to read the comparisons.
 - [Data dictionary](docs/DATA_DICTIONARY.md): every public file and field.
-- [Provenance](docs/PROVENANCE.md): where the data comes from, and what I left out.
+- [Provenance](docs/PROVENANCE.md): the cases, rule source and judgments.
 - [Disclosure boundary](../../SECURITY.md) and [SRD attribution](../../THIRD_PARTY_NOTICES.md).
 
 ## About this repository

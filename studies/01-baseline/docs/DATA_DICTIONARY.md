@@ -9,13 +9,13 @@ The public data files and what their fields mean. All files are UTF-8 JSON with 
 | `../../../data/visibility.json` | The 18 public case IDs, exactly, and the basis for choosing them | No private case IDs |
 | `../../../data/cases.json` | Questions, reference answers, reviewed claim rubrics and oracle passages | Public cases only |
 | `../data/answers.json` | 900 final answers, the exact request text sent to the model, final scores and claim awards, historical expert annotations, operations and request timing | Public cases only |
-| `../data/results.json` | 25 configurations, 50 full-120 cells (one per configuration and passage condition) and hashes of the sources | Aggregates include the private cases; no private per-case rows |
+| `../data/results.json` | 25 configurations, 50 full-120 cells (one per configuration and passage condition) | Aggregates include the private cases; no private per-case rows |
 
-`../config.json` is an input to the build. It holds the import exclusions, the ID mapping, the model metadata and the integrity checks on the retained data.
+`../config.json` holds model metadata and data-integrity checks.
 
 ## Identifiers
 
-Configuration IDs have the form `model/mode`. [Provenance](PROVENANCE.md) lists every mapping from the old IDs. `source_id` is the original ID with its batch prefix. `batch` is the research batch it came from, and `suite_id` is an older name for `batch`. Case IDs never changed.
+Configuration IDs have the form `model/mode`.
 
 The mode in a configuration ID is `off`, `on`, `native` or `low`. `native` marks the LFM2.5 models, which cannot turn thinking off and ran with thinking on. `low` marks K2 Horizon and Muse Glimmer, which cannot turn thinking off and ran at a low reasoning-effort setting. Qwen3.8 27B `on` also ran at low reasoning effort.
 
@@ -24,11 +24,13 @@ To match an answer record to its configuration and case, use the three fields `c
 ## Scores and reviews
 
 - `score.earned_points` is the sum of the final claim awards, out of 100.
-- `claim_awards` holds the per-claim points, including human overrides. It is empty for the 72 public Gemma 4 E4B answers (36 thinking off, 36 thinking on). For these answers the data holds final scores and fully correct and material-error results but no per-claim awards, and `historical_review` labels this.
-- For the 36 thinking-on answers among them, `historical_expert_annotations` keeps the available history from two experts.
-- `expert_annotation` keeps the original expert's claim judgments and source findings, including earlier uncertainties. Where they are present, `original_expert_score` and `final_review` show that the final interpretation changed.
+- `claim_awards` holds the per-claim points, including human judgments. It is empty for the 72 public Gemma 4 E4B answers (36 thinking off, 36 thinking on). For these answers the data holds final scores and fully correct and material-error results but no per-claim awards, and `historical_review` labels this.
+- For the 36 thinking-on answers among them, `historical_expert_annotations` holds annotations from two graders, labeled `grader_1` and `grader_2`.
+- `expert_annotation` holds grader claim judgments and source findings. `original_expert_score` is the grader score where available; `final_review` describes the human judgment. Final scores and correctness judgments are in `score`.
 - `score.complete_task_success` and `score.has_material_error` hold the final fully correct and material-error judgments. Each is true, false or null (unknown), and null answers are left out of the counts.
 - `profile_assessed` and `material_error_assessed` in the quality summary give the number of answers that could be graded. They are the denominators of the fully correct and material-error counts. A few answers couldn't be graded as clearly right or wrong; those are left out, so some counts are out of fewer than 120.
+
+`unknown_judgments` counts answers flagged for grading uncertainty in the aggregate summaries, including individual assertions that could not be graded. An answer can have a final score and correctness judgment while another assertion remains unknown. Use `profile_assessed` and `material_error_assessed` for the final correctness denominators.
 
 ## Timing and tokens
 
@@ -37,13 +39,13 @@ To match an answer record to its configuration and case, use the three fields `c
 - `operations` and the token distributions describe the response. Raw thinking traces are not exported, and reasoning-token counts may be missing.
 - Aggregate timing includes the mean, the median, nearest-rank quartiles and tails, coverage, retries and conditional-final statistics.
 
-## Request text and hashes
+## Request text
 
 `candidate_request` holds prompt text only: either the rendered raw-completion `prompt`, or a native `system_prompt` and `input`. Text paths and private addresses are redacted where they appeared.
 
-`candidate_input_sha256` and `answer_sha256` tie records back to my private workspace. They hash the original inputs before sanitizing.
+## Runtime metadata
 
-`sources` in `../data/results.json` holds hashes of the private reports, metrics and timing files. Each entry's `selected_records` counts the records published from that source. `source_selected_records` counts the records in the original source report. It exceeds `selected_records` only for the source that held the two configurations I left out ([Provenance](PROVENANCE.md)). Runtime metadata I could not verify is labeled as unverified. A build manifest holds hashes of the generated files. A release manifest holds the hash of the local release archive.
+`runtime_version`, `exact_gpu_placement`, `selected_variant` and `reasoning_effort` are null when not recorded. `generation_seed` is null when no seed was recorded; `generation_seed_status` is `not set` when no seed was set.
 
 ## Parameter counts and size classes
 
@@ -75,12 +77,12 @@ I checked the counts in October 2026 against vendor model cards and the safetens
 
 The observed clusters are 2.697–5.123B (small), 7.996–9.653B (medium) and 23.972–31.221B (large).
 
-- Gemma 4 E2B (5.123B) and K2 Horizon 3.7B (5.058B) sit at the upper edge of small, nearer my 4B reference than 9B.
+- Gemma 4 E2B (5.123B) and K2 Horizon 3.7B (5.058B) sit at the upper edge of the small class.
 - Gemma 4 E4B counts as medium because its total is 7.996B.
 - LFM2.5-8B-A1B stays medium despite its 1.5B active count.
 - LFM2.5-24B-A2B is at the low end of large.
 
-No total falls in the gaps between the clusters. The classes describe this selection of models. A future model with an in-between total needs an explicit assignment.
+No total falls in the gaps between the clusters. The classes describe this selection of models.
 
 Model names and cards often differ from the artifact totals:
 

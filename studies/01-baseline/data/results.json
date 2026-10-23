@@ -23,11 +23,11 @@
         "repeat_penalty": 1
       },
       "thinking": "off",
-      "reasoning_effort": "not separately specified",
+      "reasoning_effort": null,
       "generation_seed": null,
-      "generation_seed_status": "not set; native API does not expose it",
-      "runtime_version": "not verified",
-      "exact_gpu_placement": "not verified",
+      "generation_seed_status": "not set",
+      "runtime_version": null,
+      "exact_gpu_placement": null,
       "source_id": "tiny/gemma-off",
       "batch": "tiny",
       "total_parameters": 7996156490,
@@ -60,11 +60,11 @@
         "repeat_penalty": 1
       },
       "thinking": "on",
-      "reasoning_effort": "not separately specified",
+      "reasoning_effort": null,
       "generation_seed": null,
-      "generation_seed_status": "not set; native API does not expose it",
-      "runtime_version": "not verified",
-      "exact_gpu_placement": "not verified",
+      "generation_seed_status": "not set",
+      "runtime_version": null,
+      "exact_gpu_placement": null,
       "source_id": "tiny/gemma-on",
       "batch": "tiny",
       "total_parameters": 7996156490,
@@ -84,7 +84,7 @@
       "model": "LFM2.5 2.6B",
       "mode": "Native thinking",
       "model_key": "lfm2.5-2.6b",
-      "selected_variant": "not verified",
+      "selected_variant": null,
       "quantization": "Q4_K_M",
       "adapter": "native-default-thinking-v1",
       "generation": {
@@ -97,11 +97,11 @@
         "repeat_penalty": 1.1
       },
       "thinking": "on",
-      "reasoning_effort": "not separately specified",
+      "reasoning_effort": null,
       "generation_seed": null,
-      "generation_seed_status": "not set; native API does not expose it",
-      "runtime_version": "not verified",
-      "exact_gpu_placement": "not verified",
+      "generation_seed_status": "not set",
+      "runtime_version": null,
+      "exact_gpu_placement": null,
       "source_id": "tiny/lfm-on",
       "batch": "tiny",
       "total_parameters": 2697198592,
@@ -134,11 +134,11 @@
         "repeat_penalty": 1
       },
       "thinking": "off",
-      "reasoning_effort": "not separately specified",
+      "reasoning_effort": null,
       "generation_seed": null,
-      "generation_seed_status": "not set; native API does not expose it",
-      "runtime_version": "not verified",
-      "exact_gpu_placement": "not verified",
+      "generation_seed_status": "not set",
+      "runtime_version": null,
+      "exact_gpu_placement": null,
       "source_id": "tiny/gemmae2-off",
       "batch": "tiny",
       "total_parameters": 5123178051,
@@ -171,11 +171,11 @@
         "repeat_penalty": 1
       },
       "thinking": "on",
-      "reasoning_effort": "not separately specified",
+      "reasoning_effort": null,
       "generation_seed": null,
-      "generation_seed_status": "not set; native API does not expose it",
-      "runtime_version": "not verified",
-      "exact_gpu_placement": "not verified",
+      "generation_seed_status": "not set",
+      "runtime_version": null,
+      "exact_gpu_placement": null,
       "source_id": "tiny/gemmae2-on",
       "batch": "tiny",
       "total_parameters": 5123178051,
@@ -195,7 +195,7 @@
       "model": "K2 Horizon 3.7B",
       "mode": "Low reasoning effort",
       "model_key": "k2-horizon-3.7b",
-      "selected_variant": "not verified",
+      "selected_variant": null,
       "quantization": "Q4_K_M",
       "adapter": "k2-creator-low-text-v1",
       "generation": {
@@ -208,11 +208,11 @@
         "repeat_penalty": 1
       },
       "thinking": "on",
-      "reasoning_effort": "not separately specified",
+      "reasoning_effort": null,
       "generation_seed": null,
-      "generation_seed_status": "not set; native API does not expose it",
-      "runtime_version": "not verified",
-      "exact_gpu_placement": "not verified",
+      "generation_seed_status": "not set",
+      "runtime_version": null,
+      "exact_gpu_placement": null,
       "source_id": "tiny/k2-low",
       "batch": "tiny",
       "total_parameters": 5058255360,
@@ -232,7 +232,7 @@
       "model": "Granite 4.2 3B",
       "mode": "Thinking off",
       "model_key": "granite-4.2-3b",
-      "selected_variant": "not verified",
+      "selected_variant": null,
       "quantization": "Q4_K_M",
       "adapter": "granite-creator-text-v1",
       "generation": {
@@ -245,11 +245,11 @@
         "repeat_penalty": 1
       },
       "thinking": "off",
-      "reasoning_effort": "not separately specified",
+      "reasoning_effort": null,
       "generation_seed": null,
-      "generation_seed_status": "not set; native API does not expose it",
-      "runtime_version": "not verified",
-      "exact_gpu_placement": "not verified",
+      "generation_seed_status": "not set",
+      "runtime_version": null,
+      "exact_gpu_placement": null,
       "source_id": "tiny/granite-off",
       "batch": "tiny",
       "total_parameters": 3659737600,
@@ -269,7 +269,7 @@
       "model": "Granite 4.2 3B",
       "mode": "Thinking on",
       "model_key": "granite-4.2-3b",
-      "selected_variant": "not verified",
+      "selected_variant": null,
       "quantization": "Q4_K_M",
       "adapter": "granite-creator-text-v1",
       "generation": {
@@ -282,11 +282,11 @@
         "repeat_penalty": 1
       },
       "thinking": "on",
-      "reasoning_effort": "not separately specified",
+      "reasoning_effort": null,
       "generation_seed": null,
-      "generation_seed_status": "not set; native API does not expose it",
-      "runtime_version": "not verified",
-      "exact_gpu_placement": "not verified",
+      "generation_seed_status": "not set",
+      "runtime_version": null,
+      "exact_gpu_placement": null,
       "source_id": "tiny/granite-on",
       "batch": "tiny",
       "total_parameters": 3659737600,
@@ -306,7 +306,7 @@
       "model": "Qwen3.5 4B",
       "mode": "Thinking off",
       "model_key": "qwen3.5-4b",
-      "selected_variant": "not verified",
+      "selected_variant": null,
       "quantization": "Q4_K_M",
       "adapter": "qwen35-official-text-v1",
       "generation": {
@@ -320,11 +320,11 @@
         "presence_penalty": 1.5
       },
       "thinking": "off",
-      "reasoning_effort": "not separately specified",
+      "reasoning_effort": null,
       "generation_seed": null,
-      "generation_seed_status": "not set; native API does not expose it",
-      "runtime_version": "not verified",
-      "exact_gpu_placement": "not verified",
+      "generation_seed_status": "not set",
+      "runtime_version": null,
+      "exact_gpu_placement": null,
       "source_id": "medium/qwen4-off",
       "batch": "medium",
       "total_parameters": 4659865088,
@@ -344,7 +344,7 @@
       "model": "Qwen3.5 4B",
       "mode": "Thinking on",
       "model_key": "qwen3.5-4b",
-      "selected_variant": "not verified",
+      "selected_variant": null,
       "quantization": "Q4_K_M",
       "adapter": "qwen35-official-text-v1",
       "generation": {
@@ -358,11 +358,11 @@
         "presence_penalty": 1.5
       },
       "thinking": "on",
-      "reasoning_effort": "not separately specified",
+      "reasoning_effort": null,
       "generation_seed": null,
-      "generation_seed_status": "not set; native API does not expose it",
-      "runtime_version": "not verified",
-      "exact_gpu_placement": "not verified",
+      "generation_seed_status": "not set",
+      "runtime_version": null,
+      "exact_gpu_placement": null,
       "source_id": "medium/qwen4-on",
       "batch": "medium",
       "total_parameters": 4659865088,
@@ -382,7 +382,7 @@
       "model": "Granite 4.2 8B",
       "mode": "Thinking on",
       "model_key": "granite-4.2-8b",
-      "selected_variant": "not verified",
+      "selected_variant": null,
       "quantization": "Q4_K_M",
       "adapter": "granite-creator-text-v1",
       "generation": {
@@ -395,11 +395,11 @@
         "repeat_penalty": 1
       },
       "thinking": "on",
-      "reasoning_effort": "not separately specified",
+      "reasoning_effort": null,
       "generation_seed": null,
-      "generation_seed_status": "not set; native API does not expose it",
-      "runtime_version": "not verified",
-      "exact_gpu_placement": "not verified",
+      "generation_seed_status": "not set",
+      "runtime_version": null,
+      "exact_gpu_placement": null,
       "source_id": "medium/granite-on",
       "batch": "medium",
       "total_parameters": 8791592960,
@@ -419,7 +419,7 @@
       "model": "Granite 4.2 8B",
       "mode": "Thinking off",
       "model_key": "granite-4.2-8b",
-      "selected_variant": "not verified",
+      "selected_variant": null,
       "quantization": "Q4_K_M",
       "adapter": "granite-creator-text-v1",
       "generation": {
@@ -432,11 +432,11 @@
         "repeat_penalty": 1
       },
       "thinking": "off",
-      "reasoning_effort": "not separately specified",
+      "reasoning_effort": null,
       "generation_seed": null,
-      "generation_seed_status": "not set; native API does not expose it",
-      "runtime_version": "not verified",
-      "exact_gpu_placement": "not verified",
+      "generation_seed_status": "not set",
+      "runtime_version": null,
+      "exact_gpu_placement": null,
       "source_id": "medium/granite-off",
       "batch": "medium",
       "total_parameters": 8791592960,
@@ -456,7 +456,7 @@
       "model": "LFM2.5-8B-A1B",
       "mode": "Native thinking",
       "model_key": "lfm2.5-8b-a1b",
-      "selected_variant": "not verified",
+      "selected_variant": null,
       "quantization": "Q4_K_M",
       "adapter": "native-default-thinking-v1",
       "generation": {
@@ -469,11 +469,11 @@
         "repeat_penalty": 1.05
       },
       "thinking": "on",
-      "reasoning_effort": "not separately specified",
+      "reasoning_effort": null,
       "generation_seed": null,
-      "generation_seed_status": "not set; native API does not expose it",
-      "runtime_version": "not verified",
-      "exact_gpu_placement": "not verified",
+      "generation_seed_status": "not set",
+      "runtime_version": null,
+      "exact_gpu_placement": null,
       "source_id": "medium/lfm8-on",
       "batch": "medium",
       "total_parameters": 8467856832,
@@ -507,11 +507,11 @@
         "presence_penalty": 1.5
       },
       "thinking": "off",
-      "reasoning_effort": "not separately specified",
+      "reasoning_effort": null,
       "generation_seed": null,
-      "generation_seed_status": "not set; native API does not expose it",
-      "runtime_version": "not verified",
-      "exact_gpu_placement": "not verified",
+      "generation_seed_status": "not set",
+      "runtime_version": null,
+      "exact_gpu_placement": null,
       "source_id": "medium/qwen9-off",
       "batch": "medium",
       "total_parameters": 9653104368,
@@ -545,11 +545,11 @@
         "presence_penalty": 1.5
       },
       "thinking": "on",
-      "reasoning_effort": "not separately specified",
+      "reasoning_effort": null,
       "generation_seed": null,
-      "generation_seed_status": "not set; native API does not expose it",
-      "runtime_version": "not verified",
-      "exact_gpu_placement": "not verified",
+      "generation_seed_status": "not set",
+      "runtime_version": null,
+      "exact_gpu_placement": null,
       "source_id": "medium/qwen9-on",
       "batch": "medium",
       "total_parameters": 9653104368,
@@ -569,7 +569,7 @@
       "model": "Granite 4.2 30B",
       "mode": "Thinking on",
       "model_key": "granite-4.2-30b",
-      "selected_variant": "not verified",
+      "selected_variant": null,
       "quantization": "Q4_K_M",
       "adapter": "granite-creator-text-v1",
       "generation": {
@@ -582,11 +582,11 @@
         "repeat_penalty": 1.0
       },
       "thinking": "on",
-      "reasoning_effort": "not separately specified",
+      "reasoning_effort": null,
       "generation_seed": null,
-      "generation_seed_status": "not set; native API does not expose it",
-      "runtime_version": "not verified",
-      "exact_gpu_placement": "not verified",
+      "generation_seed_status": "not set",
+      "runtime_version": null,
+      "exact_gpu_placement": null,
       "source_id": "large/granite-on",
       "batch": "large",
       "total_parameters": 29276770304,
@@ -606,7 +606,7 @@
       "model": "Granite 4.2 30B",
       "mode": "Thinking off",
       "model_key": "granite-4.2-30b",
-      "selected_variant": "not verified",
+      "selected_variant": null,
       "quantization": "Q4_K_M",
       "adapter": "granite-creator-text-v1",
       "generation": {
@@ -619,11 +619,11 @@
         "repeat_penalty": 1.0
       },
       "thinking": "off",
-      "reasoning_effort": "not separately specified",
+      "reasoning_effort": null,
       "generation_seed": null,
-      "generation_seed_status": "not set; native API does not expose it",
-      "runtime_version": "not verified",
-      "exact_gpu_placement": "not verified",
+      "generation_seed_status": "not set",
+      "runtime_version": null,
+      "exact_gpu_placement": null,
       "source_id": "large/granite-off",
       "batch": "large",
       "total_parameters": 29276770304,
@@ -643,7 +643,7 @@
       "model": "LFM2.5-24B-A2B",
       "mode": "Native thinking",
       "model_key": "lfm2.5-24b-a2b",
-      "selected_variant": "not verified",
+      "selected_variant": null,
       "quantization": "Q4_K_M",
       "adapter": "native-default-thinking-v1",
       "generation": {
@@ -656,11 +656,11 @@
         "repeat_penalty": 1.05
       },
       "thinking": "on",
-      "reasoning_effort": "not separately specified",
+      "reasoning_effort": null,
       "generation_seed": null,
-      "generation_seed_status": "not set; native API does not expose it",
-      "runtime_version": "not verified",
-      "exact_gpu_placement": "not verified",
+      "generation_seed_status": "not set",
+      "runtime_version": null,
+      "exact_gpu_placement": null,
       "source_id": "large/lfm24-on",
       "batch": "large",
       "total_parameters": 23971585280,
@@ -696,9 +696,9 @@
       "thinking": "off",
       "reasoning_effort": "off",
       "generation_seed": null,
-      "generation_seed_status": "not set; native API does not expose it",
-      "runtime_version": "not verified",
-      "exact_gpu_placement": "not verified",
+      "generation_seed_status": "not set",
+      "runtime_version": null,
+      "exact_gpu_placement": null,
       "source_id": "large/qwen27-off",
       "batch": "large",
       "total_parameters": 27781427952,
@@ -734,9 +734,9 @@
       "thinking": "on",
       "reasoning_effort": "low",
       "generation_seed": null,
-      "generation_seed_status": "not set; native API does not expose it",
-      "runtime_version": "not verified",
-      "exact_gpu_placement": "not verified",
+      "generation_seed_status": "not set",
+      "runtime_version": null,
+      "exact_gpu_placement": null,
       "source_id": "large/qwen27-on",
       "batch": "large",
       "total_parameters": 27781427952,
@@ -769,11 +769,11 @@
         "repeat_penalty": 1.0
       },
       "thinking": "off",
-      "reasoning_effort": "not separately specified",
+      "reasoning_effort": null,
       "generation_seed": null,
-      "generation_seed_status": "not set; native API does not expose it",
-      "runtime_version": "not verified",
-      "exact_gpu_placement": "not verified",
+      "generation_seed_status": "not set",
+      "runtime_version": null,
+      "exact_gpu_placement": null,
       "source_id": "large/gemma26-off",
       "batch": "large",
       "total_parameters": 25805936206,
@@ -806,11 +806,11 @@
         "repeat_penalty": 1.0
       },
       "thinking": "on",
-      "reasoning_effort": "not separately specified",
+      "reasoning_effort": null,
       "generation_seed": null,
-      "generation_seed_status": "not set; native API does not expose it",
-      "runtime_version": "not verified",
-      "exact_gpu_placement": "not verified",
+      "generation_seed_status": "not set",
+      "runtime_version": null,
+      "exact_gpu_placement": null,
       "source_id": "large/gemma26-on",
       "batch": "large",
       "total_parameters": 25805936206,
@@ -844,11 +844,11 @@
         "presence_penalty": 0.0
       },
       "thinking": "off",
-      "reasoning_effort": "not separately specified",
+      "reasoning_effort": null,
       "generation_seed": null,
-      "generation_seed_status": "not set; native API does not expose it",
-      "runtime_version": "not verified",
-      "exact_gpu_placement": "not verified",
+      "generation_seed_status": "not set",
+      "runtime_version": null,
+      "exact_gpu_placement": null,
       "source_id": "large/glm30-off",
       "batch": "large",
       "total_parameters": 31221488576,
@@ -882,11 +882,11 @@
         "presence_penalty": 0.0
       },
       "thinking": "on",
-      "reasoning_effort": "not separately specified",
+      "reasoning_effort": null,
       "generation_seed": null,
-      "generation_seed_status": "not set; native API does not expose it",
-      "runtime_version": "not verified",
-      "exact_gpu_placement": "not verified",
+      "generation_seed_status": "not set",
+      "runtime_version": null,
+      "exact_gpu_placement": null,
       "source_id": "large/glm30-on",
       "batch": "large",
       "total_parameters": 31221488576,
@@ -921,9 +921,9 @@
       "thinking": "on",
       "reasoning_effort": "low",
       "generation_seed": null,
-      "generation_seed_status": "not set; native API does not expose it",
-      "runtime_version": "not verified",
-      "exact_gpu_placement": "not verified",
+      "generation_seed_status": "not set",
+      "runtime_version": null,
+      "exact_gpu_placement": null,
       "source_id": "large/muse-low",
       "batch": "large",
       "total_parameters": 29776626688,
@@ -955,14 +955,14 @@
         "mean_fully_met_claim_coverage": 0.3015277777777778,
         "answers_with_material_errors": 111,
         "material_error_assessed": 120,
-        "pending_reviews": 0,
         "operationally_flagged_answers": 0,
         "output_ceiling_hits": 0,
         "thinking_marker_breaches": 0,
         "direct_failures": 0,
         "regenerated_answers": 0,
         "mean_output_tokens": 517.6083333333333,
-        "mean_client_seconds": 5.604219952783144
+        "mean_client_seconds": 5.604219952783144,
+        "unknown_judgments": 0
       },
       "timing": {
         "recorded_cases": 120,
@@ -1078,14 +1078,14 @@
         "mean_fully_met_claim_coverage": 0.8484722222222222,
         "answers_with_material_errors": 36,
         "material_error_assessed": 119,
-        "pending_reviews": 1,
         "operationally_flagged_answers": 0,
         "output_ceiling_hits": 0,
         "thinking_marker_breaches": 0,
         "direct_failures": 0,
         "regenerated_answers": 0,
         "mean_output_tokens": 383.68333333333334,
-        "mean_client_seconds": 4.342100253925612
+        "mean_client_seconds": 4.342100253925612,
+        "unknown_judgments": 1
       },
       "timing": {
         "recorded_cases": 120,
@@ -1201,14 +1201,14 @@
         "mean_fully_met_claim_coverage": 0.33791666666666664,
         "answers_with_material_errors": 105,
         "material_error_assessed": 120,
-        "pending_reviews": 2,
         "operationally_flagged_answers": 0,
         "output_ceiling_hits": 0,
         "thinking_marker_breaches": 0,
         "direct_failures": 0,
         "regenerated_answers": 0,
         "mean_output_tokens": 1058.3166666666666,
-        "mean_client_seconds": 9.414645599692154
+        "mean_client_seconds": 9.414645599692154,
+        "unknown_judgments": 2
       },
       "timing": {
         "recorded_cases": 120,
@@ -1324,14 +1324,14 @@
         "mean_fully_met_claim_coverage": 0.91375,
         "answers_with_material_errors": 23,
         "material_error_assessed": 120,
-        "pending_reviews": 0,
         "operationally_flagged_answers": 0,
         "output_ceiling_hits": 0,
         "thinking_marker_breaches": 0,
         "direct_failures": 0,
         "regenerated_answers": 0,
         "mean_output_tokens": 801.6916666666667,
-        "mean_client_seconds": 7.350844491072947
+        "mean_client_seconds": 7.350844491072947,
+        "unknown_judgments": 0
       },
       "timing": {
         "recorded_cases": 120,
@@ -1447,14 +1447,14 @@
         "mean_fully_met_claim_coverage": 0.23180555555555554,
         "answers_with_material_errors": 118,
         "material_error_assessed": 119,
-        "pending_reviews": 8,
         "operationally_flagged_answers": 0,
         "output_ceiling_hits": 0,
         "thinking_marker_breaches": 0,
         "direct_failures": 0,
         "regenerated_answers": 0,
         "mean_output_tokens": 2392,
-        "mean_client_seconds": 9.818030036818284
+        "mean_client_seconds": 9.818030036818284,
+        "unknown_judgments": 8
       },
       "timing": {
         "recorded_cases": 120,
@@ -1570,14 +1570,14 @@
         "mean_fully_met_claim_coverage": 0.7061111111111111,
         "answers_with_material_errors": 87,
         "material_error_assessed": 120,
-        "pending_reviews": 1,
         "operationally_flagged_answers": 2,
         "output_ceiling_hits": 2,
         "thinking_marker_breaches": 0,
         "direct_failures": 0,
         "regenerated_answers": 0,
         "mean_output_tokens": 1733.9666666666667,
-        "mean_client_seconds": 7.186745574226127
+        "mean_client_seconds": 7.186745574226127,
+        "unknown_judgments": 1
       },
       "timing": {
         "recorded_cases": 120,
@@ -1693,14 +1693,14 @@
         "mean_fully_met_claim_coverage": 0.24180555555555555,
         "answers_with_material_errors": 109,
         "material_error_assessed": 120,
-        "pending_reviews": 1,
         "operationally_flagged_answers": 0,
         "output_ceiling_hits": 0,
         "thinking_marker_breaches": 0,
         "direct_failures": 0,
         "regenerated_answers": 0,
         "mean_output_tokens": 464.825,
-        "mean_client_seconds": 2.3145293871925485
+        "mean_client_seconds": 2.3145293871925485,
+        "unknown_judgments": 1
       },
       "timing": {
         "recorded_cases": 120,
@@ -1816,14 +1816,14 @@
         "mean_fully_met_claim_coverage": 0.7609722222222223,
         "answers_with_material_errors": 57,
         "material_error_assessed": 120,
-        "pending_reviews": 0,
         "operationally_flagged_answers": 0,
         "output_ceiling_hits": 0,
         "thinking_marker_breaches": 0,
         "direct_failures": 0,
         "regenerated_answers": 0,
         "mean_output_tokens": 380.0416666666667,
-        "mean_client_seconds": 1.9184900485633989
+        "mean_client_seconds": 1.9184900485633989,
+        "unknown_judgments": 0
       },
       "timing": {
         "recorded_cases": 120,
@@ -1939,14 +1939,14 @@
         "mean_fully_met_claim_coverage": 0.245,
         "answers_with_material_errors": 107,
         "material_error_assessed": 120,
-        "pending_reviews": 1,
         "operationally_flagged_answers": 0,
         "output_ceiling_hits": 0,
         "thinking_marker_breaches": 0,
         "direct_failures": 0,
         "regenerated_answers": 0,
         "mean_output_tokens": 960.3166666666667,
-        "mean_client_seconds": 4.707328449542304
+        "mean_client_seconds": 4.707328449542304,
+        "unknown_judgments": 1
       },
       "timing": {
         "recorded_cases": 120,
@@ -2062,14 +2062,14 @@
         "mean_fully_met_claim_coverage": 0.8352777777777778,
         "answers_with_material_errors": 33,
         "material_error_assessed": 120,
-        "pending_reviews": 0,
         "operationally_flagged_answers": 0,
         "output_ceiling_hits": 0,
         "thinking_marker_breaches": 0,
         "direct_failures": 0,
         "regenerated_answers": 0,
         "mean_output_tokens": 837.1916666666667,
-        "mean_client_seconds": 4.139805731367475
+        "mean_client_seconds": 4.139805731367475,
+        "unknown_judgments": 0
       },
       "timing": {
         "recorded_cases": 120,
@@ -2185,14 +2185,14 @@
         "mean_fully_met_claim_coverage": 0.17097222222222222,
         "answers_with_material_errors": 115,
         "material_error_assessed": 120,
-        "pending_reviews": 7,
         "operationally_flagged_answers": 24,
         "output_ceiling_hits": 23,
         "thinking_marker_breaches": 0,
         "direct_failures": 1,
         "regenerated_answers": 0,
         "mean_output_tokens": 6853.35,
-        "mean_client_seconds": 106.64435930660848
+        "mean_client_seconds": 106.64435930660848,
+        "unknown_judgments": 7
       },
       "timing": {
         "recorded_cases": 120,
@@ -2308,14 +2308,14 @@
         "mean_fully_met_claim_coverage": 0.6630555555555555,
         "answers_with_material_errors": 81,
         "material_error_assessed": 118,
-        "pending_reviews": 8,
         "operationally_flagged_answers": 6,
         "output_ceiling_hits": 6,
         "thinking_marker_breaches": 0,
         "direct_failures": 0,
         "regenerated_answers": 0,
         "mean_output_tokens": 2106.5583333333334,
-        "mean_client_seconds": 31.19163628355847
+        "mean_client_seconds": 31.19163628355847,
+        "unknown_judgments": 8
       },
       "timing": {
         "recorded_cases": 120,
@@ -2431,14 +2431,14 @@
         "mean_fully_met_claim_coverage": 0.27819444444444447,
         "answers_with_material_errors": 118,
         "material_error_assessed": 120,
-        "pending_reviews": 3,
         "operationally_flagged_answers": 89,
         "output_ceiling_hits": 0,
         "thinking_marker_breaches": 89,
         "direct_failures": 0,
         "regenerated_answers": 0,
         "mean_output_tokens": 2866.6916666666666,
-        "mean_client_seconds": 17.536824373217314
+        "mean_client_seconds": 17.536824373217314,
+        "unknown_judgments": 3
       },
       "timing": {
         "recorded_cases": 120,
@@ -2554,14 +2554,14 @@
         "mean_fully_met_claim_coverage": 0.8165277777777777,
         "answers_with_material_errors": 69,
         "material_error_assessed": 119,
-        "pending_reviews": 1,
         "operationally_flagged_answers": 67,
         "output_ceiling_hits": 0,
         "thinking_marker_breaches": 67,
         "direct_failures": 0,
         "regenerated_answers": 0,
         "mean_output_tokens": 1832.55,
-        "mean_client_seconds": 11.2999894266919
+        "mean_client_seconds": 11.2999894266919,
+        "unknown_judgments": 1
       },
       "timing": {
         "recorded_cases": 120,
@@ -2677,14 +2677,14 @@
         "mean_fully_met_claim_coverage": 0.33319444444444446,
         "answers_with_material_errors": 111,
         "material_error_assessed": 120,
-        "pending_reviews": 1,
         "operationally_flagged_answers": 0,
         "output_ceiling_hits": 0,
         "thinking_marker_breaches": 0,
         "direct_failures": 0,
         "regenerated_answers": 0,
         "mean_output_tokens": 5508.375,
-        "mean_client_seconds": 34.57511501556607
+        "mean_client_seconds": 34.57511501556607,
+        "unknown_judgments": 1
       },
       "timing": {
         "recorded_cases": 120,
@@ -2800,14 +2800,14 @@
         "mean_fully_met_claim_coverage": 0.8825,
         "answers_with_material_errors": 43,
         "material_error_assessed": 119,
-        "pending_reviews": 1,
         "operationally_flagged_answers": 0,
         "output_ceiling_hits": 0,
         "thinking_marker_breaches": 0,
         "direct_failures": 0,
         "regenerated_answers": 0,
         "mean_output_tokens": 2508.1916666666666,
-        "mean_client_seconds": 15.560693055508697
+        "mean_client_seconds": 15.560693055508697,
+        "unknown_judgments": 1
       },
       "timing": {
         "recorded_cases": 120,
@@ -2923,14 +2923,14 @@
         "mean_fully_met_claim_coverage": 0.30569444444444444,
         "answers_with_material_errors": 120,
         "material_error_assessed": 120,
-        "pending_reviews": 23,
         "operationally_flagged_answers": 29,
         "output_ceiling_hits": 1,
         "thinking_marker_breaches": 28,
         "direct_failures": 0,
         "regenerated_answers": 0,
         "mean_output_tokens": 2916.616666666667,
-        "mean_client_seconds": 22.127485552891933
+        "mean_client_seconds": 22.127485552891933,
+        "unknown_judgments": 23
       },
       "timing": {
         "recorded_cases": 120,
@@ -3046,14 +3046,14 @@
         "mean_fully_met_claim_coverage": 0.8476388888888889,
         "answers_with_material_errors": 68,
         "material_error_assessed": 120,
-        "pending_reviews": 5,
         "operationally_flagged_answers": 6,
         "output_ceiling_hits": 0,
         "thinking_marker_breaches": 6,
         "direct_failures": 0,
         "regenerated_answers": 0,
         "mean_output_tokens": 986.5,
-        "mean_client_seconds": 7.438834479966075
+        "mean_client_seconds": 7.438834479966075,
+        "unknown_judgments": 5
       },
       "timing": {
         "recorded_cases": 120,
@@ -3169,14 +3169,14 @@
         "mean_fully_met_claim_coverage": 0.34555555555555556,
         "answers_with_material_errors": 116,
         "material_error_assessed": 119,
-        "pending_reviews": 18,
         "operationally_flagged_answers": 1,
         "output_ceiling_hits": 1,
         "thinking_marker_breaches": 0,
         "direct_failures": 1,
         "regenerated_answers": 0,
         "mean_output_tokens": 11715.916666666666,
-        "mean_client_seconds": 90.43474560724935
+        "mean_client_seconds": 90.43474560724935,
+        "unknown_judgments": 18
       },
       "timing": {
         "recorded_cases": 120,
@@ -3292,14 +3292,14 @@
         "mean_fully_met_claim_coverage": 0.9331944444444444,
         "answers_with_material_errors": 28,
         "material_error_assessed": 120,
-        "pending_reviews": 1,
         "operationally_flagged_answers": 0,
         "output_ceiling_hits": 0,
         "thinking_marker_breaches": 0,
         "direct_failures": 0,
         "regenerated_answers": 0,
         "mean_output_tokens": 5193.15,
-        "mean_client_seconds": 38.75811221433311
+        "mean_client_seconds": 38.75811221433311,
+        "unknown_judgments": 1
       },
       "timing": {
         "recorded_cases": 120,
@@ -3415,14 +3415,14 @@
         "mean_fully_met_claim_coverage": 0.37958333333333333,
         "answers_with_material_errors": 117,
         "material_error_assessed": 119,
-        "pending_reviews": 4,
         "operationally_flagged_answers": 0,
         "output_ceiling_hits": 0,
         "thinking_marker_breaches": 0,
         "direct_failures": 0,
         "regenerated_answers": 0,
         "mean_output_tokens": 4734.825,
-        "mean_client_seconds": 48.04009623179081
+        "mean_client_seconds": 48.04009623179081,
+        "unknown_judgments": 4
       },
       "timing": {
         "recorded_cases": 120,
@@ -3538,14 +3538,14 @@
         "mean_fully_met_claim_coverage": 0.9215277777777777,
         "answers_with_material_errors": 54,
         "material_error_assessed": 117,
-        "pending_reviews": 4,
         "operationally_flagged_answers": 0,
         "output_ceiling_hits": 0,
         "thinking_marker_breaches": 0,
         "direct_failures": 0,
         "regenerated_answers": 0,
         "mean_output_tokens": 2971.891666666667,
-        "mean_client_seconds": 30.398619683539923
+        "mean_client_seconds": 30.398619683539923,
+        "unknown_judgments": 4
       },
       "timing": {
         "recorded_cases": 120,
@@ -3661,14 +3661,14 @@
         "mean_fully_met_claim_coverage": 0.3473611111111111,
         "answers_with_material_errors": 118,
         "material_error_assessed": 120,
-        "pending_reviews": 4,
         "operationally_flagged_answers": 78,
         "output_ceiling_hits": 0,
         "thinking_marker_breaches": 78,
         "direct_failures": 0,
         "regenerated_answers": 0,
         "mean_output_tokens": 3264.0833333333335,
-        "mean_client_seconds": 33.18850703368516
+        "mean_client_seconds": 33.18850703368516,
+        "unknown_judgments": 4
       },
       "timing": {
         "recorded_cases": 120,
@@ -3784,14 +3784,14 @@
         "mean_fully_met_claim_coverage": 0.8708333333333333,
         "answers_with_material_errors": 57,
         "material_error_assessed": 120,
-        "pending_reviews": 1,
         "operationally_flagged_answers": 61,
         "output_ceiling_hits": 0,
         "thinking_marker_breaches": 61,
         "direct_failures": 0,
         "regenerated_answers": 0,
         "mean_output_tokens": 1685.0833333333333,
-        "mean_client_seconds": 16.949836852439088
+        "mean_client_seconds": 16.949836852439088,
+        "unknown_judgments": 1
       },
       "timing": {
         "recorded_cases": 120,
@@ -3907,14 +3907,14 @@
         "mean_fully_met_claim_coverage": 0.21611111111111111,
         "answers_with_material_errors": 119,
         "material_error_assessed": 120,
-        "pending_reviews": 2,
         "operationally_flagged_answers": 1,
         "output_ceiling_hits": 1,
         "thinking_marker_breaches": 0,
         "direct_failures": 1,
         "regenerated_answers": 0,
         "mean_output_tokens": 4046.925,
-        "mean_client_seconds": 13.336282462099673
+        "mean_client_seconds": 13.336282462099673,
+        "unknown_judgments": 2
       },
       "timing": {
         "recorded_cases": 120,
@@ -4030,14 +4030,14 @@
         "mean_fully_met_claim_coverage": 0.6590277777777778,
         "answers_with_material_errors": 86,
         "material_error_assessed": 120,
-        "pending_reviews": 3,
         "operationally_flagged_answers": 0,
         "output_ceiling_hits": 0,
         "thinking_marker_breaches": 0,
         "direct_failures": 0,
         "regenerated_answers": 0,
         "mean_output_tokens": 1729.875,
-        "mean_client_seconds": 5.723916339183051
+        "mean_client_seconds": 5.723916339183051,
+        "unknown_judgments": 3
       },
       "timing": {
         "recorded_cases": 120,
@@ -4153,14 +4153,14 @@
         "mean_fully_met_claim_coverage": 0.45944444444444443,
         "answers_with_material_errors": 115,
         "material_error_assessed": 120,
-        "pending_reviews": 10,
         "operationally_flagged_answers": 13,
         "output_ceiling_hits": 0,
         "thinking_marker_breaches": 13,
         "direct_failures": 0,
         "regenerated_answers": 0,
         "mean_output_tokens": 1701.375,
-        "mean_client_seconds": 16.72947611001776
+        "mean_client_seconds": 16.72947611001776,
+        "unknown_judgments": 10
       },
       "timing": {
         "recorded_cases": 120,
@@ -4276,14 +4276,14 @@
         "mean_fully_met_claim_coverage": 0.8701388888888889,
         "answers_with_material_errors": 63,
         "material_error_assessed": 116,
-        "pending_reviews": 9,
         "operationally_flagged_answers": 3,
         "output_ceiling_hits": 0,
         "thinking_marker_breaches": 3,
         "direct_failures": 0,
         "regenerated_answers": 0,
         "mean_output_tokens": 749.725,
-        "mean_client_seconds": 7.4671080245427826
+        "mean_client_seconds": 7.4671080245427826,
+        "unknown_judgments": 9
       },
       "timing": {
         "recorded_cases": 120,
@@ -4399,14 +4399,14 @@
         "mean_fully_met_claim_coverage": 0.4038888888888889,
         "answers_with_material_errors": 110,
         "material_error_assessed": 119,
-        "pending_reviews": 22,
         "operationally_flagged_answers": 2,
         "output_ceiling_hits": 2,
         "thinking_marker_breaches": 0,
         "direct_failures": 1,
         "regenerated_answers": 0,
         "mean_output_tokens": 9077.375,
-        "mean_client_seconds": 89.8962851640749
+        "mean_client_seconds": 89.8962851640749,
+        "unknown_judgments": 22
       },
       "timing": {
         "recorded_cases": 120,
@@ -4522,14 +4522,14 @@
         "mean_fully_met_claim_coverage": 0.9554166666666667,
         "answers_with_material_errors": 19,
         "material_error_assessed": 120,
-        "pending_reviews": 0,
         "operationally_flagged_answers": 0,
         "output_ceiling_hits": 0,
         "thinking_marker_breaches": 0,
         "direct_failures": 0,
         "regenerated_answers": 0,
         "mean_output_tokens": 3577.925,
-        "mean_client_seconds": 35.111306433840944
+        "mean_client_seconds": 35.111306433840944,
+        "unknown_judgments": 0
       },
       "timing": {
         "recorded_cases": 120,
@@ -4645,14 +4645,14 @@
         "mean_fully_met_claim_coverage": 0.4122222222222222,
         "answers_with_material_errors": 119,
         "material_error_assessed": 120,
-        "pending_reviews": 12,
         "operationally_flagged_answers": 0,
         "output_ceiling_hits": 0,
         "thinking_marker_breaches": 0,
         "direct_failures": 0,
         "regenerated_answers": 0,
         "mean_output_tokens": 2336.325,
-        "mean_client_seconds": 102.97626134025
+        "mean_client_seconds": 102.97626134025,
+        "unknown_judgments": 12
       },
       "timing": {
         "recorded_cases": 120,
@@ -4768,14 +4768,14 @@
         "mean_fully_met_claim_coverage": 0.9463888888888888,
         "answers_with_material_errors": 49,
         "material_error_assessed": 119,
-        "pending_reviews": 3,
         "operationally_flagged_answers": 0,
         "output_ceiling_hits": 0,
         "thinking_marker_breaches": 0,
         "direct_failures": 0,
         "regenerated_answers": 0,
         "mean_output_tokens": 1493.2916666666667,
-        "mean_client_seconds": 64.74146516768451
+        "mean_client_seconds": 64.74146516768451,
+        "unknown_judgments": 3
       },
       "timing": {
         "recorded_cases": 120,
@@ -4891,14 +4891,14 @@
         "mean_fully_met_claim_coverage": 0.3595833333333333,
         "answers_with_material_errors": 120,
         "material_error_assessed": 120,
-        "pending_reviews": 7,
         "operationally_flagged_answers": 1,
         "output_ceiling_hits": 0,
         "thinking_marker_breaches": 1,
         "direct_failures": 0,
         "regenerated_answers": 0,
         "mean_output_tokens": 1406.5666666666666,
-        "mean_client_seconds": 60.31475436160836
+        "mean_client_seconds": 60.31475436160836,
+        "unknown_judgments": 7
       },
       "timing": {
         "recorded_cases": 120,
@@ -5014,14 +5014,14 @@
         "mean_fully_met_claim_coverage": 0.9344444444444444,
         "answers_with_material_errors": 52,
         "material_error_assessed": 115,
-        "pending_reviews": 8,
         "operationally_flagged_answers": 1,
         "output_ceiling_hits": 0,
         "thinking_marker_breaches": 1,
         "direct_failures": 0,
         "regenerated_answers": 0,
         "mean_output_tokens": 825.6416666666667,
-        "mean_client_seconds": 33.9371785978173
+        "mean_client_seconds": 33.9371785978173,
+        "unknown_judgments": 8
       },
       "timing": {
         "recorded_cases": 120,
@@ -5137,14 +5137,14 @@
         "mean_fully_met_claim_coverage": 0.3566666666666667,
         "answers_with_material_errors": 113,
         "material_error_assessed": 120,
-        "pending_reviews": 2,
         "operationally_flagged_answers": 0,
         "output_ceiling_hits": 0,
         "thinking_marker_breaches": 0,
         "direct_failures": 0,
         "regenerated_answers": 0,
         "mean_output_tokens": 5959.275,
-        "mean_client_seconds": 28.164994620691385
+        "mean_client_seconds": 28.164994620691385,
+        "unknown_judgments": 2
       },
       "timing": {
         "recorded_cases": 120,
@@ -5260,14 +5260,14 @@
         "mean_fully_met_claim_coverage": 0.9359722222222222,
         "answers_with_material_errors": 45,
         "material_error_assessed": 119,
-        "pending_reviews": 1,
         "operationally_flagged_answers": 0,
         "output_ceiling_hits": 0,
         "thinking_marker_breaches": 0,
         "direct_failures": 0,
         "regenerated_answers": 0,
         "mean_output_tokens": 2868.525,
-        "mean_client_seconds": 13.50058852727525
+        "mean_client_seconds": 13.50058852727525,
+        "unknown_judgments": 1
       },
       "timing": {
         "recorded_cases": 120,
@@ -5383,14 +5383,14 @@
         "mean_fully_met_claim_coverage": 0.47333333333333333,
         "answers_with_material_errors": 112,
         "material_error_assessed": 119,
-        "pending_reviews": 14,
         "operationally_flagged_answers": 0,
         "output_ceiling_hits": 0,
         "thinking_marker_breaches": 0,
         "direct_failures": 0,
         "regenerated_answers": 0,
         "mean_output_tokens": 836.3,
-        "mean_client_seconds": 16.345276489981188
+        "mean_client_seconds": 16.345276489981188,
+        "unknown_judgments": 14
       },
       "timing": {
         "recorded_cases": 120,
@@ -5506,14 +5506,14 @@
         "mean_fully_met_claim_coverage": 0.9366666666666666,
         "answers_with_material_errors": 28,
         "material_error_assessed": 120,
-        "pending_reviews": 1,
         "operationally_flagged_answers": 0,
         "output_ceiling_hits": 0,
         "thinking_marker_breaches": 0,
         "direct_failures": 0,
         "regenerated_answers": 0,
         "mean_output_tokens": 456.84166666666664,
-        "mean_client_seconds": 8.58779860207481
+        "mean_client_seconds": 8.58779860207481,
+        "unknown_judgments": 1
       },
       "timing": {
         "recorded_cases": 120,
@@ -5629,14 +5629,14 @@
         "mean_fully_met_claim_coverage": 0.4751388888888889,
         "answers_with_material_errors": 106,
         "material_error_assessed": 119,
-        "pending_reviews": 11,
         "operationally_flagged_answers": 0,
         "output_ceiling_hits": 0,
         "thinking_marker_breaches": 0,
         "direct_failures": 0,
         "regenerated_answers": 0,
         "mean_output_tokens": 1735.025,
-        "mean_client_seconds": 31.433135336017827
+        "mean_client_seconds": 31.433135336017827,
+        "unknown_judgments": 11
       },
       "timing": {
         "recorded_cases": 120,
@@ -5752,14 +5752,14 @@
         "mean_fully_met_claim_coverage": 0.98125,
         "answers_with_material_errors": 16,
         "material_error_assessed": 119,
-        "pending_reviews": 2,
         "operationally_flagged_answers": 0,
         "output_ceiling_hits": 0,
         "thinking_marker_breaches": 0,
         "direct_failures": 0,
         "regenerated_answers": 0,
         "mean_output_tokens": 709.6416666666667,
-        "mean_client_seconds": 12.722110486893508
+        "mean_client_seconds": 12.722110486893508,
+        "unknown_judgments": 2
       },
       "timing": {
         "recorded_cases": 120,
@@ -5875,14 +5875,14 @@
         "mean_fully_met_claim_coverage": 0.4215277777777778,
         "answers_with_material_errors": 111,
         "material_error_assessed": 118,
-        "pending_reviews": 5,
         "operationally_flagged_answers": 0,
         "output_ceiling_hits": 0,
         "thinking_marker_breaches": 0,
         "direct_failures": 0,
         "regenerated_answers": 0,
         "mean_output_tokens": 389.2083333333333,
-        "mean_client_seconds": 3.2954716571415097
+        "mean_client_seconds": 3.2954716571415097,
+        "unknown_judgments": 5
       },
       "timing": {
         "recorded_cases": 120,
@@ -5998,14 +5998,14 @@
         "mean_fully_met_claim_coverage": 0.9215277777777777,
         "answers_with_material_errors": 16,
         "material_error_assessed": 120,
-        "pending_reviews": 0,
         "operationally_flagged_answers": 0,
         "output_ceiling_hits": 0,
         "thinking_marker_breaches": 0,
         "direct_failures": 0,
         "regenerated_answers": 0,
         "mean_output_tokens": 255.34166666666667,
-        "mean_client_seconds": 2.396756961800323
+        "mean_client_seconds": 2.396756961800323,
+        "unknown_judgments": 0
       },
       "timing": {
         "recorded_cases": 120,
@@ -6121,14 +6121,14 @@
         "mean_fully_met_claim_coverage": 0.4434722222222222,
         "answers_with_material_errors": 102,
         "material_error_assessed": 120,
-        "pending_reviews": 2,
         "operationally_flagged_answers": 0,
         "output_ceiling_hits": 0,
         "thinking_marker_breaches": 0,
         "direct_failures": 0,
         "regenerated_answers": 0,
         "mean_output_tokens": 2754.9333333333334,
-        "mean_client_seconds": 22.196005501001007
+        "mean_client_seconds": 22.196005501001007,
+        "unknown_judgments": 2
       },
       "timing": {
         "recorded_cases": 120,
@@ -6244,14 +6244,14 @@
         "mean_fully_met_claim_coverage": 0.9770833333333333,
         "answers_with_material_errors": 2,
         "material_error_assessed": 120,
-        "pending_reviews": 0,
         "operationally_flagged_answers": 0,
         "output_ceiling_hits": 0,
         "thinking_marker_breaches": 0,
         "direct_failures": 0,
         "regenerated_answers": 0,
         "mean_output_tokens": 892.55,
-        "mean_client_seconds": 7.248209042998981
+        "mean_client_seconds": 7.248209042998981,
+        "unknown_judgments": 0
       },
       "timing": {
         "recorded_cases": 120,
@@ -6367,14 +6367,14 @@
         "mean_fully_met_claim_coverage": 0.27125,
         "answers_with_material_errors": 120,
         "material_error_assessed": 120,
-        "pending_reviews": 21,
         "operationally_flagged_answers": 0,
         "output_ceiling_hits": 0,
         "thinking_marker_breaches": 0,
         "direct_failures": 0,
         "regenerated_answers": 0,
         "mean_output_tokens": 473.2916666666667,
-        "mean_client_seconds": 4.3515448323822055
+        "mean_client_seconds": 4.3515448323822055,
+        "unknown_judgments": 21
       },
       "timing": {
         "recorded_cases": 120,
@@ -6490,14 +6490,14 @@
         "mean_fully_met_claim_coverage": 0.6493055555555556,
         "answers_with_material_errors": 89,
         "material_error_assessed": 120,
-        "pending_reviews": 3,
         "operationally_flagged_answers": 0,
         "output_ceiling_hits": 0,
         "thinking_marker_breaches": 0,
         "direct_failures": 0,
         "regenerated_answers": 0,
         "mean_output_tokens": 356.1666666666667,
-        "mean_client_seconds": 3.4040780980246685
+        "mean_client_seconds": 3.4040780980246685,
+        "unknown_judgments": 3
       },
       "timing": {
         "recorded_cases": 120,
@@ -6613,14 +6613,14 @@
         "mean_fully_met_claim_coverage": 0.38930555555555557,
         "answers_with_material_errors": 111,
         "material_error_assessed": 120,
-        "pending_reviews": 8,
         "operationally_flagged_answers": 0,
         "output_ceiling_hits": 0,
         "thinking_marker_breaches": 0,
         "direct_failures": 0,
         "regenerated_answers": 0,
         "mean_output_tokens": 3885.1666666666665,
-        "mean_client_seconds": 34.20369698000771
+        "mean_client_seconds": 34.20369698000771,
+        "unknown_judgments": 8
       },
       "timing": {
         "recorded_cases": 120,
@@ -6736,14 +6736,14 @@
         "mean_fully_met_claim_coverage": 0.8623611111111111,
         "answers_with_material_errors": 26,
         "material_error_assessed": 120,
-        "pending_reviews": 0,
         "operationally_flagged_answers": 0,
         "output_ceiling_hits": 0,
         "thinking_marker_breaches": 0,
         "direct_failures": 0,
         "regenerated_answers": 0,
         "mean_output_tokens": 2061.9166666666665,
-        "mean_client_seconds": 17.89113451098286
+        "mean_client_seconds": 17.89113451098286,
+        "unknown_judgments": 0
       },
       "timing": {
         "recorded_cases": 120,
@@ -6859,14 +6859,14 @@
         "mean_fully_met_claim_coverage": 0.5441666666666667,
         "answers_with_material_errors": 108,
         "material_error_assessed": 120,
-        "pending_reviews": 9,
         "operationally_flagged_answers": 0,
         "output_ceiling_hits": 0,
         "thinking_marker_breaches": 0,
         "direct_failures": 0,
         "regenerated_answers": 0,
         "mean_output_tokens": 912.7583333333333,
-        "mean_client_seconds": 27.54944677187741
+        "mean_client_seconds": 27.54944677187741,
+        "unknown_judgments": 9
       },
       "timing": {
         "recorded_cases": 120,
@@ -6982,14 +6982,14 @@
         "mean_fully_met_claim_coverage": 0.9858333333333333,
         "answers_with_material_errors": 24,
         "material_error_assessed": 120,
-        "pending_reviews": 3,
         "operationally_flagged_answers": 0,
         "output_ceiling_hits": 0,
         "thinking_marker_breaches": 0,
         "direct_failures": 0,
         "regenerated_answers": 0,
         "mean_output_tokens": 581.0166666666667,
-        "mean_client_seconds": 17.81076878534174
+        "mean_client_seconds": 17.81076878534174,
+        "unknown_judgments": 3
       },
       "timing": {
         "recorded_cases": 120,
@@ -7119,6 +7119,6 @@
       "source_selected_records": 2400
     }
   ],
-  "random_human_audit": "not performed; declined by operator",
+  "random_human_audit": "not performed",
   "grader_accuracy": "unmeasured"
 }

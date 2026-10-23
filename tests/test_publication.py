@@ -25,11 +25,11 @@ class SiteReferences(HTMLParser):
  def handle_starttag(self,tag,attrs):
   self.urls.extend(value for key,value in attrs if key in {'href','src'} and value is not None)
 
-class ProjectionTests(unittest.TestCase):
+class DataExportTests(unittest.TestCase):
  def row(self):
-  return {'configuration':'test','case_id':'public','condition':'no_source','candidate_answer':'answer','candidate_input_sha256':'hash','score':{'earned_points':25,'complete_task_success':True,'has_material_error':False},'annotation':{'claims':[{'claim_id':'C004','status':'uncertain','earned_points':None,'reason':'original'}]},'human_adjudication':{'scope':'claim_C004','claim_id':'C004','status':'met','points':25,'operator_comment':'DO_NOT_PUBLISH'}}
+  return {'configuration':'test','case_id':'public','condition':'no_source','candidate_answer':'answer','candidate_input_sha256':'hash','score':{'earned_points':25,'complete_task_success':True,'has_material_error':False},'annotation':{'claims':[{'claim_id':'C004','status':'uncertain','earned_points':None,'reason':'original'}]},'human_adjudication':{'scope':'claim_C004','claim_id':'C004','status':'met','points':25,'private_comment':'DO_NOT_PUBLISH'}}
  def test_human_claim_override_and_original_annotation_both_preserved(self):
-  r=self.row();b=copy.deepcopy(r);y=p.project_answer(r,'batch')
+  r=self.row();b=copy.deepcopy(r);y=p.project_answer(r,'source')
   self.assertEqual(y['claim_awards'][0]['earned_points'],25)
   self.assertIsNone(y['expert_annotation']['claims'][0]['earned_points'])
   self.assertNotIn('DO_NOT_PUBLISH',json.dumps(y));self.assertEqual(r,b)
@@ -49,34 +49,37 @@ class ProjectionTests(unittest.TestCase):
  def test_bad_claim_arithmetic_rejected(self):
   r=self.row();r['score']['earned_points']=90
   with self.assertRaises(ValueError):p.project_answer(r,'b')
- def test_release_allowlist_excludes_raw_and_local_handoff(self):
+ def test_release_allowlist_excludes_unlisted_files(self):
   with tempfile.TemporaryDirectory() as td:
-   r=fixture(Path(td));(r/'README.md').write_text('ok');(r/'LOCAL_HANDOFF.md').write_text('secret');(r/'raw').mkdir();(r/'raw/answers.json').write_text('secret');(r/'data').mkdir();(r/'data/public.json').write_text('{}');(r/'docs').mkdir();(r/'docs/WRITING_STYLE.md').write_text('local')
+   r=fixture(Path(td));(r/'README.md').write_text('ok');(r/'raw').mkdir();(r/'raw/answers.json').write_text('secret');(r/'data').mkdir();(r/'data/public.json').write_text('{}');(r/'docs').mkdir();(r/'docs/WRITING_STYLE.md').write_text('local')
    self.assertEqual({str(f.relative_to(r)) for f in p.release_paths(r)},{'README.md','studies/registry.json'})
  def test_symlink_is_rejected(self):
   with tempfile.TemporaryDirectory() as td:
    r=fixture(Path(td));(r/'README.md').write_text('ok');(r/'alias').symlink_to(r/'README.md')
    with self.assertRaises(ValueError):p.release_paths(r)
- def test_import_excludes_superseded_sources_before_projection(self):
+ def test_import_skips_excluded_configurations(self):
   # Synthetic reports contain only public case versions and deliberately
   # incomplete excluded rows: touching any excluded payload would fail.
   policy=p.study_config(ROOT,STUDY);cases=p.read(ROOT/'data/cases.json')['cases']
   excluded=[x.split('/')[1] for x in policy['excluded_source_ids']]
+  suites=list(dict.fromkeys(key.split('/')[0] for key in policy['configuration_ids']))
+  sources=[{'suite_id':suite,**{name:suite+'/'+filename for name,filename in [('observations','observations.json'),('metrics','metrics.json'),('runtime_profiles','runtime.json')]}} for suite in suites]
   read=p.read
   def source_read(path):
    path=Path(path)
-   if path.name=='observations-v2.json':return {'cases':cases,'answers':[]}
+   if path.name=='sources.json':return sources
+   if path.name=='case-reviews.json':return {'cases':cases,'answers':[]}
    if path.name=='observations.json':
-    rows=[{'configuration':name,'case_id':cases[0]['case_id']} for name in excluded] if path.parent.name==p.BATCHES[0][1] else []
+    rows=[{'configuration':name,'case_id':cases[0]['case_id']} for name in excluded] if path.parent.name==suites[0] else []
     return {'cases':cases,'answers':rows,'configurations':{},'summary':{}}
-   if path.name.startswith('model-review-metrics-'):
-    return {'models':[{'title':'Excluded fixture','modes':[{'id':name,'title':'excluded','conditions':[{'records':120}]} for name in excluded]}]} if path.parent.name==p.BATCHES[0][1] else {'models':[]}
-   if path.name=='runtime-profiles-v1.json':return {'profiles':{}}
+   if path.name=='metrics.json':
+    return {'models':[{'title':'Excluded fixture','modes':[{'id':name,'title':'excluded','conditions':[{'records':120}]} for name in excluded]}]} if path.parent.name==suites[0] else {'models':[]}
+   if path.name=='runtime.json':return {'profiles':{}}
    return read(path)
   with tempfile.TemporaryDirectory() as td:
    root=fixture(Path(td),full=True)
-   with patch.object(p,'read',side_effect=source_read),patch.object(p,'sha',return_value='f'*64),patch.object(p,'validate'),patch.object(p,'project_config',side_effect=AssertionError('excluded configuration projected')),patch.object(p,'project_answer',side_effect=AssertionError('excluded answer projected')):
-    p.import_private(root/'synthetic-source',root=root)
+   with patch.object(p,'read',side_effect=source_read),patch.object(p,'sha',return_value='f'*64),patch.object(p,'validate'),patch.object(p.metadata,'verify'),patch.object(p,'project_config',side_effect=AssertionError('excluded configuration projected')),patch.object(p,'project_answer',side_effect=AssertionError('excluded answer projected')):
+    p.import_private(root/'synthetic-source',root=root,source_manifest=root/'sources.json',case_reviews=Path('case-reviews.json'))
    result=read(p.study_path(root,STUDY)/'data/results.json')
    self.assertEqual(result['configurations'],[]);self.assertEqual(result['cells'],[])
    self.assertEqual(read(p.study_path(root,STUDY)/'data/answers.json')['answers'],[])
@@ -111,13 +114,13 @@ class FrozenDataTests(unittest.TestCase):
    for name in ('speed.csv','speed.json'):
     for base in (out,report):self.assertEqual(p.read(base/'manifest.json')['files'][str((report/name).relative_to(base))],p.sha(report/name))
     self.assertIn(str((report/name).relative_to(out)),p.generated_paths(ROOT))
- def test_frozen_projection_validates(self):self.assertEqual(p.validate()['public_answer_records'],900)
+ def test_retained_data_validates(self):self.assertEqual(p.validate()['public_answer_records'],900)
  def test_every_public_configuration_has_both_conditions(self):
   d=p.read(STUDY_ROOT/'data/answers.json')['answers'];self.assertEqual(len({(r['configuration'],r['case_id'],r['condition']) for r in d}),900)
  def test_no_held_out_records_or_comments(self):
   ids=set(p.read(ROOT/'data/visibility.json')['case_ids'])
   for r in p.read(STUDY_ROOT/'data/answers.json')['answers']:
-   self.assertIn(r['case_id'],ids);self.assertNotIn('operator_comment',json.dumps(r));self.assertNotIn('binding',r)
+   self.assertIn(r['case_id'],ids);self.assertNotIn('private_comment',json.dumps(r));self.assertNotIn('binding',r)
  def test_public_counterspell_human_awards_match_final_totals(self):
   rows=p.read(STUDY_ROOT/'data/answers.json')['answers'];targets=[r for r in rows if r['configuration'] in {'granite4.2-8b/on','granite4.2-8b/off'} and r['case_id'].endswith('t10-008') and r['condition']=='supplied_passage']
   self.assertEqual({r['score']['earned_points'] for r in targets},{100,60})
@@ -203,7 +206,7 @@ class FrozenDataTests(unittest.TestCase):
    with self.subTest(filename=filename),tempfile.TemporaryDirectory() as td:
     root=fixture(Path(td),full=True);path=p.study_path(root,STUDY)/'data'/filename;data=p.read(path)
     data[key][0][field]='changed' if key=='answers' else 999;p.write(path,data)
-    with self.assertRaisesRegex(ValueError,'changed beyond configuration IDs'):p.validate(root)
+    with self.assertRaisesRegex(ValueError,'payload hash mismatch'):p.validate(root)
  def test_size_grouping_uses_total_parameters_and_preserves_provenance(self):
   results=p.read(STUDY_ROOT/'data/results.json');cfg={c['id']:c for c in results['configurations']}
   self.assertEqual(cfg['gemma4-e4b/off']['size_class'],'medium')
@@ -213,6 +216,7 @@ class FrozenDataTests(unittest.TestCase):
   self.assertIsNone(cfg['gemma4-e4b/off']['active_parameters'])
   self.assertEqual(cfg['gemma4-e4b/off']['effective_parameters'],4500000000)
   rows=p.table_rows(ROOT,STUDY);self.assertEqual(len(rows),50)
+  self.assertTrue(all('source_id' not in row and 'batch' not in row for row in rows))
   classes=[r['size_class'] for r in rows];self.assertEqual(classes,sorted(classes,key=['small','medium','large'].index))
   self.assertEqual({size:classes.count(size) for size in set(classes)},{'small':16,'medium':14,'large':20})
   self.assertEqual(sum(s['selected_records'] for s in results['sources']),6000)
@@ -220,7 +224,7 @@ class FrozenDataTests(unittest.TestCase):
   with tempfile.TemporaryDirectory() as td:
    root=fixture(Path(td),full=True);registry=p.studies(root);renamed=copy.deepcopy(STUDY);renamed['slug']='renamed-study'
    p.study_path(root,STUDY).rename(p.study_path(root,renamed));registry[0]=renamed;p.write(root/'studies/registry.json',registry)
-   # A slug rename also requires updating documentation links (docs/README.md).
+   # A slug rename also requires updating relative documentation links.
    for source in root.rglob('*.md'):
     source.write_text(source.read_text().replace('studies/'+STUDY['slug']+'/', 'studies/'+renamed['slug']+'/'))
    out=p.build(root);report=out/'studies'/renamed['slug']
@@ -237,7 +241,7 @@ class FrozenDataTests(unittest.TestCase):
    (dest/'data/raw.json').write_text('{"private":"DO_NOT_RELEASE"}')
    (dest/'docs/notes.md').write_text('DO_NOT_RELEASE')
    (root/'studies/unregistered').mkdir();(root/'studies/unregistered/answers.json').write_text('DO_NOT_RELEASE')
-   p.package(root);archive=root/'dist/d20-bench-publication-draft.zip';digest=p.sha(archive)
+   p.package(root);archive=root/'dist/d20-bench-study1.zip';digest=p.sha(archive)
    with zipfile.ZipFile(archive) as z:
     names=set(z.namelist());prefix='d20-bench/studies/'+STUDY['slug']
     for name in ('LICENSE','LICENSE-CC-BY-4.0.md','CITATION.cff'):
@@ -259,5 +263,23 @@ class FrozenDataTests(unittest.TestCase):
    with self.assertRaises(ValueError):p.studies(root)
  def test_import_rejects_unknown_study_before_reading_private_source(self):
   with self.assertRaisesRegex(ValueError,'Unknown study'):p.import_private(Path('nonexistent'),study_slug='unregistered')
+ def test_import_requires_explicit_file_paths(self):
+  with self.assertRaisesRegex(ValueError,'Supply source_manifest and case_reviews'):
+   p.import_private(Path('nonexistent'))
+ def test_config_export_uses_nulls_and_plain_seed_status(self):
+  cfg={'model_key':'example','generation':{'context_length':32768,'max_output_tokens':8192}}
+  result=p.project_config(cfg,'off','Example','off','source')
+  for key in ('selected_variant','runtime_version','exact_gpu_placement','reasoning_effort'):
+   self.assertIsNone(result[key])
+  self.assertEqual(result['generation_seed_status'],'not set')
+ def test_source_paths_cannot_escape_the_supplied_root(self):
+  policy=p.study_config(ROOT,STUDY)
+  suites=list(dict.fromkeys(key.split('/')[0] for key in policy['configuration_ids']))
+  inputs=[{'suite_id':suite} for suite in suites]
+  read=p.read
+  def source_read(path):return inputs if Path(path).name=='sources.json' else read(path)
+  with patch.object(p,'read',side_effect=source_read):
+   with self.assertRaisesRegex(ValueError,'Source file outside source root'):
+    p.import_private(Path('nonexistent'),source_manifest=Path('sources.json'),case_reviews=Path('../reviews.json'))
 
 if __name__=='__main__':unittest.main()

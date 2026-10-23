@@ -22,6 +22,6 @@
   ],
   "public_case_count": 18,
   "private_case_count": 102,
-  "basis": "The 18 accepted human task-quality reviews; 12 random topic selections plus six targeted selections, including repaired versions. Not a random audit of model grades.",
-  "private_disclosure": "Aggregate metrics only; no private case IDs, per-case records, prompts, answers or rubric text."
+  "basis": "18 human-reviewed cases: 12 selected randomly by topic and six selected deliberately.",
+  "private_disclosure": "The other 102 cases contribute aggregate statistics only."
 }

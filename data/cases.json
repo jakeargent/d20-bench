@@ -17,7 +17,7 @@
             "full_credit_condition": "Allows this willing character to choose failure without making the saving-throw roll. Permission to accept the effect directly is equivalent. No unresolved assertion may contradict this required ruling.",
             "partial_levels": [],
             "zero_credit_condition": "The required ruling above is absent, incorrect, or contradicted elsewhere in the answer. A correct statement later explicitly retracting an earlier mistake is not an unresolved contradiction.",
-            "selection_rule": "Award the existing full weight only when the full condition is met; otherwise zero.",
+            "selection_rule": "Award the full weight only when the full condition is met; otherwise zero.",
             "no_partial_credit_reason": "Voluntary failure is the no-roll resolution itself; merely wanting failure or saying rolling is unnecessary without allowing failure does not supply a usable correct procedure."
           }
         }
@@ -170,7 +170,7 @@
               }
             ],
             "zero_credit_condition": "None of the defined components is satisfied without an unresolved contradiction. An incorrect component earns no component credit even if also asserted correctly elsewhere; an explicitly retracted mistake is not unresolved.",
-            "selection_rule": "Identify the exact set of satisfied, uncontradicted components, then award its single listed point level; all components earn the existing full weight. Never sum partial levels. Logical equivalents count, but a bare final number does not establish an explanation component unless it actually communicates that reasoning. Contradictions invalidate only the affected component.",
+            "selection_rule": "Identify the exact set of satisfied, uncontradicted components, then award its single listed point level; all components earn the full weight. Never sum partial levels. Logical equivalents count, but a bare final number does not establish an explanation component unless it actually communicates that reasoning. Contradictions invalidate only the affected component.",
             "no_partial_credit_reason": null
           }
         },
@@ -194,7 +194,7 @@
               }
             ],
             "zero_credit_condition": "None of the defined components is satisfied without an unresolved contradiction. An incorrect component earns no component credit even if also asserted correctly elsewhere; an explicitly retracted mistake is not unresolved.",
-            "selection_rule": "Identify the exact set of satisfied, uncontradicted components, then award its single listed point level; all components earn the existing full weight. Never sum partial levels. Logical equivalents count, but a bare final number does not establish an explanation component unless it actually communicates that reasoning. Contradictions invalidate only the affected component.",
+            "selection_rule": "Identify the exact set of satisfied, uncontradicted components, then award its single listed point level; all components earn the full weight. Never sum partial levels. Logical equivalents count, but a bare final number does not establish an explanation component unless it actually communicates that reasoning. Contradictions invalidate only the affected component.",
             "no_partial_credit_reason": null
           }
         },
@@ -238,7 +238,7 @@
               }
             ],
             "zero_credit_condition": "None of the defined components is satisfied without an unresolved contradiction. An incorrect component earns no component credit even if also asserted correctly elsewhere; an explicitly retracted mistake is not unresolved.",
-            "selection_rule": "Identify the exact set of satisfied, uncontradicted components, then award its single listed point level; all components earn the existing full weight. Never sum partial levels. Logical equivalents count, but a bare final number does not establish an explanation component unless it actually communicates that reasoning. Contradictions invalidate only the affected component.",
+            "selection_rule": "Identify the exact set of satisfied, uncontradicted components, then award its single listed point level; all components earn the full weight. Never sum partial levels. Logical equivalents count, but a bare final number does not establish an explanation component unless it actually communicates that reasoning. Contradictions invalidate only the affected component.",
             "no_partial_credit_reason": null
           }
         }
@@ -282,7 +282,7 @@
           "claim_id": "C002",
           "original_text": "She has 0 successes and 1 failure, because the earlier tally was reset when she became Stable",
           "weight": 35,
-          "rationale": "The most error-prone requested item: the carryover trap. It includes the explanation of why the earlier two failures are gone.",
+          "rationale": "The tally and the explanation of why the earlier two failures are gone.",
           "credit_rule": {
             "full_credit_condition": "States that the current tally is 0 successes and 1 failure, and explains that the earlier two failures were cleared (reset) when she became Stable, so the damage adds a single failure. Equivalent wording is accepted.",
             "partial_levels": [
@@ -294,7 +294,7 @@
               {
                 "points": 15,
                 "condition": "Correctly explains that the earlier tally was reset when she became Stable and that the damage adds one failure, but the final tally is not fully and correctly stated as 0 successes and 1 failure: the success count or the failure count is omitted, or only one of them is given, or the statement is ambiguous.",
-                "rationale": "The conceptual trap (reset on becoming Stable) is handled correctly, but the tally itself is incomplete."
+                "rationale": "The reset on becoming Stable is handled correctly, but the tally itself is incomplete."
               }
             ],
             "zero_credit_condition": "The final tally the answer relies on is any other failure or success count (for example 2 failures, 3 failures, or a 0/2 tally); says the earlier failures carry over to the final tally; contradicts itself about the final tally; or states neither the tally nor the reset explanation.",
@@ -378,7 +378,7 @@
             "full_credit_condition": "Rules that searching the south wall does not reveal the north-wall secret door. No unresolved assertion may contradict this required ruling.",
             "partial_levels": [],
             "zero_credit_condition": "The required ruling above is absent, incorrect, or contradicted elsewhere in the answer. A correct statement later explicitly retracting an earlier mistake is not an unresolved contradiction.",
-            "selection_rule": "Award the existing full weight only when the full condition is met; otherwise zero.",
+            "selection_rule": "Award the full weight only when the full condition is met; otherwise zero.",
             "no_partial_credit_reason": "The asked discovery outcome is binary; an incorrect or missing discovery ruling has no independently correct portion of this criterion."
           }
         },
@@ -391,7 +391,7 @@
             "full_credit_condition": "Explains that searching away from the door cannot find it regardless of the high Perception total. No unresolved assertion may contradict this required ruling.",
             "partial_levels": [],
             "zero_credit_condition": "The required ruling above is absent, incorrect, or contradicted elsewhere in the answer. A correct statement later explicitly retracting an earlier mistake is not an unresolved contradiction.",
-            "selection_rule": "Award the existing full weight only when the full condition is met; otherwise zero.",
+            "selection_rule": "Award the full weight only when the full condition is met; otherwise zero.",
             "no_partial_credit_reason": "Vicinity overriding the roll is one causal rule; merely remarking that location matters without excluding discovery from this remote search does not establish it."
           }
         }
@@ -421,7 +421,7 @@
             "full_credit_condition": "Applies Advantage to the Influence check against the Friendly hesitant NPC; equivalent two-d20 selection is accepted. No unresolved assertion may contradict this required ruling.",
             "partial_levels": [],
             "zero_credit_condition": "The required ruling above is absent, incorrect, or contradicted elsewhere in the answer. A correct statement later explicitly retracting an earlier mistake is not an unresolved contradiction.",
-            "selection_rule": "Award the existing full weight only when the full condition is met; otherwise zero.",
+            "selection_rule": "Award the full weight only when the full condition is met; otherwise zero.",
             "no_partial_credit_reason": "The Friendly attitude has a single requested roll effect; no separately correct numerical substep exists."
           }
         },
@@ -434,7 +434,7 @@
             "full_credit_condition": "Applies Disadvantage to the Influence check against the Hostile hesitant NPC; equivalent two-d20 selection is accepted. No unresolved assertion may contradict this required ruling.",
             "partial_levels": [],
             "zero_credit_condition": "The required ruling above is absent, incorrect, or contradicted elsewhere in the answer. A correct statement later explicitly retracting an earlier mistake is not an unresolved contradiction.",
-            "selection_rule": "Award the existing full weight only when the full condition is met; otherwise zero.",
+            "selection_rule": "Award the full weight only when the full condition is met; otherwise zero.",
             "no_partial_credit_reason": "The Hostile attitude has a single requested roll effect; no separately correct numerical substep exists."
           }
         }
@@ -476,7 +476,7 @@
             "full_credit_condition": "Identifies Influence as the action for urging the merchant to reduce the price. No unresolved assertion may contradict this required ruling.",
             "partial_levels": [],
             "zero_credit_condition": "The required ruling above is absent, incorrect, or contradicted elsewhere in the answer. A correct statement later explicitly retracting an earlier mistake is not an unresolved contradiction.",
-            "selection_rule": "Award the existing full weight only when the full condition is met; otherwise zero.",
+            "selection_rule": "Award the full weight only when the full condition is met; otherwise zero.",
             "no_partial_credit_reason": "This criterion asks for one action-to-intention mapping."
           }
         },
@@ -489,7 +489,7 @@
             "full_credit_condition": "Identifies Search as the action for reading the merchant’s body language. No unresolved assertion may contradict this required ruling.",
             "partial_levels": [],
             "zero_credit_condition": "The required ruling above is absent, incorrect, or contradicted elsewhere in the answer. A correct statement later explicitly retracting an earlier mistake is not an unresolved contradiction.",
-            "selection_rule": "Award the existing full weight only when the full condition is met; otherwise zero.",
+            "selection_rule": "Award the full weight only when the full condition is met; otherwise zero.",
             "no_partial_credit_reason": "This criterion asks for one action-to-intention mapping."
           }
         },
@@ -502,7 +502,7 @@
             "full_credit_condition": "Disallows combining the price request and body-language Search into one simultaneous action; sequential actions are compatible. No unresolved assertion may contradict this required ruling.",
             "partial_levels": [],
             "zero_credit_condition": "The required ruling above is absent, incorrect, or contradicted elsewhere in the answer. A correct statement later explicitly retracting an earlier mistake is not an unresolved contradiction.",
-            "selection_rule": "Award the existing full weight only when the full condition is met; otherwise zero.",
+            "selection_rule": "Award the full weight only when the full condition is met; otherwise zero.",
             "no_partial_credit_reason": "The simultaneous-combination permission is a single binary ruling."
           }
         }
@@ -532,7 +532,7 @@
             "full_credit_condition": "States that the Constitution modifier rises by one, including an equivalent +2 to +3 comparison. No unresolved assertion may contradict this required ruling.",
             "partial_levels": [],
             "zero_credit_condition": "The required ruling above is absent, incorrect, or contradicted elsewhere in the answer. A correct statement later explicitly retracting an earlier mistake is not an unresolved contradiction.",
-            "selection_rule": "Award the existing full weight only when the full condition is met; otherwise zero.",
+            "selection_rule": "Award the full weight only when the full condition is met; otherwise zero.",
             "no_partial_credit_reason": "Only one modifier change is required; the raw ability-score increase alone is not this change."
           }
         },
@@ -556,7 +556,7 @@
               }
             ],
             "zero_credit_condition": "None of the defined components is satisfied without an unresolved contradiction. An incorrect component earns no component credit even if also asserted correctly elsewhere; an explicitly retracted mistake is not unresolved.",
-            "selection_rule": "Identify the exact set of satisfied, uncontradicted components, then award its single listed point level; all components earn the existing full weight. Never sum partial levels. Logical equivalents count, but a bare final number does not establish an explanation component unless it actually communicates that reasoning. Contradictions invalidate only the affected component.",
+            "selection_rule": "Identify the exact set of satisfied, uncontradicted components, then award its single listed point level; all components earn the full weight. Never sum partial levels. Logical equivalents count, but a bare final number does not establish an explanation component unless it actually communicates that reasoning. Contradictions invalidate only the affected component.",
             "no_partial_credit_reason": null
           }
         }
@@ -594,7 +594,7 @@
               {
                 "points": 20,
                 "condition": "Says Grappler is allowed and correctly explains that Dexterity 14 satisfies the 'Strength or Dexterity 13+' prerequisite, but does not address the level 4+ requirement at all (omitted, not misstated).",
-                "rationale": "The Strength-versus-Dexterity trap is the main prerequisite and is handled correctly; the level point is only omitted."
+                "rationale": "The Strength-or-Dexterity prerequisite is handled correctly; the level point is only omitted."
               },
               {
                 "points": 15,
@@ -829,7 +829,7 @@
           "claim_id": "C002",
           "original_text": "In Scenario A, making an attack roll against an enemy extends the Rage, whether or not it hits.",
           "weight": 30,
-          "rationale": "The answer for Scenario A and the central trap. The source requires only an attack roll against an enemy, so a miss still extends the Rage.",
+          "rationale": "The answer for Scenario A and its explanation. The source requires only an attack roll against an enemy, so a miss still extends the Rage.",
           "credit_rule": {
             "full_credit_condition": "Says the Rage is still active at the start of round 3 in Scenario A because Dara made attack rolls against an enemy, and that a miss still counts, because only an attack roll is required, not a hit. Any equivalent statement that misses are still attack rolls, or that she need not hit, satisfies the miss point; a second synonymous sentence is not required.",
             "partial_levels": [
@@ -912,7 +912,7 @@
             "full_credit_condition": "Allows only one piece of ammunition from this Loading weapon in the Attack action, despite two available attacks. No unresolved assertion may contradict this required ruling.",
             "partial_levels": [],
             "zero_credit_condition": "The required ruling above is absent, incorrect, or contradicted elsewhere in the answer. A correct statement later explicitly retracting an earlier mistake is not an unresolved contradiction.",
-            "selection_rule": "Award the existing full weight only when the full condition is met; otherwise zero.",
+            "selection_rule": "Award the full weight only when the full condition is met; otherwise zero.",
             "no_partial_credit_reason": "The per-action ammunition count is one indivisible numeric ruling."
           }
         },
@@ -925,7 +925,7 @@
             "full_credit_condition": "Explains that Loading limits ammunition per action, so the two attacks within that action do not each create a fresh shot allowance. No unresolved assertion may contradict this required ruling.",
             "partial_levels": [],
             "zero_credit_condition": "The required ruling above is absent, incorrect, or contradicted elsewhere in the answer. A correct statement later explicitly retracting an earlier mistake is not an unresolved contradiction.",
-            "selection_rule": "Award the existing full weight only when the full condition is met; otherwise zero.",
+            "selection_rule": "Award the full weight only when the full condition is met; otherwise zero.",
             "no_partial_credit_reason": "Per-action rather than per-attack limitation is one explanation; its consequence is logically the same rule, not a second independent component."
           }
         }
@@ -966,7 +966,7 @@
               }
             ],
             "zero_credit_condition": "None of the defined components is satisfied without an unresolved contradiction. An incorrect component earns no component credit even if also asserted correctly elsewhere; an explicitly retracted mistake is not unresolved.",
-            "selection_rule": "Identify the exact set of satisfied, uncontradicted components, then award its single listed point level; all components earn the existing full weight. Never sum partial levels. Logical equivalents count, but a bare final number does not establish an explanation component unless it actually communicates that reasoning. Contradictions invalidate only the affected component.",
+            "selection_rule": "Identify the exact set of satisfied, uncontradicted components, then award its single listed point level; all components earn the full weight. Never sum partial levels. Logical equivalents count, but a bare final number does not establish an explanation component unless it actually communicates that reasoning. Contradictions invalidate only the affected component.",
             "no_partial_credit_reason": null
           }
         },
@@ -990,7 +990,7 @@
               }
             ],
             "zero_credit_condition": "None of the defined components is satisfied without an unresolved contradiction. An incorrect component earns no component credit even if also asserted correctly elsewhere; an explicitly retracted mistake is not unresolved.",
-            "selection_rule": "Identify the exact set of satisfied, uncontradicted components, then award its single listed point level; all components earn the existing full weight. Never sum partial levels. Logical equivalents count, but a bare final number does not establish an explanation component unless it actually communicates that reasoning. Contradictions invalidate only the affected component.",
+            "selection_rule": "Identify the exact set of satisfied, uncontradicted components, then award its single listed point level; all components earn the full weight. Never sum partial levels. Logical equivalents count, but a bare final number does not establish an explanation component unless it actually communicates that reasoning. Contradictions invalidate only the affected component.",
             "no_partial_credit_reason": null
           }
         }
@@ -1261,7 +1261,7 @@
               }
             ],
             "zero_credit_condition": "None of the defined components is satisfied without an unresolved contradiction. An incorrect component earns no component credit even if also asserted correctly elsewhere; an explicitly retracted mistake is not unresolved.",
-            "selection_rule": "Identify the exact set of satisfied, uncontradicted components, then award its single listed point level; all components earn the existing full weight. Never sum partial levels. Logical equivalents count, but a bare final number does not establish an explanation component unless it actually communicates that reasoning. Contradictions invalidate only the affected component.",
+            "selection_rule": "Identify the exact set of satisfied, uncontradicted components, then award its single listed point level; all components earn the full weight. Never sum partial levels. Logical equivalents count, but a bare final number does not establish an explanation component unless it actually communicates that reasoning. Contradictions invalidate only the affected component.",
             "no_partial_credit_reason": null
           }
         },
@@ -1305,7 +1305,7 @@
               }
             ],
             "zero_credit_condition": "None of the defined components is satisfied without an unresolved contradiction. An incorrect component earns no component credit even if also asserted correctly elsewhere; an explicitly retracted mistake is not unresolved.",
-            "selection_rule": "Identify the exact set of satisfied, uncontradicted components, then award its single listed point level; all components earn the existing full weight. Never sum partial levels. Logical equivalents count, but a bare final number does not establish an explanation component unless it actually communicates that reasoning. Contradictions invalidate only the affected component.",
+            "selection_rule": "Identify the exact set of satisfied, uncontradicted components, then award its single listed point level; all components earn the full weight. Never sum partial levels. Logical equivalents count, but a bare final number does not establish an explanation component unless it actually communicates that reasoning. Contradictions invalidate only the affected component.",
             "no_partial_credit_reason": null
           }
         },
@@ -1349,7 +1349,7 @@
               }
             ],
             "zero_credit_condition": "None of the defined components is satisfied without an unresolved contradiction. An incorrect component earns no component credit even if also asserted correctly elsewhere; an explicitly retracted mistake is not unresolved.",
-            "selection_rule": "Identify the exact set of satisfied, uncontradicted components, then award its single listed point level; all components earn the existing full weight. Never sum partial levels. Logical equivalents count, but a bare final number does not establish an explanation component unless it actually communicates that reasoning. Contradictions invalidate only the affected component.",
+            "selection_rule": "Identify the exact set of satisfied, uncontradicted components, then award its single listed point level; all components earn the full weight. Never sum partial levels. Logical equivalents count, but a bare final number does not establish an explanation component unless it actually communicates that reasoning. Contradictions invalidate only the affected component.",
             "no_partial_credit_reason": null
           }
         }
@@ -1385,7 +1385,7 @@
             "full_credit_condition": "Requires no Sanctuary Wisdom save for the area spell because Sanctuary does not protect against areas of effect. Stating the area exception as the reason is sufficient. No unresolved assertion may contradict this required ruling.",
             "partial_levels": [],
             "zero_credit_condition": "The required ruling above is absent, incorrect, or contradicted elsewhere in the answer. A correct statement later explicitly retracting an earlier mistake is not an unresolved contradiction.",
-            "selection_rule": "Award the existing full weight only when the full condition is met; otherwise zero.",
+            "selection_rule": "Award the full weight only when the full condition is met; otherwise zero.",
             "no_partial_credit_reason": "The no-save ruling and area exception express one protection boundary; a correct boundary already entails the ruling."
           }
         },
@@ -1398,7 +1398,7 @@
             "full_credit_condition": "Ends Sanctuary when the warded creature casts the harmless spell, even without harm or an attack. No unresolved assertion may contradict this required ruling.",
             "partial_levels": [],
             "zero_credit_condition": "The required ruling above is absent, incorrect, or contradicted elsewhere in the answer. A correct statement later explicitly retracting an earlier mistake is not an unresolved contradiction.",
-            "selection_rule": "Award the existing full weight only when the full condition is met; otherwise zero.",
+            "selection_rule": "Award the full weight only when the full condition is met; otherwise zero.",
             "no_partial_credit_reason": "Termination on this spellcasting is a single binary outcome; harmlessness does not create a separate graded substep."
           }
         }
@@ -1439,7 +1439,7 @@
               }
             ],
             "zero_credit_condition": "None of the defined components is satisfied without an unresolved contradiction. An incorrect component earns no component credit even if also asserted correctly elsewhere; an explicitly retracted mistake is not unresolved.",
-            "selection_rule": "Identify the exact set of satisfied, uncontradicted components, then award its single listed point level; all components earn the existing full weight. Never sum partial levels. Logical equivalents count, but a bare final number does not establish an explanation component unless it actually communicates that reasoning. Contradictions invalidate only the affected component.",
+            "selection_rule": "Identify the exact set of satisfied, uncontradicted components, then award its single listed point level; all components earn the full weight. Never sum partial levels. Logical equivalents count, but a bare final number does not establish an explanation component unless it actually communicates that reasoning. Contradictions invalidate only the affected component.",
             "no_partial_credit_reason": null
           }
         },
@@ -1452,7 +1452,7 @@
             "full_credit_condition": "Ends the tree’s animation at125 feet because that exceeds120 feet from its original treant. No unresolved assertion may contradict this required ruling.",
             "partial_levels": [],
             "zero_credit_condition": "The required ruling above is absent, incorrect, or contradicted elsewhere in the answer. A correct statement later explicitly retracting an earlier mistake is not an unresolved contradiction.",
-            "selection_rule": "Award the existing full weight only when the full condition is met; otherwise zero.",
+            "selection_rule": "Award the full weight only when the full condition is met; otherwise zero.",
             "no_partial_credit_reason": "The specified distance and termination are one threshold application; stating that it ends from excessive separation is equivalent without restating numbers."
           }
         },
@@ -1465,7 +1465,7 @@
             "full_credit_condition": "After animation ends the tree takes root if possible, or states it takes root here without inventing an obstacle. No unresolved assertion may contradict this required ruling.",
             "partial_levels": [],
             "zero_credit_condition": "The required ruling above is absent, incorrect, or contradicted elsewhere in the answer. A correct statement later explicitly retracting an earlier mistake is not an unresolved contradiction.",
-            "selection_rule": "Award the existing full weight only when the full condition is met; otherwise zero.",
+            "selection_rule": "Award the full weight only when the full condition is met; otherwise zero.",
             "no_partial_credit_reason": "Conditional rooting is one consequence; a bare root-taking statement fits the stipulated unobstructed scenario and does not require an extra caveat."
           }
         }
