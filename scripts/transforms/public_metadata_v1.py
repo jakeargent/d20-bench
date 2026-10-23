@@ -79,7 +79,7 @@ def normalize_quality(quality):
 
 
 def normalize_results(results):
-    results['random_human_audit'] = 'not performed'
+    results.pop('random_human_audit', None)
     for cfg in results['configurations']:
         for key in ('runtime_version', 'exact_gpu_placement', 'selected_variant', 'reasoning_effort'):
             if cfg.get(key) in ('not verified', 'not separately specified'):

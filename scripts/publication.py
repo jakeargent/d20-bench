@@ -168,7 +168,7 @@ def import_private(source_root,root=ROOT,study_slug=None,source_manifest=None,ca
   if read(root/'data'/name)!=value:raise ValueError('Shared cases or visibility differ from the public selection')
  for row in answers:metadata.normalize_answer_metadata(row)
  metadata.apply_annotation_edits(answers)
- results={'schema_version':1,'suite_questions':120,'selected_records':sum(c['records'] for c in cells),'public_answer_records':len(answers),'configurations':configs,'cells':cells,'sources':sources,'random_human_audit':'not performed','grader_accuracy':'unmeasured'}
+ results={'schema_version':1,'suite_questions':120,'selected_records':sum(c['records'] for c in cells),'public_answer_records':len(answers),'configurations':configs,'cells':cells,'sources':sources,'grader_accuracy':'unmeasured'}
  metadata.normalize_results(results)
  metadata.verify(policy,results,answers,shared['cases.json'],visibility)
  write(dest/'data/answers.json',{'schema_version':1,'answers':answers});write(dest/'data/results.json',results)
