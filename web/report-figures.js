@@ -1,4 +1,4 @@
-/* Only aggregate data is fetched, when a reader opens a figure. No dependencies. */
+/* Figures render on page load from one cached request for precomputed aggregates. No dependencies. */
 const NS = 'http://www.w3.org/2000/svg';
 let aggregateRequest;
 function aggregates() {
@@ -251,7 +251,7 @@ function render(figure, data, metric) {
     plot.lastChild.className = 'figure-legend';
   }
   const tip = element('div'); tip.className = 'figure-tip'; tip.hidden = true;
-  const readout = element('p', 'Focus a marker to inspect its exact values.'); readout.className = 'figure-readout';
+  const readout = element('p', 'Tab to a marker and use the arrow keys to see its exact values.'); readout.className = 'figure-readout';
   const chart = element('div'); chart.className = 'figure-chart'; plot.append(chart, readout, tip);
   const W = Math.max(260, Math.round(chart.getBoundingClientRect().width));
   const ctx = { data, tip, readout, figure, chart, points: [], marks: [], title: figure.querySelector('h3').textContent };
@@ -260,12 +260,12 @@ function render(figure, data, metric) {
   else if (key === 'live-use-tradeoffs' || key === 'thinking-returns') scatter(ctx, configs, cell, W, key === 'thinking-returns');
   if (ctx.points[0]) ctx.points[0].tabIndex = 0;
 }
-for (const button of document.querySelectorAll('[data-figure]')) button.addEventListener('click', async () => {
-  const figure = button.closest('figure'), status = figure.querySelector('.figure-status');
-  button.disabled = true; status.textContent = 'Loading aggregate data…';
+async function load(figure) {
+  const status = figure.querySelector('.figure-status');
+  figure.querySelector('.figure-load')?.remove();
+  status.textContent = 'Loading figure…';
   try {
-    const data = await aggregates(); render(figure, data); button.hidden = true;
-    status.textContent = 'Figure loaded. Tab to the markers, then use the arrow keys to move between them; static values remain below.';
+    const data = await aggregates(); render(figure, data); status.textContent = '';
     let width = figure.clientWidth;
     // Recompute SVG coordinates when the figure moves between paper and mobile layouts.
     new ResizeObserver(() => {
@@ -274,5 +274,10 @@ for (const button of document.querySelectorAll('[data-figure]')) button.addEvent
       render(figure, data, figure.querySelector('select')?.value);
     }).observe(figure);
   }
-  catch (error) { status.textContent = 'Could not load figure: ' + error.message + '. Static values remain below.'; button.disabled = false; button.textContent = 'Retry figure'; }
-});
+  catch (error) {
+    status.textContent = 'Could not load figure: ' + error.message + '. Static values remain below.';
+    const retry = element('button', 'Retry figure'); retry.type = 'button'; retry.className = 'figure-load';
+    retry.addEventListener('click', () => load(figure)); status.after(retry);
+  }
+}
+for (const figure of document.querySelectorAll('.interactive-figure')) load(figure);

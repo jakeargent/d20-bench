@@ -155,8 +155,6 @@ button, summary { cursor: pointer; }
 button:disabled { color: var(--ink-2); cursor: default; }
 button:hover { border-color: var(--accent); }
 select:focus-visible, summary:focus-visible, [tabindex]:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
-.figure-load { display: none; }
-[data-js] .figure-load { display: inline-block; }
 .figure-status { margin: .5rem 0; }
 .figure-status:empty { display: none; }
 .figure-controls { display: flex; flex-wrap: wrap; gap: .5rem; align-items: baseline; margin: 1rem 0; }
