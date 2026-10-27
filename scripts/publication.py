@@ -29,7 +29,7 @@ SHARED_DATA={'cases.json','visibility.json'}
 STUDY_DATA={'answers.json','results.json'}
 STUDY_DOCS={'METHODS.md','LIMITATIONS.md','DATA_DICTIONARY.md','RESULTS.md','PROVENANCE.md'}
 FONT_FILES={'newsreader-normal.woff2','newsreader-italic.woff2','newsreader-latin-ext.woff2','ibm-plex-mono-latin-400-normal.woff2','ibm-plex-mono-latin-ext-400-normal.woff2','Newsreader-LICENSE.txt','IBM-Plex-Mono-LICENSE.txt'}
-WEB_ASSETS={'paper.css','theme.js','report-figures.js',*{'fonts/'+name for name in FONT_FILES}}
+WEB_ASSETS={'paper.css','favicon.svg','theme.js','report-figures.js',*{'fonts/'+name for name in FONT_FILES}}
 SITE_NOTICES={'CITATION.cff','THIRD_PARTY_NOTICES.md','LICENSE','LICENSE-CC-BY-4.0.md','README.md'}
 
 def read(p):return json.loads(Path(p).read_text())
@@ -196,7 +196,7 @@ def scan_public(root,ids):
    if f.relative_to(root).as_posix() not in {'web/fonts/'+name for name in FONT_FILES if name.endswith('.woff2')}:raise ValueError('Unexpected font asset')
    if f.read_bytes()[:4]!=b'wOF2':raise ValueError('Invalid WOFF2 asset')
    continue
-  if f.suffix not in {'.json','.md','.py','.js','.css','.html','.toml','.yml','.cff','.example','.txt'} and f.name not in {'LICENSE','Makefile','.gitignore','.python-version','uv.lock'}:raise ValueError('Unexpected release file type')
+  if f.suffix not in {'.json','.md','.py','.js','.css','.svg','.html','.toml','.yml','.cff','.example','.txt'} and f.name not in {'LICENSE','Makefile','.gitignore','.python-version','uv.lock'}:raise ValueError('Unexpected release file type')
   s=f.read_text()
   if f.suffix=='.json':
    def strings(x):
