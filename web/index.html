@@ -5,8 +5,8 @@
 <script>let r=document.documentElement;try{r.dataset.theme=localStorage.theme==='light'?'light':'dark'}catch{}r.dataset.js='';</script>
 <meta name="color-scheme" content="dark light">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>d20 Bench · Erol Can Akbaba</title>
-<meta name="description" content="Exploratory English SRD 5.2.1 studies: quality, token use and completion time for local language models.">
+<title>Same score. Twelve times the mistakes. · d20 Bench</title>
+<meta name="description" content="I tested 25 AI setups on 120 questions about a game's rulebook. Two scored almost the same; one invented a wrong rule in 2 answers, the other in 24.">
 <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
 <link rel="stylesheet" href="assets/paper.css">
 <script src="assets/theme.js" defer></script>
@@ -14,11 +14,13 @@
 <a class="skip-link" href="#main">Skip to content</a>
 <div class="paper-grid">
 <header class="site-header"><div class="identity"><a href="https://erolcanakbaba.com/">Erol Can Akbaba</a></div><nav aria-label="Main navigation"><a href="index.html" aria-current="page">d20 Bench</a><span class="separator" aria-hidden="true"> · </span><a href="{{study-report}}">Report</a><span class="separator" aria-hidden="true"> · </span><a href="{{study-explore}}">Explore the data</a><span class="separator" aria-hidden="true"> · </span><a href="https://erolcanakbaba.com/">erolcanakbaba.com ↗︎</a><span class="theme-control"><span class="separator" aria-hidden="true"> · </span><button id="theme-toggle" type="button" aria-label="Switch to light theme">Light</button></span></nav></header>
-<main id="main" class="home"><div class="title-block"><p class="eyebrow">Exploratory English SRD 5.2.1 studies</p><h1>d20 Bench</h1><p class="affiliation">Erol Can Akbaba · 2026</p><hr></div>
-<div class="abstract"><p>Which local model can keep a live interaction moving? These studies measure answer quality, tokens and completion time for local language models answering D&amp;D rules questions. That stands in for a broader need: interactive narrative systems have to apply precise rules knowledge live. I start with a baseline, then measure how much retrieving the right context helps.</p></div>
+<main id="main" class="home"><div class="title-block"><p class="eyebrow">d20 Bench</p><h1>Same score. Twelve times the mistakes.</h1><p class="affiliation">Erol Can Akbaba · 2026</p><hr></div>
+<div class="abstract"><p>I tested 25 AI setups on 120 questions about a game's rulebook. Two scored almost the same, 99.1 and 98.9 out of 100. One invented a wrong rule in 2 answers, the other in 24. Pick by the score and you would never see that gap.</p><p>A study like this shows you which AI to trust with your work, how fast it answers, and where it goes wrong, before a customer finds out. A rulebook works like a policy manual: clear rules, plenty of tricky cases, and answers you can check. Swap in your refund policy or your onboarding guide and the test works the same way.</p></div>
 <h2>Studies</h2><ul><!--STUDIES--></ul>
-<p>Study 1 tested 15 local models in 25 combinations of model and thinking mode on 120 SRD 5.2.1 rules questions, with and without oracle passages, the passages used to write each question. With those passages, only three configurations got more than half the answers fully correct with a median completion time of 5 seconds or less, and all three were Gemma 4. The totals cover all 120 questions; the <a href="{{study-explore}}">explorer</a> shows the 18 public cases and their 900 answers. <a href="{{study-report}}">Read the report</a>.</p>
-<p>Study 2 is in progress: BM25 retrieval, a standard keyword-ranking method, with Gemma 4, on the same 120 questions. It has no published results yet.</p>
+<p>Study 1 is an exploratory comparison of 15 AI models run on one graphics card. Each setup answered every question twice, with and without the rulebook passage behind it. Look at how many answers were fully right, how long a typical answer took, and how many added a wrong rule. What the AI read mattered most: the best setup went from 16 of 120 fully right to 113 with the passage, almost three times faster. Only three setups gave a typical answer within 5 seconds and got more than half fully right, and all three were Gemma 4, a model family from Google.</p>
+<p>The totals cover all 120 questions. I reviewed 18 of them in full and checked the rest. The <a href="{{study-explore}}">explorer</a> shows those 18 public cases and their 900 answers, so you can read what each AI wrote. <a href="{{study-report}}">Read the report</a>.</p>
+<p>Study 2 is in progress and has no results yet. Study 1 handed each AI the right passage; Study 2 finds it with BM25, a standard keyword search, and tests Gemma 4 on the same 120 questions.</p>
+<p><a href="https://erolcanakbaba.com/d20#what-you-get">See what you would get from a study on your own AI</a>.</p>
 </main>
 <footer class="site-footer">
 <p>Erol Can Akbaba<span class="separator"> · </span>Ankara, Türkiye<span class="separator"> · </span>UTC+3<span class="separator"> · </span><a href="mailto:erol@erolcanakbaba.com">erol@erolcanakbaba.com</a><span class="separator"> · </span><a href="CITATION.cff">Cite</a></p>

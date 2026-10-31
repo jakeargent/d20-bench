@@ -9,7 +9,7 @@ Study 1 is an exploratory comparison of 25 configurations, with no preregistrati
 
 ## The questions
 
-- Eighteen task versions got a human quality review. An AI reviewed the rest. All 120 tasks are development material, and the 18 public cases are a small subset.
+- Eighteen task versions got a human quality review. An AI reviewed the rest and I checked them, without a full source-backed review. All 120 tasks are development material, and the 18 public cases are a small subset.
 - The 72 public Gemma 4 E4B answers (36 thinking off, 36 thinking on) have final scores and fully correct and material-error results but no per-claim awards. The expert annotations that exist for them stay separate.
 
 ## Grading
