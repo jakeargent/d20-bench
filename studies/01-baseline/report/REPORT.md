@@ -1,46 +1,47 @@
-# Which local model can keep a live interaction moving?
+# Which local AI answers rules questions correctly in 5 seconds?
 
 *Baseline study of English SRD 5.2.1 rules questions, by Erol Can Akbaba.*
 
-With the source passages supplied, **only three configurations met the 5-second median bar and got more than half the answers fully correct. All three were Gemma 4.**
+I gave 25 AI setups 120 questions about a game's rulebook, with and without the passage behind each question. The best setup went from 16/120 answers fully correct to 113/120 with the passage, almost three times faster. Two setups scored almost the same, 99.08 and 98.86 out of 100, yet one added a wrong rule in 2 answers and the other in 24. Three of the 25 gave a typical answer within 5 seconds and got more than half fully correct, and all three were Gemma 4, a model family from Google.
+
+A rulebook works like a policy manual: clear rules, plenty of tricky cases, and answers you can check. If you are choosing an AI for that kind of work, this report shows which numbers reveal the risk, what the right documents add, and how much quality a faster answer costs. Look for four things.
+
+- **Fully correct counts before average scores.** A *fully correct* answer meets every required claim and contains no *material error*, a wrong or invented rule the answer adds, which many people call a hallucination. The *claim score* sums the points earned for required claims, out of 100, with no deduction for errors, so a perfect score can still hide a wrong rule.
+- **The median beside the p95.** The *median* is the middle completion time. The *p95* is the slower end of the distribution, where 1 request in 20 is slower. A low median cannot excuse a slow tail.
+- **The gap with and without the passage.** *Oracle passages* are the rules passages the task authors used to write that question. The gap shows what feeding an AI the right text is worth.
+- **The price of thinking.** With *thinking on*, a model works through the problem before it answers; with *thinking off*, it answers straight away. Thinking spends *tokens*, the word fragments a model reads and writes, and each one adds to the wait.
 
 ## The product question sets the speed target
 
-This study looks at one job in interactive narrative systems such as game master agents and tabletop role-playing assistants: applying precise rules knowledge live, inside a conversation. I use the openly licensed rules of Dungeons & Dragons (SRD 5.2.1) as the test domain; the name d20 refers to the twenty-sided die the game rolls. For these systems, correct rulings and fast responses both matter: a wrong ruling misleads the players, and a slow one stalls the conversation.
+This study looks at one job in interactive narrative systems such as game master agents and tabletop role-playing assistants: applying precise rules knowledge live, inside a conversation. I use the openly licensed rules of Dungeons & Dragons (SRD 5.2.1) as the test domain; the name d20 refers to the twenty-sided die the game rolls.
 
-A player describes an action. The game master (GM) agent takes 30 seconds just to say “roll Persuasion.” That delay is unusable in a live session, where play involves many such steps. My target is about 5 seconds per step on average, but quicker is better. Usability research puts the limit for keeping a user's attention on a dialogue at about 10 seconds [1](#references). I set the 30-second hard cutoff deliberately. In my judgment, a model that takes 30 seconds to settle a simple rules question even 1% of the time invites players to switch off, and one that routinely takes 30 seconds loses them for good.
-
-For this reason, I picked Gemma 4. Every model answered each question twice: once on its own, and once with the *oracle passages*, the rules passages the task authors used to write that question. With oracle passages, Gemma 4 26B-A4B with thinking off had a 2.13-second median completion time. Thinking on reached the study's highest count of fully correct answers, 113/120, at a 6.08-second median, just beyond the intended live-use target. Across every tested configuration, oracle passages raised mean claim scores and reduced median time and mean output tokens. This makes the study a useful foundation for a retrieval series: it establishes what these configurations achieved with the oracle passages, and what a retrieval system must match or improve.
-
-Quality and completion time therefore have to be read together. So do median and the 95th percentile (p95): the median describes a typical request, while p95 shows the slower end of the observed distribution. A low median cannot excuse a tail that repeatedly interrupts play.
+A player describes an action. The game master (GM) agent takes 30 seconds just to say “roll Persuasion,” and a live session has many such steps. My target is about 5 seconds per step. Usability research puts the limit for keeping a user's attention on a dialogue at about 10 seconds [1](#references). I set a 30-second hard cutoff because, in my judgment, a model that takes that long on a simple rules question even 1% of the time invites players to switch off.
 
 ## What was tested
 
-The baseline contains 25 configurations and 6,000 answer records, from the same 120 cases answered with and without oracle passages.
+I tested 15 models in 25 *configurations*, where a configuration is one model with one thinking setting and its run settings. Each answered the same 120 cases with and without oracle passages, for 6,000 answer records.
 
-All models ran locally on a single NVIDIA RTX 3090 (24 GB VRAM) in October 2026. I ran each one the way a typical user would, in LM Studio with its defaults and each provider's recommended settings, and with no tuning of the inference setup. VRAM usage was not tracked.
+All models ran locally, on my own machine, on a single NVIDIA RTX 3090 graphics card (GPU) in October 2026. The card has 24 GB of *VRAM*, its own memory, which a model has to fit into. I ran each model in LM Studio with its defaults and each provider's recommended settings. VRAM usage was not tracked.
 
-All aggregate results below cover the full 120-case suite per study configuration. The repository exposes 18 human-reviewed public cases and their 900 answer records. The other 102 cases remain private and contribute only aggregates.
+All results below cover the full 120 cases per configuration. The repository exposes 18 human-reviewed public cases and their 900 answer records. The other 102 cases remain private and contribute only aggregates. A few answers couldn't be graded as clearly right or wrong; those are left out, so some counts are out of fewer than 120.
 
-The lead measure is **fully correct answers**: every required claim satisfied and no material error. A few answers couldn't be graded as clearly right or wrong; those are left out, so some counts are out of fewer than 120. Mean claim score is secondary. It sums the points earned for required claims, out of 100, with no deduction for errors. An answer can earn every claim point and still add a wrong rule, in which case it isn't fully correct.
+Comparisons are grouped by *parameters*, the learned numbers that measure a model's size, into three *size classes* by total count: *small*, roughly 2.7–5.1B (billion); *medium*, 8.0–9.7B; *large*, 24–31B. *Dense* models use all their parameters for each token. *Mixture-of-experts* models use only the active experts alongside shared weights: Gemma 4 26B-A4B has about 25.8B total and 3.8B active parameters. The active count is what matters for speed [2](#references), [3](#references), provided the model fits in VRAM. Runtime and configuration differences remain confounds.
 
-Comparisons are grouped by total parameters: *small*, roughly 2.7–5.1B; *medium*, 8.0–9.7B; *large*, 24–31B. Mixture-of-experts models use only part of their weights for each token: Gemma 4 26B-A4B has about 25.8B total and 3.8B active parameters. The active parameter count is what matters for speed [2](#references), [3](#references), provided the model fits in VRAM. Runtime and configuration differences remain confounds.
-
-Completion time includes recorded request attempts and retries, excluding model loading and grading. The tables use all outcomes, including failures and capped outputs. Output tokens are recorded totals per response; separate thinking-token counts are sometimes unknown. See [Methods](../docs/METHODS.md) for prompts, budgets and grading.
+Completion time covers every recorded attempt and outcome, including retries, failures and capped outputs, and leaves out model loading and grading.
 
 ## Oracle passages improved every configuration
 
-All 25 configurations had higher mean claim scores, lower median completion times and fewer mean and median output tokens with oracle passages provided to the model. The result supports context injection as a practical quality and efficiency intervention, which fits with the retrieval-augmented generation literature [4](#references).
+All 25 configurations had higher mean claim scores, lower median completion times and fewer output tokens with oracle passages. Gemma 4 26B-A4B with thinking on went from 16/120 fully correct at a 17.42-second median to 113/120 at 6.08 seconds. The lowest count with passages, 30/120, still beats the best count without them. This supports context injection, handing the model the text it needs, and fits the retrieval-augmented generation literature [4](#references).
 
 <!-- figure: oracle-effect — paired no_source versus supplied_passage results, faceted by total-parameter size class; results.json configurations.id/size_class and cells.configuration/condition, quality.mean_claim_score, timing.median_seconds, output_tokens.mean -->
 
-The public case [d20-en-pilot-t01-003](../../../data/cases.json) asks whether a willing character can fail a saving throw without rolling. Gemma 4 E2B with thinking off insisted on a roll without oracle passages. With the oracle passage, it correctly allowed voluntary failure. Its score rose from 0 to 100 and the answer became fully correct, while time fell from 1.76 to 0.70 seconds and output from 356 to 130 tokens.
+The public case [d20-en-pilot-t01-003](../../../data/cases.json) asks whether a willing character can fail a saving throw without rolling. Gemma 4 E2B with thinking off insisted on a roll without oracle passages and allowed voluntary failure with them. Its score rose from 0 to 100, while time fell from 1.76 to 0.70 seconds and output from 356 to 130 tokens.
 
-In [d20-en-pilot-t11-006](../../../data/cases.json), Qwen3.5 4B, thinking off, fabricated restrictions for *Knock* and its interaction with *Arcane Lock*. With oracle passages, it correctly distinguished unlocking a lock from suppressing the magical lock and described the spell's loud sound; its score rose from 0 to 100, with a fully correct answer.
+On [d20-en-pilot-t11-006](../../../data/cases.json), Qwen3.5 4B with thinking off also rose from 0 to 100, dropping fabricated restrictions for *Knock* and *Arcane Lock*.
 
 ## Under the 5-second bar, Gemma 4 leads
 
-With oracle passages, 10/25 configurations had a median at or below 5 seconds. Rows are sorted by fully correct answers, with lower median time breaking ties. Here, off/on mean thinking off/on; native marks models that cannot turn thinking off, and low marks reduced thinking effort.
+With oracle passages, 10/25 configurations had a median at or below 5 seconds, but only three configurations met the 5-second median bar and got more than half the answers fully correct. All three were Gemma 4. Rows are sorted by fully correct answers, then by lower median time. Here, off/on mean thinking off/on; native marks models that cannot turn thinking off, and low marks reduced thinking effort.
 
 | Size class | Configuration | Fully correct / assessed | Median s | p95 s | Mean output tokens |
 |---|---|---:|---:|---:|---:|
@@ -74,45 +75,43 @@ Bold rows: median at or below 5 seconds.
 
 <!-- figure: live-use-tradeoffs — oracle fully-correct counts and assessed denominators against median completion time, with p95 and mean output tokens visible; results.json configurations.id/size_class and supplied_passage cells.quality.fully_correct/profile_assessed, timing.median_seconds/p95_seconds/above_30_seconds, output_tokens.mean; my reference lines at 5 and 30 seconds -->
 
-I picked Gemma 4 because of the combination of fully correct answers, short times and few output tokens. Among the configurations with a median at or below 5 seconds, Gemma 4 26B-A4B off had the most fully correct answers and the lowest mean output tokens. Its p95 was also below the target. That is a stronger live-use result than passing the median filter alone: on consumer-grade hardware, even its slower responses stay within the target.
+Among the bold rows, Gemma 4 26B-A4B off had the most fully correct answers and the lowest mean output tokens, and its 4.56-second p95 also sat below the target. That combination is why I picked Gemma 4.
 
-Dense models read all their weights for each generated token; mixture-of-experts models read only the active experts alongside shared weights [2](#references), [3](#references). In the public answers, Gemma 4 26B-A4B, with 3.8B active parameters, generated about 130 tokens per second, compared with about 24–33 tokens per second for the dense roughly 30B models without speculative decoding on the same GPU. I see this smaller active workload as the main reason Gemma clears my 5-second bar with thinking off, alongside its short answers.
+In the public answers, Gemma 4 26B-A4B generated about 130 tokens per second, compared with about 24–33 tokens per second for the dense roughly 30B models without speculative decoding on the same GPU. I see its smaller active workload as the main reason Gemma clears my 5-second bar with thinking off, alongside its short answers.
 
-K2 shows why the tail matters: its 3.27-second median accompanies an 89.81-second p95. It exceeded the 30-second cutoff in 8/120 requests.
+K2's 3.27-second median accompanies an 89.81-second p95, and it exceeded the 30-second cutoff in 8/120 requests.
 
 ## Thinking can buy quality, or consume the session
 
-For Gemma 4 26B-A4B with oracle passages, thinking on is a clear quality gain: it increased fully correct answers from 96/120 to 113/120. Median time rose from 2.13 to 6.08 seconds, p95 from 4.56 to 15.68 seconds, and mean output tokens from 255.3 to 892.6. The highest fully correct count in the study therefore misses the median target, and the gain has to be weighed against the wait.
+For Gemma 4 26B-A4B with oracle passages, thinking on increased fully correct answers from 96/120 to 113/120, the highest count in the study. Median time rose from 2.13 to 6.08 seconds, just past the target and p95 from 4.56 to 15.68 seconds.
 
 <!-- figure: thinking-returns — paired off/on oracle results within model families, grouped by total-parameter size class; results.json configurations.id/model/mode/size_class and cells.configuration/condition, quality.fully_correct/profile_assessed/mean_claim_score, timing.median_seconds/p95_seconds, output_tokens.mean -->
 
-Granite 4.2 30B gained much less: with oracle passages, fully correct counts went from 62/115 (thinking off) to 69/119 (thinking on), while median time rose from 27.07 to 52.04 seconds. Neither mode approaches the live-use target.
+With oracle passages, Qwen3.5 4B went from 51/120 to 90/120, but its median rose from 3.57 to 32.70 seconds, beyond the 30-second cutoff.
 
-The public case [d20-en-pilot-t03-009](../../../data/cases.json), about damage after stabilization and run without oracle passages, makes the cost concrete. Thinking on reduced the score from 20 to 10, increased time from 94 to 795 seconds, and increased output from 2,256 to 11,321 tokens. The longer answer invented rules, including negative hit points; without grounding, thinking turned into excessive rumination, a pattern also reported for other reasoning models [5](#references).
+The public case [d20-en-pilot-t03-009](../../../data/cases.json), about damage after stabilization and run on Granite 4.2 30B without oracle passages, makes the cost concrete. Thinking on reduced the score from 20 to 10, increased time from 94 to 795 seconds, and output from 2,256 to 11,321 tokens. The longer answer invented rules; without grounding, thinking turned into excessive rumination, a pattern also reported for other reasoning models [5](#references).
 
-Qwen3.5 4B illustrates both sides. With oracle passages, thinking increased fully correct answers from 51/120 to 90/120, but median time rose from 3.57 to 32.70 seconds, beyond the 30-second cutoff. On the public spell-slot case [d20-en-pilot-t10-008](../../../data/cases.json), the score fell from 100 with thinking off to 93 with thinking on, time rose from 15 to 123 seconds, and output from 2,080 to 15,656 tokens. Both answers had a material error. The thinking off answer met every required claim while also asserting a false blanket prohibition after Bonus Action spellcasting.
+On the spell-slot case [d20-en-pilot-t10-008](../../../data/cases.json), Qwen3.5 4B fell from 100 to 93 with thinking on, while time rose from 15 to 123 seconds.
 
-Thinking is a less reliable route to quality than supplying oracle passages, and it also changes output budgets and runtime. For knowledge-heavy questions, the right evidence reliably improves accuracy, while extra thinking brings uneven gains [6](#references), [7](#references). The advantage of oracle passages in this study fits that pattern.
+For knowledge-heavy questions, the right evidence reliably improves accuracy, while extra thinking brings uneven gains [6](#references), [7](#references). The advantage of oracle passages in this study fits that pattern.
 
 ## A high average can conceal wrong rules
 
-With oracle passages, Muse Glimmer with low thinking effort averaged 98.86 claim points, close to Gemma 4 26B-A4B thinking on at 99.08. Their fully correct counts were 96/120 and 113/120 respectively. Muse had material errors in 24/120 answers; Gemma had them in 2/120. Those similar averages describe different risks for a workflow that will act on the explanation.
+With oracle passages, Muse Glimmer with low thinking effort averaged 98.86 claim points, close to Gemma 4 26B-A4B thinking on at 99.08. Their fully correct counts were 96/120 and 113/120. Muse had material errors in 24/120 answers; Gemma had them in 2/120.
 
 <!-- figure: scores-and-errors — oracle mean claim scores alongside fully-correct and material-error counts with separate assessed denominators, grouped by total-parameter size class; results.json configurations.id/size_class and supplied_passage cells.quality.mean_claim_score/fully_correct/profile_assessed/answers_with_material_errors/material_error_assessed -->
 
-In [d20-en-pilot-t05-010](../../../data/cases.json), LFM2.5 2.6B with oracle passages correctly separated negotiating from reading body language. It earned 100 claim points. It also invented an Intelligence-versus-Willpower check for Influence and extended the restriction on simultaneous actions to the whole turn. The answer is not fully correct and has a material error.
-
-That distinction matters in an interactive loop: the system can choose the right action while teaching or enforcing a wrong rule. Claim score measures required content; fully correct also checks whether the answer added material errors.
+In [d20-en-pilot-t05-010](../../../data/cases.json), LFM2.5 2.6B with oracle passages correctly separated negotiating from reading body language and earned 100 claim points. It also invented an Intelligence-versus-Willpower check for Influence, so the answer has a material error and isn't fully correct.
 
 ## Inspect the evidence
 
-Start with the [study index](../README.md) for the offline comparison and public case explorer. The [aggregate results](../data/results.json) contain every condition; [public answer records](../data/answers.json) contain the five examples above, their scores, request timings and tokens.
-
-Read [Methods](../docs/METHODS.md), [Limitations](../docs/LIMITATIONS.md), the [data dictionary](../docs/DATA_DICTIONARY.md) and [provenance](../docs/PROVENANCE.md) for measurement definitions and the public/private boundary. The source rules retain their [SRD attribution](../../../THIRD_PARTY_NOTICES.md).
+The [study index](../README.md) links the offline comparison and public case explorer. The [aggregate results](../data/results.json) contain every condition; [public answer records](../data/answers.json) contain the five examples above. [Methods](../docs/METHODS.md), [Limitations](../docs/LIMITATIONS.md), the [data dictionary](../docs/DATA_DICTIONARY.md) and [provenance](../docs/PROVENANCE.md) give measurement definitions and the public/private boundary. The source rules retain their [SRD attribution](../../../THIRD_PARTY_NOTICES.md).
 
 ## Next: measure the gap from retrieval to oracle
 
-The next study is in progress: BM25 retrieval variants with Gemma 4 at several sizes.
+A live system needs retrieval, software that finds the passages for the model. The next study, in progress, tests *BM25*, a standard keyword search that ranks passages by how well their words match the question, with Gemma 4 at several sizes.
+
+[See what a study on your own AI would give you](https://erolcanakbaba.com/d20#what-you-get).
 
 ## References
 

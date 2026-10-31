@@ -8,7 +8,7 @@ I used 120 English SRD 5.2.1 questions in 12 topics. I asked each one twice: wit
 
 Each question has required claims. Every claim has a reviewed weight and explicit partial-credit rules, and the weights total 100. An answer's score is the sum of the points awarded across its claims. Material errors, meaning wrong rules an answer adds, are recorded separately and carry no deduction.
 
-Eighteen task versions got a human quality review: twelve random picks by topic and six picked on purpose. All 18 passed and form the public set. An AI reviewed the quality of the other 102 tasks, and they stay private.
+Eighteen task versions got a human quality review: twelve random picks by topic and six picked on purpose. All 18 passed and form the public set. An AI reviewed the quality of the other 102 tasks. I then checked them, without a full source-backed review, and spotted nothing wrong. They stay private.
 
 All 120 were development cases I used while exploring.
 

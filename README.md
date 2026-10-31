@@ -1,9 +1,11 @@
 # d20 Bench
 
-Exploratory English SRD 5.2.1 studies, published incrementally.
+Same score, twelve times the mistakes. I tested 25 AI setups on 120 questions about a game's rulebook, the English SRD 5.2.1 rules of Dungeons & Dragons. Two scored almost the same, 99.08 and 98.86 out of 100, yet one invented a wrong rule in 2 answers and the other in 24.
 
-- [Study 1: baseline](studies/01-baseline/README.md) — completed; 25 configurations, 50 combinations of configuration and passage condition, 6,000 answer records, 18 public cases and 900 public answer records.
-- Study 2: BM25 context injection with Gemma 4 — in progress.
+These exploratory studies show which AI to trust with rules-heavy work, how fast it answers and where it goes wrong. A rulebook works like a policy manual: clear rules, plenty of tricky cases, and answers you can check.
+
+- [Study 1: baseline](studies/01-baseline/README.md): completed. 25 configurations (one model with one thinking setting), 50 combinations of configuration and passage condition, 6,000 answer records, 18 public cases and 900 public answer records.
+- Study 2, BM25 keyword search with Gemma 4: in progress, no results yet.
 
 Both studies use the same 120 cases and the same 18-case public boundary.
 
